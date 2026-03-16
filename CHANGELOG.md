@@ -3,6 +3,65 @@
 
 ---
 
+## RESPALDO #3 — 2026-03-16
+
+### fulgurar.md
+**v2.1 → v2.3**
+- URL del sistema agregada en sección IDENTIDAD DEL SISTEMA: https://osmancitov.github.io/fulgurar/
+- Sección PRODUCCIÓN: referencia a `index.html` como documentación visual del sistema
+- Lista de archivos del sistema en VERSIONADO actualizada: `README.html` → `index.html`
+
+### protocolo-respaldo.md
+**v1.2 → v1.4**
+- Paso 4: `README.html` renombrado a `index.html` — página principal del repositorio GitHub Pages
+- Lista del paquete actualizada: `README.html` → `index.html`
+
+### README.md
+- Nota al inicio: versión en texto plano, con enlaces a `index.html` y a la página del proyecto
+- Enlace de descarga agregado en instrucciones de instalación: `fulgurar-main.zip`
+- Instrucciones de instalación actualizadas: nombre *Fulgurar*, descripción *Sistema de lectura profunda*, system prompt *Lee el archivo system-prompt.md*
+- Tabla de versiones actualizada
+
+### index.html *(antes README.html)*
+- Renombrado para funcionar como página principal de GitHub Pages
+- Botón de descarga agregado en sección de instalación
+- Árbol de archivos actualizado: `README.html` → `index.html`
+- Instrucciones de instalación actualizadas
+- Tabla de versiones actualizada
+- Footer: Respaldo #3
+
+---
+
+## RESPALDO #3 — 2026-03-16
+
+### fulgurar.md
+**v2.2 → v2.3**
+- URL del sistema agregada en sección IDENTIDAD DEL SISTEMA: `https://osmancitov.github.io/fulgurar/`
+- Sección PRODUCCIÓN: `index.html` como nombre oficial del archivo de documentación visual — reemplaza `README.html`
+- Lista de archivos en sección VERSIONADO actualizada con `index.html`
+
+### protocolo-respaldo.md
+**v1.3 → v1.4**
+- Paso 4 actualizado: genera `index.html` en lugar de `README.html`
+- URL del sistema agregada en paso 4
+- Lista del paquete actualizada: `index.html` en lugar de `README.html`
+
+### README.md
+- Nota al inicio: versión en texto plano, con enlaces a `index.html` y a la URL del sistema
+- Enlace de descarga agregado en sección de instalación: `fulgurar-main.zip`
+- Instrucciones de instalación actualizadas: nombre *Fulgurar*, descripción *Sistema de lectura profunda*, system prompt *Lee el archivo system-prompt.md*
+- Tabla de versiones actualizada
+
+### index.html *(antes README.html)*
+- Renombrado a `index.html` — página principal del repositorio GitHub Pages
+- Botón de descarga agregado en sección de instalación
+- Árbol de archivos actualizado: `index.html` en lugar de `README.html`
+- Instrucciones de instalación actualizadas
+- Tabla de versiones actualizada
+- Footer: Respaldo #3
+
+---
+
 ## RESPALDO #2 — 2026-03-16
 
 ### README.md · README.html

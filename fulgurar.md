@@ -1,7 +1,7 @@
 # Fulgurar
 *Consume letras. Produce luz.*
 
-*v2.0 · 2026-03-16 · Módulo de operación, recepción y producción*
+*v2.3 · 2026-03-16 · Módulo de operación, recepción y producción*
 
 ---
 
@@ -30,6 +30,8 @@ Todo material que entra a Fulgurar sale transformado o expuesto. Lo que no resis
 ---
 
 ## IDENTIDAD DEL SISTEMA
+
+**URL del sistema:** https://osmancitov.github.io/fulgurar/
 
 **Fulgurar** es un sistema de lectura profunda con cuatro talleres activos:
 
@@ -342,6 +344,12 @@ El encabezado incluye siempre: logos animados, título del taller, barra de nave
 
 ---
 
+### Documentación visual del sistema
+
+La documentación visual del sistema vive en `index.html` — generado en cada respaldo desde el contenido de `README.md` usando la paleta Fulgurar. Es la página principal del repositorio en https://osmancitov.github.io/fulgurar/
+
+---
+
 ### Nombres de archivo
 
 Única fuente de verdad para los nombres de archivo producidos por Fulgurar. Los protocolos individuales no repiten estos nombres.
@@ -409,4 +417,4 @@ Cada archivo del sistema tiene número de versión y fecha al inicio.
 El historial detallado de todos los cambios vive en `CHANGELOG.md`.
 
 **Esta regla se aplica a todos los archivos del sistema:**
-`fulgurador.md` · `protocolo-bodega.md` · `protocolo-astillero.md` · `protocolo-escuadra.md` · `protocolo-jardin.md` · `protocolo-taller.md` · `protocolo-respaldo.md` · `bodega-header.html` · `astillero-header-nave.html` · `astillero-header-flota.html` · `escuadra-header.html` · `jardin-header.html` · `system-prompt.md`
+`fulgurar.md` · `protocolo-bodega.md` · `protocolo-astillero.md` · `protocolo-escuadra.md` · `protocolo-jardin.md` · `protocolo-taller.md` · `protocolo-respaldo.md` · `bodega-header.html` · `astillero-header-nave.html` · `astillero-header-flota.html` · `escuadra-header.html` · `jardin-header.html` · `system-prompt.md` · `index.html`

@@ -1,6 +1,8 @@
 # Fulgurar
 *Consume letras. Produce luz.*
 
+> Versión en texto plano. También disponible en [formato visual](index.html) y en la [página del proyecto](https://osmancitov.github.io/fulgurar/).
+
 ---
 
 ## Qué es
@@ -70,6 +72,8 @@ fulgurar/
 
 ## Cómo instalar en un proyecto nuevo
 
+**Descargar los archivos:** [fulgurar-main.zip](https://github.com/osmancitov/fulgurar/archive/refs/heads/main.zip)
+
 ### 1. Crear el proyecto en Claude
 
 Abre Claude y crea un nuevo proyecto. En el recuadro de **nombre** escribe *Fulgurar*. En el recuadro de **descripción** escribe *Sistema de lectura profunda.*
@@ -112,13 +116,13 @@ Para instalar la actualización, reemplaza los archivos del proyecto de Claude c
 
 | Archivo | Versión |
 |---|---|
-| `fulgurar.md` | v2.0 |
+| `fulgurar.md` | v2.3 |
 | `protocolo-bodega.md` | v1.4 |
 | `protocolo-astillero.md` | v1.6 |
 | `protocolo-escuadra.md` | v1.0 |
 | `protocolo-jardin.md` | v1.0 |
 | `protocolo-taller.md` | v1.0 |
-| `protocolo-respaldo.md` | v1.3 |
+| `protocolo-respaldo.md` | v1.4 |
 | `bodega-header.html` | v1.1 |
 | `astillero-header-nave.html` | v1.1 |
 | `astillero-header-flota.html` | v1.2 |
