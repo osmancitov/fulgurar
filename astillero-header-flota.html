@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astillero Osmancito — Inspección de Flota</title>
+  <!-- v1.2 · 2026-03-15 · Encabezado Astillero modo flota — paleta actualizada a verde marino -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=EB+Garamond:ital,wght@0,400;1,400&display=swap');
+
+    :root {
+      --ink:       #0a1a14;
+      --slate:     #e2ede8;
+      --compass:   #3a9a78;
+      --compass-dim: #226a50;
+      --fog:       #f0f5f2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--fog); font-family: 'EB Garamond', Georgia, serif; }
+
+    /* ── HEADER ── */
+    .astillero-header {
+      background: var(--ink);
+      border-bottom: 3px solid var(--compass);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* textura de carta náutica muy sutil */
+    .astillero-header::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04 0.04' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+    }
+
+    /* ── INNER ── */
+    .header-inner {
+      position: relative;
+      max-width: 960px; margin: 0 auto;
+      padding: 32px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── LOGOS ── */
+    .header-logos {
+      display: flex;
+      align-items: flex-end;
+      gap: 28px;
+      margin-bottom: 22px;
+    }
+
+    .logo-compass {
+      width: 68px;
+      height: 68px;
+      filter: drop-shadow(0 2px 10px rgba(122,176,212,0.4));
+      animation: compass-spin 20s linear infinite;
+    }
+
+    /* la rosa gira lenta, la aguja oscila */
+    .compass-rose  { animation: rose-turn   20s linear   infinite; transform-origin: 36px 36px; }
+    .compass-needle{ animation: needle-seek  4s ease-in-out infinite; transform-origin: 36px 36px; }
+    .compass-glow  { animation: comp-glow    3s ease-in-out infinite; }
+
+    @keyframes rose-turn   { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+    @keyframes needle-seek { 0%,100%{transform:rotate(-5deg)} 50%{transform:rotate(5deg)} }
+    @keyframes comp-glow   { 0%,100%{opacity:.12} 50%{opacity:.35} }
+
+    .logo-amanita {
+      width: 68px;
+      height: 68px;
+    }
+
+    /* ── TÍTULO ── */
+    .header-title {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .header-title .astillero {
+      font-family: 'Cinzel', serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 7vw, 3.2rem);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--compass);
+      line-height: 1;
+      text-shadow: 0 1px 18px rgba(122,176,212,0.4);
+    }
+
+    .header-title .de {
+      font-family: 'Cinzel', serif;
+      font-weight: 400;
+      font-size: clamp(0.6rem, 1.8vw, 0.85rem);
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: rgba(226,232,240,0.38);
+      margin-top: 5px;
+    }
+
+    .header-title .nombre {
+      font-family: 'Cinzel', serif;
+      font-weight: 600;
+      font-size: clamp(1.2rem, 4vw, 1.9rem);
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin-top: 3px;
+    }
+
+    .header-title .subtitulo {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: clamp(0.7rem, 1.8vw, 0.88rem);
+      letter-spacing: 0.18em;
+      color: rgba(226,232,240,0.35);
+      margin-top: 10px;
+    }
+
+    /* ── AMANITA ANIMATIONS ── */
+    .am-stem   { animation: am-sway    5s   ease-in-out infinite; transform-origin: 50% 100%; }
+    .am-cap    { animation: am-breathe 4s   ease-in-out infinite; transform-origin: 50% 80%; }
+    .am-spots  { animation: am-pulse   3.5s ease-in-out infinite; }
+    .am-glow   { animation: am-glow-m  4s   ease-in-out infinite; }
+    .am-spores { animation: am-float   6s   ease-in-out infinite; }
+
+    @keyframes am-sway    { 0%,100%{transform:rotate(-2deg)}   50%{transform:rotate(2deg)} }
+    @keyframes am-breathe { 0%,100%{transform:scaleX(1) scaleY(1)} 50%{transform:scaleX(1.04) scaleY(0.97)} }
+    @keyframes am-pulse   { 0%,100%{opacity:.9}  50%{opacity:1} }
+    @keyframes am-glow-m  { 0%,100%{opacity:.15} 50%{opacity:.45} }
+    @keyframes am-float   { 0%{transform:translateY(0) translateX(0);opacity:0} 30%{opacity:1} 100%{transform:translateY(-14px) translateX(4px);opacity:0} }
+
+    /* ── NAV ── */
+    .astillero-nav {
+      border-top: 1px solid rgba(122,176,212,0.18);
+      background: rgba(255,255,255,0.02);
+      margin-top: 22px;
+    }
+    .nav-inner {
+      max-width: 960px; margin: 0 auto; padding: 0 16px;
+      display: flex; flex-wrap: wrap; justify-content: center; list-style: none;
+    }
+    .nav-inner li a {
+      display: block; padding: 9px 14px;
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(226,232,240,0.45); text-decoration: none;
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-inner li a:hover { color: var(--compass); background: rgba(122,176,212,0.07); }
+
+    /* preview */
+    .demo-body {
+      max-width: 960px; margin: 60px auto; padding: 0 24px;
+      text-align: center; color: rgba(14,21,32,0.3);
+      font-style: italic; font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     ENCABEZADO ASTILLERO — MODO FLOTA
+     Copiar desde aquí hasta </header>
+═══════════════════════════════════════════════════════ -->
+<header class="astillero-header">
+  <div class="header-inner">
+
+    <!-- LOGOS -->
+    <div class="header-logos">
+
+      <!-- BRÚJULA -->
+      <svg class="logo-compass" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Brújula">
+        <defs>
+          <radialGradient id="comp-bg" cx="50%" cy="50%" r="50%">
+            <stop offset="0%"   stop-color="#1a3048"/>
+            <stop offset="100%" stop-color="#080f1a"/>
+          </radialGradient>
+          <radialGradient id="comp-face" cx="50%" cy="40%" r="55%">
+            <stop offset="0%"   stop-color="#1e3a52"/>
+            <stop offset="100%" stop-color="#0e1e2e"/>
+          </radialGradient>
+        </defs>
+
+        <!-- glow exterior -->
+        <ellipse class="compass-glow" cx="36" cy="36" rx="33" ry="33" fill="rgba(122,176,212,0.15)"/>
+
+        <!-- cuerpo exterior -->
+        <circle cx="36" cy="36" r="31" fill="url(#comp-bg)" stroke="rgba(122,176,212,0.4)" stroke-width="1.5"/>
+        <!-- bisel interior -->
+        <circle cx="36" cy="36" r="27" fill="url(#comp-face)" stroke="rgba(122,176,212,0.2)" stroke-width="0.8"/>
+
+        <!-- rosa de los vientos — gira completa -->
+        <g class="compass-rose">
+          <!-- puntos cardinales marcas -->
+          <line x1="36" y1="11" x2="36" y2="17" stroke="rgba(122,176,212,0.7)" stroke-width="1.2"/>
+          <line x1="36" y1="55" x2="36" y2="61" stroke="rgba(122,176,212,0.4)" stroke-width="0.8"/>
+          <line x1="11" y1="36" x2="17" y2="36" stroke="rgba(122,176,212,0.4)" stroke-width="0.8"/>
+          <line x1="55" y1="36" x2="61" y2="36" stroke="rgba(122,176,212,0.4)" stroke-width="0.8"/>
+          <!-- diagonales -->
+          <line x1="16" y1="16" x2="20" y2="20" stroke="rgba(122,176,212,0.25)" stroke-width="0.6"/>
+          <line x1="52" y1="16" x2="56" y2="20" stroke="rgba(122,176,212,0.25)" stroke-width="0.6" transform="rotate(90,36,36)"/>
+          <line x1="16" y1="56" x2="20" y2="52" stroke="rgba(122,176,212,0.25)" stroke-width="0.6" transform="rotate(180,36,36)"/>
+          <line x1="52" y1="56" x2="56" y2="52" stroke="rgba(122,176,212,0.25)" stroke-width="0.6" transform="rotate(270,36,36)"/>
+          <!-- letra N -->
+          <text x="36" y="25" text-anchor="middle" font-family="Cinzel,serif" font-size="7" font-weight="700"
+                fill="rgba(122,176,212,0.9)" letter-spacing="0">N</text>
+        </g>
+
+        <!-- aguja — oscila -->
+        <g class="compass-needle">
+          <!-- norte: azul acero -->
+          <path d="M36 16 L38.5 36 L36 38 L33.5 36Z" fill="#7ab0d4" opacity="0.95"/>
+          <!-- sur: gris oscuro -->
+          <path d="M36 56 L38.5 36 L36 34 L33.5 36Z" fill="#2a4a5e" opacity="0.8"/>
+          <!-- pivote -->
+          <circle cx="36" cy="36" r="2.5" fill="#0e1520" stroke="rgba(122,176,212,0.6)" stroke-width="0.8"/>
+          <circle cx="36" cy="36" r="1"   fill="#7ab0d4" opacity="0.7"/>
+        </g>
+
+        <!-- graduaciones del bisel -->
+        <circle cx="36" cy="36" r="29" fill="none" stroke="rgba(122,176,212,0.12)" stroke-width="3"
+                stroke-dasharray="2 4.7"/>
+      </svg>
+
+      <!-- AMANITA -->
+      <svg class="logo-amanita" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Amanita muscaria">
+        <ellipse class="am-glow" cx="36" cy="36" rx="30" ry="28" fill="rgba(200,60,30,0.12)"/>
+        <ellipse cx="36" cy="67" rx="10" ry="2.5" fill="rgba(0,0,0,0.3)"/>
+        <g class="am-stem">
+          <path d="M28 65 Q27 50 29 42 Q33 38 36 38 Q39 38 43 42 Q45 50 44 65Z" fill="url(#sg3)"/>
+          <ellipse cx="36" cy="64" rx="9" ry="3.5" fill="#d4b896"/>
+          <path d="M28 51 Q36 54 44 51" stroke="#c4a882" stroke-width="1.5" fill="none"/>
+          <path d="M32 55 Q33 48 32 42" stroke="rgba(255,255,255,0.12)" stroke-width="0.8" fill="none"/>
+          <path d="M40 55 Q39 48 40 42" stroke="rgba(255,255,255,0.10)" stroke-width="0.8" fill="none"/>
+        </g>
+        <g class="am-cap">
+          <path d="M22 42 Q36 46 50 42 Q44 38 36 38 Q28 38 22 42Z" fill="url(#gg3)" opacity="0.85"/>
+          <path d="M12 42 Q14 28 36 20 Q58 28 60 42 Q48 47 36 48 Q24 47 12 42Z" fill="url(#cg3)"/>
+          <path d="M12 42 Q24 45 36 46 Q48 45 60 42" stroke="rgba(120,30,10,0.6)" stroke-width="0.8" fill="none"/>
+        </g>
+        <g class="am-spots">
+          <ellipse cx="36" cy="28" rx="5"   ry="4"   fill="rgba(255,252,245,0.88)" transform="rotate(-5,36,28)"/>
+          <ellipse cx="25" cy="34" rx="3.5" ry="3"   fill="rgba(255,252,245,0.82)" transform="rotate(8,25,34)"/>
+          <ellipse cx="47" cy="34" rx="3.5" ry="3"   fill="rgba(255,252,245,0.82)" transform="rotate(-8,47,34)"/>
+          <ellipse cx="20" cy="40" rx="2.5" ry="2"   fill="rgba(255,252,245,0.70)"/>
+          <ellipse cx="52" cy="40" rx="2.5" ry="2"   fill="rgba(255,252,245,0.70)"/>
+          <ellipse cx="30" cy="24" rx="2"   ry="1.8" fill="rgba(255,252,245,0.65)" transform="rotate(5,30,24)"/>
+          <ellipse cx="43" cy="25" rx="2"   ry="1.8" fill="rgba(255,252,245,0.65)" transform="rotate(-5,43,25)"/>
+        </g>
+        <g class="am-spores">
+          <circle cx="42" cy="18" r="1"   fill="rgba(255,200,180,0.7)"/>
+          <circle cx="28" cy="15" r="0.7" fill="rgba(255,200,180,0.5)"/>
+          <circle cx="50" cy="22" r="0.8" fill="rgba(255,200,180,0.55)"/>
+        </g>
+        <defs>
+          <radialGradient id="cg3" cx="45%" cy="35%" r="60%">
+            <stop offset="0%"   stop-color="#e84030"/>
+            <stop offset="55%"  stop-color="#c02818"/>
+            <stop offset="100%" stop-color="#7a1008"/>
+          </radialGradient>
+          <linearGradient id="sg3" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#c8ad8a"/>
+            <stop offset="50%"  stop-color="#e8d4b0"/>
+            <stop offset="100%" stop-color="#b89870"/>
+          </linearGradient>
+          <linearGradient id="gg3" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%"   stop-color="#f0d4b0"/>
+            <stop offset="100%" stop-color="#c4a882"/>
+          </linearGradient>
+        </defs>
+      </svg>
+
+    </div><!-- /header-logos -->
+
+    <!-- TÍTULO -->
+    <div class="header-title">
+      <span class="astillero">Astillero</span>
+      <span class="de">de</span>
+      <span class="nombre">Osmancito</span>
+      <span class="subtitulo">Inspección de flota</span>
+    </div>
+
+  </div><!-- /header-inner -->
+
+  <!-- NAV — MODO FLOTA -->
+  <nav class="astillero-nav" aria-label="Secciones">
+    <ul class="nav-inner">
+      <li><a href="#capitan">El Capitán</a></li>
+      <li><a href="#mapa">Mapa de la Flota</a></li>
+      <li><a href="#tensiones">Tensiones Transversales</a></li>
+      <li><a href="#licencia">Veredicto de Licencia</a></li>
+    </ul>
+  </nav>
+
+</header>
+<!-- ═══════════════════════════════════════════════════════
+     FIN DEL ENCABEZADO — MODO FLOTA
+═══════════════════════════════════════════════════════ -->
+
+<div class="demo-body">↑ El informe de flota va aquí debajo.</div>
+
+</body>
+</html>
+
+<!--
+HISTORIAL
+- v1.0 · 2026-03-13 · Versión inicial — encabezado Astillero modo flota, logo brújula animada + amanita
+- v1.1 · 2026-03-13 · Integración al sistema Crisol Osmancito
+- v1.2 · 2026-03-15 · Paleta actualizada a verde marino — diferenciación visual respecto a Astillero Nave
+-->
