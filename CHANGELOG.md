@@ -3,6 +3,13 @@
 
 ---
 
+## RESPALDO #4 — 2026-03-16
+
+### README.md
+- Nota al inicio simplificada: *Esta información también está disponible en la página del proyecto.* con enlace directo — sin mencionar index.html
+
+---
+
 ## RESPALDO #3 — 2026-03-16
 
 ### fulgurar.md

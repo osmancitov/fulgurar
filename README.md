@@ -1,7 +1,7 @@
 # Fulgurar
 *Consume letras. Produce luz.*
 
-> Versión en texto plano. También disponible en [formato visual](index.html) y en la [página del proyecto](https://osmancitov.github.io/fulgurar/).
+> Esta información también está disponible en la [página del proyecto](https://osmancitov.github.io/fulgurar/).
 
 ---
 
