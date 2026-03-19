@@ -1,5 +1,5 @@
-# Protocolo Jardín — Fulgurador Osmancito
-*v1.0 · 2026-03-16 · Jardinero del corpus*
+# Protocolo Jardín — Fulgurar
+*v1.1 · 2026-03-19 · Jardinero del corpus*
 
 ---
 
@@ -148,9 +148,11 @@ Estos son ejemplos de tono — no frases fijas. El jardinero genera dentro del r
 
 ---
 
-## FORMATO HTML — JARDÍN
+## FORMATO — JARDÍN
 
-**Nombre del archivo:** *Jardín — [Título] — [Autor].html*
+### Producto por defecto — Markdown
+
+**Nombre del archivo:** *Jardín — [Título] — [Autor].md*
 
 **Texto introductorio:**
 
@@ -164,6 +166,63 @@ Estos son ejemplos de tono — no frases fijas. El jardinero genera dentro del r
 - **Lo que Guarda** — *El núcleo que solo se ve en silencio.*
 - **El Perfil** — *Lo que el Jardín encontró al cavar.*
 
+**Estructura Markdown:**
+
+```markdown
+# Jardín — [Título] — [Autor]
+
+**Título** — [valor] | **Autor** — [valor] | **Extensión** — [valor]
+**Naturaleza del corpus** — [valor]
+**Fecha de procesamiento** — [fecha]
+
+---
+
+## Lo que Dice
+*La superficie del texto — lo que ocurre.*
+
+[lectura literal — todas las lecturas posibles con sus tensiones]
+
+---
+
+## Lo que Muestra
+*Las imágenes y símbolos que el texto activa sin declarar.*
+
+[lectura alegórica — espectro completo de imágenes y tensiones]
+
+---
+
+## Lo que Exige
+*La transformación que el texto le pide al lector.*
+
+[lectura moral — exigencias explícitas, implícitas y sus tensiones]
+
+---
+
+## Lo que Guarda
+*El núcleo que solo se ve en silencio.*
+
+[lectura mística — todas las lecturas profundas simultáneas]
+
+---
+
+## El Perfil
+*Lo que el Jardín encontró al cavar.*
+
+### Síntesis del Jardín
+[prosa contemplativa — 250 a 350 palabras]
+
+### La Semilla
+[una proposición — lo más profundo encontrado]
+```
+
+---
+
+### Producto opcional — HTML con SVG
+
+**Nombre del archivo:** *Jardín — [Título] — [Autor].html*
+
+Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`jardin-header.html`), paleta CSS embebida, ficha del corpus formateada, y la carta del jardín SVG (corte transversal del suelo) incrustada al final de El Perfil.
+
 **Estructura HTML:**
 
 ```html
@@ -176,47 +235,20 @@ Estos son ejemplos de tono — no frases fijas. El jardinero genera dentro del r
   <style>/* estilos embebidos — paleta Jardín */</style>
 </head>
 <body>
-
   <!-- encabezado: jardin-header.html -->
-
   <main>
-    <!-- ficha del corpus: ver fulgurador.md — sección FICHA DEL CORPUS -->
-
-    <section id="dice">
-      <h1>Lo que Dice</h1>
-      <em>La superficie del texto — lo que ocurre.</em>
-      <p>[lectura literal — todas las lecturas posibles con sus tensiones]</p>
-    </section>
-
-    <section id="muestra">
-      <h1>Lo que Muestra</h1>
-      <em>Las imágenes y símbolos que el texto activa sin declarar.</em>
-      <p>[lectura alegórica — espectro completo de imágenes y tensiones]</p>
-    </section>
-
-    <section id="exige">
-      <h1>Lo que Exige</h1>
-      <em>La transformación que el texto le pide al lector.</em>
-      <p>[lectura moral — exigencias explícitas, implícitas y sus tensiones]</p>
-    </section>
-
-    <section id="guarda">
-      <h1>Lo que Guarda</h1>
-      <em>El núcleo que solo se ve en silencio.</em>
-      <p>[lectura mística — todas las lecturas profundas simultáneas]</p>
-    </section>
-
+    <!-- ficha del corpus: ver fulgurar.md — sección FICHA DEL CORPUS -->
+    <section id="dice"><h1>Lo que Dice</h1><em>La superficie del texto — lo que ocurre.</em><p>[análisis]</p></section>
+    <section id="muestra"><h1>Lo que Muestra</h1><em>Las imágenes y símbolos que el texto activa sin declarar.</em><p>[análisis]</p></section>
+    <section id="exige"><h1>Lo que Exige</h1><em>La transformación que el texto le pide al lector.</em><p>[análisis]</p></section>
+    <section id="guarda"><h1>Lo que Guarda</h1><em>El núcleo que solo se ve en silencio.</em><p>[análisis]</p></section>
     <section id="perfil">
-      <h1>El Perfil</h1>
-      <em>Lo que el Jardín encontró al cavar.</em>
-      <h2>Síntesis del Jardín</h2>
-      <p>[prosa contemplativa]</p>
-      <h2>La Semilla</h2>
-      <p>[una proposición — lo más profundo encontrado]</p>
-      <svg><!-- carta del jardín — corte transversal del suelo --></svg>
+      <h1>El Perfil</h1><em>Lo que el Jardín encontró al cavar.</em>
+      <h2>Síntesis del Jardín</h2><p>[prosa contemplativa]</p>
+      <h2>La Semilla</h2><p>[una proposición]</p>
+      <svg><!-- carta del jardín — corte transversal del suelo — ver especificaciones SVG --></svg>
     </section>
   </main>
-
 </body>
 </html>
 ```
@@ -303,9 +335,9 @@ Chiaroscuro earth light. No photorealism.
 
 ---
 
-## ACTUALIZACIONES PARA fulgurador.md
+## ACTUALIZACIONES PARA fulgurar.md
 
-Bloques listos para copiar y pegar en `fulgurador.md`:
+Bloques listos para copiar y pegar en `fulgurar.md`:
 
 ### En la tabla de Marcas (sección IDENTIDAD VISUAL):
 

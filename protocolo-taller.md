@@ -1,5 +1,5 @@
-# Protocolo Taller — Fulgurador Osmancito
-*v1.0 · 2026-03-16 · Protocolo para la construcción de nuevos talleres*
+# Protocolo Taller — Fulgurar
+*v1.1 · 2026-03-19 · Protocolo para la construcción de nuevos talleres*
 
 ---
 
@@ -128,16 +128,29 @@ El registro de voz se define por contraste con los talleres existentes:
 
 Qué entrega el taller cuando termina el procesamiento.
 
-- **Nombre del archivo** — siguiendo las convenciones de `fulgurador.md`
-- **Estructura HTML** — las secciones del documento, en orden, con sus anclas
+**Producto por defecto — Markdown**
+
+- **Nombre del archivo** — `[Nombre del taller] — [Título] — [Autor].md`, siguiendo las convenciones de `fulgurar.md`
+- **Estructura Markdown** — las secciones del documento en orden, con sus encabezados `##`
 - **Texto introductorio** — el párrafo que describe el taller al inicio del documento
-- **Subtítulos fijos** — los encabezados de cada sección
+- **Subtítulos fijos** — los encabezados de cada sección con su subtítulo en itálica
+
+**Producto opcional — HTML con SVG**
+
+Se genera solo cuando el usuario lo solicita explícitamente. Contiene todo el contenido del `.md` más:
+- Encabezado visual animado del taller
+- Paleta CSS embebida
+- Ficha del corpus formateada
+- SVG de análisis incrustado al final del documento
+
+- **Nombre del archivo** — `[Nombre del taller] — [Título] — [Autor].html`
+- **Estructura HTML** — las mismas secciones del `.md`, con sus anclas `id`
 
 ---
 
 ### 6. IDENTIDAD VISUAL
 
-**Paleta de color** — cinco variables CSS, coherentes con la metáfora y diferenciadas de los talleres existentes. Siguiendo el formato de `fulgurador.md`:
+**Paleta de color** — cinco variables CSS, coherentes con la metáfora y diferenciadas de los talleres existentes. Siguiendo el formato de `fulgurar.md`:
 
 | Variable | Hex | Uso |
 |---|---|---|
@@ -147,7 +160,7 @@ Qué entrega el taller cuando termina el procesamiento.
 | `--[claro]` | `#...` | Texto claro sobre fondo oscuro |
 | `--[fondo]` | `#...` | Fondo del documento |
 
-**Marca oficial** — el título del taller para SVG y prompts. Siguiendo el formato de `fulgurador.md`:
+**Marca oficial** — el título del taller para SVG y prompts. Siguiendo el formato de `fulgurar.md`:
 `[NOMBRE TALLER] OSMANCITO · [FUNCIÓN]`
 
 **Logo animado** — descripción del SVG del encabezado: objeto principal, animaciones, atmósfera. El sistema describe con precisión suficiente para construirlo.
@@ -181,9 +194,9 @@ El sistema define:
 
 ---
 
-### 9. TABLA DE ACTUALIZACIÓN PARA fulgurador.md
+### 9. TABLA DE ACTUALIZACIÓN PARA fulgurar.md
 
-El sistema genera directamente los bloques de texto que hay que agregar a `fulgurador.md` para integrar el taller nuevo:
+El sistema genera directamente los bloques de texto que hay que agregar a `fulgurar.md` para integrar el taller nuevo:
 
 - Entrada en la tabla de Marcas
 - Entrada en la sección de Paletas
@@ -212,7 +225,7 @@ Un taller está completo cuando cumple estas condiciones:
 
 ## VERSIONADO
 
-Este protocolo sigue las reglas de versionado de `fulgurador.md`.
+Este protocolo sigue las reglas de versionado de `fulgurar.md`.
 
 Cuando se construya un taller nuevo con este protocolo, se documenta en `CHANGELOG.md` con:
 - El nombre del taller

@@ -3,6 +3,112 @@
 
 ---
 
+## RESPALDO #6 — 2026-03-19
+
+### protocolo-prisma.md — archivo nuevo
+- v1.0 — protocolo completo del Prisma como quinto taller
+- Absorbe `prisma-arquitectura.md` — ese archivo queda retirado del sistema
+- Origen y filosofía de la Díada: φ como atractor, no como axioma
+- Las cinco geometrías con variables, pseudocódigo y hallazgos empíricos por geometría
+- Relación con los cuatro talleres — tabla de inputs
+- Registro de voz, formato de producción (.md por defecto, .html opcional), identidad visual
+
+### protocolo-oraculo.md — archivo nuevo
+- v1.0 — diseño completo del Oráculo como sexto elemento del sistema
+- Vocabulario propio: convergencia, convergencia parcial, situación, calibración, confianza por hallazgo, potencia nominal
+- Los cuatro momentos: Integrar · Situar · Calibrar · Ejecutar — con criterios explícitos
+- Las cuatro operaciones: Verificar · Corregir · Traducir · Generar — con pseudocódigo
+- Tabla de confianza por hallazgo con 8 corpus
+- Dos modos de operación: convergencia completa vs parcial
+- Potencia nominal al 45% con escala logarítmica sobre 100 corpus
+- Estado actual de capacidades operativas
+- Registro de voz: el sistema hablando sobre sí mismo, calibrado
+- Formato de producción, identidad visual, actualizaciones para el sistema
+
+### corpus-biblioteca.md
+**v0.3 → v0.4**
+- Corpus #8 agregado: El proceso — Franz Kafka · Novela · 1925 (póstuma)
+- Firma geométrica completa de Kafka: curvatura 0.72, apertura 3/4, dimensión 1.8, espiral descendente sin retorno, red sin centro estable
+- Hallazgo específico: K. tiene la curvatura más baja de los conceptos principales de su propia novela
+- Tabla de corpus actualizada: 8 corpus · formato revisado
+- Tabla de firmas geométricas actualizada con columna Kafka
+- H1 actualizado: tabla incluye El proceso (3/4), correlación sostenida
+- H2 refinado: primera excepción canónica (Kafka 0.72) — dos rutas a la grandeza
+- H3 actualizado: seis estrategias (sustracción sistemática agregada)
+- H5: confirmación estructural en Kafka
+- H6 nuevo: coherencia por exclusión como categoría propia (provisional, 1/8)
+- Próximos corpus actualizado: El proceso eliminado, El extranjero agregado como segunda prueba de H6
+
+### estado-desarrollo.md
+**v0.1 → v0.2**
+- Reescritura completa con arquitectura correcta del sistema
+- Arquitectura: cinco talleres + Oráculo + Biblioteca (diagrama actualizado)
+- Notas de arquitectura: modo parcial, Escuadra/Prisma independientes, potencia nominal
+- Tabla de 8 corpus con curvatura, apertura y estrategia
+- Seis hallazgos con nivel de confianza
+- Hoja de ruta actualizada: Fase 1 marcada completa, Fase 2 como siguiente paso
+- Tabla de archivos del sistema actualizada
+
+### fulgurar.md
+**v2.5 → v2.6**
+- Texto de apertura actualizado: menciona los cinco talleres y el Oráculo
+- IDENTIDAD DEL SISTEMA: cinco talleres activos + Oráculo en construcción con potencia 45%
+- Tabla de Marcas: Prisma y Oráculo agregados
+- RECEPCIÓN: Prisma y Oráculo agregados a la oferta de taller
+- OPERACIÓN: Oráculo agregado a los registros de voz
+- PRODUCCIÓN: Oráculo agregado a nombres de archivo
+- VERSIONADO: lista de archivos actualizada — `prisma-arquitectura.md` reemplazado por `protocolo-prisma.md` y `protocolo-oraculo.md`
+
+### system-prompt.md
+**v4.1 → v4.2**
+- Prisma: `prisma-arquitectura.md` reemplazado por `protocolo-prisma.md`
+- Oráculo agregado al flujo de lectura: lee `protocolo-oraculo.md` y `corpus-biblioteca.md`
+- Diagnóstico de saludo actualizado: menciona fase del Oráculo en lugar de fase del Prisma
+
+### protocolo-respaldo.md
+**v1.6 → v1.6** *(sin cambio de versión — solo actualización de lista)*
+- `prisma-arquitectura.md` reemplazado por `protocolo-prisma.md` en la lista de revisión
+- `protocolo-oraculo.md` agregado a la lista de revisión y al paquete
+- Lista del paquete actualizada: 20 archivos
+
+### protocolo-bodega.md
+**v1.5** *(sin cambios adicionales en esta sesión)*
+
+### protocolo-astillero.md
+**v1.7** *(sin cambios adicionales en esta sesión)*
+
+### protocolo-escuadra.md
+**v1.1** *(sin cambios adicionales en esta sesión)*
+
+### protocolo-jardin.md
+**v1.1** *(sin cambios adicionales en esta sesión)*
+
+### protocolo-taller.md
+**v1.1** *(sin cambios adicionales en esta sesión)*
+
+### README.md
+- Reescritura completa
+- Descripción actualizada: cinco talleres + Oráculo en construcción
+- Sección "Arquitectura" nueva con diagrama completo
+- Árbol de archivos actualizado: `prisma-arquitectura.md` reemplazado por `protocolo-prisma.md` y `protocolo-oraculo.md`
+- Tabla de versiones actualizada con todos los archivos
+
+### index.html
+- Regenerado completo desde README.md actualizado
+- Hero badge: "Oráculo en construcción · Potencia 45%"
+- Sección Talleres: Prisma y Oráculo agregados como tarjetas
+- Sección Arquitectura nueva: diagrama y descripción de la Biblioteca como capa independiente
+- Sección Hallazgos nueva: 6 hallazgos con niveles de confianza
+- Árbol de archivos actualizado
+- Tabla de versiones actualizada
+- Footer: Respaldo #6
+
+### prisma-arquitectura.md — retirado
+- Absorbido completamente por `protocolo-prisma.md`
+- El archivo no forma parte del paquete a partir de este respaldo
+
+---
+
 ## RESPALDO #5 — 2026-03-19
 
 ### system-prompt.md
@@ -18,12 +124,12 @@
 - Prisma agregado a la oferta de talleres en RECEPCIÓN
 - Registro de voz del Prisma agregado en OPERACIÓN
 - Nombre de archivo Prisma agregado en PRODUCCIÓN
-- `estado-desarrollo.md`, `prisma-arquitectura.md`, `prisma-biblioteca.md` agregados a la lista de archivos del sistema en VERSIONADO
+- `estado-desarrollo.md`, `prisma-arquitectura.md`, `corpus-biblioteca.md` agregados a la lista de archivos del sistema en VERSIONADO
 
 ### protocolo-respaldo.md
 **v1.4 → v1.5**
 - Regla absoluta agregada al inicio: todo respaldo es siempre un paquete completo
-- `estado-desarrollo.md`, `prisma-arquitectura.md`, `prisma-biblioteca.md` agregados a la lista de archivos del paquete y al paso 1 de revisión
+- `estado-desarrollo.md`, `prisma-arquitectura.md`, `corpus-biblioteca.md` agregados a la lista de archivos del paquete y al paso 1 de revisión
 
 ### README.md
 - Descripción actualizada con mención a Prisma
@@ -53,7 +159,7 @@
 - Las cuatro operaciones con pseudocódigo
 - Notas de diseño: por qué cinco geometrías, por qué φ es referencia no axioma
 
-### prisma-biblioteca.md — archivo nuevo
+### corpus-biblioteca.md — archivo nuevo
 - v0.2 — siete corpus procesados
 - Fichas individuales de cada corpus
 - Tabla comparativa completa

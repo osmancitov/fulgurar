@@ -1,5 +1,5 @@
 # Protocolo de Respaldo — Fulgurar
-*v1.5 · 2026-03-19 · Protocolo de generación de respaldos del sistema*
+*v1.6 · 2026-03-19 · Protocolo de generación de respaldos del sistema*
 
 ---
 
@@ -18,8 +18,9 @@ Cuando el usuario solicite un juego completo de archivos para respaldo, ejecutar
 - `protocolo-taller.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
 - `protocolo-respaldo.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
 - `estado-desarrollo.md` — verificar que refleja el estado actual completo. Actualizar siempre.
-- `prisma-arquitectura.md` — verificar algoritmo y arquitectura. Actualizar versión si hubo cambios.
-- `prisma-biblioteca.md` — verificar que todos los corpus procesados están documentados. Actualizar siempre.
+- `protocolo-prisma.md` — verificar algoritmo, geometrías, formato. Actualizar versión si hubo cambios.
+- `protocolo-oraculo.md` — verificar los cuatro momentos, operaciones, calibración. Actualizar versión si hubo cambios.
+- `corpus-biblioteca.md` — verificar que todos los corpus procesados están documentados. Actualizar siempre.
 - Encabezados HTML — actualizar solo si hubo cambios de paleta o identidad visual.
 
 **2. Revisar y actualizar el system prompt**
@@ -41,6 +42,8 @@ Lista completa de archivos del paquete:
 - `protocolo-astillero.md`
 - `protocolo-escuadra.md`
 - `protocolo-jardin.md`
+- `protocolo-prisma.md`
+- `protocolo-oraculo.md`
 - `protocolo-taller.md`
 - `protocolo-respaldo.md`
 - `bodega-header.html`
@@ -53,5 +56,4 @@ Lista completa de archivos del paquete:
 - `index.html`
 - `CHANGELOG.md`
 - `estado-desarrollo.md`
-- `prisma-arquitectura.md`
-- `prisma-biblioteca.md`
+- `corpus-biblioteca.md`

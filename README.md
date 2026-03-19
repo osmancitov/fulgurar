@@ -11,13 +11,11 @@ Fulgurar es un sistema de lectura profunda que opera dentro de Claude. Toma cual
 
 No es un resumidor ni un buscador. Es un aparato que produce destellos.
 
-El sistema está en expansión activa hacia **Prisma** — una física de la literatura que busca medir matemáticamente qué hace que una obra sea grande.
+El sistema tiene cinco talleres activos y un sexto elemento en construcción — el Oráculo — que integra los talleres, consulta la Biblioteca y ejecuta las cuatro operaciones de la física de la literatura.
 
 ---
 
 ## Cómo funciona
-
-Cuatro talleres activos más el Prisma en desarrollo:
 
 **La Bodega** destila corpus. Extrae joyas, cartografías, esencias, copa maestra, cata sensorial y sedimento.
 
@@ -27,7 +25,30 @@ Cuatro talleres activos más el Prisma en desarrollo:
 
 **El Jardín** cava corpus. Cuatro estratos simultáneos — lo que dice, muestra, exige y guarda.
 
-**El Prisma** *(en desarrollo)* — firma geométrica del corpus en cinco dimensiones simultáneas.
+**El Prisma** descompone corpus. Firma geométrica en cinco dimensiones simultáneas: Díada acoplada, Tríada, Lorenz, Riemann, Homología persistente.
+
+**El Oráculo** *(en construcción · potencia 45%)* — integra los cinco talleres, sitúa el corpus en la Biblioteca, calibra los hallazgos empíricos, y ejecuta las cuatro operaciones: Verificar · Corregir · Traducir · Generar.
+
+---
+
+## Arquitectura
+
+```
+CORPUS
+  ↓
+CINCO TALLERES
+Bodega · Astillero · Escuadra · Jardín · Prisma
+  ↓
+ORÁCULO
+Integra · Sitúa · Calibra · Ejecuta
+  ↕
+BIBLIOTECA (corpus-biblioteca.md)
+
+El Oráculo ejecuta:
+Verificar · Corregir · Traducir · Generar
+```
+
+La **Biblioteca** es una capa independiente — no pertenece al Prisma ni al Oráculo. El Prisma produce firmas. La Biblioteca las acumula. El Oráculo las consulta. Hoy tiene 8 corpus procesados y 6 hallazgos empíricos.
 
 ---
 
@@ -44,6 +65,8 @@ fulgurar/
 ├── protocolo-astillero.md       <- vocabulario, arquetipos, diez estratos del Astillero
 ├── protocolo-escuadra.md        <- vocabulario, seis instrumentos de la Escuadra
 ├── protocolo-jardin.md          <- vocabulario, cuatro estratos del Jardín
+├── protocolo-prisma.md          <- algoritmo y operación del Prisma
+├── protocolo-oraculo.md         <- diseño completo del Oráculo
 ├── protocolo-taller.md          <- protocolo para construir talleres nuevos
 ├── protocolo-respaldo.md        <- protocolo de generación de respaldos
 ├── bodega-header.html           <- encabezado visual Bodega (ámbar — barril + amanita)
@@ -51,9 +74,8 @@ fulgurar/
 ├── astillero-header-flota.html  <- encabezado visual Astillero Flota (verde marino)
 ├── escuadra-header.html         <- encabezado visual Escuadra (violeta pizarra)
 ├── jardin-header.html           <- encabezado visual Jardín (verde musgo)
-├── estado-desarrollo.md         <- estado actual del proyecto Prisma
-├── prisma-arquitectura.md       <- algoritmo y arquitectura del Prisma
-└── prisma-biblioteca.md         <- firmas geométricas y hallazgos empíricos
+├── estado-desarrollo.md         <- estado actual — arquitectura completa del proyecto
+└── corpus-biblioteca.md         <- 8 corpus procesados · 6 hallazgos (Capa Biblioteca)
 ```
 
 ---
@@ -98,23 +120,34 @@ El sistema ejecutará el protocolo de respaldo completo — revisa todos los arc
 
 | Archivo | Versión | Última modificación |
 |---|---|---|
-| `fulgurar.md` | v2.4 | 2026-03-19 |
-| `protocolo-bodega.md` | v1.4 | 2026-03-15 |
-| `protocolo-astillero.md` | v1.6 | 2026-03-15 |
-| `protocolo-escuadra.md` | v1.0 | 2026-03-16 |
-| `protocolo-jardin.md` | v1.0 | 2026-03-16 |
-| `protocolo-taller.md` | v1.0 | 2026-03-16 |
-| `protocolo-respaldo.md` | v1.5 | 2026-03-19 |
+| `fulgurar.md` | v2.6 | 2026-03-19 |
+| `protocolo-bodega.md` | v1.5 | 2026-03-19 |
+| `protocolo-astillero.md` | v1.7 | 2026-03-19 |
+| `protocolo-escuadra.md` | v1.1 | 2026-03-19 |
+| `protocolo-jardin.md` | v1.1 | 2026-03-19 |
+| `protocolo-prisma.md` | v1.0 | 2026-03-19 |
+| `protocolo-oraculo.md` | v1.0 | 2026-03-19 |
+| `protocolo-taller.md` | v1.1 | 2026-03-19 |
+| `protocolo-respaldo.md` | v1.6 | 2026-03-19 |
 | `bodega-header.html` | v1.1 | 2026-03-13 |
 | `astillero-header-nave.html` | v1.1 | 2026-03-13 |
 | `astillero-header-flota.html` | v1.2 | 2026-03-15 |
 | `escuadra-header.html` | v1.0 | 2026-03-16 |
 | `jardin-header.html` | v1.0 | 2026-03-16 |
-| `system-prompt.md` | v4.0 | 2026-03-19 |
-| `estado-desarrollo.md` | v0.1 | 2026-03-19 |
-| `prisma-arquitectura.md` | v0.2 | 2026-03-19 |
-| `prisma-biblioteca.md` | v0.2 | 2026-03-19 |
+| `system-prompt.md` | v4.2 | 2026-03-19 |
+| `estado-desarrollo.md` | v0.2 | 2026-03-19 |
+| `corpus-biblioteca.md` | v0.4 | 2026-03-19 |
+
+## Origen
+
+Fulgurar no fue diseñado de una vez. Emergió por capas.
+
+Comenzó como el **Protocolo Θ∆** — un *reading companion* que acompañaba el análisis de un texto. Las cuatro capas de análisis (analogías biológica, física, matemática y hermenéutica) se profundizaron hasta diez estratos, que se convirtieron en el **Astillero Nave**. Vino después el **Astillero Flota** para autores completos, luego la **Bodega** para destilar, el **Jardín** para cavar en cuatro estratos simultáneos, y la **Escuadra** para medir la geometría invisible del texto.
+
+El **Prisma** emergió de una pregunta que los cuatro talleres no podían responder solos: ¿qué hace que una obra sea grande? La **Biblioteca** nació para acumular lo que el Prisma produce. El **Oráculo** para integrar todo y producir la convergencia que ningún taller puede producir solo.
+
+Cada capa respondió a una limitación del estado anterior. El sistema crece mientras haya corpus que resistan el fuego.
 
 ---
 
-*Fulgurar · Consume letras. Produce luz. · Respaldo #5 · 2026-03-19*
+*Fulgurar · Consume letras. Produce luz. · Respaldo #6 · 2026-03-19*

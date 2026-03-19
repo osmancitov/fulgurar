@@ -1,5 +1,5 @@
-# Protocolo Escuadra — Fulgurador Osmancito
-*v1.0 · 2026-03-16 · Geómetra del corpus*
+# Protocolo Escuadra — Fulgurar
+*v1.1 · 2026-03-19 · Geómetra del corpus*
 
 ---
 
@@ -195,9 +195,11 @@ Estos son ejemplos de tono — no frases fijas. El geómetra genera dentro del r
 
 ---
 
-## FORMATO HTML — ESCUADRA
+## FORMATO — ESCUADRA
 
-**Nombre del archivo:** *Escuadra — [Título] — [Autor].html*
+### Producto por defecto — Markdown
+
+**Nombre del archivo:** *Escuadra — [Título] — [Autor].md*
 
 **Texto introductorio:**
 
@@ -213,6 +215,88 @@ Estos son ejemplos de tono — no frases fijas. El geómetra genera dentro del r
 - **Geometría del Vocabulario** — *La curva de Zipf — el comportamiento estadístico del lenguaje.*
 - **El Levantamiento** — *Lo que la geometría reveló.*
 
+**Estructura Markdown:**
+
+```markdown
+# Escuadra — [Título] — [Autor]
+
+**Título** — [valor] | **Autor** — [valor] | **Extensión** — [valor]
+**Naturaleza del corpus** — [valor]
+**Fecha de procesamiento** — [fecha]
+
+---
+
+## Cifras del Corpus
+*El inventario numérico — base de todo levantamiento.*
+
+| Campo | Valor |
+|---|---|
+| Total de palabras | [valor] |
+| Total de capítulos | [valor] |
+| Promedio palabras/capítulo | [valor] |
+| Capítulo más largo | [título] — [palabras] |
+| Capítulo más corto | [título] — [palabras] |
+| Tiempo estimado de lectura | [valor] min |
+| Vocabulario real | [palabras únicas] |
+| Riqueza léxica | [proporción] |
+| Palabra más frecuente con contenido | [palabra] — [frecuencia] |
+
+---
+
+## Perfil de Densidad Léxica
+*Cómo varía la intensidad intelectual a lo largo del corpus.*
+
+[análisis del perfil — capítulo de mayor densidad, menor densidad, patrón general]
+
+---
+
+## El Gráfico Principal
+*La arquitectura visual del corpus.*
+
+[descripción del gráfico y lectura de las proporciones — referencia a phi, punto medio, tercios]
+[En el .html este instrumento incluye un SVG con el gráfico real]
+
+---
+
+## Geometría de la Red
+*La topología del corpus — quién sostiene qué.*
+
+[análisis de la red — forma, nodo central, nodos aislados, puentes frágiles]
+
+---
+
+## Geometría de las Proporciones
+*Las relaciones entre partes mayores.*
+
+[análisis de proporciones entre partes o tercios]
+
+---
+
+## Geometría del Vocabulario
+*La curva de Zipf — el comportamiento estadístico del lenguaje.*
+
+[análisis de la curva y sus desviaciones]
+
+---
+
+## El Levantamiento
+*Lo que la geometría reveló.*
+
+### Síntesis Geométrica
+[prosa analítica — 200 a 300 palabras]
+
+### Hallazgo Principal
+[una proposición — dato concreto y lo que revela]
+```
+
+---
+
+### Producto opcional — HTML con SVG
+
+**Nombre del archivo:** *Escuadra — [Título] — [Autor].html*
+
+Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`escuadra-header.html`), paleta CSS embebida, gráfico principal como SVG interactivo, grafo de conceptos como SVG, curva de Zipf como SVG, y la carta geométrica incrustada al final de El Levantamiento.
+
 **Estructura HTML:**
 
 ```html
@@ -225,62 +309,22 @@ Estos son ejemplos de tono — no frases fijas. El geómetra genera dentro del r
   <style>/* estilos embebidos — paleta Escuadra */</style>
 </head>
 <body>
-
   <!-- encabezado: escuadra-header.html -->
-
   <main>
-    <!-- ficha del corpus: ver fulgurador.md — sección FICHA DEL CORPUS -->
-
-    <section id="cifras">
-      <h1>Cifras del Corpus</h1>
-      <em>El inventario numérico — base de todo levantamiento.</em>
-      <table><!-- tabla de medidas --></table>
-    </section>
-
-    <section id="densidad">
-      <h1>Perfil de Densidad Léxica</h1>
-      <em>Cómo varía la intensidad intelectual a lo largo del corpus.</em>
-      <p>[análisis del perfil]</p>
-    </section>
-
-    <section id="grafico">
-      <h1>El Gráfico Principal</h1>
-      <em>La arquitectura visual del corpus.</em>
-      <svg><!-- gráfico de densidad con barras proporcionales y líneas phi --></svg>
-      <p>[lectura del gráfico]</p>
-    </section>
-
-    <section id="red">
-      <h1>Geometría de la Red</h1>
-      <em>La topología del corpus — quién sostiene qué.</em>
-      <p>[análisis de la red]</p>
-      <svg><!-- grafo de conceptos --></svg>
-    </section>
-
-    <section id="proporciones">
-      <h1>Geometría de las Proporciones</h1>
-      <em>Las relaciones entre partes mayores.</em>
-      <p>[análisis de proporciones]</p>
-    </section>
-
-    <section id="vocabulario">
-      <h1>Geometría del Vocabulario</h1>
-      <em>La curva de Zipf — el comportamiento estadístico del lenguaje.</em>
-      <p>[análisis de la curva]</p>
-      <svg><!-- curva de Zipf --></svg>
-    </section>
-
+    <!-- ficha del corpus: ver fulgurar.md — sección FICHA DEL CORPUS -->
+    <section id="cifras"><h1>Cifras del Corpus</h1><em>El inventario numérico — base de todo levantamiento.</em><table><!-- tabla de medidas --></table></section>
+    <section id="densidad"><h1>Perfil de Densidad Léxica</h1><em>Cómo varía la intensidad intelectual a lo largo del corpus.</em><p>[análisis]</p></section>
+    <section id="grafico"><h1>El Gráfico Principal</h1><em>La arquitectura visual del corpus.</em><svg><!-- gráfico de densidad con barras proporcionales y líneas phi --></svg><p>[lectura]</p></section>
+    <section id="red"><h1>Geometría de la Red</h1><em>La topología del corpus — quién sostiene qué.</em><p>[análisis]</p><svg><!-- grafo de conceptos --></svg></section>
+    <section id="proporciones"><h1>Geometría de las Proporciones</h1><em>Las relaciones entre partes mayores.</em><p>[análisis]</p></section>
+    <section id="vocabulario"><h1>Geometría del Vocabulario</h1><em>La curva de Zipf — el comportamiento estadístico del lenguaje.</em><p>[análisis]</p><svg><!-- curva de Zipf --></svg></section>
     <section id="levantamiento">
-      <h1>El Levantamiento</h1>
-      <em>Lo que la geometría reveló.</em>
-      <h2>Síntesis Geométrica</h2>
-      <p>[prosa analítica]</p>
-      <h2>Hallazgo Principal</h2>
-      <p>[una proposición — dato concreto y lo que revela]</p>
+      <h1>El Levantamiento</h1><em>Lo que la geometría reveló.</em>
+      <h2>Síntesis Geométrica</h2><p>[prosa analítica]</p>
+      <h2>Hallazgo Principal</h2><p>[una proposición]</p>
       <svg><!-- carta geométrica del corpus --></svg>
     </section>
   </main>
-
 </body>
 </html>
 ```
@@ -361,9 +405,9 @@ No photorealism.
 
 ---
 
-## ACTUALIZACIONES PARA fulgurador.md
+## ACTUALIZACIONES PARA fulgurar.md
 
-Bloques listos para copiar y pegar en `fulgurador.md`:
+Bloques listos para copiar y pegar en `fulgurar.md`:
 
 ### En la tabla de Marcas (sección IDENTIDAD VISUAL):
 

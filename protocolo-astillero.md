@@ -1,5 +1,5 @@
-# Protocolo Astillero — Crisol Osmancito
-*v1.6 · 2026-03-15 · Inspector de corpus*
+# Protocolo Astillero — Fulgurar
+*v1.7 · 2026-03-19 · Inspector de corpus*
 
 ---
 
@@ -350,15 +350,95 @@ El objeto de inspección no es una nave sino un capitán y todas sus embarcacion
 
 ---
 
-## FORMATO HTML — ASTILLERO
+## FORMATO — ASTILLERO
 
-### Modo Nave
+### Modo Nave — Producto por defecto — Markdown
 
-**Nombre del archivo:** ver `fulgurador.md` — sección Nombres de archivo.
+**Nombre del archivo:** *Astillero Nave — [Título] — [Autor].md*
 
 **Texto introductorio:**
 
 > Esta inspección del Astillero somete una nave a escrutinio estructural completo. No es una reseña ni un resumen: es un dictamen técnico y sensorial. Cada informe contiene lo que emerge cuando se le exige a un texto que justifique su existencia ante diez estratos de escrutinio — su arquitectura, sus corrientes ocultas, la psicología de su capitán, las rutas antiguas que navega sin saberlo.
+
+**Estructura Markdown:**
+
+```markdown
+# Astillero Nave — [Título] — [Autor]
+
+**Título** — [valor] | **Autor** — [valor] | **Extensión** — [valor]
+**Naturaleza del corpus** — [valor]
+**Fecha de procesamiento** — [fecha]
+
+---
+
+## Clasificación de Nave
+[arquetipo + justificación]
+
+---
+
+## Los Diez Estratos
+
+### 1. Casco y Quilla
+*La estructura argumental y la tesis central — ¿aguanta el peso?*
+[análisis]
+
+### 2. Corrientes y Vientos
+*Las fuerzas externas que empujan el barco aunque el capitán no las vea*
+[análisis]
+
+### 3. Arquitectura Naval
+*Los patrones de construcción, las simetrías y los desequilibrios reveladores*
+[análisis]
+
+### 4. Aguas Profundas
+*La ontología, la ética y las verdades que el texto no puede nombrar sin hundirse*
+[análisis]
+
+### 5. El Capitán y su Sombra
+*Las proyecciones, obsesiones y arquetipos que el autor navega sin saberlo*
+[análisis]
+
+### 6. Registro de Origen y Carga
+*El puerto de origen, la época, la carga declarada versus la real*
+[análisis]
+
+### 7. La Travesía como Experiencia
+*El ritmo, el clima sensorial y lo que le pasa al cuerpo del pasajero*
+[análisis]
+
+### 8. Órdenes de Navegación
+*Lo que el capitán dice versus lo que realmente hace con el timón*
+[análisis]
+
+### 9. Rutas Antiguas
+*Los mitos, símbolos y rituales que el barco navega sin saberlo*
+[análisis]
+
+### 10. El Entramado
+*Los nudos de sentido que sostienen todo y no pueden deshacerse sin colapsar*
+[análisis]
+
+---
+
+## Sinopsis del Viaje
+[prosa literaria]
+
+---
+
+## Veredicto de Zarpe
+[categoría + justificación]
+
+---
+
+## Cata
+[prosa poética]
+```
+
+### Modo Nave — Producto opcional — HTML con SVG
+
+**Nombre del archivo:** *Astillero Nave — [Título] — [Autor].html*
+
+Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`astillero-header-nave.html`), paleta CSS embebida, ficha del corpus formateada, y la ficha técnica SVG de inspección naval incrustada al final de la sección Cata.
 
 **Estructura HTML:**
 
@@ -368,21 +448,14 @@ El objeto de inspección no es una nave sino un capitán y todas sus embarcacion
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Informe de Inspección — [Título] — [Autor]</title>
-  <style>/* estilos embebidos */</style>
+  <title>Astillero Nave — [Título] — [Autor]</title>
+  <style>/* estilos embebidos — paleta Astillero Nave */</style>
 </head>
 <body>
-
   <!-- encabezado: astillero-header-nave.html -->
-
   <main>
-    <!-- ficha del corpus: ver fulgurador.md — sección FICHA DEL CORPUS -->
-
-    <section id="clasificacion">
-      <h1>Clasificación de Nave</h1>
-      <p>[arquetipo + justificación]</p>
-    </section>
-
+    <!-- ficha del corpus: ver fulgurar.md — sección FICHA DEL CORPUS -->
+    <section id="clasificacion"><h1>Clasificación de Nave</h1><p>[arquetipo + justificación]</p></section>
     <section id="estratos">
       <h1>Los Diez Estratos</h1>
       <section id="casco"><h2>1. Casco y Quilla</h2><em>La estructura argumental y la tesis central — ¿aguanta el peso?</em><p>[análisis]</p></section>
@@ -396,53 +469,76 @@ El objeto de inspección no es una nave sino un capitán y todas sus embarcacion
       <section id="rutas"><h2>9. Rutas Antiguas</h2><em>Los mitos, símbolos y rituales que el barco navega sin saberlo</em><p>[análisis]</p></section>
       <section id="entramado"><h2>10. El Entramado</h2><em>Los nudos de sentido que sostienen todo y no pueden deshacerse sin colapsar</em><p>[análisis]</p></section>
     </section>
-
-    <section id="sinopsis">
-      <h1>Sinopsis del Viaje</h1>
-      <p>[prosa literaria]</p>
-    </section>
-
-    <section id="veredicto">
-      <h1>Veredicto de Zarpe</h1>
-      <p>[categoría + justificación]</p>
-    </section>
-
+    <section id="sinopsis"><h1>Sinopsis del Viaje</h1><p>[prosa literaria]</p></section>
+    <section id="veredicto"><h1>Veredicto de Zarpe</h1><p>[categoría + justificación]</p></section>
     <section id="cata">
       <h1>Cata</h1>
       <p>[prosa poética]</p>
-      <svg><!-- imagen de cata: ficha técnica de inspección naval — ver especificaciones --></svg>
+      <svg><!-- ficha técnica de inspección naval — ver especificaciones SVG --></svg>
     </section>
   </main>
-
 </body>
 </html>
 ```
 
 ---
 
-### Modo Flota
+### Modo Flota — Producto por defecto — Markdown
 
-**Nombre del archivo:** ver `fulgurador.md` — sección Nombres de archivo.
+**Nombre del archivo:** *Astillero Flota — [Nombre del autor].md*
 
 **Texto introductorio:**
 
 > Esta inspección del Astillero examina no una nave sino un capitán y toda su flota. No es el análisis de un libro: es el retrato de un navegante a través de su obra completa. Cada informe de flota contiene lo que emerge cuando se examina una bibliografía entera — los patrones que se repiten, las obsesiones que evolucionan o se endurecen, las contradicciones que persisten de nave en nave.
 
+**Estructura Markdown:**
+
+```markdown
+# Astillero Flota — [Nombre del autor]
+
+**Autor** — [valor]
+**Fecha de procesamiento** — [fecha]
+
+---
+
+## El Capitán
+[análisis]
+
+---
+
+## Mapa de la Flota
+[cada nave con arquetipo y línea de justificación]
+
+---
+
+## Tensiones Transversales
+[análisis]
+
+---
+
+## Veredicto de Licencia
+[categoría + justificación]
+```
+
+### Modo Flota — Producto opcional — HTML con SVG
+
+**Nombre del archivo:** *Astillero Flota — [Nombre del autor].html*
+
+Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`astillero-header-flota.html`), paleta CSS embebida, y la carta náutica SVG de la flota incrustada al final de la sección Veredicto de Licencia.
+
 **Estructura HTML:**
 
 ```html
   <!-- encabezado: astillero-header-flota.html -->
-
   <main>
-    <!-- ficha del corpus: ver fulgurador.md — sección FICHA DEL CORPUS -->
-
+    <!-- ficha del corpus: ver fulgurar.md — sección FICHA DEL CORPUS -->
     <section id="capitan"><h1>El Capitán</h1><p>[análisis]</p></section>
     <section id="mapa"><h1>Mapa de la Flota</h1><p>[cada nave con arquetipo]</p></section>
     <section id="tensiones"><h1>Tensiones Transversales</h1><p>[análisis]</p></section>
     <section id="licencia">
       <h1>Veredicto de Licencia</h1>
       <p>[categoría + justificación]</p>
-      <svg><!-- carta náutica de la flota — ver especificaciones abajo --></svg>
+      <svg><!-- carta náutica de la flota — ver especificaciones SVG --></svg>
     </section>
   </main>
 ```
@@ -458,7 +554,7 @@ Al final de la sección Cata, siempre se embebe un SVG con:
 - **Objeto principal:** documento oficial de astillero — el SVG es la ficha técnica misma, no una escena ilustrativa
 - **Encabezado del documento:**
   - Escudo o sello del Astillero Osmancito en esquina superior izquierda
-  - `ASTILLERO OSMANCITO · INSPECTOR DE NAVE` — ver marca en `fulgurador.md`
+  - `ASTILLERO OSMANCITO · INSPECTOR DE NAVE` — ver marca en `fulgurar.md`
   - `INFORME DE INSPECCIÓN` como título del documento
 - **Ficha de identificación:** nombre de la nave (título del libro), capitán (apellido del autor), arquetipo asignado
 - **Los diez estratos** como líneas de inspección con indicadores visuales de estado:
@@ -487,7 +583,7 @@ Al final de la sección Veredicto de Licencia, siempre se embebe un SVG con:
 - **Rutas punteadas** conectando las naves en orden cronológico o temático según corresponda
 - **Cartouche** en esquina superior izquierda: `CARTA DE NAVEGACIÓN · [Apellido]`, número de naves inspeccionadas
 - **Etiqueta** en la parte inferior, tres zonas:
-  - *Arriba:* `ASTILLERO OSMANCITO · INSPECTOR DE FLOTA` — ver marca en `fulgurador.md`
+  - *Arriba:* `ASTILLERO OSMANCITO · INSPECTOR DE FLOTA` — ver marca en `fulgurar.md`
   - *Centro:* nombre del autor (tipo mayor), `INSPECCIÓN DE FLOTA` (tipo secundario), veredicto de licencia
   - *Abajo:* frase final de la Cata en itálica apenas legible
 - **Pie del SVG:** *[Apellido] · Inspección de Flota · Astillero Osmancito*

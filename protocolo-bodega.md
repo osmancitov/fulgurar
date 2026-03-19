@@ -1,5 +1,5 @@
-# Protocolo Bodega — Crisol Osmancito
-*v1.4 · 2026-03-15 · Destiladora de corpus*
+# Protocolo Bodega — Fulgurar
+*v1.5 · 2026-03-19 · Destiladora de corpus*
 
 ---
 
@@ -334,7 +334,7 @@ Al final de la sección Cata, siempre se embebe un SVG con:
 - **Objeto principal:** una etiqueta de cata expandida — el SVG es la etiqueta misma como objeto físico, no un escenario con copa y botella
 - **Forma:** etiqueta de época, con bordes ornamentales acordes a la bebida elegida (sello de destilería, marco de bodega, cartela chamánica, etc.)
 - **Zonas de la etiqueta:**
-  - *Banda superior:* marca del taller según `fulgurador.md` — `BODEGA OSMANCITO · DESTILADORA`
+  - *Banda superior:* marca del taller según `fulgurar.md` — `BODEGA OSMANCITO · DESTILADORA`
   - *Zona central superior:* tipo de bebida y denominación de origen imaginaria, en tipografía mayor
   - *Zona central:* título del libro (tipo mayor), apellido del autor (tipo secundario)
   - *Zona de notas:* añada, tipo de blend o elaboración, notas sensoriales clave de la cata distribuidas como campos de etiqueta
@@ -360,9 +360,13 @@ Estructura del prompt:
 
 ---
 
-## FORMATO HTML — BODEGA
+## FORMATO — BODEGA
 
-**Nombre del archivo:** ver `fulgurador.md` — sección Nombres de archivo.
+### Producto por defecto — Markdown
+
+**Nombre del archivo:** *Bodega — [Título] — [Autor].md*
+
+El análisis completo en Markdown limpio. Sin encabezado visual, sin estilos, sin SVG. Todo el contenido — destilados, cartografía, cosecha, copa maestra, cata, sedimento — en texto plano con marcado mínimo.
 
 **Texto introductorio:**
 
@@ -370,14 +374,101 @@ Estructura del prompt:
 >
 > Este archivo tiene seis secciones. Los destilados: la esencia de cada capítulo, comprimida a su núcleo. La cartografía: un mapa del corpus — densidad, temas, tensiones irresueltas. La cosecha: las joyas del corpus — los fragmentos que pueden vivir sin el libro. La copa maestra: un texto que encarna el libro sin resumirlo. La cata: la nota sensorial — qué tipo de bebida es este libro, cómo entra, qué deja. El sedimento: lo que el texto no pudo decir, lo que dijo sin saberlo, lo que solo se ve cuando el líquido reposa.
 
-**Subtítulos fijos:**
+**Estructura Markdown:**
 
-- **Destilados** — *La esencia de cada capítulo, comprimida a su núcleo.*
-- **Cartografía** — *El mapa del corpus: densidad, temas, tensiones irresueltas.*
-- **Cosecha** — *Las joyas del corpus.*
-- **Copa Maestra** — *El texto que encarna el libro sin resumirlo.*
-- **Cata** — *La nota sensorial: qué bebida es este libro, cómo entra, qué deja.*
-- **Sedimento** — *Lo que el texto no pudo decir. Lo que dijo sin saberlo.*
+```markdown
+# La Bodega — [Título] — [Autor]
+
+**Título** — [valor]
+**Autor** — [valor]
+**Naturaleza del corpus** — [valor]
+**Modo de entrada** — [valor]
+**Idioma original** — [valor]
+**Extensión** — [Breve / Medio / Extenso]
+**Fecha de procesamiento** — [fecha]
+
+---
+
+## Destilados
+*La esencia de cada capítulo, comprimida a su núcleo.*
+
+### Capítulo 1 — [título]
+[destilado]
+
+<!-- continúa por capítulo -->
+
+---
+
+## Cartografía
+*El mapa del corpus: densidad, temas, tensiones irresueltas.*
+
+**Densidad** — [análisis]
+
+**Temas recurrentes** — [análisis]
+
+**Tensiones centrales** — [análisis]
+
+**Voces y presencias** — [análisis]
+
+**Arco del argumento** — [análisis]
+
+---
+
+## Cosecha
+*Las joyas del corpus.*
+
+### Capítulo 1 — [título]
+
+#### [subtítulo anzuelo]
+[joya]
+
+<!-- continúa por capítulo -->
+
+---
+
+## Copa Maestra
+*El texto que encarna el libro sin resumirlo.*
+
+[prosa literaria]
+
+---
+
+## Cata
+*La nota sensorial: qué bebida es este libro, cómo entra, qué deja.*
+
+**Tipo** — [...]
+**Origen y año imaginario** — [...]
+**Notas de entrada** — [...]
+**Cuerpo** — [...]
+**Final** — [...]
+**Maridaje** — [...]
+
+---
+
+## Sedimento
+*Lo que el texto no pudo decir. Lo que dijo sin saberlo.*
+
+### Ausencias
+[prosa]
+
+### Síntomas
+[prosa]
+
+### Cifras
+[prosa]
+```
+
+---
+
+### Producto opcional — HTML con SVG
+
+**Nombre del archivo:** *Bodega — [Título] — [Autor].html*
+
+Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`bodega-header.html`), paleta CSS embebida, ficha del corpus formateada, y la imagen SVG de cata incrustada al final de la sección Cata.
+
+**Texto introductorio:** idéntico al del `.md`.
+
+**Subtítulos fijos:** idénticos al `.md`.
 
 **Estructura HTML:**
 
@@ -388,21 +479,20 @@ Estructura del prompt:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Bodega — [Título] — [Autor]</title>
-  <style>/* estilos embebidos */</style>
+  <style>/* estilos embebidos — paleta Bodega */</style>
 </head>
 <body>
 
   <!-- encabezado: bodega-header.html -->
 
   <main>
-    <!-- ficha del corpus: ver fulgurador.md — sección FICHA DEL CORPUS -->
+    <!-- ficha del corpus: ver fulgurar.md — sección FICHA DEL CORPUS -->
 
     <section id="destilados">
       <h1>Destilados</h1>
       <em>La esencia de cada capítulo, comprimida a su núcleo.</em>
       <h2>Capítulo 1 — [título]</h2>
       <p>[destilado]</p>
-      <!-- continúa por capítulo -->
     </section>
 
     <section id="cartografia">
@@ -421,7 +511,6 @@ Estructura del prompt:
       <h2>Capítulo 1 — [título]</h2>
       <h3>[subtítulo anzuelo]</h3>
       <p>[joya]</p>
-      <!-- continúa por capítulo -->
     </section>
 
     <section id="copa-maestra">
@@ -445,12 +534,9 @@ Estructura del prompt:
     <section id="sedimento">
       <h1>Sedimento</h1>
       <em>Lo que el texto no pudo decir. Lo que dijo sin saberlo.</em>
-      <h2>Ausencias</h2>
-      <p>[prosa]</p>
-      <h2>Síntomas</h2>
-      <p>[prosa]</p>
-      <h2>Cifras</h2>
-      <p>[prosa]</p>
+      <h2>Ausencias</h2><p>[prosa]</p>
+      <h2>Síntomas</h2><p>[prosa]</p>
+      <h2>Cifras</h2><p>[prosa]</p>
     </section>
   </main>
 
