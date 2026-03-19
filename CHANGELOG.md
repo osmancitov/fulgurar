@@ -3,6 +3,68 @@
 
 ---
 
+## RESPALDO #5 — 2026-03-19
+
+### system-prompt.md
+**v3.0 → v4.0**
+- Instrucción agregada: leer `estado-desarrollo.md` al arranque
+- Prisma agregado como taller con sus archivos de referencia
+- Instrucción de diagnóstico automático al recibir saludo sin corpus
+
+### fulgurar.md
+**v2.3 → v2.4**
+- Regla estructural agregada en IDENTIDAD DEL SISTEMA: el system prompt nunca cambia — siempre dice *Lee system-prompt.md*
+- Mención de expansión activa hacia Prisma en IDENTIDAD DEL SISTEMA
+- Prisma agregado a la oferta de talleres en RECEPCIÓN
+- Registro de voz del Prisma agregado en OPERACIÓN
+- Nombre de archivo Prisma agregado en PRODUCCIÓN
+- `estado-desarrollo.md`, `prisma-arquitectura.md`, `prisma-biblioteca.md` agregados a la lista de archivos del sistema en VERSIONADO
+
+### protocolo-respaldo.md
+**v1.4 → v1.5**
+- Regla absoluta agregada al inicio: todo respaldo es siempre un paquete completo
+- `estado-desarrollo.md`, `prisma-arquitectura.md`, `prisma-biblioteca.md` agregados a la lista de archivos del paquete y al paso 1 de revisión
+
+### README.md
+- Descripción actualizada con mención a Prisma
+- Árbol de archivos actualizado con los tres archivos nuevos del proyecto Prisma
+- Instrucciones de instalación actualizadas: paso 4 ahora dice escribir *Hola* y el sistema se orienta solo
+- Tabla de versiones actualizada con todos los archivos
+
+### index.html
+- Regenerado completo desde README.md actualizado con paleta Fulgurar
+- Árbol de archivos actualizado
+- Instrucciones de instalación actualizadas
+- Tabla de versiones actualizada
+- Footer: Respaldo #5
+
+### estado-desarrollo.md — archivo nuevo
+- v0.1 — estado actual completo del proyecto Prisma
+- Seis capas de la arquitectura documentadas
+- Filosofía del proyecto: Díada, φ, instrumentos matemáticos
+- Siete corpus procesados con tabla de firmas
+- Cinco hallazgos empíricos
+- Hoja de ruta Fases 1-4
+- Próximo corpus: El proceso de Kafka
+
+### prisma-arquitectura.md — archivo nuevo
+- v0.2 — algoritmo completo con pseudocódigo
+- Las cinco geometrías documentadas
+- Las cuatro operaciones con pseudocódigo
+- Notas de diseño: por qué cinco geometrías, por qué φ es referencia no axioma
+
+### prisma-biblioteca.md — archivo nuevo
+- v0.2 — siete corpus procesados
+- Fichas individuales de cada corpus
+- Tabla comparativa completa
+- Cinco hallazgos empíricos con evidencia
+- Próximos corpus a procesar
+
+---
+
+
+---
+
 ## RESPALDO #4 — 2026-03-16
 
 ### README.md

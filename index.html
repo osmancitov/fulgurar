@@ -16,292 +16,81 @@
       --ash-light: #2a2420;
       --ash-mid:   #3a3028;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: var(--void);
-      color: var(--spark);
-      font-family: 'EB Garamond', Georgia, serif;
-      font-size: 18px;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      z-index: 0;
-    }
-
-    .hero {
-      position: relative;
-      text-align: center;
-      padding: 80px 40px 60px;
-      border-bottom: 1px solid var(--ember-dim);
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -40%; left: 50%;
-      transform: translateX(-50%);
-      width: 600px; height: 400px;
-      background: radial-gradient(ellipse at center, rgba(200,146,42,0.12) 0%, rgba(200,146,42,0.04) 40%, transparent 70%);
-      pointer-events: none;
-      animation: pulse-glow 6s ease-in-out infinite;
-    }
-
-    @keyframes pulse-glow {
-      0%,100% { opacity:0.6; transform:translateX(-50%) scale(1); }
-      50%      { opacity:1;   transform:translateX(-50%) scale(1.08); }
-    }
-
-    .hero-title {
-      font-family: 'Cinzel', serif;
-      font-weight: 900;
-      font-size: clamp(2.4rem, 6vw, 4rem);
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--ember);
-      text-shadow: 0 0 40px rgba(200,146,42,0.3);
-      position: relative;
-      animation: flicker 8s ease-in-out infinite;
-    }
-
-    @keyframes flicker {
-      0%,92%,96%,100% { text-shadow: 0 0 40px rgba(200,146,42,0.3); }
-      94%             { text-shadow: 0 0 60px rgba(200,146,42,0.6), 0 0 20px rgba(200,146,42,0.4); }
-    }
-
-    .hero-subtitle {
-      font-family: 'EB Garamond', serif;
-      font-style: italic;
-      font-size: clamp(1rem, 2.5vw, 1.3rem);
-      letter-spacing: 0.2em;
-      color: rgba(245,232,200,0.45);
-      margin-top: 12px;
-      position: relative;
-    }
-
-    .hero-divider {
-      width: 120px; height: 1px;
-      background: linear-gradient(to right, transparent, var(--ember), transparent);
-      margin: 28px auto 0;
-    }
-
-    .nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      border-bottom: 1px solid var(--ash-mid);
-      position: sticky; top: 0;
-      background: rgba(8,8,8,0.95);
-      backdrop-filter: blur(8px);
-      z-index: 100;
-    }
-
-    .nav a {
-      font-family: 'Cinzel', serif;
-      font-size: 0.6rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(245,232,200,0.35);
-      text-decoration: none;
-      padding: 14px 18px;
-      transition: color 0.2s, background 0.2s;
-      border-right: 1px solid var(--ash-mid);
-    }
-
+    body { background: var(--void); color: var(--spark); font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.7; min-height: 100vh; }
+    body::before { content: ''; position: fixed; inset: 0; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); z-index: 0; }
+    .hero { position: relative; text-align: center; padding: 80px 40px 60px; border-bottom: 1px solid var(--ember-dim); overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -40%; left: 50%; transform: translateX(-50%); width: 600px; height: 400px; background: radial-gradient(ellipse at center, rgba(200,146,42,0.12) 0%, rgba(200,146,42,0.04) 40%, transparent 70%); pointer-events: none; animation: pulse-glow 6s ease-in-out infinite; }
+    @keyframes pulse-glow { 0%,100%{opacity:0.6;transform:translateX(-50%) scale(1)} 50%{opacity:1;transform:translateX(-50%) scale(1.08)} }
+    .hero-title { font-family: 'Cinzel', serif; font-weight: 900; font-size: clamp(2.4rem,6vw,4rem); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember); text-shadow: 0 0 40px rgba(200,146,42,0.3); position: relative; animation: flicker 8s ease-in-out infinite; }
+    @keyframes flicker { 0%,92%,96%,100%{text-shadow:0 0 40px rgba(200,146,42,0.3)} 94%{text-shadow:0 0 60px rgba(200,146,42,0.6),0 0 20px rgba(200,146,42,0.4)} }
+    .hero-subtitle { font-family: 'EB Garamond', serif; font-style: italic; font-size: clamp(1rem,2.5vw,1.3rem); letter-spacing: 0.2em; color: rgba(245,232,200,0.45); margin-top: 12px; position: relative; }
+    .hero-badge { display: inline-block; margin-top: 20px; padding: 6px 18px; border: 1px solid var(--ember-dim); font-family: 'Cinzel', serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember); }
+    .hero-divider { width: 120px; height: 1px; background: linear-gradient(to right, transparent, var(--ember), transparent); margin: 28px auto 0; }
+    .nav { display: flex; justify-content: center; flex-wrap: wrap; border-bottom: 1px solid var(--ash-mid); position: sticky; top: 0; background: rgba(8,8,8,0.95); backdrop-filter: blur(8px); z-index: 100; }
+    .nav a { font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,232,200,0.35); text-decoration: none; padding: 14px 18px; transition: color 0.2s, background 0.2s; border-right: 1px solid var(--ash-mid); }
     .nav a:first-child { border-left: 1px solid var(--ash-mid); }
     .nav a:hover { color: var(--ember); background: rgba(200,146,42,0.06); }
-
-    .content {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 32px 80px;
-      position: relative;
-      z-index: 1;
-    }
-
+    .content { max-width: 860px; margin: 0 auto; padding: 0 32px 80px; position: relative; z-index: 1; }
     section { padding: 64px 0 0; }
     section + section { border-top: 1px solid var(--ash-mid); margin-top: 64px; }
-
-    h1 {
-      font-family: 'Cinzel', serif;
-      font-weight: 600;
-      font-size: clamp(1.1rem, 3vw, 1.5rem);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--ember);
-      margin-bottom: 28px;
-    }
-
-    h2 {
-      font-family: 'Cinzel', serif;
-      font-weight: 400;
-      font-size: 0.9rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: rgba(245,232,200,0.55);
-      margin: 36px 0 16px;
-    }
-
+    h1 { font-family: 'Cinzel', serif; font-weight: 600; font-size: clamp(1.1rem,3vw,1.5rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember); margin-bottom: 28px; }
+    h2 { font-family: 'Cinzel', serif; font-weight: 400; font-size: 0.9rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,232,200,0.55); margin: 36px 0 16px; }
     p { color: rgba(245,232,200,0.75); margin-bottom: 16px; }
     p strong { color: var(--spark); font-weight: 500; }
-
-    .talleres {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-top: 28px;
-    }
-
-    @media (max-width: 600px) { .talleres { grid-template-columns: 1fr; } }
-
-    .taller {
-      background: var(--ash);
-      border: 1px solid var(--ash-mid);
-      border-top: 2px solid var(--ember-dim);
-      padding: 24px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .taller::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; height: 60px;
-      background: linear-gradient(to bottom, rgba(200,146,42,0.05), transparent);
-      pointer-events: none;
-    }
-
-    .taller.bodega   { border-top-color: #8c5c18; }
-    .taller.astillero{ border-top-color: #2d6a80; }
+    .talleres { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+    @media(max-width:600px){.talleres{grid-template-columns:1fr}}
+    .taller { background: var(--ash); border: 1px solid var(--ash-mid); border-top: 2px solid var(--ember-dim); padding: 24px; position: relative; overflow: hidden; }
+    .taller::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 60px; background: linear-gradient(to bottom, rgba(200,146,42,0.05), transparent); pointer-events: none; }
+    .taller.bodega { border-top-color: #8c5c18; }
+    .taller.astillero { border-top-color: #2d6a80; }
     .taller.escuadra { border-top-color: #5a5290; }
-    .taller.jardin   { border-top-color: #386848; }
-
-    .taller-nombre {
-      font-family: 'Cinzel', serif;
-      font-weight: 600;
-      font-size: 1rem;
-      letter-spacing: 0.12em;
-      color: var(--ember);
-      margin-bottom: 10px;
-    }
-
-    .taller.bodega    .taller-nombre { color: #c8872a; }
+    .taller.jardin { border-top-color: #386848; }
+    .taller.prisma { border-top-color: var(--ember-dim); border: 1px solid var(--ember-dim); }
+    .taller-nombre { font-family: 'Cinzel', serif; font-weight: 600; font-size: 1rem; letter-spacing: 0.12em; color: var(--ember); margin-bottom: 10px; }
+    .taller.bodega .taller-nombre { color: #c8872a; }
     .taller.astillero .taller-nombre { color: #4a9ab5; }
-    .taller.escuadra  .taller-nombre { color: #8a7fc8; }
-    .taller.jardin    .taller-nombre { color: #5a9a6a; }
-
+    .taller.escuadra .taller-nombre { color: #8a7fc8; }
+    .taller.jardin .taller-nombre { color: #5a9a6a; }
+    .taller.prisma .taller-nombre { color: var(--ember); }
     .taller-desc { font-size: 0.9rem; line-height: 1.6; color: rgba(245,232,200,0.6); margin: 0; }
-
-    .file-tree {
-      background: var(--ash);
-      border: 1px solid var(--ash-mid);
-      border-left: 3px solid var(--ember-dim);
-      padding: 28px 32px;
-      margin-top: 28px;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.82rem;
-      line-height: 2;
-      overflow-x: auto;
-    }
-
+    .dev-badge { display: inline-block; font-family: 'Cinzel', serif; font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ember); border: 1px solid var(--ember-dim); padding: 2px 8px; margin-left: 8px; vertical-align: middle; }
+    .capas { margin-top: 28px; }
+    .capa { display: flex; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--ash-mid); align-items: flex-start; }
+    .capa:last-child { border-bottom: none; }
+    .capa-num { font-family: 'Cinzel', serif; font-size: 1.4rem; font-weight: 900; color: var(--ember-dim); line-height: 1; flex-shrink: 0; width: 32px; }
+    .capa-body h3 { font-family: 'Cinzel', serif; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--spark); margin-bottom: 6px; }
+    .capa-body p { font-size: 0.9rem; margin: 0; color: rgba(245,232,200,0.6); }
+    .file-tree { background: var(--ash); border: 1px solid var(--ash-mid); border-left: 3px solid var(--ember-dim); padding: 28px 32px; margin-top: 28px; font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem; line-height: 2; overflow-x: auto; }
     .file-line { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
     .file-name { color: var(--ember); white-space: nowrap; flex-shrink: 0; }
-    .file-name.doc      { color: rgba(200,146,42,0.55); }
-    .file-name.proto    { color: #c8a060; }
-    .file-name.nave     { color: #4a9ab5; }
-    .file-name.flota    { color: #3a9a78; }
-    .file-name.bodega-f { color: var(--ember); }
-    .file-name.escuadra { color: #8a7fc8; }
-    .file-name.jardin   { color: #5a9a6a; }
+    .file-name.doc { color: rgba(200,146,42,0.55); }
+    .file-name.proto { color: #c8a060; }
+    .file-name.nave { color: #4a9ab5; }
+    .file-name.flota { color: #3a9a78; }
+    .file-name.escuadra-f { color: #8a7fc8; }
+    .file-name.jardin-f { color: #5a9a6a; }
+    .file-name.prisma-f { color: var(--ember); }
     .file-desc { color: rgba(245,232,200,0.4); font-size: 0.78rem; font-style: italic; font-family: 'EB Garamond', serif; }
     .tree-line { color: var(--ash-mid); }
-
     .steps { counter-reset: step; margin-top: 28px; }
-
     .step { display: flex; gap: 24px; margin-bottom: 32px; align-items: flex-start; }
-
-    .step-num {
-      counter-increment: step;
-      font-family: 'Cinzel', serif;
-      font-size: 1.6rem;
-      font-weight: 900;
-      color: var(--ember-dim);
-      line-height: 1;
-      flex-shrink: 0;
-      width: 36px;
-      text-align: right;
-      padding-top: 2px;
-    }
-
-    .step-body h3 {
-      font-family: 'Cinzel', serif;
-      font-size: 0.85rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--spark);
-      margin-bottom: 8px;
-    }
-
+    .step-num { counter-increment: step; font-family: 'Cinzel', serif; font-size: 1.6rem; font-weight: 900; color: var(--ember-dim); line-height: 1; flex-shrink: 0; width: 36px; text-align: right; padding-top: 2px; }
+    .step-body h3 { font-family: 'Cinzel', serif; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--spark); margin-bottom: 8px; }
     .step-body p { font-size: 0.95rem; margin: 0; }
-
-    .command {
-      background: var(--ash);
-      border-left: 3px solid var(--ember);
-      padding: 16px 20px;
-      margin: 20px 0;
-      font-family: 'EB Garamond', serif;
-      font-style: italic;
-      font-size: 1rem;
-      color: var(--spark);
-    }
-
+    .command { background: var(--ash); border-left: 3px solid var(--ember); padding: 16px 20px; margin: 20px 0; font-family: 'EB Garamond', serif; font-style: italic; font-size: 1rem; color: var(--spark); }
+    .hallazgos { margin-top: 28px; display: flex; flex-direction: column; gap: 16px; }
+    .hallazgo { background: var(--ash); border-left: 3px solid var(--ember-dim); padding: 16px 20px; }
+    .hallazgo-num { font-family: 'Cinzel', serif; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ember-dim); margin-bottom: 6px; }
+    .hallazgo p { margin: 0; font-size: 0.95rem; }
     .version-table { width: 100%; border-collapse: collapse; margin-top: 28px; font-size: 0.9rem; }
-
-    .version-table th {
-      font-family: 'Cinzel', serif;
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--ember-dim);
-      padding: 10px 16px;
-      text-align: left;
-      border-bottom: 1px solid var(--ash-mid);
-    }
-
-    .version-table td {
-      padding: 10px 16px;
-      border-bottom: 1px solid var(--ash);
-      color: rgba(245,232,200,0.65);
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.82rem;
-    }
-
+    .version-table th { font-family: 'Cinzel', serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember-dim); padding: 10px 16px; text-align: left; border-bottom: 1px solid var(--ash-mid); }
+    .version-table td { padding: 10px 16px; border-bottom: 1px solid var(--ash); color: rgba(245,232,200,0.65); font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem; }
     .version-table tr:last-child td { border-bottom: none; }
     .version-table tr:hover td { background: var(--ash); }
     .version-table td:first-child { color: var(--ember); }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      border-top: 1px solid var(--ash-mid);
-      font-family: 'EB Garamond', serif;
-      font-style: italic;
-      font-size: 0.9rem;
-      color: rgba(245,232,200,0.25);
-      letter-spacing: 0.1em;
-      position: relative;
-      z-index: 1;
-    }
-
+    .version-table td.new { color: rgba(200,146,42,0.9); }
+    footer { text-align: center; padding: 40px; border-top: 1px solid var(--ash-mid); font-family: 'EB Garamond', serif; font-style: italic; font-size: 0.9rem; color: rgba(245,232,200,0.25); letter-spacing: 0.1em; position: relative; z-index: 1; }
     footer .ember { color: var(--ember-dim); }
   </style>
 </head>
@@ -310,12 +99,14 @@
   <header class="hero">
     <div class="hero-title">Fulgurar</div>
     <div class="hero-subtitle">Consume letras. Produce luz.</div>
+    <div class="hero-badge">En expansión → Prisma</div>
     <div class="hero-divider"></div>
   </header>
 
   <nav class="nav">
     <a href="#que-es">Qué es</a>
     <a href="#talleres">Talleres</a>
+    <a href="#prisma">Prisma</a>
     <a href="#archivos">Archivos</a>
     <a href="#instalar">Instalar</a>
     <a href="#actualizar">Actualizar</a>
@@ -326,32 +117,92 @@
 
     <section id="que-es">
       <h1>Qué es</h1>
-      <p>Fulgurar es un sistema de lectura profunda que opera dentro de Claude. Toma cualquier corpus — un libro, un guión, una película, un álbum, una obra completa — y lo somete a fuego hasta que revela lo que no podía decir solo. Toma algo opaco y lo vuelve legible, visible, comprensible.</p>
+      <p>Fulgurar es un sistema de lectura profunda que opera dentro de Claude. Toma cualquier corpus — un libro, un guión, una película, un álbum, una obra completa — y lo somete a fuego hasta que revela lo que no podía decir solo.</p>
       <p>No es un resumidor ni un buscador. Es un aparato que produce destellos.</p>
+      <p>El sistema está en expansión activa hacia <strong>Prisma</strong> — una física de la literatura que busca responder con precisión matemática: ¿qué hace que una obra sea grande?</p>
     </section>
 
     <section id="talleres">
       <h1>Talleres</h1>
-      <p>El sistema opera a través de talleres — espacios de trabajo con oficio propio, vocabulario propio y registro de voz propio. Hay cuatro talleres activos:</p>
+      <p>El sistema opera a través de talleres — espacios de trabajo con oficio propio, vocabulario propio y registro de voz propio.</p>
       <div class="talleres">
         <div class="taller bodega">
           <div class="taller-nombre">La Bodega</div>
-          <p class="taller-desc">Destila corpus. Extrae joyas, cartografías, esencias, copa maestra, cata sensorial y sedimento. Describe el corpus como si fuera una bebida.</p>
+          <p class="taller-desc">Destila corpus. Extrae joyas, cartografías, esencias, copa maestra, cata sensorial y sedimento.</p>
         </div>
         <div class="taller astillero">
           <div class="taller-nombre">El Astillero</div>
-          <p class="taller-desc">Inspecciona corpus. Somete cada libro a diez estratos de análisis, clasifica la nave según su arquetipo y emite un veredicto de zarpe. También inspecciona autores completos en Modo Flota.</p>
+          <p class="taller-desc">Inspecciona corpus. Diez estratos de análisis, clasificación de nave, veredicto de zarpe, modo flota para autores.</p>
         </div>
         <div class="taller escuadra">
           <div class="taller-nombre">La Escuadra</div>
-          <p class="taller-desc">Mide corpus. Levanta la geometría invisible del texto: proporciones áureas, densidad léxica, topología de conceptos, curva de Zipf. Produce un plano.</p>
+          <p class="taller-desc">Mide corpus. Proporciones áureas, densidad léxica, topología de conceptos, curva de Zipf.</p>
         </div>
         <div class="taller jardin">
           <div class="taller-nombre">El Jardín</div>
-          <p class="taller-desc">Cava corpus. Lee en cuatro estratos simultáneos — lo que dice, muestra, exige y guarda — y expone todas las lecturas posibles sin resolver las tensiones entre ellas.</p>
+          <p class="taller-desc">Cava corpus. Cuatro estratos simultáneos — lo que dice, muestra, exige y guarda.</p>
         </div>
       </div>
-      <p style="margin-top:28px">El sistema dispone además de un protocolo para construir talleres nuevos a partir de una semilla del usuario.</p>
+    </section>
+
+    <section id="prisma">
+      <h1>Prisma <span class="dev-badge">En desarrollo</span></h1>
+      <p>Prisma es la expansión de Fulgurar hacia una física de la literatura. Toma un corpus y lo descompone en sus geometrías fundamentales — como un prisma óptico descompone la luz blanca en sus frecuencias.</p>
+
+      <h2>La pregunta central</h2>
+      <p>¿Qué patrón matemático comparten las obras que consideramos grandes? No metafóricamente. Exactamente.</p>
+
+      <h2>Seis capas</h2>
+      <div class="capas">
+        <div class="capa">
+          <div class="capa-num">1</div>
+          <div class="capa-body"><h3>Fulgurar</h3><p>Los cuatro talleres leen el corpus y producen input estructurado</p></div>
+        </div>
+        <div class="capa">
+          <div class="capa-num">2</div>
+          <div class="capa-body"><h3>Prisma</h3><p>Cinco geometrías simultáneas producen la firma geométrica del corpus</p></div>
+        </div>
+        <div class="capa">
+          <div class="capa-num">3</div>
+          <div class="capa-body"><h3>Instrumentos matemáticos</h3><p>Shannon · Moore/Mealy · Grafos — implementan las geometrías en código</p></div>
+        </div>
+        <div class="capa">
+          <div class="capa-num">4</div>
+          <div class="capa-body"><h3>Biblioteca</h3><p>Acumula firmas geométricas · 7 corpus procesados · hallazgos empíricos activos</p></div>
+        </div>
+        <div class="capa">
+          <div class="capa-num">5</div>
+          <div class="capa-body"><h3>Oráculo</h3><p>Modelo de IA que aprende de la Biblioteca y responde la pregunta central</p></div>
+        </div>
+        <div class="capa">
+          <div class="capa-num">6</div>
+          <div class="capa-body"><h3>Las cuatro operaciones</h3><p>Verificar · Corregir · Traducir · Generar</p></div>
+        </div>
+      </div>
+
+      <h2>Hallazgos empíricos — 7 corpus procesados</h2>
+      <div class="hallazgos">
+        <div class="hallazgo">
+          <div class="hallazgo-num">Hallazgo 1</div>
+          <p>La apertura topológica es el predictor más fuerte de inagotabilidad. Correlación perfecta en los 7 corpus.</p>
+        </div>
+        <div class="hallazgo">
+          <div class="hallazgo-num">Hallazgo 2</div>
+          <p>La curvatura riemanniana tiene umbral provisional en 0.83. Todos los corpus con curvatura ≥ 0.83 y coherencia alta son obras mayores.</p>
+        </div>
+        <div class="hallazgo">
+          <div class="hallazgo-num">Hallazgo 3</div>
+          <p>Hay seis estrategias distintas de grandeza. La grandeza no tiene una sola firma geométrica.</p>
+        </div>
+        <div class="hallazgo">
+          <div class="hallazgo-num">Hallazgo 4</div>
+          <p>La grandeza es integración, no acumulación. Una obra puede tener momentos brillantes y no ser grande si no los integra.</p>
+        </div>
+        <div class="hallazgo">
+          <div class="hallazgo-num">Hallazgo 5</div>
+          <p>La firma geométrica puede reflejar el tema de la obra. En Cien años de soledad la curvatura forma una cadena circular — exactamente el tiempo circular que la obra declara.</p>
+        </div>
+      </div>
     </section>
 
     <section id="archivos">
@@ -359,60 +210,58 @@
       <div class="file-tree">
         <div class="file-line"><span class="tree-line">fulgurar/</span></div>
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">README.md</span><span class="file-desc">versión en texto plano de la documentación</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">index.html</span><span class="file-desc">versión visual del README — página principal del repositorio</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">CHANGELOG.md</span><span class="file-desc">historial completo — única fuente de verdad del historial</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">system-prompt.md</span><span class="file-desc">instrucciones de arranque del proyecto</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name">fulgurar.md</span><span class="file-desc">módulo central: identidad, vocabulario, identidad visual, ficha del corpus</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">index.html</span><span class="file-desc">esta página — regenerada en cada respaldo</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">CHANGELOG.md</span><span class="file-desc">historial completo — única fuente de verdad</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">system-prompt.md</span><span class="file-desc">instrucciones de arranque — nunca cambia</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name">fulgurar.md</span><span class="file-desc">módulo central del sistema</span></div>
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-bodega.md</span><span class="file-desc">vocabulario, criterios y formato de la Bodega</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-astillero.md</span><span class="file-desc">vocabulario, arquetipos, diez estratos, dictamen del Astillero</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-escuadra.md</span><span class="file-desc">vocabulario, seis instrumentos, levantamiento de la Escuadra</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-jardin.md</span><span class="file-desc">vocabulario, cuatro estratos, perfil del Jardín</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-astillero.md</span><span class="file-desc">vocabulario, arquetipos, diez estratos del Astillero</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-escuadra.md</span><span class="file-desc">vocabulario, seis instrumentos de la Escuadra</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-jardin.md</span><span class="file-desc">vocabulario, cuatro estratos del Jardín</span></div>
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-taller.md</span><span class="file-desc">protocolo para construir talleres nuevos</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-respaldo.md</span><span class="file-desc">protocolo de generación de respaldos del sistema</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name bodega-f">bodega-header.html</span><span class="file-desc">encabezado Bodega — paleta ámbar, barril + amanita</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name nave">astillero-header-nave.html</span><span class="file-desc">encabezado Astillero Nave — paleta acero azul, velero + amanita</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name flota">astillero-header-flota.html</span><span class="file-desc">encabezado Astillero Flota — paleta verde marino, brújula + amanita</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name escuadra">escuadra-header.html</span><span class="file-desc">encabezado Escuadra — paleta violeta pizarra, escuadra + amanita</span></div>
-        <div class="file-line"><span class="tree-line">└──</span><span class="file-name jardin">jardin-header.html</span><span class="file-desc">encabezado Jardín — paleta verde musgo, corte de suelo + amanita</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-respaldo.md</span><span class="file-desc">protocolo de generación de respaldos</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name">bodega-header.html</span><span class="file-desc">encabezado Bodega — ámbar, barril + amanita</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name nave">astillero-header-nave.html</span><span class="file-desc">encabezado Astillero Nave — acero azul</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name flota">astillero-header-flota.html</span><span class="file-desc">encabezado Astillero Flota — verde marino</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name escuadra-f">escuadra-header.html</span><span class="file-desc">encabezado Escuadra — violeta pizarra</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name jardin-f">jardin-header.html</span><span class="file-desc">encabezado Jardín — verde musgo</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name prisma-f">estado-desarrollo.md</span><span class="file-desc">estado actual del proyecto Prisma — leer al arranque</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name prisma-f">prisma-arquitectura.md</span><span class="file-desc">algoritmo y arquitectura del Prisma con pseudocódigo</span></div>
+        <div class="file-line"><span class="tree-line">└──</span><span class="file-name prisma-f">prisma-biblioteca.md</span><span class="file-desc">firmas geométricas y hallazgos empíricos</span></div>
       </div>
     </section>
 
     <section id="instalar">
-      <h1>Cómo instalar en un proyecto nuevo</h1>
-      <p style="margin-bottom:28px">Descarga el paquete completo de archivos:</p>
-      <a href="https://github.com/osmancitov/fulgurar/archive/refs/heads/main.zip"
-         style="display:inline-block; background:var(--ash); border:1px solid var(--ember-dim); padding:14px 28px; font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--ember); text-decoration:none; margin-bottom:40px; transition:background 0.2s;"
-         onmouseover="this.style.background='rgba(200,146,42,0.1)'"
-         onmouseout="this.style.background='var(--ash)'">
-        Descargar fulgurar-main.zip
-      </a>
+      <h1>Cómo instalar</h1>
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-body">
             <h3>Crear el proyecto en Claude</h3>
-            <p>Abre Claude y crea un nuevo proyecto. En el recuadro de <strong>nombre</strong> escribe <em>Fulgurar</em>. En el recuadro de <strong>descripción</strong> escribe <em>Sistema de lectura profunda.</em></p>
+            <p>Nombre: <em>Fulgurar</em> · Descripción: <em>Sistema de lectura profunda</em></p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-body">
-            <h3>Agregar los archivos al proyecto</h3>
-            <p>Sube <strong>todos</strong> los archivos del ZIP al contenedor de archivos del proyecto. El sistema los necesita todos para funcionar y para generar respaldos completos.</p>
+            <h3>Subir todos los archivos</h3>
+            <p>Sube <strong>todos</strong> los archivos al proyecto. Sin excepción. El sistema los necesita todos.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-body">
-            <h3>Configurar el system prompt</h3>
-            <p>En el recuadro de <strong>instrucciones</strong> del proyecto escribe exactamente: <em>Lee el archivo system-prompt.md</em></p>
+            <h3>Configurar las instrucciones</h3>
+            <p>En el recuadro de instrucciones escribe exactamente: <em>Lee el archivo system-prompt.md</em></p>
+            <p>Este recuadro nunca cambia. Siempre dice eso.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">4</div>
           <div class="step-body">
             <h3>Verificar que funciona</h3>
-            <p>Inicia una conversación nueva y envía un corpus. El sistema debe acusar recibo, generar la Naturaleza del corpus y ofrecer los cuatro talleres disponibles.</p>
+            <p>Abre una conversación nueva y escribe: <strong>Hola</strong></p>
+            <p>El sistema leerá todos los archivos automáticamente y producirá un diagnóstico del estado actual. No necesitas orientarte — el sistema se orienta solo.</p>
           </div>
         </div>
       </div>
@@ -420,35 +269,32 @@
 
     <section id="actualizar">
       <h1>Cómo actualizar</h1>
-      <p>El sistema evoluciona con el uso. Cuando hayas acumulado cambios en una sesión de trabajo, pide al sistema:</p>
+      <p>Cuando hayas acumulado cambios en una sesión de trabajo, pide al sistema:</p>
       <div class="command">"Genera un juego completo de archivos para respaldo."</div>
-      <p>El sistema ejecutará el protocolo de respaldo — revisará todos los archivos, numerará el respaldo, actualizará el CHANGELOG, regenerará este README.html y entregará el paquete completo listo para reemplazar esta carpeta.</p>
+      <p>El sistema ejecutará el protocolo de respaldo completo — revisa todos los archivos, numera el respaldo, actualiza el CHANGELOG, regenera este index.html y entrega el paquete completo. Reemplaza todos los archivos del proyecto con el paquete nuevo.</p>
     </section>
 
     <section id="versiones">
       <h1>Versiones actuales</h1>
       <table class="version-table">
-        <thead>
-          <tr>
-            <th>Archivo</th>
-            <th>Versión</th>
-            <th>Última modificación</th>
-          </tr>
-        </thead>
+        <thead><tr><th>Archivo</th><th>Versión</th><th>Última modificación</th></tr></thead>
         <tbody>
-          <tr><td>fulgurar.md</td><td>v2.3</td><td>2026-03-16</td></tr>
+          <tr><td>fulgurar.md</td><td>v2.4</td><td>2026-03-19</td></tr>
           <tr><td>protocolo-bodega.md</td><td>v1.4</td><td>2026-03-15</td></tr>
           <tr><td>protocolo-astillero.md</td><td>v1.6</td><td>2026-03-15</td></tr>
           <tr><td>protocolo-escuadra.md</td><td>v1.0</td><td>2026-03-16</td></tr>
           <tr><td>protocolo-jardin.md</td><td>v1.0</td><td>2026-03-16</td></tr>
           <tr><td>protocolo-taller.md</td><td>v1.0</td><td>2026-03-16</td></tr>
-          <tr><td>protocolo-respaldo.md</td><td>v1.4</td><td>2026-03-16</td></tr>
+          <tr><td>protocolo-respaldo.md</td><td>v1.5</td><td>2026-03-19</td></tr>
           <tr><td>bodega-header.html</td><td>v1.1</td><td>2026-03-13</td></tr>
           <tr><td>astillero-header-nave.html</td><td>v1.1</td><td>2026-03-13</td></tr>
           <tr><td>astillero-header-flota.html</td><td>v1.2</td><td>2026-03-15</td></tr>
           <tr><td>escuadra-header.html</td><td>v1.0</td><td>2026-03-16</td></tr>
           <tr><td>jardin-header.html</td><td>v1.0</td><td>2026-03-16</td></tr>
-          <tr><td>system-prompt.md</td><td>v3.0</td><td>2026-03-16</td></tr>
+          <tr><td>system-prompt.md</td><td>v4.0</td><td>2026-03-19</td></tr>
+          <tr><td class="new">estado-desarrollo.md</td><td class="new">v0.1</td><td class="new">2026-03-19</td></tr>
+          <tr><td class="new">prisma-arquitectura.md</td><td class="new">v0.2</td><td class="new">2026-03-19</td></tr>
+          <tr><td class="new">prisma-biblioteca.md</td><td class="new">v0.2</td><td class="new">2026-03-19</td></tr>
         </tbody>
       </table>
     </section>
@@ -456,7 +302,7 @@
   </div>
 
   <footer>
-    <span class="ember">Fulgurar</span> · Consume letras. Produce luz. · Respaldo #4 · 2026-03-16
+    <span class="ember">Fulgurar</span> · Consume letras. Produce luz. · Respaldo #5 · 2026-03-19
   </footer>
 
 </body>

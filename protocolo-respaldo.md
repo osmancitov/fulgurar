@@ -1,5 +1,9 @@
 # Protocolo de Respaldo — Fulgurar
-*v1.4 · 2026-03-16 · Protocolo de generación de respaldos del sistema*
+*v1.5 · 2026-03-19 · Protocolo de generación de respaldos del sistema*
+
+---
+
+**Regla absoluta:** todo respaldo es siempre un paquete completo. Nunca se entregan archivos parciales. El usuario no debe completar el paquete con archivos de otras fuentes ni de sesiones anteriores. Si un archivo no cambió en esta sesión, se incluye igual — exactamente como está. Un paquete incompleto no es un respaldo.
 
 ---
 
@@ -13,6 +17,9 @@ Cuando el usuario solicite un juego completo de archivos para respaldo, ejecutar
 - `protocolo-jardin.md` — verificar estratos, perfil, SVG, prompts. Actualizar versión si hubo cambios.
 - `protocolo-taller.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
 - `protocolo-respaldo.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
+- `estado-desarrollo.md` — verificar que refleja el estado actual completo. Actualizar siempre.
+- `prisma-arquitectura.md` — verificar algoritmo y arquitectura. Actualizar versión si hubo cambios.
+- `prisma-biblioteca.md` — verificar que todos los corpus procesados están documentados. Actualizar siempre.
 - Encabezados HTML — actualizar solo si hubo cambios de paleta o identidad visual.
 
 **2. Revisar y actualizar el system prompt**
@@ -26,7 +33,7 @@ Evaluar si los cambios acumulados en la sesión permiten simplificarlo, mejorarl
 Generar desde el contenido actualizado de `README.md` usando la paleta Fulgurar definida en `fulgurar.md`. El `index.html` se regenera siempre — nunca es estático. Es la página principal del repositorio en https://osmancitov.github.io/fulgurar/
 
 **5. Entregar el paquete completo**
-El paquete incluye **todos** los archivos del sistema sin excepción — los modificados en esta sesión y los que no tuvieron cambios. El usuario no debe completar el paquete con archivos de otras fuentes.
+El paquete incluye **todos** los archivos del sistema sin excepción — los modificados en esta sesión y los que no tuvieron cambios. Ver regla absoluta al inicio de este protocolo.
 
 Lista completa de archivos del paquete:
 - `fulgurar.md`
@@ -45,3 +52,6 @@ Lista completa de archivos del paquete:
 - `README.md`
 - `index.html`
 - `CHANGELOG.md`
+- `estado-desarrollo.md`
+- `prisma-arquitectura.md`
+- `prisma-biblioteca.md`
