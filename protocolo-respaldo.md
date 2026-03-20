@@ -1,5 +1,5 @@
 # Protocolo de Respaldo — Fulgurar
-*v1.8 · 2026-03-19 · Protocolo de generación de respaldos del sistema*
+*v1.9 · 2026-03-19 · Protocolo de generación de respaldos del sistema*
 
 ---
 
@@ -32,7 +32,9 @@ Evaluar si los cambios acumulados en la sesión permiten simplificarlo, mejorarl
 - `CHANGELOG.md` — determinar el número de este respaldo contando las entradas con encabezado `## RESPALDO #N` en el historial existente y sumando uno. Agregar entrada completa con ese número y la fecha actual, archivo por archivo, con todos los cambios de la sesión. Orden inverso — lo más reciente arriba. Formato del encabezado: `## RESPALDO #[N] — [FECHA]`
 
 **4. Preguntar sobre index.html**
-Antes de generarlo, preguntar al usuario: *"¿Genero un index.html nuevo? Tarda un poco más."* Si el usuario confirma, generar desde el contenido actualizado de `README.md` aplicando la tipografía y contraste definidos en la paleta Fulgurar de `fulgurar.md` — tamaños de fuente, niveles de opacidad y estructura de secciones se conservan del diseño canónico. No se reinventa el diseño en cada respaldo. Si el usuario declina, incluir en el paquete el `index.html` existente sin modificaciones. El `index.html` es la página principal del repositorio en https://osmancitov.github.io/fulgurar/
+Antes de generarlo, verificar que `README.md` está completo y consistente — contenido, diagramas, secciones y versiones. El README es la fuente de verdad del contenido. El `index.html` se genera desde él, no al revés.
+
+Luego preguntar al usuario: *"¿Genero un index.html nuevo? Tarda un poco más."* Si el usuario confirma, generar desde el contenido actualizado de `README.md` aplicando la tipografía y contraste definidos en la paleta Fulgurar de `fulgurar.md` — tamaños de fuente, niveles de opacidad y estructura de secciones se conservan del diseño canónico. No se reinventa el diseño en cada respaldo. Si el usuario declina, incluir en el paquete el `index.html` existente sin modificaciones. El `index.html` es la página principal del repositorio en https://osmancitov.github.io/fulgurar/
 
 **5. Entregar el paquete completo**
 El paquete incluye **todos** los archivos del sistema sin excepción — los modificados en esta sesión y los que no tuvieron cambios. Ver regla absoluta al inicio de este protocolo.

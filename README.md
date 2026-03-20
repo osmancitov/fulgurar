@@ -142,7 +142,7 @@ El sistema ejecutará el protocolo de respaldo completo — revisa todos los arc
 | `protocolo-oraculo.md` | v1.2 | 2026-03-19 |
 | `protocolo-telegrafo.md` | v1.0 | 2026-03-19 |
 | `protocolo-taller.md` | v1.1 | 2026-03-19 |
-| `protocolo-respaldo.md` | v1.8 | 2026-03-19 |
+| `protocolo-respaldo.md` | v1.9 | 2026-03-19 |
 | `bodega-header.html` | v1.1 | 2026-03-13 |
 | `astillero-header-nave.html` | v1.1 | 2026-03-13 |
 | `astillero-header-flota.html` | v1.2 | 2026-03-15 |
@@ -167,4 +167,4 @@ Cada capa respondió a una limitación del estado anterior. El sistema crece mie
 
 ---
 
-*Fulgurar · Consume letras. Produce luz. · Respaldo #9 · 2026-03-19*
+*Fulgurar · Consume letras. Produce luz. · Respaldo #10 · 2026-03-19*

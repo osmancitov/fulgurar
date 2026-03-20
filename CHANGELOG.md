@@ -1,3 +1,23 @@
+## RESPALDO #10 — 2026-03-19
+
+### README.md
+- Diagrama arquitectura corregido: Oráculo unificado en una sola línea — operaciones en la misma línea que el nombre
+- protocolo-oraculo.md en árbol de archivos: descripción actualizada con "— La Convergencia"
+- Sección Horizontes agregada entre Arquitectura y Archivos
+- "los cuatro talleres no podían responder" → "los talleres anteriores"
+- Footer actualizado: Respaldo #7 → Respaldo #9 (en esta entrega #10)
+
+### estado-desarrollo.md
+- "los cuatro talleres no podían responder solos" → "los talleres anteriores no podían responder solos" en la sección Historia
+
+### protocolo-respaldo.md
+**v1.8 → v1.9**
+- Paso 4 reforzado: verificar que README.md está completo y consistente antes de generar index.html
+- Regla explícita: el README es la fuente de verdad del contenido — el index.html se genera desde él, no al revés
+
+
+---
+
 ## RESPALDO #9 — 2026-03-19
 
 ### fulgurar.md
