@@ -41,16 +41,25 @@ CORPUS
 SEIS TALLERES
 Bodega · Astillero · Escuadra · Jardín · Prisma · Telégrafo
   ↓
-ORÁCULO
-Integra · Sitúa · Calibra · Ejecuta
+ORÁCULO — LA CONVERGENCIA
+Integra · Sitúa · Calibra · Ejecuta · Verificar · Corregir · Traducir · Generar
   ↕
 BIBLIOTECA (corpus-biblioteca.md)
-
-El Oráculo ejecuta:
-Verificar · Corregir · Traducir · Generar
 ```
 
 La **Biblioteca** es una capa independiente — no pertenece al Prisma ni al Oráculo. El Prisma produce firmas. La Biblioteca las acumula. El Oráculo las consulta. Hoy tiene 8 corpus procesados y 6 hallazgos empíricos.
+
+---
+
+## Horizontes
+
+Los horizontes no son secuenciales ni excluyentes. Cada uno amplía el campo de visión sin cerrar el anterior.
+
+**Horizonte 1 — Masa crítica** — más corpus en la Biblioteca para que los hallazgos ganen confianza. H6 provisional con 1/8. La hipótesis del Telégrafo sobre redes small-world sin validación todavía. Corpus prioritarios: Don Quijote, Pedro Páramo, Divina Comedia, El extranjero, un bestseller como control negativo. Indicador: potencia al 65%.
+
+**Horizonte 2 — Profundidad operativa** — La Convergencia produciendo El Elemento de Convergencia sobre corpus reales. Las cuatro operaciones ejecutadas con confianza calibrada. Indicador: La Convergencia produce algo que ningún taller habría visto solo.
+
+**Horizonte 3 — Apertura** — el sistema listo para que otros lo usen. Manual del operador. La pregunta central con una respuesta provisional pero defendible. Indicador: alguien que no construyó el sistema puede usarlo sin ayuda.
 
 ---
 
@@ -68,7 +77,7 @@ fulgurar/
 ├── protocolo-escuadra.md        <- vocabulario, seis instrumentos de la Escuadra
 ├── protocolo-jardin.md          <- vocabulario, cuatro estratos del Jardín
 ├── protocolo-prisma.md          <- algoritmo y operación del Prisma
-├── protocolo-oraculo.md         <- diseño completo del Oráculo
+├── protocolo-oraculo.md         <- diseño completo del Oráculo — La Convergencia
 ├── protocolo-telegrafo.md       <- vocabulario, cinco instrumentos del Telégrafo
 ├── protocolo-taller.md          <- protocolo para construir talleres nuevos
 ├── protocolo-respaldo.md        <- protocolo de generación de respaldos
@@ -152,10 +161,10 @@ Fulgurar no fue diseñado de una vez. Emergió por capas.
 
 Comenzó como el **Protocolo Θ∆** — un *reading companion* que acompañaba el análisis de un texto. Las cuatro capas de análisis se profundizaron hasta diez estratos — el **Astillero Nave**. Vino después el **Astillero Flota** para autores completos, la **Bodega** para destilar, el **Jardín** para cavar en cuatro estratos simultáneos, y la **Escuadra** para medir la geometría invisible del texto.
 
-El **Prisma** emergió de una pregunta que los cuatro talleres no podían responder solos: ¿qué hace que una obra sea grande? La **Biblioteca** nació para acumular lo que el Prisma produce. El **Telégrafo** llegó para escuchar el canal antes de leer el mensaje — entropía, estados, topología de red. El **Oráculo** para integrar todo y producir la convergencia que ningún taller puede producir solo.
+El **Prisma** emergió de una pregunta que los talleres anteriores no podían responder solos: ¿qué hace que una obra sea grande? La **Biblioteca** nació para acumular lo que el Prisma produce. El **Telégrafo** llegó para escuchar el canal antes de leer el mensaje — entropía, estados, topología de red. El **Oráculo** para integrar todo y producir la convergencia que ningún taller puede producir solo.
 
 Cada capa respondió a una limitación del estado anterior. El sistema crece mientras haya corpus que resistan el fuego.
 
 ---
 
-*Fulgurar · Consume letras. Produce luz. · Respaldo #7 · 2026-03-19*
+*Fulgurar · Consume letras. Produce luz. · Respaldo #9 · 2026-03-19*

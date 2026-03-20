@@ -39,7 +39,7 @@ La lectura en capas simultáneas — no secuencial sino estratigráfica. Inspira
 La geometría invisible del texto. Un taller que mide proporciones, densidad léxica, topología de conceptos, curva de Zipf. La Escuadra levanta planos, no interpreta.
 
 **El Prisma**
-La pregunta que los cuatro talleres no podían responder solos: ¿qué hace que una obra sea grande? El Prisma descompone el corpus en cinco geometrías simultáneas y produce su firma matemática. La física de la literatura como proyecto.
+La pregunta que los talleres anteriores no podían responder solos: ¿qué hace que una obra sea grande? El Prisma descompone el corpus en cinco geometrías simultáneas y produce su firma matemática. La física de la literatura como proyecto.
 
 **La Biblioteca**
 El Prisma por sí solo produce firmas individuales. Para detectar patrones necesita acumulación y comparación. La Biblioteca nació como capa independiente — no un taller sino un archivo vivo que crece con cada corpus procesado.
