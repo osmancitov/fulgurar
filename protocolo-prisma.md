@@ -1,5 +1,5 @@
 # Protocolo Prisma — Fulgurar
-*v1.0 · 2026-03-19 · Quinto taller — física de la literatura*
+*v1.1 · 2026-03-19 · Física de la literatura*
 
 ---
 
@@ -183,20 +183,13 @@ El pseudocódigo completo de cada función vive en el historial de diseño del p
 
 ---
 
-## RELACIÓN CON LOS OTROS TALLERES
+## RELACIÓN CON EL ORÁCULO
 
-Los cuatro talleres producen input estructurado que alimenta al Prisma:
+El Prisma opera directamente sobre el corpus — texto crudo, sin depender de los outputs de los otros talleres. Produce una firma autónoma.
 
-| Taller | Input para el Prisma |
-|---|---|
-| **Bodega** | Conceptos de mayor curvatura (input para Riemann) |
-| **Astillero** | Estructura narrativa y estratos (input para la Díada) |
-| **Escuadra** | Variables formales — densidad léxica, Zipf (input para Díada y Tríada) |
-| **Jardín** | Agujeros semánticos por estrato (input para Homología) |
+Cuando el Prisma opera solo produce una **firma parcial** — válida, pero sin el enriquecimiento que aportan los otros talleres. Cuando todos los talleres han procesado el corpus, el Oráculo recibe todos sus outputs y produce la convergencia enriquecida. Es el Oráculo quien integra — no el Prisma.
 
-Cuando el Prisma opera solo — sin los otros cuatro talleres — produce una firma parcial. Los valores de la firma son válidos pero incompletos. La firma completa requiere los cinco talleres. El Oráculo distingue estos dos modos.
-
-La posible integración formal entre la Escuadra y el Prisma (algunas geometrías se solapan) queda para después — solo si la Escuadra demuestra que alimenta al Prisma de forma consistentemente valiosa.
+El Oráculo distingue estos dos modos y los declara explícitamente en cada operación. Ver `protocolo-oraculo.md`.
 
 ---
 
@@ -225,15 +218,15 @@ Generación libre dentro del registro — no frases fijas.
 
 ### Producto por defecto — Markdown
 
-**Nombre del archivo:** *Prisma — [Título] — [Autor].md*
+**Nombre del archivo:** *Producto — Prisma — [Título] — [Autor].md*
 
 ```markdown
-# Prisma — [Título] — [Autor]
+# Producto — Prisma — [Título] — [Autor]
 
 **Título** — [valor] | **Autor** — [valor] | **Extensión** — [valor]
 **Naturaleza del corpus** — [valor]
 **Fecha de procesamiento** — [fecha]
-**Modo** — Firma completa (cinco talleres) / Firma parcial (solo Prisma)
+**Modo** — Firma completa (todos los talleres) / Firma parcial (solo Prisma)
 
 ---
 
@@ -287,7 +280,7 @@ Generación libre dentro del registro — no frases fijas.
 
 ### Producto opcional — HTML con SVG
 
-**Nombre del archivo:** *Prisma — [Título] — [Autor].html*
+**Nombre del archivo:** *Producto — Prisma — [Título] — [Autor].html*
 
 Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más paleta CSS embebida y un SVG de firma geométrica — diagrama de radar con cinco ejes, uno por geometría, con el polígono de la firma del corpus trazado. Si hay corpus de comparación, se superpone como segundo polígono.
 

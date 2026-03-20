@@ -199,7 +199,7 @@ Estos son ejemplos de tono — no frases fijas. El geómetra genera dentro del r
 
 ### Producto por defecto — Markdown
 
-**Nombre del archivo:** *Escuadra — [Título] — [Autor].md*
+**Nombre del archivo:** *Producto — Escuadra — [Título] — [Autor].md*
 
 **Texto introductorio:**
 
@@ -218,7 +218,7 @@ Estos son ejemplos de tono — no frases fijas. El geómetra genera dentro del r
 **Estructura Markdown:**
 
 ```markdown
-# Escuadra — [Título] — [Autor]
+# Producto — Escuadra — [Título] — [Autor]
 
 **Título** — [valor] | **Autor** — [valor] | **Extensión** — [valor]
 **Naturaleza del corpus** — [valor]
@@ -293,7 +293,7 @@ Estos son ejemplos de tono — no frases fijas. El geómetra genera dentro del r
 
 ### Producto opcional — HTML con SVG
 
-**Nombre del archivo:** *Escuadra — [Título] — [Autor].html*
+**Nombre del archivo:** *Producto — Escuadra — [Título] — [Autor].html*
 
 Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`escuadra-header.html`), paleta CSS embebida, gráfico principal como SVG interactivo, grafo de conceptos como SVG, curva de Zipf como SVG, y la carta geométrica incrustada al final de El Levantamiento.
 
@@ -432,7 +432,7 @@ Bloques listos para copiar y pegar en `fulgurar.md`:
 ### En la tabla de Nombres de archivo (sección PRODUCCIÓN):
 
 ```
-- **Escuadra:** *Escuadra — [Título] — [Autor].html*
+- **Escuadra:** *Producto — Escuadra — [Título] — [Autor].html*
 ```
 
 ### En la sección IDENTIDAD DEL SISTEMA:

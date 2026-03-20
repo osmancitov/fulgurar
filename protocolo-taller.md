@@ -59,7 +59,7 @@ La fase termina cuando el usuario señala que el territorio está suficientement
 - No pide al usuario que elija la metáfora antes de proponer opciones
 - No enumera posibilidades sin evaluarlas — propone, no lista
 - No pregunta lo que puede inferir
-- No avanza a Fase 2 sin confirmación del usuario
+- No avanza a la propuesta completa sin confirmación del usuario
 
 ---
 
@@ -102,7 +102,7 @@ El vocabulario cubre al menos:
 
 ### 3. INSTRUMENTOS
 
-Los análisis que el taller aplica al corpus. Derivados de la exploración de Fase 1, formalizados aquí.
+Los análisis que el taller aplica al corpus. Derivados de la exploración, formalizados aquí.
 
 Para cada instrumento:
 - **Nombre** — en el vocabulario del taller
@@ -121,6 +121,9 @@ El registro de voz se define por contraste con los talleres existentes:
 - La Bodega: destilador paciente, sensorial, reposado
 - El Astillero: inspector de puerto, seco, profesional
 - La Escuadra: geómetra, preciso, silencioso, maravillado
+- El Jardín: jardinero, paciente, atento, no sorprendido
+- El Prisma: físico, riguroso, maravillado ante los patrones
+- El Telégrafo: operador técnico, alerta, imperturbable
 
 ---
 

@@ -1,3 +1,166 @@
+## RESPALDO #9 — 2026-03-19
+
+### fulgurar.md
+**v2.9 → v3.0**
+- Paleta Fulgurar expandida con dos tablas nuevas:
+  - Tipografía Fulgurar: fuente base 20px/1.75, nav 0.75rem, h1 clamp(1.3rem,3vw,1.6rem), h2 1.0rem, monoespaciado 0.92rem, etiquetas 0.78rem
+  - Contraste mínimo sobre fondo oscuro: cuerpo 0.85, secundario 0.72, terciario 0.60, decorativo 0.45
+- Nota canónica: estos valores son la referencia para cualquier documento HTML del sistema
+
+### protocolo-respaldo.md
+**v1.7 → v1.8**
+- Paso 4 actualizado: el index.html se genera aplicando la tipografía y contraste definidos en la paleta Fulgurar de fulgurar.md — no se reinventa el diseño en cada respaldo
+
+### index.html
+**Ajustes de legibilidad para pantallas de baja resolución**
+- Fuente base: 18px → 20px · interlineado 1.7 → 1.75
+- Nav links: 0.6rem → 0.75rem · letter-spacing reducido · padding más generoso
+- Títulos de sección: clamp mínimo subido a 1.3rem
+- Subtítulos h2: 0.9rem → 1.0rem
+- Texto monoespaciado (árbol, diagrama, tabla): 0.82rem → 0.92rem
+- Etiquetas pequeñas: 0.65rem → 0.78rem
+- Contraste general subido: párrafos 0.75→0.85, nav 0.35→0.60, descripciones árbol 0.4→0.65, footer 0.25→0.45
+- Diagrama arquitectura: Oráculo unificado en una sola línea — operaciones en la misma línea que el nombre
+- Tabla de versiones: fulgurar.md v3.0, protocolo-respaldo.md v1.8
+
+### estado-desarrollo.md · README.md
+- Diagrama arquitectura actualizado: Oráculo unificado en una sola línea
+
+
+---
+
+## RESPALDO #8 — 2026-03-19
+
+### fulgurar.md
+**v2.7 → v2.9**
+- v2.8: Prefijo `Producto —` aplicado a todos los nombres de archivo de output
+- v2.8: Telégrafo duplicado en registros de voz y nombres de archivo eliminado
+- v2.9: Sección INVARIANTES DEL SISTEMA agregada antes de VOCABULARIO — seis reglas estructurales que gobiernan cómo evoluciona el sistema sin crear inconsistencias en cascada
+- v2.9: Regla estructural del system prompt migrada de IDENTIDAD DEL SISTEMA a INVARIANTES
+
+### protocolo-oraculo.md
+**v1.1 → v1.2**
+- Subtítulo corregido: "Séptimo elemento" → "La Convergencia — integrador del sistema"
+- Sección MODOS DE OPERACIÓN agregada antes de LOS CUATRO MOMENTOS
+- Modo sesión única documentado con flujo completo
+- Modo dos sesiones documentado: archivos Producto temporales, corpus-biblioteca.md como registro permanente
+- Cómo el Oráculo ofrece la elección al usuario documentado
+- Prefijo `Producto —` aplicado al nombre de archivo de output
+
+### protocolo-telegrafo.md
+**v1.0** *(subtítulo corregido)*
+- Subtítulo corregido: "Séptimo taller" → "Teoría de la información" — sin ordinal de posición
+- Prefijo `Producto —` aplicado al nombre de archivo de output y al prompt de imagen
+
+### protocolo-prisma.md
+**v1.1** *(nombres de archivo actualizados)*
+- Prefijo `Producto —` aplicado a nombres de archivo
+- "todos los talleres" en lugar de "seis talleres" — agnóstico al conteo
+
+### protocolo-bodega.md · protocolo-astillero.md · protocolo-escuadra.md · protocolo-jardin.md
+**sin cambio de versión** *(nombres de archivo actualizados)*
+- Prefijo `Producto —` aplicado a todos los nombres de archivo de output y prompts de imagen
+
+### protocolo-taller.md
+**v1.1** *(sin cambio de versión — correcciones menores)*
+- "Fase 1" y "Fase 2" eliminados — reemplazados por lenguaje descriptivo sin ordinales
+- Lista de registros de voz de contraste completada: Jardín, Prisma y Telégrafo agregados
+
+### estado-desarrollo.md
+**v0.3 → v0.4**
+- Subtítulo: "Fase 1 completa · Fase 2 en diseño" → "Arquitectura completa · Tres horizontes"
+- Párrafo de apertura: referencias a fases eliminadas — el sistema opera y crece
+- Encabezado "Estado actual — Fase 1 completa" → "Estado actual"
+- Sección "Hoja de ruta" con cuatro fases reemplazada por "Horizontes"
+  - Horizonte 1 — Masa crítica: más corpus, H6 y hipótesis small-world del Telégrafo
+  - Horizonte 2 — Profundidad operativa: La Convergencia produciendo El Elemento
+  - Horizonte 3 — Apertura: manual, sistema listo para otros usuarios
+- Tabla de archivos del sistema completada con todos los protocolos
+- "Séptimo elemento" → "La Convergencia" en tabla de archivos
+- "La pregunta que los cinco talleres no podían responder" → "los talleres anteriores"
+
+### index.html
+**Regenerado completo desde Respaldo #6 a Respaldo #8**
+- Hero badge: "La Convergencia en construcción · Potencia 45%"
+- Nav: sección Horizontes agregada
+- Sección Qué es: seis talleres, La Convergencia
+- Sección Talleres: El Telégrafo agregado con tarjeta y color cobre — grid ahora de 7 elementos
+- Sección Arquitectura: diagrama actualizado con SEIS TALLERES y LA CONVERGENCIA, flujo Producto documentado
+- Sección Horizontes: nueva — los tres horizontes con sus indicadores de llegada
+- Sección Archivos: árbol completo con telegrafo-header.html y protocolo-telegrafo.md, descripciones actualizadas
+- Sección Versiones: tabla actualizada con todas las versiones actuales, Telégrafo marcado como nuevo
+- Sección Origen: Telégrafo y La Convergencia en la narrativa
+- Footer: Respaldo #8
+
+### README.md
+- Sección Horizontes agregada — reemplaza referencias implícitas a fases
+- Tabla de versiones actualizada: fulgurar.md v2.9, protocolo-oraculo.md v1.2, protocolo-respaldo.md v1.7, estado-desarrollo.md v0.4
+
+### Arquitectura — cambios conceptuales de esta sesión
+- **La Convergencia** establecida como nombre arquitectónico del Oráculo — estable independientemente del número de talleres
+- **INVARIANTES DEL SISTEMA** en fulgurar.md — fuente de verdad para las reglas estructurales del sistema
+- **Prefijo `Producto`** — convención oficial para todos los outputs de talleres
+- **Modo dos sesiones** documentado en protocolo-oraculo.md — flujo de corpus-biblioteca.md como registro permanente liviano
+- **Ordinales eliminados** de subtítulos de protocolos — ningún protocolo declara su posición en el sistema
+
+
+---
+
+## RESPALDO #7 — 2026-03-19
+
+### protocolo-telegrafo.md — archivo nuevo
+- v1.0 — protocolo completo del Telégrafo como séptimo taller
+- Semilla: instrumentos de teoría de la información — Shannon, autómatas Moore/Mealy, grafos topológicos
+- Cinco instrumentos: Entropía de Shannon · Mapa de Sorpresa · Autómata del Corpus · Topología de la Red · Redundancia y Capacidad de Canal
+- Vocabulario completo derivado de la metáfora del operador de telégrafo
+- Hipótesis falseable central: los corpus canónicos tienen redes conceptuales small-world (firma matemática de H4)
+- Registro de voz: operador técnico, alerta, imperturbable
+- Producto: Despacho — Perfil de Transmisión + Señal Clave
+- SVG embebido: cinta telegráfica expandida con datos del análisis y código Morse de la Señal Clave
+- Prompt de imagen: estación telegráfica nocturna bajo lámpara de latón
+- Output para el Oráculo: tabla de inputs definida
+
+### telegrafo-header.html — archivo nuevo
+- v1.0 — encabezado visual Telégrafo, paleta cobre telegráfico
+- Logo: aparato Morse animado — palanca pulsa código F (··-·) en Morse, galvanómetro oscila, cinta de papel corre, chispa en los contactos
+- Animaciones: tg-lever · tg-needle · tg-spark · tg-glow · tg-tape
+
+### fulgurar.md
+**v2.6 → v2.7**
+- Párrafo de apertura actualizado: Telégrafo mencionado
+- IDENTIDAD DEL SISTEMA: seis talleres activos + Oráculo en construcción — Telégrafo agregado
+- Tabla de Marcas: Telégrafo agregado — `TELÉGRAFO OSMANCITO · OPERADOR`
+- Paletas: Telégrafo agregado — cobre `#b87333`, fondo negro `#0f0c08`
+- RECEPCIÓN — Oferta de taller: Telégrafo agregado
+- OPERACIÓN — Registros de voz: Telégrafo agregado
+- PRODUCCIÓN — Nombres de archivo: Telégrafo agregado (.md y .html)
+- VERSIONADO — Lista de archivos: `protocolo-telegrafo.md` y `telegrafo-header.html` agregados
+
+### system-prompt.md
+**v4.2 → v4.3**
+- Telégrafo agregado al flujo de recepción: `Telégrafo → lee protocolo-telegrafo.md`
+
+### protocolo-prisma.md
+**v1.0 → v1.1**
+- Sección RELACIÓN CON LOS OTROS TALLERES reemplazada por RELACIÓN CON EL ORÁCULO
+- La tabla de inputs que vivía aquí migrada al protocolo-oraculo.md donde pertenece
+- El Prisma opera ahora sobre texto crudo exclusivamente — produce firma autónoma
+- Frontera con el Oráculo limpia: el Prisma mide, el Oráculo integra
+
+### protocolo-oraculo.md
+**v1.0 → v1.1**
+- Tabla de inputs de talleres migrada aquí desde protocolo-prisma.md
+- Telégrafo agregado a la tabla: entropía, autómata, topología de red — enriquece H4 y H6
+- Clarificación explícita: es el Oráculo quien integra los outputs, no el Prisma
+
+### protocolo-respaldo.md
+**v1.6 → v1.7**
+- Paso 4 modificado: el sistema pregunta al usuario antes de generar index.html
+- Si el usuario declina, incluye el index.html existente sin modificaciones
+
+
+---
+
 # Fulgurar — Changelog
 *Registro completo de cambios del proyecto*
 

@@ -11,7 +11,7 @@ Fulgurar es un sistema de lectura profunda que opera dentro de Claude. Toma cual
 
 No es un resumidor ni un buscador. Es un aparato que produce destellos.
 
-El sistema tiene cinco talleres activos y un sexto elemento en construcción — el Oráculo — que integra los talleres, consulta la Biblioteca y ejecuta las cuatro operaciones de la física de la literatura.
+El sistema tiene seis talleres activos y La Convergencia en construcción — el Oráculo — que integra los talleres, consulta la Biblioteca y ejecuta las cuatro operaciones de la física de la literatura.
 
 ---
 
@@ -27,7 +27,9 @@ El sistema tiene cinco talleres activos y un sexto elemento en construcción —
 
 **El Prisma** descompone corpus. Firma geométrica en cinco dimensiones simultáneas: Díada acoplada, Tríada, Lorenz, Riemann, Homología persistente.
 
-**El Oráculo** *(en construcción · potencia 45%)* — integra los cinco talleres, sitúa el corpus en la Biblioteca, calibra los hallazgos empíricos, y ejecuta las cuatro operaciones: Verificar · Corregir · Traducir · Generar.
+**El Telégrafo** escucha corpus. Entropía de Shannon, mapa de sorpresa, autómata de estados y transiciones, topología global de la red conceptual, redundancia y capacidad de canal.
+
+**El Oráculo** *(en construcción · potencia 45%)* — integra los talleres, sitúa el corpus en la Biblioteca, calibra los hallazgos empíricos, y ejecuta las cuatro operaciones: Verificar · Corregir · Traducir · Generar.
 
 ---
 
@@ -36,8 +38,8 @@ El sistema tiene cinco talleres activos y un sexto elemento en construcción —
 ```
 CORPUS
   ↓
-CINCO TALLERES
-Bodega · Astillero · Escuadra · Jardín · Prisma
+SEIS TALLERES
+Bodega · Astillero · Escuadra · Jardín · Prisma · Telégrafo
   ↓
 ORÁCULO
 Integra · Sitúa · Calibra · Ejecuta
@@ -67,6 +69,7 @@ fulgurar/
 ├── protocolo-jardin.md          <- vocabulario, cuatro estratos del Jardín
 ├── protocolo-prisma.md          <- algoritmo y operación del Prisma
 ├── protocolo-oraculo.md         <- diseño completo del Oráculo
+├── protocolo-telegrafo.md       <- vocabulario, cinco instrumentos del Telégrafo
 ├── protocolo-taller.md          <- protocolo para construir talleres nuevos
 ├── protocolo-respaldo.md        <- protocolo de generación de respaldos
 ├── bodega-header.html           <- encabezado visual Bodega (ámbar — barril + amanita)
@@ -74,6 +77,7 @@ fulgurar/
 ├── astillero-header-flota.html  <- encabezado visual Astillero Flota (verde marino)
 ├── escuadra-header.html         <- encabezado visual Escuadra (violeta pizarra)
 ├── jardin-header.html           <- encabezado visual Jardín (verde musgo)
+├── telegrafo-header.html        <- encabezado visual Telégrafo (cobre telegráfico)
 ├── estado-desarrollo.md         <- estado actual — arquitectura completa del proyecto
 └── corpus-biblioteca.md         <- 8 corpus procesados · 6 hallazgos (Capa Biblioteca)
 ```
@@ -102,7 +106,7 @@ Este recuadro nunca cambia. Siempre dice eso.
 
 Abre una conversación nueva y escribe: **Hola**
 
-El sistema leerá todos los archivos automáticamente y producirá un diagnóstico del estado actual — no necesitas orientarte, el sistema se orienta solo.
+El sistema leerá todos los archivos automáticamente y producirá un diagnóstico del estado actual.
 
 ---
 
@@ -112,7 +116,7 @@ Cuando hayas acumulado cambios, pide:
 
 > *"Genera un juego completo de archivos para respaldo."*
 
-El sistema ejecutará el protocolo de respaldo completo — revisa todos los archivos, numera el respaldo, actualiza el CHANGELOG, regenera el index.html y entrega el paquete completo. Reemplaza todos los archivos del proyecto con el paquete nuevo.
+El sistema ejecutará el protocolo de respaldo completo — revisa todos los archivos, numera el respaldo, actualiza el CHANGELOG, y entrega el paquete completo. Reemplaza todos los archivos del proyecto con el paquete nuevo.
 
 ---
 
@@ -120,34 +124,38 @@ El sistema ejecutará el protocolo de respaldo completo — revisa todos los arc
 
 | Archivo | Versión | Última modificación |
 |---|---|---|
-| `fulgurar.md` | v2.6 | 2026-03-19 |
+| `fulgurar.md` | v3.0 | 2026-03-19 |
 | `protocolo-bodega.md` | v1.5 | 2026-03-19 |
 | `protocolo-astillero.md` | v1.7 | 2026-03-19 |
 | `protocolo-escuadra.md` | v1.1 | 2026-03-19 |
 | `protocolo-jardin.md` | v1.1 | 2026-03-19 |
-| `protocolo-prisma.md` | v1.0 | 2026-03-19 |
-| `protocolo-oraculo.md` | v1.0 | 2026-03-19 |
+| `protocolo-prisma.md` | v1.1 | 2026-03-19 |
+| `protocolo-oraculo.md` | v1.2 | 2026-03-19 |
+| `protocolo-telegrafo.md` | v1.0 | 2026-03-19 |
 | `protocolo-taller.md` | v1.1 | 2026-03-19 |
-| `protocolo-respaldo.md` | v1.6 | 2026-03-19 |
+| `protocolo-respaldo.md` | v1.8 | 2026-03-19 |
 | `bodega-header.html` | v1.1 | 2026-03-13 |
 | `astillero-header-nave.html` | v1.1 | 2026-03-13 |
 | `astillero-header-flota.html` | v1.2 | 2026-03-15 |
 | `escuadra-header.html` | v1.0 | 2026-03-16 |
 | `jardin-header.html` | v1.0 | 2026-03-16 |
-| `system-prompt.md` | v4.2 | 2026-03-19 |
-| `estado-desarrollo.md` | v0.2 | 2026-03-19 |
+| `telegrafo-header.html` | v1.0 | 2026-03-19 |
+| `system-prompt.md` | v4.3 | 2026-03-19 |
+| `estado-desarrollo.md` | v0.4 | 2026-03-19 |
 | `corpus-biblioteca.md` | v0.4 | 2026-03-19 |
+
+---
 
 ## Origen
 
 Fulgurar no fue diseñado de una vez. Emergió por capas.
 
-Comenzó como el **Protocolo Θ∆** — un *reading companion* que acompañaba el análisis de un texto. Las cuatro capas de análisis (analogías biológica, física, matemática y hermenéutica) se profundizaron hasta diez estratos, que se convirtieron en el **Astillero Nave**. Vino después el **Astillero Flota** para autores completos, luego la **Bodega** para destilar, el **Jardín** para cavar en cuatro estratos simultáneos, y la **Escuadra** para medir la geometría invisible del texto.
+Comenzó como el **Protocolo Θ∆** — un *reading companion* que acompañaba el análisis de un texto. Las cuatro capas de análisis se profundizaron hasta diez estratos — el **Astillero Nave**. Vino después el **Astillero Flota** para autores completos, la **Bodega** para destilar, el **Jardín** para cavar en cuatro estratos simultáneos, y la **Escuadra** para medir la geometría invisible del texto.
 
-El **Prisma** emergió de una pregunta que los cuatro talleres no podían responder solos: ¿qué hace que una obra sea grande? La **Biblioteca** nació para acumular lo que el Prisma produce. El **Oráculo** para integrar todo y producir la convergencia que ningún taller puede producir solo.
+El **Prisma** emergió de una pregunta que los cuatro talleres no podían responder solos: ¿qué hace que una obra sea grande? La **Biblioteca** nació para acumular lo que el Prisma produce. El **Telégrafo** llegó para escuchar el canal antes de leer el mensaje — entropía, estados, topología de red. El **Oráculo** para integrar todo y producir la convergencia que ningún taller puede producir solo.
 
 Cada capa respondió a una limitación del estado anterior. El sistema crece mientras haya corpus que resistan el fuego.
 
 ---
 
-*Fulgurar · Consume letras. Produce luz. · Respaldo #6 · 2026-03-19*
+*Fulgurar · Consume letras. Produce luz. · Respaldo #7 · 2026-03-19*

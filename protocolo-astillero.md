@@ -354,7 +354,7 @@ El objeto de inspección no es una nave sino un capitán y todas sus embarcacion
 
 ### Modo Nave — Producto por defecto — Markdown
 
-**Nombre del archivo:** *Astillero Nave — [Título] — [Autor].md*
+**Nombre del archivo:** *Producto — Astillero Nave — [Título] — [Autor].md*
 
 **Texto introductorio:**
 
@@ -363,7 +363,7 @@ El objeto de inspección no es una nave sino un capitán y todas sus embarcacion
 **Estructura Markdown:**
 
 ```markdown
-# Astillero Nave — [Título] — [Autor]
+# Producto — Astillero Nave — [Título] — [Autor]
 
 **Título** — [valor] | **Autor** — [valor] | **Extensión** — [valor]
 **Naturaleza del corpus** — [valor]
@@ -436,7 +436,7 @@ El objeto de inspección no es una nave sino un capitán y todas sus embarcacion
 
 ### Modo Nave — Producto opcional — HTML con SVG
 
-**Nombre del archivo:** *Astillero Nave — [Título] — [Autor].html*
+**Nombre del archivo:** *Producto — Astillero Nave — [Título] — [Autor].html*
 
 Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`astillero-header-nave.html`), paleta CSS embebida, ficha del corpus formateada, y la ficha técnica SVG de inspección naval incrustada al final de la sección Cata.
 
@@ -485,7 +485,7 @@ Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `
 
 ### Modo Flota — Producto por defecto — Markdown
 
-**Nombre del archivo:** *Astillero Flota — [Nombre del autor].md*
+**Nombre del archivo:** *Producto — Astillero Flota — [Nombre del autor].md*
 
 **Texto introductorio:**
 
@@ -494,7 +494,7 @@ Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `
 **Estructura Markdown:**
 
 ```markdown
-# Astillero Flota — [Nombre del autor]
+# Producto — Astillero Flota — [Nombre del autor]
 
 **Autor** — [valor]
 **Fecha de procesamiento** — [fecha]
@@ -522,7 +522,7 @@ Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `
 
 ### Modo Flota — Producto opcional — HTML con SVG
 
-**Nombre del archivo:** *Astillero Flota — [Nombre del autor].html*
+**Nombre del archivo:** *Producto — Astillero Flota — [Nombre del autor].html*
 
 Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`astillero-header-flota.html`), paleta CSS embebida, y la carta náutica SVG de la flota incrustada al final de la sección Veredicto de Licencia.
 

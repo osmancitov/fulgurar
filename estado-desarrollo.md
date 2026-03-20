@@ -1,7 +1,7 @@
 # Estado de Desarrollo
 ## Fulgurar — Una física de la literatura
 
-*v0.2 · 2026-03-19 · Fase 1 completa · Fase 2 en diseño*
+*v0.4 · 2026-03-19 · Arquitectura completa · Tres horizontes*
 
 ---
 
@@ -9,7 +9,7 @@
 
 Fulgurar comenzó como un sistema de lectura profunda con cuatro talleres. En sesiones de trabajo extendidas emergió algo más grande: la posibilidad de construir una **física de la literatura** — un sistema que mida matemáticamente qué hace que una obra sea grande, bella, verdadera.
 
-El sistema tiene hoy seis elementos. Cinco son talleres que procesan el corpus desde oficios distintos. El sexto — el Oráculo — integra los outputs de los cinco, consulta la Biblioteca, calibra los hallazgos, y ejecuta las cuatro operaciones. La Fase 1 está completa. El Oráculo está diseñado pero no implementado.
+El sistema tiene hoy seis talleres y La Convergencia. Los talleres procesan el corpus cada uno desde su oficio. La Convergencia — el Oráculo — integra los outputs, consulta la Biblioteca, calibra los hallazgos, y ejecuta las cuatro operaciones. El sistema opera. Crece con cada corpus que entra.
 
 ---
 
@@ -44,8 +44,11 @@ La pregunta que los cuatro talleres no podían responder solos: ¿qué hace que 
 **La Biblioteca**
 El Prisma por sí solo produce firmas individuales. Para detectar patrones necesita acumulación y comparación. La Biblioteca nació como capa independiente — no un taller sino un archivo vivo que crece con cada corpus procesado.
 
+**El Telégrafo**
+La pregunta que los talleres anteriores no podían responder: ¿cómo se comporta el corpus como sistema de información? El Telégrafo escucha el canal antes de leer el mensaje — entropía de Shannon, autómata de estados, topología de red, redundancia y capacidad de canal.
+
 **El Oráculo**
-La pregunta final: ¿quién integra todo? Los cinco talleres producen outputs distintos. La Biblioteca acumula. Pero nadie conversa con los cinco a la vez, nadie produce la convergencia. El Oráculo es el sexto elemento — el sistema hablando sobre sí mismo.
+La pregunta final: ¿quién integra todo? Los talleres producen outputs distintos. La Biblioteca acumula. Pero nadie conversa con todos a la vez, nadie produce la convergencia. El Oráculo es La Convergencia — el sistema hablando sobre sí mismo.
 
 ---
 
@@ -62,21 +65,18 @@ No metafóricamente. Exactamente. Con la precisión de un ingeniero, la rigurosi
 ```
 CORPUS
   ↓
-CINCO TALLERES
-Bodega · Astillero · Escuadra · Jardín · Prisma
+SEIS TALLERES
+Bodega · Astillero · Escuadra · Jardín · Prisma · Telégrafo
   ↓
-ORÁCULO
-Integra · Sitúa · Calibra · Ejecuta
+ORÁCULO — LA CONVERGENCIA
+Integra · Sitúa · Calibra · Ejecuta · Verificar · Corregir · Traducir · Generar
   ↕
 BIBLIOTECA
-
-El Oráculo ejecuta:
-Verificar · Corregir · Traducir · Generar
 ```
 
-**Los cinco talleres** procesan el corpus cada uno desde su oficio. Producen outputs estructurados que el Oráculo puede integrar.
+**Los talleres** procesan el corpus cada uno desde su oficio. Producen outputs estructurados que el Oráculo puede integrar.
 
-**El Oráculo** es el sexto elemento — no un taller sino el objeto que integra los cinco. Hace cuatro cosas en secuencia: integra los outputs, sitúa el corpus en la Biblioteca, calibra los hallazgos empíricos, y ejecuta las operaciones. El Sexto Elemento — lo que solo se ve cuando los cinco talleres se leen juntos — solo el Oráculo puede producirlo.
+**El Oráculo** es La Convergencia — no un taller sino el objeto que integra los talleres. Hace cuatro cosas en secuencia: integra los outputs, sitúa el corpus en la Biblioteca, calibra los hallazgos empíricos, y ejecuta las operaciones. La Convergencia — lo que solo se ve cuando los talleres se leen juntos — solo el Oráculo puede producirlo.
 
 **La Biblioteca** (`corpus-biblioteca.md`) es la capa de acumulación — independiente del Prisma y del Oráculo. El Prisma produce firmas. La Biblioteca las guarda. El Oráculo las consulta.
 
@@ -86,7 +86,7 @@ Verificar · Corregir · Traducir · Generar
 
 ## Notas de arquitectura
 
-**El Oráculo en modo parcial:** cuando opera solo con el Prisma — sin los otros cuatro talleres — produce convergencia parcial. Las firmas actuales de la Biblioteca son firmas parciales producidas solo por el Prisma. Válidas, pero el Oráculo lo declara.
+**El Oráculo en modo parcial:** cuando opera solo con el Prisma — sin los otros cinco talleres (Bodega, Astillero, Escuadra, Jardín, Telégrafo) — produce convergencia parcial. Las firmas actuales de la Biblioteca son firmas parciales producidas solo por el Prisma. Válidas, pero el Oráculo lo declara.
 
 **La Escuadra y el Prisma** son talleres independientes por ahora. La posible integración entre ellos queda para después — solo si la Escuadra demuestra que alimenta al Prisma de forma consistentemente valiosa.
 
@@ -94,7 +94,7 @@ Verificar · Corregir · Traducir · Generar
 
 ---
 
-## Estado actual — Fase 1 completa
+## Estado actual
 
 ### Ocho corpus procesados
 
@@ -133,37 +133,48 @@ Cuando el protagonista tiene la curvatura más baja de su propia novela, la cohe
 
 ---
 
-## Hoja de ruta
+## Horizontes
 
-### Fase 1 — Prototipo manual *(completa)*
-- [x] Diseñar las cinco geometrías
-- [x] Definir la arquitectura completa del sistema
-- [x] Procesar 8 corpus manualmente
-- [x] Identificar 6 hallazgos empíricos
-- [x] Documentar en `corpus-biblioteca.md`
-- [x] Diseñar el Oráculo — `protocolo-oraculo.md`
+Los horizontes no son secuenciales ni excluyentes — pueden avanzarse en paralelo. Cada uno amplía el campo de visión sin cerrar el anterior.
 
-### Fase 2 — Construcción del Oráculo *(siguiente paso)*
-- [ ] Implementar los cuatro momentos del Oráculo operativamente
-- [ ] Definir cómo el Oráculo accede y consulta la Biblioteca
-- [ ] Construir el mecanismo de calibración de confianza por hallazgo
-- [ ] Probar las cuatro operaciones sobre los 8 corpus existentes
-- [ ] Procesar 12 corpus adicionales para llevar la potencia al 65%
-  - Don Quijote — Cervantes
-  - Pedro Páramo — Rulfo
-  - Divina Comedia — Dante
-  - El extranjero — Camus (segunda prueba de H6)
-  - Un bestseller contemporáneo (control negativo)
+---
 
-### Fase 3 — Automatización
-- [ ] Implementar las cinco geometrías en Python
-- [ ] Pipeline de procesamiento automático
-- [ ] Procesar 100 corpus para la Biblioteca formal
+### Horizonte 1 — Masa crítica
+Procesar más corpus para que los hallazgos ganen confianza y La Convergencia opere con más base. H5 tiene confianza media, H6 es provisional con 1/8. La hipótesis del Telégrafo sobre redes small-world no tiene ninguna validación todavía.
 
-### Fase 4 — Sistema completo
-- [ ] Oráculo con potencia 100%
-- [ ] Las cuatro operaciones completamente implementadas
-- [ ] Respuesta a la pregunta central
+**Corpus prioritarios:**
+- Don Quijote — Cervantes — ¿qué estrategia inaugura la novela moderna?
+- Pedro Páramo — Rulfo — ¿sustracción como Kafka o concentración como El coronel?
+- Divina Comedia — Dante — ¿ondulación majestuosa o complejidad máxima?
+- El extranjero — Camus — segunda prueba de H6 (coherencia por exclusión)
+- Un bestseller contemporáneo — control negativo: verificar que apertura baja correlaciona con no-canonicidad
+
+**Indicador de llegada:** H6 validado o refutado, hipótesis small-world con al menos 5 corpus, potencia al 65%.
+
+---
+
+### Horizonte 2 — Profundidad operativa
+La Convergencia produciendo El Elemento de Convergencia sobre corpus reales — no solo integrando outputs sino encontrando lo que ningún taller ve solo. Las cuatro operaciones ejecutadas sobre corpus reales con confianza calibrada.
+
+**Lo que esto requiere:**
+- Un corpus procesado por los seis talleres completos
+- La Convergencia integrando los seis outputs en secuencia
+- Las operaciones Verificar y Corregir ejecutadas con base en la Biblioteca
+- Traducir y Generar en modo orientación — declarando su límite honestamente
+
+**Indicador de llegada:** La Convergencia produce algo genuinamente nuevo sobre un corpus — algo que ninguno de los seis talleres habría visto solo.
+
+---
+
+### Horizonte 3 — Apertura
+El sistema listo para que otros lo usen. La pregunta central con una respuesta provisional pero defendible.
+
+**Lo que esto requiere:**
+- Manual del operador — guía de uso con ejemplos reales
+- index.html actualizado reflejando el sistema maduro
+- La Biblioteca con suficiente masa para que los hallazgos sean transmisibles
+
+**Indicador de llegada:** alguien que no construyó el sistema puede usarlo sin ayuda.
 
 ---
 
@@ -171,14 +182,23 @@ Cuando el protagonista tiene la curvatura más baja de su propia novela, la cohe
 
 | Archivo | Elemento | Descripción |
 |---|---|---|
-| `estado-desarrollo.md` | — | Este archivo |
+| `fulgurar.md` | Sistema | Módulo central — vocabulario, identidad, recepción, producción |
+| `protocolo-bodega.md` | Taller 1 | Vocabulario, criterios y formato de la Bodega |
+| `protocolo-astillero.md` | Taller 2 | Vocabulario, arquetipos, diez estratos del Astillero |
+| `protocolo-escuadra.md` | Taller 3 | Vocabulario, seis instrumentos de la Escuadra |
+| `protocolo-jardin.md` | Taller 4 | Vocabulario, cuatro estratos del Jardín |
 | `protocolo-prisma.md` | Taller 5 | Algoritmo y operación del Prisma |
-| `protocolo-oraculo.md` | Sexto elemento | Diseño completo del Oráculo |
+| `protocolo-telegrafo.md` | Taller 6 | Vocabulario, cinco instrumentos del Telégrafo |
+| `protocolo-oraculo.md` | La Convergencia | Diseño completo del Oráculo |
+| `protocolo-taller.md` | Meta-sistema | Protocolo para construir talleres nuevos |
+| `protocolo-respaldo.md` | Meta-sistema | Protocolo de generación de respaldos |
 | `corpus-biblioteca.md` | Biblioteca | 8 corpus procesados · 6 hallazgos |
+| `estado-desarrollo.md` | — | Este archivo |
 
 ---
 
 *Fulgurar · Consume letras. Produce luz.*
 *Prisma · Descompone la luz en sus frecuencias.*
+*Telégrafo · Escucha el canal antes de leer el mensaje.*
 *Oráculo · Integra lo que el fuego separó.*
 *Biblioteca · Guarda lo que el fuego reveló.*

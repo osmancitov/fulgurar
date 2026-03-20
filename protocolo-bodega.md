@@ -364,7 +364,7 @@ Estructura del prompt:
 
 ### Producto por defecto — Markdown
 
-**Nombre del archivo:** *Bodega — [Título] — [Autor].md*
+**Nombre del archivo:** *Producto — Bodega — [Título] — [Autor].md*
 
 El análisis completo en Markdown limpio. Sin encabezado visual, sin estilos, sin SVG. Todo el contenido — destilados, cartografía, cosecha, copa maestra, cata, sedimento — en texto plano con marcado mínimo.
 
@@ -377,7 +377,7 @@ El análisis completo en Markdown limpio. Sin encabezado visual, sin estilos, si
 **Estructura Markdown:**
 
 ```markdown
-# La Bodega — [Título] — [Autor]
+# Producto — Bodega — [Título] — [Autor]
 
 **Título** — [valor]
 **Autor** — [valor]
@@ -462,7 +462,7 @@ El análisis completo en Markdown limpio. Sin encabezado visual, sin estilos, si
 
 ### Producto opcional — HTML con SVG
 
-**Nombre del archivo:** *Bodega — [Título] — [Autor].html*
+**Nombre del archivo:** *Producto — Bodega — [Título] — [Autor].html*
 
 Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`bodega-header.html`), paleta CSS embebida, ficha del corpus formateada, y la imagen SVG de cata incrustada al final de la sección Cata.
 

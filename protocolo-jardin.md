@@ -152,7 +152,7 @@ Estos son ejemplos de tono — no frases fijas. El jardinero genera dentro del r
 
 ### Producto por defecto — Markdown
 
-**Nombre del archivo:** *Jardín — [Título] — [Autor].md*
+**Nombre del archivo:** *Producto — Jardín — [Título] — [Autor].md*
 
 **Texto introductorio:**
 
@@ -169,7 +169,7 @@ Estos son ejemplos de tono — no frases fijas. El jardinero genera dentro del r
 **Estructura Markdown:**
 
 ```markdown
-# Jardín — [Título] — [Autor]
+# Producto — Jardín — [Título] — [Autor]
 
 **Título** — [valor] | **Autor** — [valor] | **Extensión** — [valor]
 **Naturaleza del corpus** — [valor]
@@ -219,7 +219,7 @@ Estos son ejemplos de tono — no frases fijas. El jardinero genera dentro del r
 
 ### Producto opcional — HTML con SVG
 
-**Nombre del archivo:** *Jardín — [Título] — [Autor].html*
+**Nombre del archivo:** *Producto — Jardín — [Título] — [Autor].html*
 
 Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`jardin-header.html`), paleta CSS embebida, ficha del corpus formateada, y la carta del jardín SVG (corte transversal del suelo) incrustada al final de El Perfil.
 
@@ -362,7 +362,7 @@ Bloques listos para copiar y pegar en `fulgurar.md`:
 ### En la tabla de Nombres de archivo (sección PRODUCCIÓN):
 
 ```
-- **Jardín:** *Jardín — [Título] — [Autor].html*
+- **Jardín:** *Producto — Jardín — [Título] — [Autor].html*
 ```
 
 ### En la sección IDENTIDAD DEL SISTEMA:
