@@ -1,4 +1,31 @@
-## RESPALDO #13 — 2026-03-20
+## RESPALDO #14 — 2026-03-20
+
+### estado-desarrollo.md — eliminado
+- Archivo retirado del sistema. Su contenido relevante vive en `README.md` (arquitectura, horizontes) y `corpus-biblioteca.md` (corpus, hallazgos).
+
+### system-prompt.md
+**v4.5 → v4.6**
+- Instrucción de lectura de `estado-desarrollo.md` eliminada
+
+### fulgurar.md
+**v3.2 → v3.3**
+- Referencia a `estado-desarrollo.md` en IDENTIDAD DEL SISTEMA eliminada
+- `estado-desarrollo.md` eliminado de la lista de archivos en VERSIONADO
+
+### protocolo-respaldo.md
+**v2.1 → v2.2**
+- `estado-desarrollo.md` eliminado del Paso 1 de revisión
+- `estado-desarrollo.md` eliminado de la lista del paquete
+- Paquete: 16 → 15 archivos
+
+### README.md
+- `estado-desarrollo.md` eliminado del árbol de archivos
+- `estado-desarrollo.md` eliminado de la tabla de versiones
+- Footer: Respaldo #14
+
+---
+
+
 
 ### system-prompt.md
 **v4.4 → v4.5**

@@ -1,5 +1,5 @@
 # Protocolo de Respaldo — Fulgurar
-*v2.1 · 2026-03-20 · Protocolo de generación de respaldos del sistema*
+*v2.2 · 2026-03-20 · Protocolo de generación de respaldos del sistema*
 
 ---
 
@@ -40,7 +40,6 @@ Cuando el usuario solicite un juego completo de archivos para respaldo, ejecutar
 - `protocolo-telegrafo.md` — verificar instrumentos, despacho, prompts. Actualizar versión si hubo cambios.
 - `protocolo-taller.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
 - `protocolo-respaldo.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
-- `estado-desarrollo.md` — verificar que refleja el estado actual completo. Actualizar siempre.
 - `protocolo-prisma.md` — verificar algoritmo, geometrías, formato. Actualizar versión si hubo cambios.
 - `protocolo-oraculo.md` — verificar los cuatro momentos, operaciones, calibración. Actualizar versión si hubo cambios.
 - `corpus-biblioteca.md` — verificar que todos los corpus procesados están documentados. Actualizar siempre.
@@ -70,5 +69,4 @@ Lista completa de archivos del paquete:
 - `system-prompt.md`
 - `README.md`
 - `CHANGELOG.md`
-- `estado-desarrollo.md`
 - `corpus-biblioteca.md`

@@ -87,7 +87,6 @@ fulgurar/
 ├── protocolo-telegrafo.md       <- vocabulario, cinco instrumentos del Telégrafo
 ├── protocolo-taller.md          <- protocolo para construir talleres nuevos
 ├── protocolo-respaldo.md        <- protocolo de generación de respaldos
-├── estado-desarrollo.md         <- estado actual — arquitectura completa del proyecto
 └── corpus-biblioteca.md         <- 8 corpus procesados · 6 hallazgos — Biblioteca
 ```
 
@@ -121,7 +120,7 @@ Abre una conversación nueva y escribe: **Hola**
 
 | Archivo | Versión | Última modificación |
 |---|---|---|
-| `fulgurar.md` | v3.2 | 2026-03-20 |
+| `fulgurar.md` | v3.3 | 2026-03-20 |
 | `protocolo-umbral.md` | v1.3 | 2026-03-20 |
 | `protocolo-bodega.md` | v1.7 | 2026-03-20 |
 | `protocolo-astillero.md` | v1.8 | 2026-03-20 |
@@ -131,11 +130,10 @@ Abre una conversación nueva y escribe: **Hola**
 | `protocolo-oraculo.md` | v1.2 | 2026-03-19 |
 | `protocolo-telegrafo.md` | v1.0 | 2026-03-19 |
 | `protocolo-taller.md` | v1.2 | 2026-03-20 |
-| `protocolo-respaldo.md` | v2.1 | 2026-03-20 |
-| `system-prompt.md` | v4.5 | 2026-03-20 |
-| `estado-desarrollo.md` | v0.4 | 2026-03-19 |
+| `protocolo-respaldo.md` | v2.2 | 2026-03-20 |
+| `system-prompt.md` | v4.6 | 2026-03-20 |
 | `corpus-biblioteca.md` | v0.4 | 2026-03-19 |
 
 ---
 
-*Fulgurar · Consume letras. Produce luz. · Respaldo #13 · 2026-03-20*
+*Fulgurar · Consume letras. Produce luz. · Respaldo #14 · 2026-03-20*

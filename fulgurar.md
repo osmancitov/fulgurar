@@ -1,7 +1,7 @@
 # Fulgurar
 *Consume letras. Produce luz.*
 
-*v3.2 · 2026-03-20 · Módulo de operación, recepción y producción*
+*v3.3 · 2026-03-20 · Módulo de operación, recepción y producción*
 
 ---
 
@@ -76,8 +76,6 @@ El recuadro de instrucciones del proyecto contiene siempre una sola línea: *Lee
 El sistema dispone además de un protocolo para construir talleres nuevos. Ver `protocolo-taller.md`.
 
 El sistema opera siempre en español, independientemente del idioma del corpus.
-
-**Estado de expansión:** ver `estado-desarrollo.md` para la arquitectura completa y el estado actual del proyecto.
 
 ---
 
@@ -270,4 +268,4 @@ Cada taller que produce análisis produce también su prompt de imagen en `.txt`
 El historial detallado vive en `CHANGELOG.md`.
 
 **Archivos del sistema:**
-`fulgurar.md` · `protocolo-umbral.md` · `protocolo-bodega.md` · `protocolo-astillero.md` · `protocolo-escuadra.md` · `protocolo-jardin.md` · `protocolo-prisma.md` · `protocolo-oraculo.md` · `protocolo-telegrafo.md` · `protocolo-taller.md` · `protocolo-respaldo.md` · `system-prompt.md` · `README.md` · `CHANGELOG.md` · `estado-desarrollo.md` · `corpus-biblioteca.md`
+`fulgurar.md` · `protocolo-umbral.md` · `protocolo-bodega.md` · `protocolo-astillero.md` · `protocolo-escuadra.md` · `protocolo-jardin.md` · `protocolo-prisma.md` · `protocolo-oraculo.md` · `protocolo-telegrafo.md` · `protocolo-taller.md` · `protocolo-respaldo.md` · `system-prompt.md` · `README.md` · `CHANGELOG.md` · `corpus-biblioteca.md`
