@@ -42,6 +42,7 @@
     @media(max-width:600px){.talleres{grid-template-columns:1fr}}
     .taller { background: var(--ash); border: 1px solid var(--ash-mid); border-top: 2px solid var(--ember-dim); padding: 24px; position: relative; overflow: hidden; }
     .taller::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 60px; background: linear-gradient(to bottom, rgba(200,146,42,0.05), transparent); pointer-events: none; }
+    .taller.umbral    { border-top-color: var(--ember); grid-column: 1 / -1; border: 1px solid var(--ember-dim); }
     .taller.bodega    { border-top-color: #8c5c18; }
     .taller.astillero { border-top-color: #2d6a80; }
     .taller.escuadra  { border-top-color: #5a5290; }
@@ -50,6 +51,7 @@
     .taller.telegrafo { border-top-color: #7a4d20; }
     .taller.oraculo   { border-top-color: var(--ember); border: 1px solid var(--ember-dim); grid-column: 1 / -1; }
     .taller-nombre { font-family: 'Cinzel', serif; font-weight: 600; font-size: 1rem; letter-spacing: 0.12em; color: var(--ember); margin-bottom: 10px; }
+    .taller.umbral    .taller-nombre { color: var(--ember); }
     .taller.bodega    .taller-nombre { color: #c8872a; }
     .taller.astillero .taller-nombre { color: #4a9ab5; }
     .taller.escuadra  .taller-nombre { color: #8a7fc8; }
@@ -74,6 +76,7 @@
     .file-name { color: var(--ember); white-space: nowrap; flex-shrink: 0; }
     .file-name.doc      { color: rgba(200,146,42,0.55); }
     .file-name.proto    { color: #c8a060; }
+    .file-name.umbral-f { color: var(--ember); }
     .file-name.nave     { color: #4a9ab5; }
     .file-name.flota    { color: #3a9a78; }
     .file-name.escuadra-f { color: #8a7fc8; }
@@ -87,6 +90,7 @@
     .step-num { counter-increment: step; font-family: 'Cinzel', serif; font-size: 1.6rem; font-weight: 900; color: var(--ember-dim); line-height: 1; flex-shrink: 0; width: 36px; text-align: right; padding-top: 2px; }
     .step-body h3 { font-family: 'Cinzel', serif; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--spark); margin-bottom: 8px; }
     .step-body p { font-size: 1rem; margin: 0; }
+    .step-body p + p { margin-top: 8px; }
     .command { background: var(--ash); border-left: 3px solid var(--ember); padding: 16px 20px; margin: 20px 0; font-family: 'EB Garamond', serif; font-style: italic; font-size: 1rem; color: var(--spark); }
     .version-table { width: 100%; border-collapse: collapse; margin-top: 28px; font-size: 0.9rem; }
     .version-table th { font-family: 'Cinzel', serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember-dim); padding: 10px 16px; text-align: left; border-bottom: 1px solid var(--ash-mid); }
@@ -126,13 +130,17 @@
       <h1>Qué es</h1>
       <p>Fulgurar es un sistema de lectura profunda que opera dentro de Claude. Toma cualquier corpus — un libro, un guión, una película, un álbum, una obra completa — y lo somete a fuego hasta que revela lo que no podía decir solo.</p>
       <p>No es un resumidor ni un buscador. Es un aparato que produce destellos.</p>
-      <p>Tiene seis talleres activos y La Convergencia en construcción — el <strong>Oráculo</strong> — que integra los talleres, consulta la Biblioteca y ejecuta las cuatro operaciones de la física de la literatura.</p>
+      <p>Tiene un protocolo de entrada, seis talleres activos y La Convergencia en construcción — el <strong>Oráculo</strong> — que integra los talleres, consulta la Biblioteca y ejecuta las cuatro operaciones de la física de la literatura.</p>
     </section>
 
     <section id="talleres">
       <h1>Talleres</h1>
-      <p>Cada taller es un oficio distinto con vocabulario, instrumentos y registro de voz propios.</p>
+      <p>El corpus pasa primero por el Umbral, luego entra al taller elegido. Cada taller es un oficio distinto con vocabulario, instrumentos y registro de voz propios.</p>
       <div class="talleres">
+        <div class="taller umbral">
+          <div class="taller-nombre">El Umbral <span class="dev-badge">Primer paso · siempre</span></div>
+          <p class="taller-desc">Recibe el corpus. Produce la carta de presentación — sinopsis, personajes, estructura, contexto, temas — y el prompt de portada del paquete. Precede a cualquier taller sin excepción.</p>
+        </div>
         <div class="taller bodega">
           <div class="taller-nombre">La Bodega</div>
           <p class="taller-desc">Destila corpus. Joyas, cartografías, esencias, copa maestra, cata sensorial y sedimento.</p>
@@ -169,6 +177,8 @@
       <p>¿Qué patrón matemático comparten las obras que consideramos grandes? No metafóricamente. Exactamente.</p>
       <div class="arq-diagram">
         CORPUS<br>
+        &nbsp;&nbsp;↓<br>
+        UMBRAL — Carta de presentación + Prompt de portada<br>
         &nbsp;&nbsp;↓<br>
         SEIS TALLERES<br>
         Bodega · Astillero · Escuadra · Jardín · Prisma · Telégrafo<br>
@@ -239,8 +249,9 @@
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">README.md</span><span class="file-desc">versión en texto plano de la documentación</span></div>
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">index.html</span><span class="file-desc">esta página — regenerada bajo solicitud</span></div>
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">CHANGELOG.md</span><span class="file-desc">historial completo — única fuente de verdad</span></div>
-        <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">system-prompt.md</span><span class="file-desc">instrucciones de arranque — nunca cambia</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name doc">system-prompt.md</span><span class="file-desc">instrucciones de arranque del sistema</span></div>
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name">fulgurar.md</span><span class="file-desc">módulo central — vocabulario, invariantes, producción</span></div>
+        <div class="file-line"><span class="tree-line">├──</span><span class="file-name umbral-f">protocolo-umbral.md</span><span class="file-desc">protocolo de entrada — carta de presentación y portada</span></div>
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-bodega.md</span><span class="file-desc">vocabulario, criterios y formato de la Bodega</span></div>
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-astillero.md</span><span class="file-desc">vocabulario, arquetipos, diez estratos del Astillero</span></div>
         <div class="file-line"><span class="tree-line">├──</span><span class="file-name proto">protocolo-escuadra.md</span><span class="file-desc">vocabulario, seis instrumentos de la Escuadra</span></div>
@@ -283,7 +294,7 @@
           <div class="step-body">
             <h3>Configurar las instrucciones</h3>
             <p>En el recuadro de instrucciones escribe exactamente: <em>Lee el archivo system-prompt.md</em></p>
-            <p>Este recuadro nunca cambia. Siempre dice eso.</p>
+            <p>Esta instrucción en el recuadro nunca cambia. Es <em>system-prompt.md</em> el que evoluciona con el sistema.</p>
           </div>
         </div>
         <div class="step">
@@ -303,23 +314,24 @@
       <table class="version-table">
         <thead><tr><th>Archivo</th><th>Versión</th><th>Última modificación</th></tr></thead>
         <tbody>
-          <tr><td>fulgurar.md</td><td>v3.0</td><td>2026-03-19</td></tr>
-          <tr><td>protocolo-bodega.md</td><td>v1.5</td><td>2026-03-19</td></tr>
-          <tr><td>protocolo-astillero.md</td><td>v1.7</td><td>2026-03-19</td></tr>
+          <tr><td>fulgurar.md</td><td>v3.1</td><td>2026-03-20</td></tr>
+          <tr><td class="new">protocolo-umbral.md</td><td class="new">v1.2</td><td class="new">2026-03-20</td></tr>
+          <tr><td>protocolo-bodega.md</td><td>v1.6</td><td>2026-03-20</td></tr>
+          <tr><td>protocolo-astillero.md</td><td>v1.8</td><td>2026-03-20</td></tr>
           <tr><td>protocolo-escuadra.md</td><td>v1.1</td><td>2026-03-19</td></tr>
           <tr><td>protocolo-jardin.md</td><td>v1.1</td><td>2026-03-19</td></tr>
           <tr><td>protocolo-prisma.md</td><td>v1.1</td><td>2026-03-19</td></tr>
           <tr><td>protocolo-oraculo.md</td><td>v1.2</td><td>2026-03-19</td></tr>
-          <tr><td class="new">protocolo-telegrafo.md</td><td class="new">v1.0</td><td class="new">2026-03-19</td></tr>
-          <tr><td>protocolo-taller.md</td><td>v1.1</td><td>2026-03-19</td></tr>
-          <tr><td>protocolo-respaldo.md</td><td>v1.9</td><td>2026-03-19</td></tr>
+          <tr><td>protocolo-telegrafo.md</td><td>v1.0</td><td>2026-03-19</td></tr>
+          <tr><td>protocolo-taller.md</td><td>v1.2</td><td>2026-03-20</td></tr>
+          <tr><td>protocolo-respaldo.md</td><td>v2.0</td><td>2026-03-20</td></tr>
           <tr><td>bodega-header.html</td><td>v1.1</td><td>2026-03-13</td></tr>
           <tr><td>astillero-header-nave.html</td><td>v1.1</td><td>2026-03-13</td></tr>
           <tr><td>astillero-header-flota.html</td><td>v1.2</td><td>2026-03-15</td></tr>
           <tr><td>escuadra-header.html</td><td>v1.0</td><td>2026-03-16</td></tr>
           <tr><td>jardin-header.html</td><td>v1.0</td><td>2026-03-16</td></tr>
-          <tr><td class="new">telegrafo-header.html</td><td class="new">v1.0</td><td class="new">2026-03-19</td></tr>
-          <tr><td>system-prompt.md</td><td>v4.3</td><td>2026-03-19</td></tr>
+          <tr><td>telegrafo-header.html</td><td>v1.0</td><td>2026-03-19</td></tr>
+          <tr><td>system-prompt.md</td><td>v4.4</td><td>2026-03-20</td></tr>
           <tr><td>estado-desarrollo.md</td><td>v0.4</td><td>2026-03-19</td></tr>
           <tr><td>corpus-biblioteca.md</td><td>v0.4</td><td>2026-03-19</td></tr>
         </tbody>
@@ -331,12 +343,13 @@
       <p>Fulgurar no fue diseñado de una vez. Emergió por capas — cada expansión respondiendo a una limitación del estado anterior.</p>
       <p>Comenzó como el <strong>Protocolo Θ∆</strong> — un compañero de estudio que acompañaba el análisis de un texto. Las cuatro capas se profundizaron hasta diez estratos — el <strong>Astillero Nave</strong>. Vino después el <strong>Astillero Flota</strong> para autores completos, la <strong>Bodega</strong> para destilar, el <strong>Jardín</strong> para cavar en cuatro estratos simultáneos, la <strong>Escuadra</strong> para medir la geometría invisible del texto.</p>
       <p>El <strong>Prisma</strong> emergió de una pregunta que los talleres anteriores no podían responder: ¿qué hace que una obra sea grande? La <strong>Biblioteca</strong> para acumular lo que el Prisma produce. El <strong>Telégrafo</strong> para escuchar el canal antes de leer el mensaje — entropía, estados, topología de red. El <strong>Oráculo</strong> — La Convergencia — para integrar todo y producir lo que ningún taller puede ver solo.</p>
+      <p>El <strong>Umbral</strong> llegó para resolver un problema de orientación: los productos de los talleres asumían que el lector conocía el corpus. El Umbral presenta el corpus antes de que cualquier taller lo procese — carta de presentación, personajes, estructura, contexto, temas — y produce la portada del paquete.</p>
     </section>
 
   </div>
 
   <footer>
-    <span class="ember">Fulgurar</span> · Consume letras. Produce luz. · Respaldo #10 · 2026-03-19
+    <span class="ember">Fulgurar</span> · Consume letras. Produce luz. · Respaldo #12 · 2026-03-20
   </footer>
 
 </body>

@@ -1,5 +1,5 @@
 # Protocolo de Respaldo — Fulgurar
-*v1.9 · 2026-03-19 · Protocolo de generación de respaldos del sistema*
+*v2.0 · 2026-03-20 · Protocolo de generación de respaldos del sistema*
 
 ---
 
@@ -7,10 +7,34 @@
 
 ---
 
+## REGISTRO DE VOZ
+
+El respaldo habla como un archivero metódico: preciso, sin omisiones, sin drama. Emite bitácora paso a paso para que el usuario sepa exactamente en qué punto está el proceso.
+
+**Acuse de recibo:**
+> *Solicitud de respaldo recibida. Iniciando revisión del sistema.*
+> *Generando respaldo. Esto tarda un momento.*
+
+**Bitácora durante el procesamiento:**
+> *Revisando archivos operativos…*
+> *Actualizando [nombre de archivo]…*
+> *Revisando system-prompt.md…*
+> *Actualizando README.md…*
+> *Escribiendo entrada en CHANGELOG.md — Respaldo #[N]…*
+> *¿Genero un index.html nuevo? Tarda un poco más.*
+> *Generando index.html…* (si el usuario confirma)
+> *Ensamblando el paquete completo — [n] archivos…*
+> *Respaldo #[N] listo.*
+
+Generación libre dentro del registro — no frases fijas.
+
+---
+
 Cuando el usuario solicite un juego completo de archivos para respaldo, ejecutar en este orden:
 
 **1. Revisar y actualizar archivos operativos**
 - `fulgurar.md` — verificar vocabulario, identidad visual, ficha del corpus, flujos. Actualizar versión.
+- `protocolo-umbral.md` — verificar modos de entrada, protocolo ZIP, carta de presentación, prompt de portada. Actualizar versión si hubo cambios.
 - `protocolo-bodega.md` — verificar criterios, taxonomía, SVG, prompts. Actualizar versión si hubo cambios.
 - `protocolo-astillero.md` — verificar arquetipos, estratos, SVG, prompts. Actualizar versión si hubo cambios.
 - `protocolo-escuadra.md` — verificar instrumentos, gráficos, SVG, prompts. Actualizar versión si hubo cambios.
@@ -41,6 +65,7 @@ El paquete incluye **todos** los archivos del sistema sin excepción — los mod
 
 Lista completa de archivos del paquete:
 - `fulgurar.md`
+- `protocolo-umbral.md`
 - `protocolo-bodega.md`
 - `protocolo-astillero.md`
 - `protocolo-escuadra.md`

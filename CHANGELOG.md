@@ -1,3 +1,92 @@
+## RESPALDO #12 — 2026-03-20
+
+### README.md
+- Sección Qué es: "protocolo de entrada, seis talleres activos" — Umbral mencionado
+- Sección Cómo funciona: El Umbral añadido como primer elemento antes de La Bodega
+- Diagrama de arquitectura: UMBRAL añadido entre CORPUS y SEIS TALLERES
+- Árbol de archivos: `protocolo-umbral.md` añadido; `system-prompt.md` — descripción corregida de "nunca cambia" a "instrucciones de arranque del sistema"
+- Instrucciones de instalación paso 3: corregida la confusión — "Esta instrucción en el recuadro nunca cambia. Es system-prompt.md el que evoluciona."
+- Tabla de versiones: actualizada con todas las versiones del Respaldo #12
+- Sección Origen: párrafo del Umbral añadido
+- Footer: Respaldo #10 → Respaldo #12
+
+### fulgurar.md
+**v3.1** *(corrección de invariante)*
+- Invariante "El system prompt nunca cambia" corregida a "La instrucción del recuadro del proyecto nunca cambia" — con aclaración explícita de que es system-prompt.md el que evoluciona
+
+### system-prompt.md
+**v4.3 → v4.4**
+- Umbral integrado: "Al recibir un corpus, lee siempre primero protocolo-umbral.md. El Umbral precede a cualquier taller sin excepción."
+- Modo Flota actualizado: el Umbral produce la carta de presentación del autor
+- Reglas absolutas: "Emite bitácora durante todo procesamiento — sin excepción" añadida
+- "Nunca menciones los archivos del sistema en los productos entregados" simplificado
+
+### index.html
+**Regenerado completo desde README.md actualizado**
+- Sección Talleres: El Umbral añadido como tarjeta ancho completo al inicio del grid, con badge "Primer paso · siempre"
+- Sección Arquitectura: diagrama actualizado con UMBRAL entre CORPUS y SEIS TALLERES
+- Sección Archivos: `protocolo-umbral.md` añadido al árbol con color propio (`umbral-f`); `system-prompt.md` — descripción corregida
+- Sección Instalar paso 3: corrección de la confusión sobre qué nunca cambia
+- Sección Versiones: tabla completa con versiones del Respaldo #12, `protocolo-umbral.md` marcado como nuevo
+- Sección Origen: párrafo del Umbral añadido
+- Footer: Respaldo #12
+
+---
+
+## RESPALDO #11 — 2026-03-20
+
+### protocolo-umbral.md — archivo nuevo
+- v1.2 — protocolo de entrada completo
+- El Umbral es el primer paso antes de cualquier taller — recibe el corpus, produce la carta de presentación y el prompt de portada
+- Cinco modos de entrada documentados: archivo adjunto, título y autor, ZIP Plano, nombre de autor (Modo Flota), corpus en proyecto
+- Protocolo de Ingesta ZIP unificado para Modo 3 y Modo 5 — mismo procedimiento, distinta fuente
+- Modo 5 — Corpus en proyecto: el Umbral detecta `toc.ncx` en los archivos del sistema y ejecuta el Protocolo de Ingesta desde ahí; corpus permanente disponible en sesiones posteriores
+- Carta de presentación con seis secciones: Registro de Ingesta (primera, siempre) · Sinopsis · Personajes o Figuras Clave · Estructura del Corpus · Contexto · Temas Centrales
+- Registro de Ingesta como primera sección — trazabilidad del proceso, formato distinto por modo de entrada
+- El Registro de Ingesta se genera después de la confirmación del usuario en Modos 3 y 5 — refleja el corpus ya delimitado
+- Prompt de portada: atmósfera del corpus, no ilustración de escena; etiqueta `FULGURAR · TÍTULO · APELLIDO` en esquina inferior
+- Registro de voz propio: quien abre la puerta — preciso, útil, sin demora
+- Modos de entrada y Protocolo de Ingesta ZIP migrados desde `fulgurar.md` — su lugar natural es el Umbral
+- Diagrama de flujo del sistema con bifurcación ZIP/proyecto vs modos directos
+- Bloques de actualización para `fulgurar.md`, `system-prompt.md` y `protocolo-respaldo.md` documentados al final
+
+### fulgurar.md
+**v3.0 → v3.1**
+- Párrafo de apertura: El Umbral añadido al inicio de la lista de talleres
+- IDENTIDAD DEL SISTEMA: El Umbral añadido como primer elemento, conteo actualizado a "protocolo de entrada, seis talleres activos y La Convergencia"
+- Tabla de Marcas: `UMBRAL OSMANCITO · ENTRADA` añadida
+- RECEPCIÓN: modos de entrada y Protocolo de Ingesta ZIP eliminados — migrados a `protocolo-umbral.md`; sección ahora contiene solo la oferta de talleres con referencia al Umbral
+- Oferta de talleres: Umbral añadido como primer elemento, Telégrafo duplicado eliminado
+- OPERACIÓN — Registros de voz: Umbral añadido como primer registro
+- OPERACIÓN — Reglas generales: referencia al Protocolo de Ingesta ZIP actualizada para apuntar al Umbral
+- PRODUCCIÓN — Nombres de archivo: Umbral añadido con sus dos productos
+- VERSIONADO — Lista de archivos: `protocolo-umbral.md` añadido
+
+### protocolo-bodega.md
+**v1.5 → v1.6**
+- Sección REGISTRO DE VOZ añadida — acuse de recibo y bitácora por etapas de destilación
+- Bitácora cubre: lectura del corpus, destilación por capítulo, cartografía, cosecha, copa maestra, cata, sedimento, prompt de imagen
+
+### protocolo-astillero.md
+**v1.7 → v1.8**
+- Sección REGISTRO DE VOZ añadida — acuse de recibo y bitácora para Modo Nave y Modo Flota por separado
+- Bitácora Modo Nave cubre los diez estratos en secuencia, dictamen, cata y prompt
+- Bitácora Modo Flota cubre: identificación del capitán, mapeo de la flota, clasificación, tensiones, veredicto, carta náutica, prompt
+
+### protocolo-taller.md
+**v1.1 → v1.2**
+- Sección REGISTRO DE VOZ añadida — el sistema en modo de expansión construyéndose a sí mismo
+- Bitácora diferenciada para Fase 1 (exploración) y Fase 2 (propuesta completa)
+
+### protocolo-respaldo.md
+**v1.9 → v2.0**
+- Sección REGISTRO DE VOZ añadida — archivero metódico, preciso, sin drama
+- Bitácora paso a paso: revisión de archivos, actualizaciones, CHANGELOG, pregunta sobre index.html, ensamblado del paquete
+- `protocolo-umbral.md` añadido al Paso 1 de revisión de archivos operativos
+- `protocolo-umbral.md` añadido a la lista completa del paquete
+
+---
+
 ## RESPALDO #10 — 2026-03-19
 
 ### README.md

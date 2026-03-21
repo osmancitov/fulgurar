@@ -11,11 +11,13 @@ Fulgurar es un sistema de lectura profunda que opera dentro de Claude. Toma cual
 
 No es un resumidor ni un buscador. Es un aparato que produce destellos.
 
-El sistema tiene seis talleres activos y La Convergencia en construcción — el Oráculo — que integra los talleres, consulta la Biblioteca y ejecuta las cuatro operaciones de la física de la literatura.
+El sistema tiene un protocolo de entrada, seis talleres activos y La Convergencia en construcción — el Oráculo — que integra los talleres, consulta la Biblioteca y ejecuta las cuatro operaciones de la física de la literatura.
 
 ---
 
 ## Cómo funciona
+
+**El Umbral** recibe el corpus. Produce la carta de presentación — sinopsis, personajes, estructura, contexto, temas centrales — y el prompt de portada del paquete. Es siempre el primer paso antes de cualquier taller.
 
 **La Bodega** destila corpus. Extrae joyas, cartografías, esencias, copa maestra, cata sensorial y sedimento.
 
@@ -37,6 +39,8 @@ El sistema tiene seis talleres activos y La Convergencia en construcción — el
 
 ```
 CORPUS
+  ↓
+UMBRAL — Carta de presentación + Prompt de portada
   ↓
 SEIS TALLERES
 Bodega · Astillero · Escuadra · Jardín · Prisma · Telégrafo
@@ -70,8 +74,9 @@ fulgurar/
 ├── README.md                    <- este archivo
 ├── index.html                   <- versión visual — página principal del repositorio
 ├── CHANGELOG.md                 <- historial completo de cambios
-├── system-prompt.md             <- instrucciones de arranque — nunca cambia
+├── system-prompt.md             <- instrucciones de arranque del sistema
 ├── fulgurar.md                  <- módulo central del sistema
+├── protocolo-umbral.md          <- protocolo de entrada — carta de presentación y portada
 ├── protocolo-bodega.md          <- vocabulario, criterios y formato de la Bodega
 ├── protocolo-astillero.md       <- vocabulario, arquetipos, diez estratos del Astillero
 ├── protocolo-escuadra.md        <- vocabulario, seis instrumentos de la Escuadra
@@ -109,7 +114,7 @@ En el recuadro de instrucciones del proyecto escribe exactamente:
 
 *Lee el archivo system-prompt.md*
 
-Este recuadro nunca cambia. Siempre dice eso.
+Esta instrucción en el recuadro nunca cambia — siempre dice eso. Es `system-prompt.md` el que evoluciona con el sistema.
 
 ### 4. Verificar que funciona
 
@@ -133,23 +138,24 @@ El sistema ejecutará el protocolo de respaldo completo — revisa todos los arc
 
 | Archivo | Versión | Última modificación |
 |---|---|---|
-| `fulgurar.md` | v3.0 | 2026-03-19 |
-| `protocolo-bodega.md` | v1.5 | 2026-03-19 |
-| `protocolo-astillero.md` | v1.7 | 2026-03-19 |
+| `fulgurar.md` | v3.1 | 2026-03-20 |
+| `protocolo-umbral.md` | v1.2 | 2026-03-20 |
+| `protocolo-bodega.md` | v1.6 | 2026-03-20 |
+| `protocolo-astillero.md` | v1.8 | 2026-03-20 |
 | `protocolo-escuadra.md` | v1.1 | 2026-03-19 |
 | `protocolo-jardin.md` | v1.1 | 2026-03-19 |
 | `protocolo-prisma.md` | v1.1 | 2026-03-19 |
 | `protocolo-oraculo.md` | v1.2 | 2026-03-19 |
 | `protocolo-telegrafo.md` | v1.0 | 2026-03-19 |
-| `protocolo-taller.md` | v1.1 | 2026-03-19 |
-| `protocolo-respaldo.md` | v1.9 | 2026-03-19 |
+| `protocolo-taller.md` | v1.2 | 2026-03-20 |
+| `protocolo-respaldo.md` | v2.0 | 2026-03-20 |
 | `bodega-header.html` | v1.1 | 2026-03-13 |
 | `astillero-header-nave.html` | v1.1 | 2026-03-13 |
 | `astillero-header-flota.html` | v1.2 | 2026-03-15 |
 | `escuadra-header.html` | v1.0 | 2026-03-16 |
 | `jardin-header.html` | v1.0 | 2026-03-16 |
 | `telegrafo-header.html` | v1.0 | 2026-03-19 |
-| `system-prompt.md` | v4.3 | 2026-03-19 |
+| `system-prompt.md` | v4.4 | 2026-03-20 |
 | `estado-desarrollo.md` | v0.4 | 2026-03-19 |
 | `corpus-biblioteca.md` | v0.4 | 2026-03-19 |
 
@@ -163,8 +169,10 @@ Comenzó como el **Protocolo Θ∆** — un *reading companion* que acompañaba 
 
 El **Prisma** emergió de una pregunta que los talleres anteriores no podían responder solos: ¿qué hace que una obra sea grande? La **Biblioteca** nació para acumular lo que el Prisma produce. El **Telégrafo** llegó para escuchar el canal antes de leer el mensaje — entropía, estados, topología de red. El **Oráculo** para integrar todo y producir la convergencia que ningún taller puede producir solo.
 
+El **Umbral** llegó para resolver un problema de orientación: los productos de los talleres asumían que el lector conocía el corpus. El Umbral presenta el corpus antes de que cualquier taller lo procese — carta de presentación, personajes, estructura, contexto, temas — y produce la portada del paquete.
+
 Cada capa respondió a una limitación del estado anterior. El sistema crece mientras haya corpus que resistan el fuego.
 
 ---
 
-*Fulgurar · Consume letras. Produce luz. · Respaldo #10 · 2026-03-19*
+*Fulgurar · Consume letras. Produce luz. · Respaldo #12 · 2026-03-20*
