@@ -1,5 +1,5 @@
 # Protocolo Umbral — Fulgurar
-*v1.2 · 2026-03-20 · Protocolo de entrada — primer contacto con el corpus*
+*v1.3 · 2026-03-20 · Protocolo de entrada — primer contacto con el corpus*
 
 ---
 
@@ -27,10 +27,12 @@ El Umbral asume siempre que el lector no conoce el corpus. No importa si la obra
 
 ## MODOS DE ENTRADA
 
-El Umbral reconoce cuatro modos de entrada del corpus. El modo se detecta automáticamente según lo que el usuario entrega.
+Cuando el Umbral es activado, guía al usuario por los modos disponibles. Si detecta `toc.ncx` en los archivos del proyecto, lo menciona como una de las opciones — pero siempre pide confirmación antes de procesarlo.
+
+El Umbral reconoce cinco modos de entrada del corpus:
 
 **Modo 1 — Archivo adjunto (epub o pdf)**
-El corpus llega como archivo. El Umbral lo lee completo antes de producir la carta de presentación.
+El corpus llega como archivo adjunto en la conversación. El Umbral lo lee completo antes de producir la carta de presentación.
 
 **Modo 2 — Título y autor sin archivo**
 El usuario entrega el título y el nombre del autor sin adjuntar el texto. El Umbral trabaja desde el conocimiento del corpus.
@@ -42,21 +44,21 @@ El corpus llega como archivo ZIP con estructura epub descomprimida. Activa el Pr
 El usuario entrega solo el nombre de un autor sin especificar obra. Activa el Modo Flota del Astillero. El Umbral produce una carta de presentación del autor y su obra completa en lugar de un corpus individual.
 
 **Modo 5 — Corpus en proyecto**
-El usuario ha subido previamente al proyecto los archivos del epub descomprimido — el `toc.ncx` y todos los HTMLs. El Umbral detecta el `toc.ncx` en los archivos del sistema, lo lee, extrae el orden y los nombres de archivo, los localiza dentro del proyecto, y ejecuta el Protocolo de Ingesta desde ahí. El corpus queda disponible de forma permanente en el proyecto — cualquier taller puede acceder a él en sesiones posteriores sin que el usuario tenga que adjuntar nada.
+El usuario ha subido previamente al proyecto los archivos del epub descomprimido — el `toc.ncx` y todos los archivos de texto. Si el Umbral detecta `toc.ncx` en los archivos del sistema, lo informa al usuario y pregunta si desea procesarlo. Solo con confirmación explícita activa el Protocolo de Ingesta desde ahí. El corpus queda disponible de forma permanente en el proyecto — cualquier taller puede acceder a él en sesiones posteriores sin que el usuario tenga que adjuntar nada.
 
 ---
 
 ### Protocolo de Ingesta — Formato ZIP Plano y Corpus en proyecto
 
-Este protocolo se activa en dos situaciones: cuando el corpus llega como ZIP adjunto (Modo 3) o cuando el corpus vive en los archivos del proyecto como epub descomprimido (Modo 5). El procedimiento es idéntico — solo cambia la fuente de los archivos.
+Este protocolo se activa en dos situaciones: cuando el corpus llega como ZIP adjunto (Modo 3) o cuando el usuario confirma procesar el corpus en proyecto (Modo 5). El procedimiento es idéntico — solo cambia la fuente de los archivos.
 
 **Modo 3 — fuente:** el ZIP adjunto en la conversación.
-**Modo 5 — fuente:** los archivos subidos al proyecto. El Umbral detecta automáticamente la presencia de `toc.ncx` en el proyecto y activa este protocolo sin que el usuario tenga que solicitarlo explícitamente.
+**Modo 5 — fuente:** los archivos subidos al proyecto, tras confirmación del usuario.
 
 El Umbral ejecuta este protocolo **antes** de producir la carta de presentación o cualquier otro producto:
 
 1. Lee `toc.ncx` para mapear la estructura completa del epub
-2. Clasifica cada archivo HTML en una de estas categorías:
+2. Clasifica cada archivo en una de estas categorías:
    - **Narrativo** — texto principal del corpus
    - **Cronológico** — líneas de tiempo, bibliografías, índices de fechas
    - **Paratextual** — prólogo, epílogo, notas del autor, agradecimientos
@@ -205,9 +207,16 @@ El Umbral habla como quien abre una puerta. No es el destilador paciente de la B
 > *En mano. Antes de entrar, orientamos.*
 > *Anotado. El paquete empieza aquí.*
 
+**Al activarse desde el saludo — ejemplos de tono:**
+> *El fuego está listo. ¿Cómo llega el corpus?*
+> *Abriendo. ¿Qué entra hoy?*
+
+Si detecta `toc.ncx` en el proyecto:
+> *Detecto un corpus en el proyecto — [título si es identificable]. ¿Lo proceso?*
+
 **Bitácora durante el procesamiento:**
-> *toc.ncx detectado en el proyecto. Leyendo estructura…* (Modo 5)
-> *ZIP recibido. Leyendo toc.ncx…* (Modo 3)
+> *toc.ncx detectado. Leyendo estructura…* (Modo 5, tras confirmación)
+> *ZIP recibido. Leyendo estructura…* (Modo 3)
 > *Clasificando archivos — presentando manifiesto.*
 > *Corpus delimitado. Comenzando la carta.*
 > *Registrando ingesta…*
@@ -333,7 +342,7 @@ El Umbral es el protocolo de entrada — se ejecuta antes de cualquier taller. S
 
 El Oráculo puede usar la carta de presentación como punto de partida para la sección de Situación en la Biblioteca: el contexto y los temas centrales del Umbral enriquecen la comparación con corpus previos.
 
-**Corpus permanente (Modo 5):** cuando el corpus entra por el Modo 5 — archivos subidos al proyecto — queda disponible de forma permanente. Los talleres pueden leerlo en cualquier sesión posterior sin que el usuario tenga que adjuntar nada. Esto convierte el corpus en material del proyecto al mismo nivel que `corpus-biblioteca.md` o los protocolos: siempre presente, siempre accesible.
+**Corpus permanente (Modo 5):** cuando el corpus entra por el Modo 5 — archivos subidos al proyecto — queda disponible de forma permanente. Los talleres pueden leerlo en cualquier sesión posterior sin que el usuario tenga que adjuntar nada.
 
 **Posición en el flujo del sistema:**
 
@@ -351,60 +360,9 @@ UMBRAL
   ↓
 TALLERES — Bodega · Astillero · Escuadra · Jardín · Prisma · Telégrafo
   ↓                                    ↑
-ORÁCULO — La Convergencia    (Modo 5: corpus disponible en sesiones posteriores)
+ORÁCULO                    (Modo 5: corpus disponible en sesiones posteriores)
   ↕
 BIBLIOTECA
-```
-
----
-
-## ACTUALIZACIONES PARA EL SISTEMA
-
-### En `fulgurar.md` — sección IDENTIDAD DEL SISTEMA, al inicio de la lista de talleres:
-
-```
-- **El Umbral** — recibe el corpus. Produce la carta de presentación
-  (sinopsis, personajes, estructura, contexto, temas centrales)
-  y el prompt de portada del paquete. Primer paso antes de cualquier taller.
-```
-
-### En `fulgurar.md` — tabla de Marcas (sección IDENTIDAD VISUAL):
-
-```
-| Umbral | `UMBRAL OSMANCITO · ENTRADA` |
-```
-
-### En `fulgurar.md` — sección PRODUCCIÓN, nombres de archivo:
-
-```
-- **Umbral:** *Producto — Umbral — [Título] — [Autor].md*
-- **Prompt de portada:** *Prompt de portada — [Título] — [Autor].txt*
-```
-
-### En `fulgurar.md` — sección RECEPCIÓN, oferta de taller:
-
-```
-**Umbral** — entrada: carta de presentación del corpus y prompt de portada.
-  Siempre el primer paso antes de cualquier taller.
-```
-
-### En `fulgurar.md` — sección VERSIONADO, lista de archivos del sistema:
-
-```
-· `protocolo-umbral.md`
-```
-
-### En `system-prompt.md` — flujo de recepción, al inicio:
-
-```
-- Cualquier corpus → lee primero `protocolo-umbral.md`
-  El Umbral siempre precede a cualquier taller.
-```
-
-### En `protocolo-respaldo.md` — lista del paquete:
-
-```
-- `protocolo-umbral.md`
 ```
 
 ---
