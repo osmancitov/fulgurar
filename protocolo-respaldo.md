@@ -1,5 +1,5 @@
 # Protocolo de Respaldo — Fulgurar
-*v2.2 · 2026-03-20 · Protocolo de generación de respaldos del sistema*
+*v2.3 · 2026-03-21 · Protocolo de generación de respaldos del sistema*
 
 ---
 
@@ -16,6 +16,7 @@ El respaldo habla como un archivero metódico: preciso, sin omisiones, sin drama
 > *Generando respaldo. Esto tarda un momento.*
 
 **Bitácora durante el procesamiento:**
+> *Actualizando parametros-globales.md…*
 > *Revisando archivos operativos…*
 > *Actualizando [nombre de archivo]…*
 > *Revisando system-prompt.md…*
@@ -30,8 +31,11 @@ Generación libre dentro del registro — no frases fijas.
 
 Cuando el usuario solicite un juego completo de archivos para respaldo, ejecutar en este orden:
 
-**1. Revisar y actualizar archivos operativos**
-- `fulgurar.md` — verificar vocabulario, identidad visual, ficha del corpus, flujos. Actualizar versión.
+**1. Actualizar `parametros-globales.md` primero**
+Antes que cualquier otro archivo — versión global, número de respaldo, fecha, corpus procesados, hallazgos, lucidez. Es la fuente de verdad del sistema.
+
+**2. Revisar y actualizar archivos operativos**
+- `matriz.md` — verificar vocabulario, identidad visual, ficha del corpus, flujos. Actualizar versión solo si hubo cambios estructurales.
 - `protocolo-umbral.md` — verificar modos de entrada, protocolo ZIP, carta de presentación, prompt de portada. Actualizar versión si hubo cambios.
 - `protocolo-bodega.md` — verificar criterios, taxonomía, prompts. Actualizar versión si hubo cambios.
 - `protocolo-astillero.md` — verificar arquetipos, estratos, prompts. Actualizar versión si hubo cambios.
@@ -41,21 +45,22 @@ Cuando el usuario solicite un juego completo de archivos para respaldo, ejecutar
 - `protocolo-taller.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
 - `protocolo-respaldo.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
 - `protocolo-prisma.md` — verificar algoritmo, geometrías, formato. Actualizar versión si hubo cambios.
-- `protocolo-oraculo.md` — verificar los cuatro momentos, operaciones, calibración. Actualizar versión si hubo cambios.
+- `protocolo-oraculo.md` — verificar las tres operaciones, calibración. Actualizar versión si hubo cambios.
 - `corpus-biblioteca.md` — verificar que todos los corpus procesados están documentados. Actualizar siempre.
 
-**2. Revisar y actualizar el system prompt**
+**3. Revisar y actualizar el system prompt**
 Evaluar si los cambios acumulados en la sesión permiten simplificarlo, mejorarlo o corregirlo. Actualizar versión.
 
-**3. Revisar y actualizar archivos de documentación**
-- `README.md` — revisar sección por sección: descripción del proyecto, cómo funciona, árbol de archivos con descripciones, instrucciones de instalación, tabla de versiones. Reescribir donde sea necesario.
+**4. Revisar y actualizar archivos de documentación**
+- `README.md` — revisar sección por sección. Copiar valores actuales desde `parametros-globales.md`. Reescribir donde sea necesario.
 - `CHANGELOG.md` — determinar el número de este respaldo contando las entradas con encabezado `## RESPALDO #N` en el historial existente y sumando uno. Agregar entrada completa con ese número y la fecha actual, archivo por archivo, con todos los cambios de la sesión. Orden inverso — lo más reciente arriba. Formato del encabezado: `## RESPALDO #[N] — [FECHA]`
 
-**4. Entregar el paquete completo**
+**5. Entregar el paquete completo**
 El paquete incluye **todos** los archivos del sistema sin excepción — los modificados en esta sesión y los que no tuvieron cambios. Ver regla absoluta al inicio de este protocolo.
 
 Lista completa de archivos del paquete:
-- `fulgurar.md`
+- `parametros-globales.md`
+- `matriz.md`
 - `protocolo-umbral.md`
 - `protocolo-bodega.md`
 - `protocolo-astillero.md`

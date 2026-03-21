@@ -1,3 +1,94 @@
+## RESPALDO #16 — 2026-03-21
+
+### parametros-globales.md — archivo nuevo
+- Fuente de verdad del sistema — valores actuales centralizados en un solo archivo
+- Parámetros: nombre del sistema, lema, versión global, respaldo, fecha, corpus procesados, hallazgos, talleres activos, lucidez, URL proyecto, URL repositorio
+- Se actualiza primero en cada respaldo, antes que cualquier otro archivo
+
+### matriz.md — antes fulgurar.md
+- Renombrado de `fulgurar.md` a `matriz.md` — mismo contenido, versión continúa
+- v3.3 → v3.4
+- Las cuatro operaciones del Oráculo → tres: Observar · Transformar · Producir
+- "Potencia nominal 45%" → "Lucidez: 48%"
+- Conteo de talleres y lucidez referencian `parametros-globales.md`
+- Artículos eliminados de nombres de talleres en oferta — Bodega · Astillero · Escuadra · Jardín · Prisma · Telégrafo · Oráculo
+- Combinaciones eliminado de la oferta de talleres
+- INVARIANTES: conteo de talleres apunta a `parametros-globales.md`
+- VERSIONADO: lista de archivos actualizada — `matriz.md` · `parametros-globales.md` añadido · `fulgurar.md` eliminado
+
+### protocolo-oraculo.md
+- v1.2 → v1.3
+- Las cuatro operaciones → tres: Observar · Transformar · Producir
+- Verificar y Corregir unificados en Observar
+- Traducir → Transformar · Generar → Producir
+- Pseudocódigo actualizado para las tres operaciones
+- POTENCIA NOMINAL → LUCIDEZ en vocabulario y todas las instancias
+- Estado actual referencia `parametros-globales.md`
+- Tabla de confianza actualizada a 9 corpus · H7 añadido
+
+### system-prompt.md
+- v4.6 → v4.7
+- `fulgurar.md` → `matriz.md`
+
+### protocolo-respaldo.md
+- v2.2 → v2.3
+- `parametros-globales.md` añadido como Paso 1 — primer archivo a actualizar en todo respaldo
+- `fulgurar.md` → `matriz.md` en lista del paquete y revisión
+- 15 → 16 archivos en el paquete
+
+### corpus-biblioteca.md
+- v0.5 → v0.6
+- Sección *Sobre la granularidad* eliminada
+- Sección *Sobre la estimación manual* eliminada
+- Sección *Próximos corpus* movida al final — después de Notas metodológicas
+
+### README.md
+- Fulgurar v1.6 en título y footer
+- Índice añadido al inicio
+- Artículos eliminados de nombres de talleres en sección Cómo funciona
+- Sección *Biblioteca* añadida después de Arquitectura — tabla de corpus procesados, próximos corpus, enlace a biblioteca completa
+- Sección *Versiones actuales* eliminada
+- Links integrados en árbol de Archivos del sistema
+- `fulgurar.md` → `matriz.md` en árbol · `parametros-globales.md` añadido al árbol
+- "En construcción · potencia 48%" → "Lucidez: 48%"
+- Tres operaciones del Oráculo: Integrar · Observar · Transformar · Producir
+- "Indicador: potencia al 65%" → "Indicador: lucidez al 65%"
+- Footer: *Fulgurar v1.6 · Respaldo #16 · 2026-03-21*
+
+---
+
+
+
+### corpus-biblioteca.md
+**v0.4 → v0.5**
+- Noveno corpus procesado: El mito de Sísifo — Albert Camus (1942) · ensayo filosófico · convergencia completa
+- Primer corpus con convergencia completa de los seis talleres (Umbral · Bodega · Astillero · Escuadra · Jardín · Prisma · Telégrafo) más el Oráculo
+- Variables formales computacionales directas: entropía H=9.027 bits/token, riqueza léxica 0.142, red small-world clustering 0.681
+- Tabla de firmas geométricas: columna de El mito de Sísifo añadida
+- Nota metodológica sobre la mayor precisión de las variables de este corpus respecto a los anteriores
+- Ficha individual: El mito de Sísifo — firma en prosa, concepto de mayor curvatura, anti-estrella semántica, agujeros topológicos, hallazgo del Telégrafo, hallazgo del autómata, La Convergencia
+- H1 actualizado: 9/9 · cuarto tipo de cierre añadido (performativo)
+- H2 reformulado: el umbral aplica a la curvatura del concepto dominante, no a la media. Tres rutas a la grandeza por curvatura documentadas.
+- H3 ampliado: séptima estrategia añadida — concentración estática con anti-estrella semántica (El mito de Sísifo)
+- H4 actualizado: 9/9 · primera medición computacional directa de la integración (red small-world)
+- H5 actualizado: 3/9 · nueva variante de canal documentada
+- H6 actualizado: 2/9 · dos variantes documentadas (exclusión de protagonista / exclusión de concepto)
+- H7 nuevo y provisional: tensión polar como mecanismo de apertura · 1/9
+- Patrones emergentes: sección sobre red small-world añadida
+- Próximos corpus: El extranjero sube a prioridad alta
+- Conteo: 8 corpus → 9 corpus · 6 hallazgos → 7 hallazgos
+
+### README.md
+- Diagrama de arquitectura: 8 corpus → 9 corpus · 6 hallazgos → 7 hallazgos
+- Oráculo: potencia 45% → 48%
+- Horizonte 1: hipótesis Telégrafo sobre small-world validada por primera vez con El mito de Sísifo
+- Horizonte 2: primera convergencia completa ejecutada documentada
+- Árbol de archivos: corpus-biblioteca.md descripción actualizada
+- Tabla de versiones: corpus-biblioteca.md v0.4 → v0.5 · 2026-03-20
+- Footer: Respaldo #14 → Respaldo #15
+
+---
+
 ## RESPALDO #14 — 2026-03-20
 
 ### estado-desarrollo.md — eliminado

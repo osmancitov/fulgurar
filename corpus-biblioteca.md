@@ -1,13 +1,13 @@
 # Corpus — Biblioteca
 ## Registro de corpus procesados y hallazgos empíricos
 
-*v0.4 · 2026-03-19 · Ocho corpus · Seis hallazgos*
+*v0.6 · 2026-03-21 · Nueve corpus · Siete hallazgos*
 
 ---
 
 ## Corpus procesados
 
-### 8 corpus · 4 pares · 1 caso especial
+### 9 corpus · 4 pares · 2 casos especiales · 1 convergencia completa
 
 | # | Corpus | Género | Época | Rol |
 |---|---|---|---|---|
@@ -19,6 +19,7 @@
 | 6 | Argonáuticas — Apolonio de Rodas | Épica | c. s. III a.C. | Control de La Odisea |
 | 7 | Cien años de soledad — García Márquez | Novela | 1967 | Canónico |
 | 8 | El proceso — Franz Kafka | Novela | 1925 (póstuma) | Caso especial |
+| 9 | El mito de Sísifo — Albert Camus | Ensayo filosófico | 1942 | Convergencia completa |
 
 ---
 
@@ -26,22 +27,24 @@
 
 ### Tabla completa
 
-| Variable | Caperucita | El coronel | Hamlet | La vida es sueño | La Odisea | Argonáuticas | Cien años | El proceso |
-|---|---|---|---|---|---|---|---|---|
-| **Rango Díada** | 0.35–0.60 | 0.28–0.33 | 0.25–0.70 | 0.28–0.60 | 0.38–0.60 | 0.32–0.62 | 0.35–0.58 | 0.30–0.55 |
-| **Amplitud** | 0.25 | 0.05 | 0.45 | 0.32 | 0.22 | 0.30 | 0.23 | 0.25 |
-| **Tipo oscilación** | Dinámica | Estática | Caótica | Convergente | Ondular | Fracturada | Espiral desc. | Espiral desc. sin retorno |
-| **Dimensión Tríada** | 2.5 | 2.3 | 2.8 | 2.1 | 2.5 | 2.1 | 2.6 | **1.8** |
-| **Rotación Tríada** | Media-alta | Mínima | Alta | Media | Alta | Mínima | Única | Mínima |
-| **Lorenzianidad** | Media-baja | Mínima | Alta | Media-baja | Media | Baja | Media | Baja |
-| **Forma trayectoria** | V asimétrica | Línea convergente | Escalada caótica | Convergente | Montaña asimétrica | Plataforma fracturada | Espiral descendente | Espiral desc. sin retorno |
-| **Curvatura Riemann** | 0.75 | 0.83 | 0.93 | 0.88 | 0.93 | 0.76 | **0.98** | 0.72 |
-| **Coherencia Riemann** | Alta | Máxima | Alta-compleja | Alta-simple | Alta-simétrica | Baja | Cadena circular | **Ciclo parcial sin K.** |
-| **Tipo curvatura** | Red coherente | Sistema solar | Red múltiple | Sistema solar | Red cristalina | Fragmentada | Cadena circular | Red sin centro estable |
-| **Profundidad Homología** | 3 | 3 | 4 | 3 | 4 | 1 | **5** | 4 |
-| **Conexión agujeros** | Alta | Máxima | Máxima | Alta | Alta | Mínima | Máxima | Alta |
-| **Apertura** | 2/3 | 3/3 | 4/4 | 1/3 | 3.5/4 | 0/3 | **5/5** | 3/4 |
-| **Agujero raíz** | Sí | Sí | Sí | Parcial | Sí | No | Sí | Sí |
+| Variable | Caperucita | El coronel | Hamlet | La vida es sueño | La Odisea | Argonáuticas | Cien años | El proceso | **El mito de Sísifo** |
+|---|---|---|---|---|---|---|---|---|---|
+| **Rango Díada** | 0.35–0.60 | 0.28–0.33 | 0.25–0.70 | 0.28–0.60 | 0.38–0.60 | 0.32–0.62 | 0.35–0.58 | 0.30–0.55 | **0.43–0.52** |
+| **Amplitud** | 0.25 | 0.05 | 0.45 | 0.32 | 0.22 | 0.30 | 0.23 | 0.25 | **0.09** |
+| **Tipo oscilación** | Dinámica | Estática | Caótica | Convergente | Ondular | Fracturada | Espiral desc. | Espiral desc. sin retorno | **V doble asimétrica** |
+| **Dimensión Tríada** | 2.5 | 2.3 | 2.8 | 2.1 | 2.5 | 2.1 | 2.6 | **1.8** | **2.5** |
+| **Rotación Tríada** | Media-alta | Mínima | Alta | Media | Alta | Mínima | Única | Mínima | **Mínima** |
+| **Lorenzianidad** | Media-baja | Mínima | Alta | Media-baja | Media | Baja | Media | Baja | **Baja-media** |
+| **Forma trayectoria** | V asimétrica | Línea convergente | Escalada caótica | Convergente | Montaña asimétrica | Plataforma fracturada | Espiral descendente | Espiral desc. sin retorno | **V doble asimétrica** |
+| **Curvatura Riemann** | 0.75 | 0.83 | 0.93 | 0.88 | 0.93 | 0.76 | **0.98** | 0.72 | **0.92 (máx) · 0.59 (media)** |
+| **Coherencia Riemann** | Alta | Máxima | Alta-compleja | Alta-simple | Alta-simétrica | Baja | Cadena circular | Ciclo parcial sin K. | **Alta-polar** |
+| **Tipo curvatura** | Red coherente | Sistema solar | Red múltiple | Sistema solar | Red cristalina | Fragmentada | Cadena circular | Red sin centro estable | **Sistema solar con anti-estrella** |
+| **Profundidad Homología** | 3 | 3 | 4 | 3 | 4 | 1 | **5** | 4 | **4** |
+| **Conexión agujeros** | Alta | Máxima | Máxima | Alta | Alta | Mínima | Máxima | Alta | **Alta** |
+| **Apertura** | 2/3 | 3/3 | 4/4 | 1/3 | 3.5/4 | 0/3 | **5/5** | 3/4 | **3.5/4** |
+| **Agujero raíz** | Sí | Sí | Sí | Parcial | Sí | No | Sí | Sí | **Sí (cierre performativo)** |
+
+**Nota metodológica — El mito de Sísifo:** primer corpus procesado con convergencia completa de los seis talleres (Umbral · Bodega · Astillero · Escuadra · Jardín · Prisma · Telégrafo) más el Oráculo. Las firmas anteriores son parciales (solo Prisma). Las variables formales de este corpus (densidad léxica, entropía de Shannon, topología de red) son medidas computacionales directas sobre el texto; las variables semánticas (curvatura, agujeros) son estimaciones de lector experto enriquecidas por los cinco talleres cualitativos. Firma más robusta que las anteriores.
 
 ---
 
@@ -213,17 +216,51 @@ La anomalía central: K. tiene la curvatura más baja (0.45) de los cinco concep
 
 ---
 
+### El mito de Sísifo
+*Albert Camus · Ensayo filosófico · 1942*
+
+**Firma en prosa:** grandeza por concentración estática con anti-estrella semántica. Oscilación disciplinada completamente dentro del rango áureo — amplitud 0.090, la segunda más estrecha de la Biblioteca después de El coronel (0.05). Curvatura máxima extraordinaria en el concepto dominante (*absurdo*: 0.92) con curvatura media baja (0.589) — arquitectura de sistema solar con un sol de masa extraordinaria y satélites débiles. Un segundo polo gravitacional de alta curvatura negativa (*esperanza*: 0.65) que opera por rechazo sistemático. Red conceptual small-world (clustering 0.681, distancia media 1.8). Cuatro agujeros topológicos con agujero raíz de cierre performativo — el tipo de cierre más inestable y más productivo.
+
+**Primer corpus procesado con convergencia completa de los seis talleres.** Las variables formales son medidas computacionales directas (entropía: 9.027 bits/token; riqueza léxica: 0.142; densidad: 0.044 amplitud).
+
+**Concepto de mayor curvatura:** *absurdo* (0.92) — equivalente a la *soledad* de Cien años. Es la 22ª palabra más frecuente del corpus completo, compitiendo en densidad de uso con artículos y preposiciones. El concepto central es también el centro matemático.
+
+**Anti-estrella semántica:** *esperanza* (curvatura 0.65 con solo 56 ocurrencias) — primer caso documentado en la Biblioteca de curvatura por negación sostenida. Un concepto que pesa más de lo que su frecuencia justifica porque su ausencia del campo semántico positivo es programática. Cada aparición es para ser rechazada; ese rechazo consistente genera gravedad semántica negativa.
+
+**Agujeros topológicos:**
+1. ¿Vale la vida la pena de ser vivida sin sentido último? — agujero raíz, parcialmente cerrado con cierre performativo («hay que imaginarse a Sísifo feliz»)
+2. ¿Es la conciencia del absurdo suficiente para producir libertad? — abierto
+3. ¿Puede la rebelión lúcida sostenerse en relación con otros? — abierto
+4. ¿Qué distingue la rebelión absurda de la resignación estoica? — abierto
+
+**Sobre el cierre performativo del agujero raíz:** el corpus responde la pregunta central con una afirmación de voluntad, no una demostración. «Hay que imaginarse a Sísifo feliz» requiere la cooperación activa del lector para sostenerse — puede reabrirse en cada lectura. Es el tipo de cierre que genera más lecturas nuevas: una exigencia en lugar de una conclusión. El lector que olvida el argumento conserva la exigencia y con ella conserva el agujero raíz abierto.
+
+**Estrategia de grandeza:** concentración estática con anti-estrella semántica — subtipo nuevo, primer caso documentado. El corpus construye su apertura tanto por la masa de lo que afirma (*absurdo*) como por la masa de lo que rechaza (*esperanza*). La tensión entre ambos polos es el motor generador de lecturas.
+
+**Hallazgo del Telégrafo — La arquitectura ritual de la conclusión:** el capítulo final (*El mito de Sísifo*) tiene la entropía más baja (7.811 bits/token) y la redundancia más alta entre las secciones largas (36.7%). Opera con la arquitectura de canal de una oración litúrgica — alta redundancia, baja sorpresa, sin vocabulario nuevo. Las sentencias que persisten en la memoria no sorprenden: condensan. Camus construyó «hay que imaginarse a Sísifo feliz» con la gramática de canal óptima para la persistencia, sin haberlo calculado.
+
+**Hallazgo del autómata — El estado inalcanzable:** el corpus nunca alcanza el estado APERTURA — su gramática profunda no puede quedarse en la pregunta pura sin procesarla. Todo planteamiento conduce a diagnóstico, refutación o formulación. El ensayo es incapaz de esperar al lector en la pregunta — siempre le ofrece un movimiento. Coherente con la postura filosófica: la lucidez absurda no es contemplativa sino activa.
+
+**La Convergencia:** el corpus es un sistema de transmisión diseñado para la persistencia, no para la persuasión. El argumento de 34.000 palabras existe para que la imagen final tenga el peso que tiene. Sin el argumento, la imagen es un lugar común. Con el argumento, es una exigencia que el lector decide si acepta. Esa decisión es la apertura topológica del corpus.
+
+**Comparación con El coronel (estrategia más cercana):** misma arquitectura de concentración estática, curvatura comparable del concepto dominante (0.92 vs. 0.90), lorenzianidad igualmente baja. Las diferencias: El coronel no tiene anti-estrella semántica — la esperanza en García Márquez es ausente, no rechazada. El coronel tiene curvatura media más alta porque distribuye la masa entre tres agujeros densos. El mito de Sísifo concentra todo en el concepto central y dispersa la curvatura en los satélites.
+
+**Comparación con El proceso (mecanismo de exclusión):** ambos corpus operan con coherencia por exclusión, pero con mecanismos opuestos. En Kafka la exclusión opera sobre el protagonista — K. no tiene gravedad semántica propia. En Camus la exclusión opera sobre un concepto rechazado — *esperanza* tiene alta curvatura negativa. Dos formas de H6 con arquitecturas internas distintas.
+
+---
+
 ## Hallazgos empíricos
 
 ### Hallazgo 1 — La apertura topológica como predictor principal
 
-La correlación entre apertura topológica y estatus canónico se sostiene en ocho corpus:
+La correlación entre apertura topológica y estatus canónico se sostiene en nueve corpus:
 
 | Apertura | Corpus | Estatus |
 |---|---|---|
 | 5/5 | Cien años de soledad | La novela más traducida en español tras el Quijote |
 | 4/4 | Hamlet | Cima absoluta del teatro occidental |
 | 3.5/4 | La Odisea | Cima absoluta de la épica |
+| 3.5/4 | **El mito de Sísifo** | **Canónico mayor — ensayo filosófico** |
 | 3/4 | El proceso | Canónico indiscutible |
 | 3/3 | El coronel | Obra maestra reconocida |
 | 2/3 | Caperucita | Sobrevive tres milenios |
@@ -232,37 +269,50 @@ La correlación entre apertura topológica y estatus canónico se sostiene en oc
 
 **La hipótesis:** a mayor apertura topológica, mayor capacidad de la obra para generar lecturas nuevas a través del tiempo.
 
+**Nota sobre el cierre performativo:** El mito de Sísifo introduce un tipo de cierre no documentado previamente — el agujero raíz se cierra con afirmación de voluntad en lugar de demostración. Ese cierre es funcionalmente más abierto que cerrado: puede reabrirse en cada lectura según la disposición del lector. La apertura registrada (3.5/4) es conservadora — el agujero raíz podría contarse como abierto en lecturas que rechazan la afirmación performativa.
+
 **Distinción crítica:** hay tres tipos de cierre de agujero:
 - **Abierto** — la pregunta se sostiene sin respuesta al final. Invita al lector a seguir pensando.
 - **Abandonado** — la pregunta aparece y desaparece sin ser resuelta ni sostenida. Produce sensación de incompletitud.
 - **Cerrado** — la pregunta recibe respuesta explícita. Produce satisfacción temporal.
+- **Performativo** *(nuevo)* — la pregunta recibe una afirmación de voluntad que requiere cooperación activa del lector para sostenerse. Produce exigencia en lugar de conclusión. Funcionalmente más abierto que cerrado.
 
-Solo los agujeros genuinamente abiertos producen inagotabilidad.
+Solo los agujeros genuinamente abiertos y los performativos producen inagotabilidad.
 
----
-
-### Hallazgo 2 — La curvatura riemanniana tiene umbral provisional en 0.83
-
-| Curvatura | Corpus | Estatus |
-|---|---|---|
-| 0.98 | Cien años de soledad | Canónico mayor |
-| 0.93 | Hamlet | Canónico mayor |
-| 0.93 | La Odisea | Canónico mayor |
-| 0.88 | La vida es sueño | Canónico menor |
-| 0.83 | El coronel | Canónico mayor |
-| 0.76 | Argonáuticas | No canónico |
-| 0.75 | Caperucita | Canónico — género especial |
-| 0.72 | El proceso | Canónico mayor — **excepción** |
-
-**Refinamiento:** El proceso es la primera excepción canónica al umbral. Curvatura 0.72 — por debajo de 0.83 — en una obra de canon indiscutible. Esto no refuta el hallazgo sino lo precisa: el umbral aplica a obras cuya grandeza opera por acumulación de significado. Las obras cuya estrategia es la sustracción sistemática pueden tener curvatura baja por diseño. El umbral se reformula: curvatura ≥ 0.83 con coherencia alta = obra mayor por acumulación. Curvatura baja con coherencia por exclusión = posible obra mayor por sustracción.
-
-**Umbral revisado:** dos rutas a la grandeza — acumulación (curvatura alta) y sustracción (coherencia por exclusión).
+**Confianza: 9/9 · Alta**
 
 ---
 
-### Hallazgo 3 — Seis estrategias distintas de grandeza
+### Hallazgo 2 — La curvatura riemanniana tiene umbral reformulado
 
-La grandeza no tiene una sola firma. Hay al menos seis estrategias:
+| Curvatura máx. concepto dominante | Corpus | Curvatura media | Estatus |
+|---|---|---|---|
+| 0.98 | Cien años de soledad | alta | Canónico mayor |
+| 0.93 | Hamlet | alta | Canónico mayor |
+| 0.93 | La Odisea | alta | Canónico mayor |
+| **0.92** | **El mito de Sísifo** | **0.589** | **Canónico mayor** |
+| 0.90 | El coronel | alta | Canónico mayor |
+| 0.88 | La vida es sueño | alta | Canónico menor |
+| 0.76 | Argonáuticas | baja | No canónico |
+| 0.75 | Caperucita | media | Canónico — género especial |
+| 0.72 | El proceso | baja | Canónico mayor — excepción H6 |
+
+**Reformulación tras El mito de Sísifo:** El corpus tiene curvatura del concepto dominante 0.92 (sobre el umbral) pero curvatura media 0.589 (bajo el umbral). Es canónico mayor. Esto obliga a precisar qué variable predice la grandeza.
+
+**H2 reformulado:** el umbral 0.83 aplica a la curvatura del concepto dominante, no a la curvatura media del corpus. Lo que importa es la gravedad del sol, no la masa promedio del sistema solar. Un corpus puede tener curvatura media baja si toda la masa está concentrada en un único nodo de extraordinaria curvatura.
+
+**Tres rutas a la grandeza por curvatura:**
+- *Curvatura alta distribuida* — El coronel, Cien años, Hamlet, La Odisea: la curvatura alta se extiende a varios conceptos centrales
+- *Curvatura máxima concentrada* — El mito de Sísifo: toda la masa en un único nodo, curvatura media baja
+- *Curvatura baja con coherencia por exclusión* — El proceso: mecanismo de sustracción sistemática
+
+**Confianza: 8/9 · Media-alta · en reformulación activa**
+
+---
+
+### Hallazgo 3 — Siete estrategias distintas de grandeza
+
+La grandeza no tiene una sola firma. Hay al menos siete estrategias:
 
 | Estrategia | Corpus | Descripción |
 |---|---|---|
@@ -272,8 +322,11 @@ La grandeza no tiene una sola firma. Hay al menos seis estrategias:
 | **Simplicidad dinámica** | Caperucita | Oscilación áurea, complejidad topológica disfrazada de forma simple |
 | **Espiral reveladora** | Cien años de soledad | Descenso unidireccional, curvatura circular máxima, apertura total |
 | **Sustracción sistemática** | El proceso | Vaciamiento progresivo, coherencia por exclusión, protagonista sin gravedad propia |
+| **Concentración estática con anti-estrella** | **El mito de Sísifo** | **Un centro de alta curvatura afirmativa + un polo de alta curvatura negativa por rechazo sistemático. La apertura emerge de la tensión polar entre afirmación y exclusión.** |
 
-Lo que une las primeras cinco: el mecanismo de grandeza opera por presencia — de curvatura, de oscilación, de apertura. La sustracción sistemática es la estrategia inversa: opera por ausencia deliberada. La coherencia viene de lo que se elimina, no de lo que se acumula.
+Lo que une las primeras seis estrategias: operan principalmente por presencia (de curvatura, de oscilación, de apertura) o por ausencia deliberada (sustracción). La séptima estrategia es híbrida: opera simultáneamente por presencia afirmativa y presencia negativa — dos polos de alta curvatura con polaridades opuestas.
+
+**Confianza: 9/9 · Alta · con séptima estrategia provisional**
 
 ---
 
@@ -285,17 +338,25 @@ Las Argonáuticas tienen momentos de belleza comparable a La Odisea — Medea en
 
 **Las Argonáuticas** yuxtaponen sin integrar: la épica de aventuras y la historia de Medea operan en paralelo. La curvatura es fragmentada. La oscilación tiene una fractura en S6-S7 de la que la obra no se recupera.
 
+**El mito de Sísifo** confirma la hipótesis desde un nuevo ángulo: red conceptual small-world (clustering 0.681, distancia media 1.8), todos los conceptos integrados en menos de dos pasos. El Telégrafo proporciona la primera medición computacional directa de la integración — la firma matemática de H4 es la red small-world.
+
 **La grandeza no es acumulación de momentos brillantes. Es integración de sistemas.**
+
+**Confianza: 9/9 · Alta · con primera medición computacional directa**
+
+---
 
 ### Hallazgo 5 — La firma geométrica puede reflejar el tema de la obra
 
 En Cien años de soledad la curvatura riemanniana forma una cadena circular — cada concepto curva al siguiente y el último curva al primero. Eso es exactamente el tema de la obra: el tiempo circular, la historia que se repite, el destino que vuelve sobre sí mismo.
 
-El Prisma detectó el tema sin leer la obra. Solo midió sus proporciones.
+En El proceso la ausencia de centro gravitacional en K. refleja geométricamente la experiencia de un sistema que nunca te da un centro desde el cual resistir.
 
-Esta correspondencia entre geometría y tema es el hallazgo más profundo de la Biblioteca hasta ahora. Sugiere que las grandes obras no solo tienen proporciones específicas — tienen proporciones que **encarnan su propio contenido**. La forma y el fondo son autosimilares.
+**En El mito de Sísifo:** el capítulo final tiene la entropía más baja y la redundancia más alta del corpus — opera con arquitectura de canal litúrgica. El corpus que propone sostener la lucidez sin evasión construye su conclusión con la única forma de lenguaje que sobrevive sin argumentación: la sentencia ritual. La forma de la conclusión refleja el contenido de la postura filosófica. No es la correspondencia geométrica directa de Cien años, pero es una nueva instancia del principio: la forma encarna el contenido.
 
 **Hipótesis derivada:** en las obras más grandes, la geometría del texto refleja geométricamente su tema central. La forma es el contenido.
+
+**Confianza: 3/9 directa · Media · con nueva variante de canal**
 
 ---
 
@@ -303,13 +364,32 @@ Esta correspondencia entre geometría y tema es el hallazgo más profundo de la 
 
 Cuando el protagonista nominal de una obra tiene la curvatura más baja de los conceptos principales, la coherencia del sistema no viene de lo que integra sino de lo que excluye sistemáticamente.
 
-En El proceso: K. (curvatura 0.45) es el nodo más débil de su propia red. La Ley, el proceso, la culpa, el tribunal — todos tienen más gravedad semántica que el protagonista. El sistema es coherente precisamente porque K. no tiene centro desde el cual resistir.
+En El proceso: K. (curvatura 0.45) es el nodo más débil de su propia red. El sistema es coherente precisamente porque K. no tiene centro desde el cual resistir.
 
-Esta es una categoría distinta de la fragmentación de las Argonáuticas. La fragmentación es falla de integración — dos sistemas que no conversan. La coherencia por exclusión es integración de la ausencia — un sistema que funciona porque su centro está deliberadamente vaciado.
+**Segunda instancia — El mito de Sísifo:** coherencia por exclusión de concepto (no de protagonista). *Esperanza* (curvatura 0.65) aparece 56 veces pero siempre en contexto de rechazo. Su alta curvatura no viene de lo que produce sino de lo que niega. Dos mecanismos de exclusión con arquitecturas distintas:
 
-**Implicación para la Biblioteca:** hay obras cuya firma geométrica parece débil en valores absolutos (curvatura baja, dimensión tríadica baja) pero son canónicas porque su mecanismo de grandeza opera por sustracción. El Oráculo necesita detectar este patrón para no clasificarlas erróneamente.
+| Mecanismo | Corpus | Qué se excluye | Efecto |
+|---|---|---|---|
+| Exclusión de protagonista | El proceso | K. no tiene gravedad semántica propia | El vacío está en el centro |
+| Exclusión de concepto | El mito de Sísifo | *Esperanza* rechazada sistemáticamente | El vacío define el borde del campo |
 
-**Confianza actual:** 1/8 corpus — hallazgo provisional. Requiere validación con más corpus de estrategia sustractiva.
+Esta distinción es significativa: en Kafka el vaciamiento opera sobre el agente. En Camus opera sobre el horizonte. El sistema kafkiano es coherente porque su centro está vacío. El sistema camusiano es coherente porque su horizonte está cerrado. Son dos formas de coherencia por exclusión que producen experiencias de lectura radicalmente distintas — y posiblemente apertura topológica por mecanismos distintos.
+
+**Confianza: 2/9 · Provisional · con dos variantes documentadas**
+
+---
+
+### Hallazgo 7 — La tensión polar como mecanismo de apertura (provisional)
+
+Los corpus cuyo concepto dominante curva por afirmación (alta frecuencia + alta coherencia de influencia positiva) y cuyo concepto secundario de mayor masa curva por negación sistemática (presencia frecuente en contexto de rechazo) pueden generar apertura topológica por tensión polar, independientemente de la lorenzianidad.
+
+En El mito de Sísifo: *absurdo* (0.92, afirmativo) y *esperanza* (0.65, negativo por rechazo) forman un sistema bipolar donde la apertura emerge de la tensión entre polos de signo opuesto. Los agujeros topológicos del corpus no son solo preguntas sin respuesta — son preguntas cuya respuesta depende de qué polo acepta el lector. El agujero raíz (¿vale la vida la pena?) se cierra con la afirmación del polo positivo y se reabre si el lector cuestiona el polo negativo (¿es la esperanza realmente una evasión?).
+
+Este mecanismo es distinto del agujero topológico clásico (pregunta que persiste sin respuesta) y del cierre performativo (respuesta que requiere cooperación activa). Es una apertura que emerge de la estructura bipolar del campo semántico: el lector no puede aceptar un polo sin posicionarse respecto al otro.
+
+**Primera instancia documentada.** Requiere validación con más corpus antes de elevarse a hallazgo consolidado.
+
+**Confianza: 1/9 · Muy provisional**
 
 ---
 
@@ -322,16 +402,31 @@ La hipótesis inicial era que φ es la proporción de las obras grandes. La evid
 - La Odisea oscila dentro del rango áureo — es el corpus más áureo
 - Hamlet lo desborda deliberadamente en ambos extremos — y es igualmente grande
 - El coronel opera muy fuera del rango áureo — y es una obra maestra
+- El mito de Sísifo oscila dentro del rango áureo con amplitud 0.090 — pero por disciplina, no por musicalidad áurea
 
-**Revisión:** φ es una proporción posible entre varias. Lo que importa no es la proporción específica sino la **coherencia interna** de la oscilación y la **apertura topológica**. φ podría ser la proporción óptima para ciertos géneros (épica oral, cuento popular) pero no universal.
+**Revisión:** φ es una proporción posible entre varias. Lo que importa no es la proporción específica sino la **coherencia interna** de la oscilación y la **apertura topológica**. φ podría ser la proporción óptima para ciertos géneros (épica oral, cuento popular) pero no universal. El caso de El mito de Sísifo muestra que un corpus puede permanecer dentro del rango áureo por razones de control compositivo sin que eso sea su firma definitoria.
 
 ### Sobre la profundidad homológica
 
-Los cuatro corpus canónicos mayores tienen 3-4 agujeros topológicos. Los dos corpus de calibre menor tienen 1-3. La profundidad mínima para una obra que perdure parece ser 3 agujeros persistentes — pero la conexión entre ellos y la apertura son más importantes que el número.
+Los cuatro corpus canónicos mayores tienen 3-5 agujeros topológicos. Los dos corpus de calibre menor tienen 1-3. La profundidad mínima para una obra que perdure parece ser 3 agujeros persistentes — pero la conexión entre ellos y la apertura son más importantes que el número. El mito de Sísifo confirma: 4 agujeros con alta conexión y apertura 3.5/4 es firma canónica.
 
 ### Sobre la dimensión tríadica
 
-Los corpus con dimensión > 2.5 tienden a ser los de mayor complejidad percibida (Hamlet 2.8). Los de dimensión < 2.3 tienden a ser los más concentrados y simples (La vida es sueño 2.1, Argonáuticas 2.1). La dimensión tríadica mide la riqueza de las fuerzas en tensión, no la calidad.
+Los corpus con dimensión > 2.5 tienden a ser los de mayor complejidad percibida (Hamlet 2.8). Los de dimensión < 2.3 tienden a ser los más concentrados y simples (La vida es sueño 2.1, Argonáuticas 2.1). La dimensión tríadica mide la riqueza de las fuerzas en tensión, no la calidad. El mito de Sísifo (2.5) confirma el patrón: complejidad media, postura filosófica clara.
+
+### Sobre la red small-world como firma de integración
+
+El mito de Sísifo proporciona la primera medición computacional directa de la topología de red de un corpus de la Biblioteca: clustering 0.681, distancia media 1.8, clasificación small-world. Si H4 es correcto — la grandeza es integración, no acumulación — la firma matemática de esa integración debería ser consistentemente small-world en los corpus canónicos. Esta hipótesis es ahora falseable computacionalmente.
+
+---
+
+## Notas metodológicas
+
+### Sobre la falsabilidad
+
+La hipótesis central — apertura topológica como predictor de inagotabilidad — es falseable. Un corpus con apertura 4/4 que no sea considerado grande la refutaría. Un corpus con apertura 0/3 que sea considerado inagotable también la refutaría. Los próximos corpus pondrán la hipótesis a prueba.
+
+La hipótesis nueva sobre la red small-world es ahora computacionalmente falseable: si los próximos corpus canónicos no muestran clustering alto y distancia corta, H4 necesita revisión.
 
 ---
 
@@ -342,27 +437,11 @@ Los corpus con dimensión > 2.5 tienden a ser los de mayor complejidad percibida
 | Alta | Don Quijote — Cervantes | Primera novela moderna — ¿qué estrategia inaugura el género? |
 | Alta | Pedro Páramo — Rulfo | ¿Sustracción como El proceso o concentración como El coronel? |
 | Alta | Divina Comedia — Dante | Épica medieval — ¿ondulación majestuosa o complejidad máxima? |
+| Alta | El extranjero — Camus | Segunda prueba de estrategia sustractiva y segunda obra del mismo autor — ¿confirma anti-estrella o nueva firma? |
 | Media | En busca del tiempo perdido — Proust | Obra de máxima extensión — ¿cómo se mide la firma a esa escala? |
-| Media | El extranjero — Camus | Segunda prueba de estrategia sustractiva — validar H6 |
 | Control | Cualquier bestseller contemporáneo | Verificar que apertura topológica baja correlaciona con obras no canónicas |
 
----
-
-## Notas metodológicas
-
-### Sobre la estimación manual
-
-Los ocho corpus han sido procesados mediante estimación informada, no medición computacional exacta. Las variables formales (densidad léxica, longitud de oraciones) son más precisas. Las variables semánticas (tensión entre polos, profundidad de capas, curvatura conceptual) son estimaciones de lector experto.
-
-La automatización de las cinco geometrías es el siguiente paso técnico. El objetivo de la fase manual es validar que las geometrías discriminan y producen información útil antes de invertir en la implementación computacional.
-
-### Sobre la granularidad
-
-Todos los corpus fueron divididos en 10 segmentos independientemente de su extensión. Esto produce granularidades muy distintas — 120 palabras por segmento en Caperucita vs 12.000 en La Odisea. La implementación computacional deberá normalizar la granularidad o ajustar los algoritmos para trabajar a múltiples escalas simultáneamente.
-
-### Sobre la falsabilidad
-
-La hipótesis central — apertura topológica como predictor de inagotabilidad — es falseable. Un corpus con apertura 4/4 que no sea considerado grande la refutaría. Un corpus con apertura 0/3 que sea considerado inagotable también la refutaría. Los próximos corpus pondrán la hipótesis a prueba.
+*El extranjero* sube a prioridad alta: es la segunda obra de Camus y fue publicada el mismo año que El mito de Sísifo. Su comparación directa puede revelar si la anti-estrella semántica es una firma del autor o del corpus específico.
 
 ---
 
