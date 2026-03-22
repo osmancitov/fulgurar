@@ -1,5 +1,5 @@
 # Protocolo Prisma — Fulgurar
-*v1.1 · 2026-03-19 · Física de la literatura*
+*v1.2 · 2026-03-21 · Física de la literatura*
 
 ---
 
@@ -276,13 +276,28 @@ Generación libre dentro del registro — no frases fijas.
 
 ## Posición en la Biblioteca
 [relación con corpus previos — similitudes, diferencias, patrones]
+
+---
+
+## Prompt de Imagen
+*Generado siempre. Sección final del producto.*
+
+[prompt en español]
 ```
 
-### Producto opcional — HTML con SVG
+---
 
-**Nombre del archivo:** *Producto — Prisma — [Título] — [Autor].html*
+## PROMPT DE IMAGEN — PRISMA
 
-Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más paleta CSS embebida y un SVG de firma geométrica — diagrama de radar con cinco ejes, uno por geometría, con el polígono de la firma del corpus trazado. Si hay corpus de comparación, se superpone como segundo polígono.
+La firma geométrica del corpus como luz descompuesta por un prisma. El espectro que emerge varía de corpus en corpus: la amplitud de oscilación de la Díada determina el ancho del espectro, el concepto de mayor curvatura Riemann produce el color dominante, los agujeros topológicos aparecen como bandas oscuras, la lorenzianidad se expresa en la turbulencia de los bordes del espectro.
+
+Estructura del prompt:
+
+```
+Un prisma óptico de cristal perfecto sobre fondo negro profundo. Un rayo de luz blanca entra por un lado y emerge como espectro descompuesto. El espectro tiene [ancho según amplitud de la Díada del corpus — estrecho si amplitud < 0.1, amplio si > 0.3]. La banda de color dominante es [color derivado del concepto de mayor curvatura — cálido/dorado para conceptos de vida/amor/tiempo, frío/azul para conceptos de sistema/proceso/vacío, verde para conceptos de naturaleza/crecimiento]. [Número de agujeros topológicos] bandas oscuras atraviesan el espectro como interrupciones. Los bordes del espectro son [nítidos y precisos si lorenzianidad baja / turbulentos y fractales si lorenzianidad alta]. En la base del prisma, grabado: PRISMA OSMANCITO · FÍSICO / [TÍTULO] · [APELLIDO] / [ESTRATEGIA DE GRANDEZA]. Paleta Fulgurar: negro profundo, dorado intenso, espectro cromático emergente. Estética de ilustración científica del siglo XIX, sin fotorrealismo.
+```
+
+La sección final del `.md` contiene el prompt generado con los valores específicos de la firma del corpus.
 
 ---
 

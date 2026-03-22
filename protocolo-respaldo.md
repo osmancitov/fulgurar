@@ -1,5 +1,5 @@
 # Protocolo de Respaldo — Fulgurar
-*v2.3 · 2026-03-21 · Protocolo de generación de respaldos del sistema*
+*v2.4 · 2026-03-21 · Protocolo de generación de respaldos del sistema*
 
 ---
 

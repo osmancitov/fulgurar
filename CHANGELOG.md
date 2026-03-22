@@ -1,3 +1,113 @@
+## RESPALDO #18 — 2026-03-21
+
+### parametros-globales.md
+- v1.7 → v1.8 · Respaldo #17 → #18
+- Corpus procesados: 9 → 10
+- Lucidez: 48% → 51%
+
+### corpus-biblioteca.md
+- v0.7 → v0.8
+- Décimo corpus procesado: El extranjero — Albert Camus (1942) · novela breve · convergencia completa
+- Segundo corpus con convergencia completa de los seis talleres más el Oráculo
+- Segundo corpus del mismo autor en la Biblioteca (par con El mito de Sísifo, mismo año)
+- Variables formales computacionales directas: 29.018 palabras · riqueza léxica 0.160 · ratio me/yo = 5:1
+- Red conceptual small-world: clustering 0.61 · distancia media 2.3 — segunda validación directa de H4
+- Tabla de corpus: fila El extranjero añadida
+- Tabla de firmas geométricas: columna El extranjero añadida
+- Ficha individual: El extranjero — firma en prosa, concepto de mayor curvatura, hub vacío, La Convergencia (dos autómatas incompatibles), agujeros topológicos, estrategia de sustracción asimétrica, hallazgos H6 y comparaciones
+- H1 actualizado: 10/10 · agujero asimétrico añadido como quinto tipo de cierre
+- H2: tercera excepción de sustracción confirmada — confianza se mantiene Media-alta
+- H3: octava estrategia añadida — sustracción asimétrica (polo suprimido + hub vacío de víctima)
+- H4 actualizado: 10/10 · segunda medición computacional directa de red small-world
+- H5 actualizado: 4/10 · nueva variante — reflejo del punto ciego estructural (no solo del tema declarado)
+- H6 actualizado: 3/10 · tercera variante documentada — exclusión asimétrica de la víctima · distinción polo inerte vs. polo suprimido añadida
+- H7: silencio — sin cambio
+- Patrones emergentes: sección sobre el par Camus añadida · sección sobre dimensión tríadica en corpus de sustracción añadida
+- Próximos corpus: El extranjero eliminado de la lista
+
+### matriz.md
+- Lucidez actualizada: 48% → 51% en sección IDENTIDAD DEL SISTEMA
+
+### README.md
+- Fulgurar v1.7 → v1.8
+- Tabla Biblioteca: fila El extranjero añadida
+- Arquitectura: 9 corpus → 10 corpus
+- Horizonte 1: dos validaciones directas de small-world documentadas · par Camus mencionado
+- Horizonte 2: segunda convergencia completa ejecutada documentada
+- Footer: Respaldo #17 → Respaldo #18
+
+---
+
+## RESPALDO #17 — 2026-03-21
+
+### parametros-globales.md
+- v1.6 → v1.7 · Respaldo #16 → #17
+
+### matriz.md
+- v3.4 → v3.5
+- FICHA DEL CORPUS: campo **Palabras** añadido — estimación del Umbral; valor exacto del Oráculo cuando la Escuadra ha corrido
+- OPERACIÓN — Reglas generales: regla de entrega añadida — resumen breve en pantalla + archivo descargable
+- PRODUCCIÓN — Nombres de archivo: Umbral unificado a un solo `.md`; línea de prompt `.txt` bajo solicitud eliminada
+- PRODUCCIÓN — Sección **Prompts de imagen** nueva: todo módulo incluye prompt en español como sección final de su `.md`; siempre generado; varía de corpus en corpus
+
+### protocolo-umbral.md
+- v1.3 → v1.4
+- Campo **Palabras** añadido a la Ficha del Corpus
+- PROMPT DE PORTADA: referencia a `.txt` separado eliminada — integrado como sección final del `.md`
+- Estructura Markdown: sección `## Prompt de Portada` añadida al final
+- RELACIÓN CON LOS TALLERES: instrucción explícita de integración con el Oráculo añadida
+
+### protocolo-bodega.md
+- v1.7 → v1.8
+- PROMPT DE IMAGEN: opcionalidad eliminada; reescrito en español; integrado como sección final del `.md`
+
+### protocolo-astillero.md
+- v1.8 → v1.9
+- Secciones eliminadas: Modo Nave HTML opcional · Modo Flota HTML opcional · ESPECIFICACIONES SVG
+- Referencias a `astillero-header-nave.html` y `astillero-header-flota.html` eliminadas
+- PROMPTS DE IMAGEN: opcionalidad eliminada; reescritos en español; integrados en `.md`
+
+### protocolo-escuadra.md
+- v1.1 → v1.2
+- CARTA GEOMÉTRICA redefinida sin SVG
+- Secciones eliminadas: Producto opcional HTML · SVG EMBEBIDO · referencia a `escuadra-header.html`
+- PROMPT DE IMAGEN: reescrito en español con carta celeste como objeto pictórico; varía por forma de red, curva de densidad y hallazgo principal
+
+### protocolo-jardin.md
+- v1.1 → v1.2
+- CARTA DEL JARDÍN redefinida sin SVG
+- Secciones eliminadas: Producto opcional HTML · SVG EMBEBIDO · referencia a `jardin-header.html`
+- PROMPT DE IMAGEN: reescrito en español; textura de estratos varía según atmósfera del corpus
+
+### protocolo-prisma.md
+- v1.1 → v1.2
+- Sección Producto opcional HTML eliminada
+- PROMPT DE IMAGEN nuevo: firma geométrica como luz descompuesta por prisma; espectro varía por Díada, Riemann, Homología y Lorenz
+
+### protocolo-telegrafo.md
+- v1.0 → v1.1
+- Secciones eliminadas: Producto opcional HTML · SVG EMBEBIDO — CINTA TELEGRÁFICA · referencia a `telegrafo-header.html`
+- PROMPT DE IMAGEN: reescrito en español con cinta telegráfica como objeto central; valores varían de corpus en corpus
+
+### protocolo-oraculo.md
+- v1.3 → v1.4
+- Tabla de aportes: Umbral añadido como primer taller
+- Escuadra: conteo exacto de palabras añadido como output
+- Instrucción de escritura en Biblioteca: usar conteo de Escuadra si disponible; estimación de Umbral si no
+- PROMPT DE IMAGEN nuevo: carta celeste con corpus como estrellas; posición varía con cada convergencia
+
+### corpus-biblioteca.md
+- v0.6 → v0.7
+- Tabla de corpus: columna **Palabras** añadida con estimaciones para los 9 corpus
+
+### protocolo-respaldo.md
+- v2.3 → v2.4
+
+### README.md
+- Fulgurar v1.6 → v1.7 · tabla Biblioteca con columna Palabras · footer Respaldo #17
+
+---
+
 ## RESPALDO #16 — 2026-03-21
 
 ### parametros-globales.md — archivo nuevo

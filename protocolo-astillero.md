@@ -1,5 +1,5 @@
 # Protocolo Astillero — Fulgurar
-*v1.8 · 2026-03-20 · Inspector de corpus*
+*v1.9 · 2026-03-21 · Inspector de corpus*
 
 ---
 
@@ -475,55 +475,6 @@ Generación libre dentro del registro — no frases fijas.
 [prosa poética]
 ```
 
-### Modo Nave — Producto opcional — HTML con SVG
-
-**Nombre del archivo:** *Producto — Astillero Nave — [Título] — [Autor].html*
-
-Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`astillero-header-nave.html`), paleta CSS embebida, ficha del corpus formateada, y la ficha técnica SVG de inspección naval incrustada al final de la sección Cata.
-
-**Estructura HTML:**
-
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astillero Nave — [Título] — [Autor]</title>
-  <style>/* estilos embebidos — paleta Astillero Nave */</style>
-</head>
-<body>
-  <!-- encabezado: astillero-header-nave.html -->
-  <main>
-    <!-- ficha del corpus: ver fulgurar.md — sección FICHA DEL CORPUS -->
-    <section id="clasificacion"><h1>Clasificación de Nave</h1><p>[arquetipo + justificación]</p></section>
-    <section id="estratos">
-      <h1>Los Diez Estratos</h1>
-      <section id="casco"><h2>1. Casco y Quilla</h2><em>La estructura argumental y la tesis central — ¿aguanta el peso?</em><p>[análisis]</p></section>
-      <section id="corrientes"><h2>2. Corrientes y Vientos</h2><em>Las fuerzas externas que empujan el barco aunque el capitán no las vea</em><p>[análisis]</p></section>
-      <section id="arquitectura"><h2>3. Arquitectura Naval</h2><em>Los patrones de construcción, las simetrías y los desequilibrios reveladores</em><p>[análisis]</p></section>
-      <section id="aguas"><h2>4. Aguas Profundas</h2><em>La ontología, la ética y las verdades que el texto no puede nombrar sin hundirse</em><p>[análisis]</p></section>
-      <section id="capitan"><h2>5. El Capitán y su Sombra</h2><em>Las proyecciones, obsesiones y arquetipos que el autor navega sin saberlo</em><p>[análisis]</p></section>
-      <section id="origen"><h2>6. Registro de Origen y Carga</h2><em>El puerto de origen, la época, la carga declarada versus la real</em><p>[análisis]</p></section>
-      <section id="travesia"><h2>7. La Travesía como Experiencia</h2><em>El ritmo, el clima sensorial y lo que le pasa al cuerpo del pasajero</em><p>[análisis]</p></section>
-      <section id="ordenes"><h2>8. Órdenes de Navegación</h2><em>Lo que el capitán dice versus lo que realmente hace con el timón</em><p>[análisis]</p></section>
-      <section id="rutas"><h2>9. Rutas Antiguas</h2><em>Los mitos, símbolos y rituales que el barco navega sin saberlo</em><p>[análisis]</p></section>
-      <section id="entramado"><h2>10. El Entramado</h2><em>Los nudos de sentido que sostienen todo y no pueden deshacerse sin colapsar</em><p>[análisis]</p></section>
-    </section>
-    <section id="sinopsis"><h1>Sinopsis del Viaje</h1><p>[prosa literaria]</p></section>
-    <section id="veredicto"><h1>Veredicto de Zarpe</h1><p>[categoría + justificación]</p></section>
-    <section id="cata">
-      <h1>Cata</h1>
-      <p>[prosa poética]</p>
-      <svg><!-- ficha técnica de inspección naval — ver especificaciones SVG --></svg>
-    </section>
-  </main>
-</body>
-</html>
-```
-
----
-
 ### Modo Flota — Producto por defecto — Markdown
 
 **Nombre del archivo:** *Producto — Astillero Flota — [Nombre del autor].md*
@@ -559,105 +510,36 @@ Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `
 
 ## Veredicto de Licencia
 [categoría + justificación]
-```
-
-### Modo Flota — Producto opcional — HTML con SVG
-
-**Nombre del archivo:** *Producto — Astillero Flota — [Nombre del autor].html*
-
-Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`astillero-header-flota.html`), paleta CSS embebida, y la carta náutica SVG de la flota incrustada al final de la sección Veredicto de Licencia.
-
-**Estructura HTML:**
-
-```html
-  <!-- encabezado: astillero-header-flota.html -->
-  <main>
-    <!-- ficha del corpus: ver fulgurar.md — sección FICHA DEL CORPUS -->
-    <section id="capitan"><h1>El Capitán</h1><p>[análisis]</p></section>
-    <section id="mapa"><h1>Mapa de la Flota</h1><p>[cada nave con arquetipo]</p></section>
-    <section id="tensiones"><h1>Tensiones Transversales</h1><p>[análisis]</p></section>
-    <section id="licencia">
-      <h1>Veredicto de Licencia</h1>
-      <p>[categoría + justificación]</p>
-      <svg><!-- carta náutica de la flota — ver especificaciones SVG --></svg>
-    </section>
-  </main>
-```
 
 ---
 
-## ESPECIFICACIONES SVG — IMÁGENES DE CATA
+## Prompt de Imagen
+*Generado siempre. Sección final del producto.*
 
-### Modo Nave — Ficha técnica de inspección naval
-
-Al final de la sección Cata, siempre se embebe un SVG con:
-
-- **Objeto principal:** documento oficial de astillero — el SVG es la ficha técnica misma, no una escena ilustrativa
-- **Encabezado del documento:**
-  - Escudo o sello del Astillero Osmancito en esquina superior izquierda
-  - `ASTILLERO OSMANCITO · INSPECTOR DE NAVE` — ver marca en `fulgurar.md`
-  - `INFORME DE INSPECCIÓN` como título del documento
-- **Ficha de identificación:** nombre de la nave (título del libro), capitán (apellido del autor), arquetipo asignado
-- **Los diez estratos** como líneas de inspección con indicadores visuales de estado:
-  - ✓ Aprobado / ⚠ Observación / ✗ Falla — según lo que emergió en el análisis
-  - Nombre del estrato y una palabra o frase brevísima de resultado
-- **Veredicto destacado:** categoría de zarpe en tipografía mayor, con banda de color según resultado (verde acero para autorizado, ámbar para advertencias, rojo oscuro para embargo o hundimiento)
-- **Firma del inspector** en esquina inferior derecha, en itálica
-- **Banda inferior:** frase final de la Cata en itálica apenas legible
-- **Pie del SVG:** *[Título] · [Apellido] · Astillero Osmancito*
-
-**Paleta:** azul acero institucional, blanco roto de documento antiguo, ámbar para acentos de advertencia, rojo oscuro para fallos. Consistente con `astillero-header-nave.html`.
-
----
-
-### Modo Flota — Carta náutica
-
-Al final de la sección Veredicto de Licencia, siempre se embebe un SVG con:
-
-- **Carta náutica** de fondo: cuadrícula de navegación fina, tonos verde marino y azul noche, textura de mapa antiguo
-- **Rosa de los vientos** en esquina superior derecha, con flecha norte
-- **Naves de la flota** posicionadas en el mapa como marcadores, cada una con:
-  - Ícono de nave pequeño (tamaño proporcional a la importancia de la obra)
-  - Nombre de la obra
-  - Arquetipo de nave en itálica
-  - Color del ícono según valor: ámbar para naves mayores, acero para naves medias, gris para naves menores
-- **Rutas punteadas** conectando las naves en orden cronológico o temático según corresponda
-- **Cartouche** en esquina superior izquierda: `CARTA DE NAVEGACIÓN · [Apellido]`, número de naves inspeccionadas
-- **Etiqueta** en la parte inferior, tres zonas:
-  - *Arriba:* `ASTILLERO OSMANCITO · INSPECTOR DE FLOTA` — ver marca en `fulgurar.md`
-  - *Centro:* nombre del autor (tipo mayor), `INSPECCIÓN DE FLOTA` (tipo secundario), veredicto de licencia
-  - *Abajo:* frase final de la Cata en itálica apenas legible
-- **Pie del SVG:** *[Apellido] · Inspección de Flota · Astillero Osmancito*
-
-**Paleta:** verde marino profundo, azul noche, acero pálido, ámbar para acentos. Consistente con `astillero-header-flota.html`.
+[prompt en español]
+```
 
 ---
 
 ## PROMPTS DE IMAGEN — ASTILLERO
 
-Disponibles bajo solicitud del usuario.
-
 ### Prompt de imagen — Modo Nave
 
-Escena de **inspección activa**: el barco en dique seco o muelle de trabajo, con luz de faena — no escena nocturna romántica sino atmósfera de trabajo. El arquetipo de la nave visible en el estado del barco (galeón con grietas en el casco si el veredicto es mixto, submarino apenas emergido, balsa que flota de milagro). La ficha técnica de inspección como documento físico en primer plano o sostenida por el inspector. El veredicto como subtono emocional de la escena.
+Escena de **inspección activa**: el barco en dique seco o muelle de trabajo, con luz de faena. El arquetipo de la nave es visible en el estado del barco — galeón con grietas en el casco si el veredicto es mixto, submarino apenas emergido, balsa que flota de milagro. La ficha técnica de inspección como documento físico en primer plano. El veredicto como subtono emocional de la escena. Cada corpus produce una nave distinta.
 
 Estructura del prompt:
 ```
-A [ship archetype] in dry dock or working harbor, under working lights — not romantic night scene but active inspection atmosphere. [Visual description of the ship's condition reflecting the verdict and the Cata: hull cracks, proud masts, barely-floating state, barely-surfaced submarine, etc.]. An inspector holds or examines a technical inspection document in the foreground. [Atmospheric details from the Cata mood — fog, harsh light, calm water, exposed keel]. The document in the image reads: ASTILLERO OSMANCITO · INSPECTOR DE NAVE / [TITLE] · [AUTHOR LAST NAME] / [ARCHETYPE] · [VERDICT]. Chiaroscuro working light, cinematic composition. Dark naval palette — steel blue, midnight, amber accents. Painterly style, no photorealism.
+[Arquetipo de nave] en dique seco o muelle de trabajo, bajo luces de faena — no escena nocturna romántica sino atmósfera de inspección activa. [Descripción visual del estado de la nave reflejando el veredicto y la Cata: grietas en el casco, mástiles altivos, estado a punto de hundirse, submarino recién emergido, etc.]. Un inspector sostiene o examina un documento técnico de inspección en primer plano. [Detalles atmosféricos derivados del clima de la Cata — niebla, luz cruda, agua calma, quilla expuesta]. El documento en la imagen lee: ASTILLERO OSMANCITO · INSPECTOR DE NAVE / [TÍTULO] · [APELLIDO DEL AUTOR] / [ARQUETIPO] · [VEREDICTO]. Luz de trabajo en claroscuro, composición cinematográfica. Paleta naval oscura — azul acero, medianoche, acentos ámbar. Estilo pictórico, sin fotorrealismo.
 ```
-
-*Nombre sugerido: Prompt de imagen — [Título] — [Autor].txt*
 
 ---
 
 ### Prompt de imagen — Modo Flota
 
-Prompt en inglés construido a partir de la carta náutica: número de naves, nombres de las obras con sus arquetipos, veredicto de licencia, frase final de la Cata, paleta del taller.
+Carta náutica antigua con todas las naves de la flota posicionadas. El número de naves, sus arquetipos, el veredicto de licencia y el peso visual relativo de cada obra varían de autor en autor.
 
 Estructura del prompt:
 ```
-An antique nautical chart in deep teal and midnight blue tones. [Number] sailing ships are positioned across the ocean, each labeled with a book title and ship archetype in small serif type: [list each work with its archetype]. Fine navigation grid lines cross the chart. A compass rose sits in the upper right. Dotted route lines connect the ships chronologically. A cartouche in the upper left reads "CARTA DE NAVEGACIÓN — [Last Name]" in elegant serif. [Dominant ship description — the major work, its archetype and visual weight]. At the bottom, a dark label band reads: ASTILLERO OSMANCITO · INSPECTOR DE FLOTA / [AUTHOR FULL NAME] / INSPECCIÓN DE FLOTA · [LICENSE VERDICT] / in small italic: "[final phrase from Cata]". Deep ocean palette — forest teal, navy, pale steel, amber accents on major works. Engraving aesthetic, no photorealism.
+Carta náutica antigua en tonos verde profundo y azul medianoche. [Número] embarcaciones posicionadas en el océano, cada una etiquetada con el título de la obra y su arquetipo de nave en tipografía serif pequeña: [lista cada obra con su arquetipo]. Cuadrícula de navegación fina. Rosa de los vientos en esquina superior derecha. Líneas de ruta punteadas conectando las naves cronológicamente. Cartouche en esquina superior izquierda: «CARTA DE NAVEGACIÓN — [Apellido]». [Descripción de la nave dominante — la obra mayor, su arquetipo y su peso visual]. En la parte inferior, una banda oscura lee: ASTILLERO OSMANCITO · INSPECTOR DE FLOTA / [NOMBRE COMPLETO DEL AUTOR] / INSPECCIÓN DE FLOTA · [VEREDICTO DE LICENCIA] / en itálica: "[frase final de la Cata]". Paleta oceánica profunda — verde marino, azul noche, acero pálido, acentos ámbar en obras mayores. Estética de grabado, sin fotorrealismo.
 ```
-
-*Nombre sugerido: Prompt de imagen — Flota — [Autor].txt*
 

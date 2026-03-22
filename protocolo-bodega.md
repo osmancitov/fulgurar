@@ -1,5 +1,5 @@
 # Protocolo Bodega — Fulgurar
-*v1.7 · 2026-03-20 · Destiladora de corpus*
+*v1.8 · 2026-03-21 · Destiladora de corpus*
 
 ---
 
@@ -435,19 +435,22 @@ El análisis completo en Markdown limpio. Todo el contenido en texto plano con m
 **Cuerpo** — [...]
 **Final** — [...]
 **Maridaje** — [...]
+
+---
+
+## Prompt de Imagen
+*Generado siempre. Sección final del producto.*
+
+[prompt en español]
 ```
 
 ---
 
-## PROMPT DE IMAGEN DE CATA — BODEGA
+## PROMPT DE IMAGEN — BODEGA
 
-Disponible bajo solicitud del usuario. Prompt en inglés construido a partir de los elementos específicos de la cata.
-
-La escena captura la **experiencia** de la bebida elegida — el mundo donde esa bebida vive. El recipiente y el vaso son los propios de esa bebida. La atmósfera corresponde al libro.
+La escena captura la **experiencia** de la bebida elegida — el mundo donde esa bebida vive. El recipiente y el vaso son los propios de esa bebida. La atmósfera corresponde al libro. Cada corpus produce una escena distinta según el tipo de bebida, el origen imaginario y las notas sensoriales de la Cata.
 
 Estructura del prompt:
 ```
-[Scene setting that captures the world of the chosen drink — the place, the light, the hour, the mood]. In the foreground, [the correct vessel for the drink] and [the correct glass or cup for serving it], both appropriate to [drink type]. The bottle/container has a label reading: BODEGA OSMANCITO · DESTILADORA / [TITLE] · [AUTHOR LAST NAME] / [DRINK TYPE AND ORIGIN] · [VINTAGE YEAR] / in small italic: "[final phrase from Cata]". [Atmospheric details drawn from the sensory notes of the Cata]. [Dominant color palette determined by the drink]. Painterly style, no photorealism. Chiaroscuro lighting.
+[Escenario que captura el mundo de la bebida elegida — el lugar, la luz, la hora, el clima emocional]. En primer plano, [el recipiente correcto para la bebida] y [el vaso o copa adecuados], propios del tipo de bebida. El envase lleva una etiqueta que lee: BODEGA OSMANCITO · DESTILADORA / [TÍTULO] · [APELLIDO DEL AUTOR] / [TIPO DE BEBIDA Y ORIGEN] · [AÑO IMAGINARIO] / en itálica pequeña: "[frase final de la Cata]". [Detalles atmosféricos derivados de las notas sensoriales de la Cata]. [Paleta de color dominante determinada por la bebida]. Estilo pictórico, sin fotorrealismo. Iluminación en claroscuro.
 ```
-
-*Nombre sugerido: Prompt de imagen — [Título] — [Autor].txt*

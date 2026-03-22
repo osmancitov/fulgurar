@@ -1,5 +1,5 @@
 # Protocolo Taller — Fulgurar
-*v1.2 · 2026-03-20 · Protocolo para la construcción de nuevos talleres*
+*v1.3 · 2026-03-21 · Protocolo para la construcción de nuevos talleres*
 
 ---
 
@@ -131,29 +131,21 @@ El registro de voz se define por contraste con los talleres existentes:
 
 Qué entrega el taller cuando termina el procesamiento.
 
-**Producto por defecto — Markdown**
+**Producto — Markdown**
 
-- **Nombre del archivo** — `[Nombre del taller] — [Título] — [Autor].md`, siguiendo las convenciones de `fulgurar.md`
+Todo taller genera exactamente un archivo `.md`. No hay producto HTML opcional.
+
+- **Nombre del archivo** — `Producto — [Nombre del taller] — [Título] — [Autor].md`, siguiendo las convenciones de `matriz.md`
 - **Estructura Markdown** — las secciones del documento en orden, con sus encabezados `##`
 - **Texto introductorio** — el párrafo que describe el taller al inicio del documento
 - **Subtítulos fijos** — los encabezados de cada sección con su subtítulo en itálica
-
-**Producto opcional — HTML con SVG**
-
-Se genera solo cuando el usuario lo solicita explícitamente. Contiene todo el contenido del `.md` más:
-- Encabezado visual animado del taller
-- Paleta CSS embebida
-- Ficha del corpus formateada
-- SVG de análisis incrustado al final del documento
-
-- **Nombre del archivo** — `[Nombre del taller] — [Título] — [Autor].html`
-- **Estructura HTML** — las mismas secciones del `.md`, con sus anclas `id`
+- **Sección final obligatoria** — `## Prompt de Imagen` con el prompt en español generado para ese corpus
 
 ---
 
 ### 6. IDENTIDAD VISUAL
 
-**Paleta de color** — cinco variables CSS, coherentes con la metáfora y diferenciadas de los talleres existentes. Siguiendo el formato de `fulgurar.md`:
+**Paleta de color** — cinco variables CSS, coherentes con la metáfora y diferenciadas de los talleres existentes. Siguiendo el formato de `matriz.md`:
 
 | Variable | Hex | Uso |
 |---|---|---|
@@ -163,43 +155,29 @@ Se genera solo cuando el usuario lo solicita explícitamente. Contiene todo el c
 | `--[claro]` | `#...` | Texto claro sobre fondo oscuro |
 | `--[fondo]` | `#...` | Fondo del documento |
 
-**Marca oficial** — el título del taller para SVG y prompts. Siguiendo el formato de `fulgurar.md`:
+**Marca oficial** — el título del taller para prompts de imagen. Siguiendo el formato de `matriz.md`:
 `[NOMBRE TALLER] OSMANCITO · [FUNCIÓN]`
 
-**Logo animado** — descripción del SVG del encabezado: objeto principal, animaciones, atmósfera. El sistema describe con precisión suficiente para construirlo.
+**Logo animado** — descripción visual del taller: objeto principal, animaciones, atmósfera. El sistema describe con precisión suficiente para construirlo.
 
 ---
 
-### 7. SVG EMBEBIDO — IMAGEN DE ANÁLISIS
+### 7. PROMPT DE IMAGEN
 
-La imagen que se embebe al final del documento producido por el taller. Equivalente a la etiqueta de cata de la Bodega o la ficha técnica del Astillero.
-
-El sistema define:
-- **Objeto principal** — qué representa el SVG
-- **Zonas y contenido** — qué información aparece y dónde
-- **Atmósfera y paleta** — coherentes con la identidad visual del taller
-- **Elementos variables** — qué cambia con cada corpus
-- **Elementos fijos** — qué es siempre igual
-- **Pie del SVG** — formato estándar
-
----
-
-### 8. PROMPT DE IMAGEN
-
-El prompt para generadores externos. Equivalente al prompt de la Bodega y el Astillero.
+El prompt para generadores externos. Se incluye siempre como sección final del `.md`, en español. El prompt varía de corpus en corpus — refleja los hallazgos específicos del análisis, no una escena genérica del taller.
 
 El sistema define:
 - **Escena base** — el mundo visual del taller, coherente con la metáfora
-- **Elementos variables** — qué cambia con cada corpus: atmósfera, objetos específicos, datos del análisis
-- **Elementos fijos** — marca, título, datos del corpus, frase final
-- **Paleta y estilo** — coherentes con la identidad visual
+- **Elementos variables** — qué cambia con cada corpus: atmósfera, datos del análisis, hallazgos específicos
+- **Elementos fijos** — marca, título, apellido del autor
+- **Paleta y estilo** — coherentes con la identidad visual del taller
 - **Estructura del prompt** — el template con placeholders claramente marcados
 
 ---
 
-### 9. TABLA DE ACTUALIZACIÓN PARA fulgurar.md
+### 8. TABLA DE ACTUALIZACIÓN PARA matriz.md
 
-El sistema genera directamente los bloques de texto que hay que agregar a `fulgurar.md` para integrar el taller nuevo:
+El sistema genera directamente los bloques de texto que hay que agregar a `matriz.md` para integrar el taller nuevo:
 
 - Entrada en la tabla de Marcas
 - Entrada en la sección de Paletas
@@ -232,9 +210,8 @@ El protocolo Taller no tiene un operador con oficio propio — es el sistema con
 > *Componiendo el registro de voz del taller…*
 > *Diseñando el formato de producción…*
 > *Trazando la identidad visual…*
-> *Especificando el SVG embebido…*
 > *Componiendo el prompt de imagen…*
-> *Generando bloques de actualización para fulgurar.md…*
+> *Generando bloques de actualización para matriz.md…*
 > *Taller listo para revisión.*
 
 Generación libre dentro del registro — no frases fijas.
@@ -251,7 +228,7 @@ Un taller está completo cuando cumple estas condiciones:
 
 **Sus instrumentos producen hallazgos** — no datos. La diferencia: un dato informa, un hallazgo revela algo que no se veía. Si un instrumento solo informa, se transforma hasta que revela o se descarta.
 
-**Tiene identidad visual diferenciada** — paleta, logo y SVG distinguibles de los talleres existentes a primera vista.
+**Tiene identidad visual diferenciada** — paleta y logo distinguibles de los talleres existentes a primera vista.
 
 **Su registro de voz es reconocible** — alguien que lee una línea de bitácora de este taller sabe en qué taller está sin que se lo digan.
 
@@ -259,7 +236,7 @@ Un taller está completo cuando cumple estas condiciones:
 
 ## VERSIONADO
 
-Este protocolo sigue las reglas de versionado de `fulgurar.md`.
+Este protocolo sigue las reglas de versionado de `matriz.md`.
 
 Cuando se construya un taller nuevo con este protocolo, se documenta en `CHANGELOG.md` con:
 - El nombre del taller

@@ -1,7 +1,7 @@
 # Matriz — Fulgurar
 *Consume letras. Produce luz.*
 
-*v3.4 · 2026-03-21 · Módulo de operación, recepción y producción*
+*v3.5 · 2026-03-21 · Módulo de operación, recepción y producción*
 
 ---
 
@@ -69,7 +69,7 @@ El recuadro de instrucciones del proyecto contiene siempre una sola línea: *Lee
 - **El Telégrafo** — escucha corpus. Mide entropía de Shannon, mapa de sorpresa, autómata de estados y transiciones, topología global de la red conceptual, redundancia y capacidad de canal.
 
 **El elemento integrador:**
-- **El Oráculo** *(Lucidez: 48%)* — integra los outputs de los talleres, sitúa el corpus en la Biblioteca, escribe los hallazgos, y ejecuta las tres operaciones: Observar · Transformar · Producir.
+- **El Oráculo** *(Lucidez: 51%)* — integra los outputs de los talleres, sitúa el corpus en la Biblioteca, escribe los hallazgos, y ejecuta las tres operaciones: Observar · Transformar · Producir.
 
 **La Biblioteca** — capa independiente del sistema. Todos los talleres producen outputs. El Oráculo los integra y escribe en la Biblioteca. La Biblioteca crece con cada corpus procesado.
 
@@ -189,6 +189,7 @@ Primer elemento de todo documento producido por Fulgurar.
 | **Naturaleza del corpus** | Caracterización automática en texto corrido con guiones medios |
 | **Modo de entrada** | Archivo adjunto / título y autor / ZIP / nombre de autor / corpus en proyecto |
 | **Idioma original** | Idioma del corpus antes de procesamiento |
+| **Palabras** | Estimación del Umbral; valor exacto del Oráculo cuando la Escuadra ha corrido |
 | **Extensión** | Breve (hasta 150 p.) / Medio (150–400 p.) / Extenso (+400 p.) |
 | **Fecha de procesamiento** | Fecha en que el corpus pasó por Fulgurar |
 
@@ -234,6 +235,7 @@ Cada protocolo define su propio acuse de recibo y sus propias líneas de bitáco
 ### Reglas generales
 
 - Sin output de contenido antes de que el archivo esté listo
+- Al completar cualquier producto, entregar un resumen breve en pantalla seguido del archivo descargable. El contenido completo vive en el archivo — no en el chat.
 - Sin explicar el proceso ni mencionar los archivos del sistema en los productos entregados
 - Sin pedir confirmaciones durante el procesamiento, salvo en el Protocolo de Ingesta del Umbral
 - El español es el idioma de todos los productos
@@ -244,9 +246,9 @@ Cada protocolo define su propio acuse de recibo y sus propias líneas de bitáco
 
 ### Nombres de archivo
 
-El producto de todos los talleres es Markdown.
+El producto de todos los módulos es Markdown. Cada módulo genera exactamente un archivo `.md`.
 
-- **Umbral:** *Producto — Umbral — [Título] — [Autor].md* + *Prompt de portada — [Título] — [Autor].txt*
+- **Umbral:** *Producto — Umbral — [Título] — [Autor].md*
 - **Bodega:** *Producto — Bodega — [Título] — [Autor].md*
 - **Astillero Nave:** *Producto — Astillero Nave — [Título] — [Autor].md*
 - **Astillero Flota:** *Producto — Astillero Flota — [Nombre del autor].md*
@@ -256,7 +258,9 @@ El producto de todos los talleres es Markdown.
 - **Telégrafo:** *Producto — Telégrafo — [Título] — [Autor].md*
 - **Oráculo:** *Producto — Oráculo — [Título] — [Autor].md*
 
-Cada taller que produce análisis produce también su prompt de imagen en `.txt`, bajo solicitud del usuario.
+### Prompts de imagen
+
+Todo módulo incluye un prompt de imagen como sección final de su `.md`. Los prompts se escriben siempre en español. El prompt varía de corpus en corpus — refleja los hallazgos específicos del análisis, no una escena genérica del taller. Cada protocolo define la escena base y los elementos variables de su prompt.
 
 ---
 

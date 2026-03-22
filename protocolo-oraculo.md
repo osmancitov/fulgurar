@@ -1,5 +1,5 @@
 # Protocolo Oráculo — Fulgurar
-*v1.3 · 2026-03-21 · La Convergencia — integrador del sistema*
+*v1.4 · 2026-03-21 · La Convergencia — integrador del sistema*
 
 ---
 
@@ -91,12 +91,15 @@ Toma los outputs de los talleres disponibles y produce la convergencia: lo que l
 
 | Taller | Output que el Oráculo integra |
 |---|---|
+| **Umbral** | Contexto, género, época, temas centrales — enriquece la Situación en la Biblioteca; campo Palabras como estimación base |
 | **Bodega** | Conceptos de mayor curvatura — enriquece la lectura de Riemann |
 | **Astillero** | Estructura narrativa y estratos — enriquece la lectura de la Díada |
-| **Escuadra** | Variables formales — densidad léxica, Zipf — enriquece Díada y Tríada |
+| **Escuadra** | Variables formales — densidad léxica, Zipf, conteo exacto de palabras — enriquece Díada y Tríada |
 | **Jardín** | Agujeros semánticos por estrato — enriquece la Homología persistente |
 | **Prisma** | Firma geométrica completa — base de la situación en la Biblioteca |
 | **Telégrafo** | Entropía, autómata, topología de red — enriquece H4 y H6 |
+
+**Al escribir en `corpus-biblioteca.md`:** el Oráculo usa el conteo computacional de palabras de la Escuadra si está disponible; si no, usa la estimación del Umbral.
 
 **Formato de la convergencia:**
 ```
@@ -291,7 +294,28 @@ Generación libre dentro del registro — no frases fijas.
 ## Operaciones disponibles
 
 *El Oráculo puede ejecutar Observar, Transformar o Producir sobre este corpus. Solicita la operación que necesites.*
+
+---
+
+## Prompt de Imagen
+*Generado siempre. Sección final del producto.*
+
+[prompt en español]
 ```
+
+---
+
+## PROMPT DE IMAGEN — ORÁCULO
+
+Una carta celeste donde cada corpus procesado ocupa su lugar como estrella. La posición del corpus nuevo en la constelación varía con cada corpus: su distancia a los corpus canónicos, su estrategia de grandeza y los corpus más cercanos son únicos cada vez.
+
+Estructura del prompt:
+
+```
+Carta celeste pintada sobre terciopelo negro profundo. [Número de corpus en la Biblioteca] estrellas brillan en posiciones distintas — cada una etiquetada con el apellido del autor en tipografía serif diminuta. Las estrellas más grandes y brillantes son los corpus canónicos mayores. Las constelaciones forman grupos según estrategia de grandeza: [describir el agrupamiento según los corpus actuales]. Una estrella nueva, levemente más brillante que las otras y de color [dorado / azul / verde / cobre según la estrategia del corpus nuevo], ocupa su posición: [TÍTULO EN MAYÚSCULAS] · [APELLIDO]. Líneas de luz tenue conectan esta estrella nueva con sus corpus más cercanos: [lista los corpus más cercanos]. En la esquina superior izquierda: «ORÁCULO OSMANCITO · INTEGRADOR». En la banda inferior: [TÍTULO] · [APELLIDO] / [ESTRATEGIA DE GRANDEZA] / Lucidez [x]% · [n] corpus. Paleta Fulgurar: negro profundo, dorado intenso, constelaciones en blanco tiza. Estética de atlas astronómico del siglo XVIII. Sin fotorrealismo.
+```
+
+La sección final del `.md` contiene el prompt generado con los valores específicos del corpus y su posición en la Biblioteca.
 
 ---
 

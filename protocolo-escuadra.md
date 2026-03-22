@@ -1,5 +1,5 @@
 # Protocolo Escuadra — Fulgurar
-*v1.1 · 2026-03-19 · Geómetra del corpus*
+*v1.2 · 2026-03-21 · Geómetra del corpus*
 
 ---
 
@@ -31,7 +31,7 @@ Opera desde la convicción de que todo corpus tiene una geometría propia. Encon
 
 **CIFRAS DEL CORPUS** — La tabla de medidas base. El inventario numérico del corpus antes de cualquier análisis relacional.
 
-**CARTA GEOMÉTRICA** — El SVG embebido al final del documento. La carta celeste del corpus — sus conceptos como constelaciones, su densidad como Vía Láctea, sus proporciones como meridianos.
+**CARTA GEOMÉTRICA** — La imagen representativa del corpus producida por la Escuadra. Muestra los conceptos del corpus como constelaciones sobre un cielo nocturno, la curva de densidad léxica como Vía Láctea, y los meridianos phi como líneas de referencia. Se genera como prompt de imagen al final del producto.
 
 ---
 
@@ -95,8 +95,6 @@ Tres líneas verticales fijas marcadas sobre el gráfico:
 - Si hay simetría especular en la curva
 - Si el punto phi coincide con un momento argumentalmente significativo del corpus
 - Si el gráfico tiene una forma reconocible — campana, diente de sierra, meseta, colapso
-
-El gráfico se produce como SVG embebido en el documento HTML.
 
 ---
 
@@ -254,7 +252,6 @@ Estos son ejemplos de tono — no frases fijas. El geómetra genera dentro del r
 *La arquitectura visual del corpus.*
 
 [descripción del gráfico y lectura de las proporciones — referencia a phi, punto medio, tercios]
-[En el .html este instrumento incluye un SVG con el gráfico real]
 
 ---
 
@@ -287,46 +284,13 @@ Estos son ejemplos de tono — no frases fijas. El geómetra genera dentro del r
 
 ### Hallazgo Principal
 [una proposición — dato concreto y lo que revela]
-```
 
 ---
 
-### Producto opcional — HTML con SVG
+## Prompt de Imagen
+*Generado siempre. Sección final del producto.*
 
-**Nombre del archivo:** *Producto — Escuadra — [Título] — [Autor].html*
-
-Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`escuadra-header.html`), paleta CSS embebida, gráfico principal como SVG interactivo, grafo de conceptos como SVG, curva de Zipf como SVG, y la carta geométrica incrustada al final de El Levantamiento.
-
-**Estructura HTML:**
-
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escuadra — [Título] — [Autor]</title>
-  <style>/* estilos embebidos — paleta Escuadra */</style>
-</head>
-<body>
-  <!-- encabezado: escuadra-header.html -->
-  <main>
-    <!-- ficha del corpus: ver fulgurar.md — sección FICHA DEL CORPUS -->
-    <section id="cifras"><h1>Cifras del Corpus</h1><em>El inventario numérico — base de todo levantamiento.</em><table><!-- tabla de medidas --></table></section>
-    <section id="densidad"><h1>Perfil de Densidad Léxica</h1><em>Cómo varía la intensidad intelectual a lo largo del corpus.</em><p>[análisis]</p></section>
-    <section id="grafico"><h1>El Gráfico Principal</h1><em>La arquitectura visual del corpus.</em><svg><!-- gráfico de densidad con barras proporcionales y líneas phi --></svg><p>[lectura]</p></section>
-    <section id="red"><h1>Geometría de la Red</h1><em>La topología del corpus — quién sostiene qué.</em><p>[análisis]</p><svg><!-- grafo de conceptos --></svg></section>
-    <section id="proporciones"><h1>Geometría de las Proporciones</h1><em>Las relaciones entre partes mayores.</em><p>[análisis]</p></section>
-    <section id="vocabulario"><h1>Geometría del Vocabulario</h1><em>La curva de Zipf — el comportamiento estadístico del lenguaje.</em><p>[análisis]</p><svg><!-- curva de Zipf --></svg></section>
-    <section id="levantamiento">
-      <h1>El Levantamiento</h1><em>Lo que la geometría reveló.</em>
-      <h2>Síntesis Geométrica</h2><p>[prosa analítica]</p>
-      <h2>Hallazgo Principal</h2><p>[una proposición]</p>
-      <svg><!-- carta geométrica del corpus --></svg>
-    </section>
-  </main>
-</body>
-</html>
+[prompt en español]
 ```
 
 ---
@@ -357,57 +321,21 @@ El segundo logo es la amanita, igual que en los otros talleres.
 
 ---
 
-## SVG EMBEBIDO — CARTA GEOMÉTRICA
-
-Al final de la sección El Levantamiento, siempre se embebe un SVG con:
-
-- **Objeto principal:** una carta celeste — el cielo nocturno como espacio de medición
-- **Fondo:** negro profundo con cuadrícula de navegación fina en violeta muy tenue
-- **Constelaciones:** los conceptos centrales del corpus como nodos conectados, posicionados en el mapa celeste según su peso relativo en la red. Los nodos más conectados son más brillantes y más grandes.
-- **Vía Láctea:** la curva de densidad léxica atravesando el mapa — su forma específica refleja el perfil real del corpus
-- **Tres meridianos:** líneas verticales en 0.382, 0.500 y 0.618. El meridiano phi en color más intenso.
-- **Anotaciones:** donde un pico de densidad cae cerca de un meridiano, se marca el hallazgo con una pequeña etiqueta
-- **Rosa de los vientos:** esquina superior derecha, con flecha norte
-- **Cartouche:** esquina superior izquierda — `CARTA GEOMÉTRICA · [Apellido]`
-- **Banda inferior:** `ESCUADRA OSMANCITO · GEÓMETRA` / título y apellido / hallazgo principal en itálica apenas legible
-- **Pie del SVG:** *[Título] · [Apellido] · Escuadra Osmancito*
-
-**Paleta:** violeta pizarra profundo, negro espacio, blanco tiza para los nodos, dorado para los meridianos phi y los hallazgos.
-
----
-
 ## PROMPT DE IMAGEN — ESCUADRA
 
-Prompt en inglés construido a partir de los datos específicos del levantamiento. La escena captura la mesa del geómetra — no como decorado sino como lugar activo de trabajo.
+La imagen es la carta geométrica del corpus como objeto pictórico — el cielo nocturno donde los conceptos son constelaciones. La forma de la red, la curva de densidad y el hallazgo principal varían de corpus en corpus, produciendo una carta celeste única cada vez.
 
 Estructura del prompt:
 
 ```
-A geometer's drafting table under focused lamplight. Spread 
-across the table: large-format technical drawings of [corpus 
-description — its architecture, its themes, its structure as 
-physical form]. The drawings show [specific geometric finding 
-from the levantamiento — phi proportion, network topology, 
-density curve shape] rendered as precise architectural plans. 
-A compass and straightedge rest on the parchment. [Atmospheric 
-detail derived from the corpus — medieval stone if Eco, 
-industrial steel if contemporary essay, tropical wood if 
-Latin American novel]. In the corner, a small star chart 
-showing the corpus's conceptual network as constellations. 
-The main drawing has a label reading: ESCUADRA OSMANCITO · 
-GEÓMETRA / [TITLE] · [AUTHOR LAST NAME] / [HALLAZGO PRINCIPAL]. 
-[Dominant color from corpus atmosphere]. Chiaroscuro technical 
-light. Engraving meets scientific illustration aesthetic. 
-No photorealism.
+Carta celeste pintada sobre papel de astrónomo. Fondo negro profundo con cuadrícula de navegación fina en violeta tenue. Los conceptos centrales del corpus [lista los conceptos principales del análisis Riemann] aparecen como nodos brillantes conectados por líneas de luz — los más conectados son más grandes y más luminosos. Una banda de luz difusa atraviesa el mapa de [descripción de la forma de la curva de densidad léxica del corpus — campana / diente de sierra / meseta / colapso]. Tres meridianos verticales en 0.382, 0.500 y 0.618 cruzan el mapa; el meridiano phi [indicar si el hallazgo principal cae cerca o lejos de phi] aparece más intenso. En la esquina superior izquierda, un cartouche reza: «CARTA GEOMÉTRICA · [APELLIDO]». En la banda inferior: ESCUADRA OSMANCITO · GEÓMETRA / [TÍTULO] · [APELLIDO] / [HALLAZGO PRINCIPAL en itálica apenas legible]. Paleta: violeta pizarra profundo, negro espacio, blanco tiza para los nodos, dorado para los meridianos phi. Estética de ilustración científica del siglo XIX, sin fotorrealismo.
 ```
 
-*Nombre sugerido: Prompt de imagen — Escuadra — [Título] — [Autor].txt*
+La sección final del `.md` contiene el prompt generado con los valores específicos del corpus.
 
 ---
 
-## ACTUALIZACIONES PARA fulgurar.md
-
-Bloques listos para copiar y pegar en `fulgurar.md`:
+## ACTUALIZACIONES PARA matriz.md
 
 ### En la tabla de Marcas (sección IDENTIDAD VISUAL):
 
@@ -429,23 +357,11 @@ Bloques listos para copiar y pegar en `fulgurar.md`:
 | `--vellum` | `#f4f2fa` | Fondo del documento |
 ```
 
-### En la tabla de Nombres de archivo (sección PRODUCCIÓN):
-
-```
-- **Escuadra:** *Producto — Escuadra — [Título] — [Autor].html*
-```
-
 ### En la sección IDENTIDAD DEL SISTEMA:
 
 ```
 - **La Escuadra** — mide corpus. Levanta la geometría invisible del texto: 
   proporciones, densidad léxica, topología de conceptos, curva de Zipf.
-```
-
-### En la sección VERSIONADO — lista de archivos del sistema:
-
-```
-· `protocolo-escuadra.md`  · `escuadra-header.html`
 ```
 
 ### En la sección RECEPCIÓN — al recibir un corpus:

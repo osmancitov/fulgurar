@@ -1,5 +1,5 @@
 # Protocolo Jardín — Fulgurar
-*v1.1 · 2026-03-19 · Jardinero del corpus*
+*v1.2 · 2026-03-21 · Jardinero del corpus*
 
 ---
 
@@ -33,7 +33,7 @@ El nombre del taller viene de PaRDeS — la palabra hebrea para jardín o paraí
 
 **HUMUS** — Lo que el corpus deposita en el lector después de la lectura. No es lo que el texto dice — es lo que deja.
 
-**CARTA DEL JARDÍN** — El SVG embebido al final del documento. El corte transversal del suelo — los cuatro estratos como capas geológicas con sus lecturas y tensiones visibles.
+**CARTA DEL JARDÍN** — La imagen representativa del corpus producida por el Jardín. Muestra el corte transversal del suelo con los cuatro estratos como capas geológicas, las lecturas como elementos dentro de cada capa y las tensiones como líneas entre ellas. Se genera como prompt de imagen al final del producto.
 
 ---
 
@@ -213,44 +213,13 @@ Estos son ejemplos de tono — no frases fijas. El jardinero genera dentro del r
 
 ### La Semilla
 [una proposición — lo más profundo encontrado]
-```
 
 ---
 
-### Producto opcional — HTML con SVG
+## Prompt de Imagen
+*Generado siempre. Sección final del producto.*
 
-**Nombre del archivo:** *Producto — Jardín — [Título] — [Autor].html*
-
-Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`jardin-header.html`), paleta CSS embebida, ficha del corpus formateada, y la carta del jardín SVG (corte transversal del suelo) incrustada al final de El Perfil.
-
-**Estructura HTML:**
-
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jardín — [Título] — [Autor]</title>
-  <style>/* estilos embebidos — paleta Jardín */</style>
-</head>
-<body>
-  <!-- encabezado: jardin-header.html -->
-  <main>
-    <!-- ficha del corpus: ver fulgurar.md — sección FICHA DEL CORPUS -->
-    <section id="dice"><h1>Lo que Dice</h1><em>La superficie del texto — lo que ocurre.</em><p>[análisis]</p></section>
-    <section id="muestra"><h1>Lo que Muestra</h1><em>Las imágenes y símbolos que el texto activa sin declarar.</em><p>[análisis]</p></section>
-    <section id="exige"><h1>Lo que Exige</h1><em>La transformación que el texto le pide al lector.</em><p>[análisis]</p></section>
-    <section id="guarda"><h1>Lo que Guarda</h1><em>El núcleo que solo se ve en silencio.</em><p>[análisis]</p></section>
-    <section id="perfil">
-      <h1>El Perfil</h1><em>Lo que el Jardín encontró al cavar.</em>
-      <h2>Síntesis del Jardín</h2><p>[prosa contemplativa]</p>
-      <h2>La Semilla</h2><p>[una proposición]</p>
-      <svg><!-- carta del jardín — corte transversal del suelo — ver especificaciones SVG --></svg>
-    </section>
-  </main>
-</body>
-</html>
+[prompt en español]
 ```
 
 ---
@@ -281,63 +250,21 @@ El segundo logo es la amanita, igual que en todos los talleres.
 
 ---
 
-## SVG EMBEBIDO — CARTA DEL JARDÍN
-
-Al final de la sección El Perfil, siempre se embebe un SVG con:
-
-- **Objeto principal:** un corte transversal del suelo — cuatro estratos geológicos apilados verticalmente, cada uno con textura y color distintos
-- **Los cuatro estratos como capas:**
-  - *Lo que Dice* — capa superficial, tierra clara, textura de hojarasca
-  - *Lo que Muestra* — segunda capa, tierra media, raíces visibles
-  - *Lo que Exige* — tercera capa, tierra oscura, minerales
-  - *Lo que Guarda* — capa más profunda, tierra negra, semilla dorada en el centro
-- **Lecturas como elementos dentro de cada capa:** pequeños nodos o símbolos que representan las lecturas encontradas — más nodos indica más riqueza en ese estrato
-- **Tensiones como líneas entre nodos:** cuando dos lecturas están en tensión, una línea las conecta
-- **La raíz central:** desciende desde la superficie hasta la semilla, ramificándose. Su forma refleja la estructura del corpus
-- **Etiquetas de estrato:** nombre de cada capa en el margen izquierdo
-- **Banda superior:** `JARDÍN OSMANCITO · JARDINERO` / título y apellido
-- **Banda inferior:** la semilla en itálica apenas legible
-- **Pie del SVG:** *[Título] · [Apellido] · Jardín Osmancito*
-
-**Paleta:** verde musgo profundo, negro tierra, ocre para las raíces, dorado para la semilla, blanco petal para las etiquetas.
-
----
-
 ## PROMPT DE IMAGEN — JARDÍN
 
-Prompt en inglés construido a partir de los datos específicos del perfil. La escena captura el jardín como lugar de excavación activa — no un jardín ornamental sino un jardín de trabajo.
+El corte transversal del suelo como ilustración botánica. Los cuatro estratos tienen textura y color derivados de la atmósfera específica del corpus — un ensayo filosófico produce tierra urbana con trazas industriales, un texto medieval produce turba oscura con fragmentos de pergamino, una épica produce arcilla antigua con semillas fosilizadas. Las lecturas encontradas en cada estrato varían de corpus en corpus.
 
 Estructura del prompt:
 
 ```
-A cross-section of ancient garden soil, cut open to reveal 
-four distinct geological layers. [Description of the corpus 
-atmosphere translated into soil texture and color — medieval 
-manuscript becomes dark peat and vellum fragments, 
-contemporary essay becomes urban soil with industrial traces, 
-mythological text becomes deep loam with ancient seeds]. 
-The surface layer shows [literal reading elements as surface 
-objects]. The second layer reveals [allegorical images as root 
-patterns and mineral formations]. The third layer holds 
-[moral tensions as branching root conflicts]. The deepest 
-layer contains [mystical readings as luminous seeds or 
-crystal formations — multiple seeds if multiple deep readings 
-coexist]. A single root descends from surface to deepest 
-layer, branching as it goes. In the corner, a gardener's 
-notebook with a pressed specimen and the label: JARDÍN 
-OSMANCITO · JARDINERO / [TITLE] · [AUTHOR LAST NAME] / 
-[LA SEMILLA]. [Dominant atmospheric color from corpus mood]. 
-Cross-section botanical illustration aesthetic. 
-Chiaroscuro earth light. No photorealism.
+Corte transversal de suelo antiguo, abierto para revelar cuatro estratos geológicos distintos. [Descripción de la atmósfera del corpus traducida a textura y color del suelo — ensayo filosófico produce tierra urbana con trazas industriales, texto medieval produce turba oscura con fragmentos de pergamino, épica produce arcilla antigua con semillas fosilizadas]. La capa superficial muestra [elementos de la lectura literal como objetos en la superficie]. La segunda capa revela [imágenes alegóricas como patrones de raíces y formaciones minerales]. La tercera capa contiene [tensiones morales como conflictos de raíces ramificadas]. La capa más profunda guarda [lecturas místicas como semillas luminosas o formaciones cristalinas — varias semillas si coexisten varias lecturas profundas]. Una raíz central desciende desde la superficie hasta la capa más profunda, ramificándose. En la esquina, un cuaderno de jardinero con una muestra prensada y la etiqueta: JARDÍN OSMANCITO · JARDINERO / [TÍTULO] · [APELLIDO] / [LA SEMILLA]. [Color atmosférico dominante derivado del clima del corpus]. Estética de ilustración botánica en sección transversal. Luz terrestre en claroscuro. Sin fotorrealismo.
 ```
 
-*Nombre sugerido: Prompt de imagen — Jardín — [Título] — [Autor].txt*
+La sección final del `.md` contiene el prompt generado con los valores específicos del corpus.
 
 ---
 
-## ACTUALIZACIONES PARA fulgurar.md
-
-Bloques listos para copiar y pegar en `fulgurar.md`:
+## ACTUALIZACIONES PARA matriz.md
 
 ### En la tabla de Marcas (sección IDENTIDAD VISUAL):
 
@@ -359,24 +286,12 @@ Bloques listos para copiar y pegar en `fulgurar.md`:
 | `--loam` | `#f2f5f0` | Fondo del documento |
 ```
 
-### En la tabla de Nombres de archivo (sección PRODUCCIÓN):
-
-```
-- **Jardín:** *Producto — Jardín — [Título] — [Autor].html*
-```
-
 ### En la sección IDENTIDAD DEL SISTEMA:
 
 ```
 - **El Jardín** — cava corpus. Lee en cuatro estratos simultáneos: 
   lo que dice, lo que muestra, lo que exige, lo que guarda. 
   Expone tensiones entre lecturas sin resolverlas.
-```
-
-### En la sección VERSIONADO — lista de archivos del sistema:
-
-```
-· `protocolo-jardin.md`  · `jardin-header.html`
 ```
 
 ### En la sección RECEPCIÓN — al recibir un corpus:

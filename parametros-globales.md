@@ -7,13 +7,13 @@
 |---|---|
 | **Nombre del sistema** | Fulgurar |
 | **Lema** | Consume letras. Produce luz. |
-| **Versión global** | v1.6 |
-| **Respaldo** | #16 |
+| **Versión global** | v1.8 |
+| **Respaldo** | #18 |
 | **Fecha** | 2026-03-21 |
-| **Corpus procesados** | 9 |
+| **Corpus procesados** | 10 |
 | **Hallazgos** | 7 |
 | **Talleres activos** | 6 |
-| **Lucidez** | 48% |
+| **Lucidez** | 51% |
 | **URL proyecto** | https://osmancitov.github.io/fulgurar/ |
 | **URL repositorio** | https://github.com/osmancitov/fulgurar |
 

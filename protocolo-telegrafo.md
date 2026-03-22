@@ -1,5 +1,5 @@
 # Protocolo Telégrafo — Fulgurar
-*v1.0 · 2026-03-19 · Teoría de la información*
+*v1.1 · 2026-03-21 · Teoría de la información*
 
 ---
 
@@ -283,45 +283,13 @@ Generación libre dentro del registro — no frases fijas.
 
 ### Señal Clave
 [una proposición — dato concreto y lo que revela]
-```
 
 ---
 
-### Producto opcional — HTML con SVG
+## Prompt de Imagen
+*Generado siempre. Sección final del producto.*
 
-**Nombre del archivo:** *Producto — Telégrafo — [Título] — [Autor].html*
-
-Se genera solo si el usuario lo solicita explícitamente. Contiene todo lo del `.md` más: encabezado visual animado (`telegrafo-header.html`), paleta CSS embebida, ficha del corpus formateada, gráfico de entropía como SVG, diagrama del autómata como SVG, grafo con propiedades topológicas como SVG, y el SVG de cinta telegráfica incrustado al final del Despacho.
-
-**Estructura HTML:**
-
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Telégrafo — [Título] — [Autor]</title>
-  <style>/* estilos embebidos — paleta Telégrafo */</style>
-</head>
-<body>
-  <!-- encabezado: telegrafo-header.html -->
-  <main>
-    <!-- ficha del corpus -->
-    <section id="entropia"><h1>Entropía de Shannon</h1><em>Cuánta sorpresa contiene el corpus — su densidad de información.</em><p>[análisis]</p><svg><!-- gráfico de entropía por segmento --></svg></section>
-    <section id="sorpresa"><h1>Mapa de Sorpresa</h1><em>La distribución de la sorpresa a lo largo del corpus — dónde golpea y dónde adormece.</em><p>[análisis]</p><svg><!-- curva de sorpresa --></svg></section>
-    <section id="automata"><h1>Autómata del Corpus</h1><em>El corpus como máquina de estados — su gramática profunda.</em><p>[análisis]</p><svg><!-- diagrama de estados y transiciones --></svg></section>
-    <section id="red"><h1>Topología de la Red</h1><em>Las propiedades globales del grafo conceptual — si el corpus integra o acumula.</em><p>[análisis]</p><svg><!-- grafo con métricas --></svg></section>
-    <section id="redundancia"><h1>Redundancia y Capacidad de Canal</h1><em>Cuánto repite el corpus y qué dice esa repetición sobre su arquitectura.</em><p>[análisis]</p></section>
-    <section id="despacho">
-      <h1>El Despacho</h1><em>Lo que el canal reveló.</em>
-      <h2>Perfil de Transmisión</h2><p>[prosa analítica]</p>
-      <h2>Señal Clave</h2><p>[una proposición]</p>
-      <svg><!-- cinta telegráfica con el despacho --></svg>
-    </section>
-  </main>
-</body>
-</html>
+[prompt en español]
 ```
 
 ---
@@ -359,53 +327,17 @@ El segundo logo es la amanita, igual que en todos los talleres.
 
 ---
 
-## SVG EMBEBIDO — CINTA TELEGRÁFICA
-
-Al final de la sección El Despacho, siempre se embebe un SVG con:
-
-- **Objeto principal:** una cinta telegráfica expandida como objeto físico — el SVG es la cinta misma, no una escena con aparato
-- **Fondo:** negro profundo con textura de papel télex muy sutil
-- **Banda superior:** `TELÉGRAFO OSMANCITO · OPERADOR` en tipografía monoespaciada, tono cobre
-- **Cuerpo de la cinta — de arriba abajo:**
-  - *Cabecera:* título del corpus y apellido del autor en tipo mayor
-  - *Línea de entropía:* valor H y clasificación (densa · equilibrada · redundante · ritual)
-  - *Línea de red:* clasificación topológica (small-world · scale-free · fragmentada)
-  - *Línea de autómata:* número de estados alcanzables / total posibles
-  - *Línea de redundancia:* porcentaje de capacidad de canal utilizada
-  - *Señal clave:* en tipo mayor, con subrayado — el hallazgo principal
-- **Código Morse:** la Señal Clave traducida a puntos y rayas, corriendo a lo largo del borde inferior de la cinta
-- **Sello de transmisión:** esquina inferior derecha — `TRANSMITIDO · [fecha]`
-- **Pie del SVG:** *[Título] · [Apellido] · Telégrafo Osmancito*
-
-**Paleta:** negro telegráfico, cobre para los valores destacados, blanco de papel para el texto, cobre oxidado para los separadores.
-
----
-
 ## PROMPT DE IMAGEN — TELÉGRAFO
 
-Prompt en inglés construido a partir de los datos específicos del despacho.
+La cinta telegráfica como objeto físico expandido — el despacho impreso sobre papel de papel télex. Los datos del análisis varían de corpus en corpus: la entropía, la clasificación de la red y la señal clave son distintas para cada texto procesado.
+
+Estructura del prompt:
 
 ```
-A telegraph operator's station, late night, under a single 
-brass lamp. On the desk: a precision Morse telegraph 
-apparatus in copper and black, its lever mid-transmission. 
-A paper tape feeds through the instrument, printed with 
-dots and dashes. [Atmospheric detail derived from the corpus 
-— gothic stone walls if Kafka, warm wood if García Márquez, 
-cold steel if contemporary essay, ancient marble if Homer]. 
-On the wall, a hand-drawn diagram showing [autómata topology 
-— number of states, key transitions, unreachable states 
-sketched as ghosted circles]. A galvanometer needle holds 
-steady at [entropy value]. The tape in the foreground reads: 
-TELÉGRAFO OSMANCITO · OPERADOR / [TITLE] · [AUTHOR LAST NAME] 
-/ H=[entropy] · [network classification] / [SEÑAL CLAVE in 
-all caps]. [Dominant color from corpus atmosphere — copper 
-warmth for humanist texts, cold blue-black for Kafka-type]. 
-Chiaroscuro lamp light. Engraving meets scientific 
-instrument aesthetic. No photorealism.
+Una cinta de papel telegráfico expandida sobre fondo negro profundo, con textura sutil de papel télex antiguo. En la banda superior: «TELÉGRAFO OSMANCITO · OPERADOR» en tipografía monoespaciada color cobre. El cuerpo de la cinta muestra, de arriba abajo: [TÍTULO] · [APELLIDO] en tipo mayor; «H=[valor de entropía] · [clasificación: densa / equilibrada / redundante / ritual]»; «Red: [clasificación topológica: small-world / scale-free / fragmentada]»; «Estados: [número alcanzables]/[total posibles]»; «Canal: [porcentaje de capacidad utilizada]%». La señal clave aparece en tipo mayor con subrayado: «[SEÑAL CLAVE EN MAYÚSCULAS]». A lo largo del borde inferior corre el código Morse de la señal clave como puntos y rayas. En la esquina inferior derecha: «TRANSMITIDO · [fecha]». [Ambiente del corpus expresado en el color dominante de la cinta — cobre cálido para textos humanistas, azul-negro frío para textos como Kafka, verde oxidado para textos clásicos]. Estética de grabado y documento técnico del siglo XIX. Sin fotorrealismo.
 ```
 
-*Nombre sugerido: Prompt de imagen — Telégrafo — [Título] — [Autor].txt*
+La sección final del `.md` contiene el prompt generado con los valores específicos del corpus.
 
 ---
 
@@ -422,7 +354,7 @@ El Telégrafo aporta a la convergencia del Oráculo:
 
 ---
 
-## ACTUALIZACIONES PARA fulgurar.md
+## ACTUALIZACIONES PARA matriz.md
 
 ### En la tabla de Marcas (sección IDENTIDAD VISUAL):
 
@@ -444,13 +376,6 @@ El Telégrafo aporta a la convergencia del Oráculo:
 | `--parchment` | `#f8f4e8` | Fondo del documento |
 ```
 
-### En la tabla de Nombres de archivo (sección PRODUCCIÓN):
-
-```
-- **Telégrafo:** *Producto — Telégrafo — [Título] — [Autor].md*
-- **Telégrafo (opcional):** *Producto — Telégrafo — [Título] — [Autor].html*
-```
-
 ### En la sección IDENTIDAD DEL SISTEMA:
 
 ```
@@ -465,12 +390,6 @@ El Telégrafo aporta a la convergencia del Oráculo:
 ```
 **Telégrafo** — escucha: entropía, sorpresa, autómata de estados, 
 topología de red, redundancia y capacidad de canal.
-```
-
-### En la sección VERSIONADO — lista de archivos del sistema:
-
-```
-· `protocolo-telegrafo.md`  · `telegrafo-header.html`
 ```
 
 ### En la sección RECEPCIÓN — al recibir un corpus:

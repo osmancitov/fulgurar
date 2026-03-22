@@ -1,5 +1,5 @@
 # Protocolo Umbral — Fulgurar
-*v1.3 · 2026-03-20 · Protocolo de entrada — primer contacto con el corpus*
+*v1.4 · 2026-03-21 · Protocolo de entrada — primer contacto con el corpus*
 
 ---
 
@@ -163,7 +163,7 @@ Descripción precisa de cómo está organizado el corpus. Incluye:
 
 - Número de partes, capítulos, libros, cantos, actos o secciones — según la unidad organizativa del corpus
 - Nombres o títulos de las divisiones mayores si los tienen
-- Extensión aproximada (breve / medio / extenso) y tiempo estimado de lectura
+- Extensión aproximada (breve / medio / extenso), palabras estimadas y tiempo estimado de lectura
 - Si hay paratexto relevante (prólogo, epílogo, notas del autor) que los talleres puedan referenciar
 
 Para corpus sin estructura declarada (algunos poemarios, ensayos breves, textos fragmentarios): describir la organización implícita o el principio de composición.
@@ -234,7 +234,7 @@ Generación libre dentro del registro — no frases fijas.
 
 ## PROMPT DE PORTADA
 
-El prompt de portada es el segundo producto del Umbral. Se genera siempre, junto con la carta de presentación.
+El prompt de portada es la sección final del `.md` del Umbral. Se genera siempre, en español.
 
 La portada no ilustra una escena del corpus — encarna su atmósfera completa. No es una ilustración del argumento sino una imagen que podría preceder todo el paquete de análisis: la primera cosa que el lector vería antes de leer cualquiera de los productos generados por los talleres.
 
@@ -259,10 +259,8 @@ La portada no ilustra una escena del corpus — encarna su atmósfera completa. 
 [Estilo y técnica — pictórico, grabado, ilustración científica, etc.].
 En la esquina inferior, una etiqueta discreta que lee:
 FULGURAR · [TÍTULO EN MAYÚSCULAS] · [APELLIDO DEL AUTOR EN MAYÚSCULAS].
-Painterly style, no photorealism.
+Estilo pictórico, sin fotorrealismo.
 ```
-
-*Nombre del archivo: Prompt de portada — [Título] — [Autor].txt*
 
 ---
 
@@ -283,6 +281,7 @@ Painterly style, no photorealism.
 
 **Título** — [valor]
 **Autor** — [valor]
+**Palabras** — [estimación]
 **Fecha de procesamiento** — [fecha]
 
 ---
@@ -314,7 +313,7 @@ Painterly style, no photorealism.
 ---
 
 ## Estructura del Corpus
-[descripción de la organización — partes, capítulos, extensión, paratexto]
+[descripción de la organización — partes, capítulos, extensión, palabras, paratexto]
 
 ---
 
@@ -332,6 +331,12 @@ Painterly style, no photorealism.
 - [Tema 1 formulado como tensión o pregunta]
 - [Tema 2 formulado como tensión o pregunta]
 - [Tema 3 si existe]
+
+---
+
+## Prompt de Portada
+
+[prompt en español]
 ```
 
 ---
@@ -340,7 +345,7 @@ Painterly style, no photorealism.
 
 El Umbral es el protocolo de entrada — se ejecuta antes de cualquier taller. Su producto no alimenta directamente el análisis de los talleres (cada taller opera sobre el corpus directamente), pero orienta al lector del paquete y puede ser referenciado por los talleres cuando sea útil.
 
-El Oráculo puede usar la carta de presentación como punto de partida para la sección de Situación en la Biblioteca: el contexto y los temas centrales del Umbral enriquecen la comparación con corpus previos.
+El Oráculo integra el producto del Umbral al escribir en la Biblioteca: el contexto, el género, la época y los temas centrales enriquecen la sección de Situación en la Biblioteca. El campo Palabras del Umbral es una estimación — si la Escuadra ha corrido, el Oráculo usa su conteo computacional exacto al escribir la entrada permanente en `corpus-biblioteca.md`.
 
 **Corpus permanente (Modo 5):** cuando el corpus entra por el Modo 5 — archivos subidos al proyecto — queda disponible de forma permanente. Los talleres pueden leerlo en cualquier sesión posterior sin que el usuario tenga que adjuntar nada.
 

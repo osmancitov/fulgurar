@@ -1,4 +1,4 @@
-# Fulgurar v1.6
+# Fulgurar v1.8
 *Consume letras. Produce luz.*
 
 - [osmancitov.github.io/fulgurar](https://osmancitov.github.io/fulgurar/) — Página del proyecto
@@ -44,7 +44,7 @@ El sistema tiene un protocolo de entrada, seis talleres activos y Oráculo acumu
 
 **Telégrafo** escucha corpus. Entropía de Shannon, mapa de sorpresa, autómata de estados y transiciones, topología global de la red conceptual, redundancia y capacidad de canal.
 
-**Oráculo** *(Lucidez: 48%)* — integra los talleres, escribe en la Biblioteca, calibra los hallazgos empíricos, y ejecuta las tres operaciones: Observar · Transformar · Producir.
+**Oráculo** *(Lucidez: 51%)* — integra los talleres, escribe en la Biblioteca, calibra los hallazgos empíricos, y ejecuta las tres operaciones: Observar · Transformar · Producir.
 
 ---
 
@@ -62,7 +62,7 @@ ORÁCULO
 Integrar · Observar · Transformar · Producir
   ↕
 BIBLIOTECA — corpus-biblioteca.md
-9 corpus · 7 hallazgos · Lucidez: 48%
+10 corpus · 7 hallazgos · Lucidez: 51%
 ```
 
 La **Biblioteca** es una capa independiente. Todos los talleres producen outputs. Oráculo los integra y escribe en la Biblioteca. La Biblioteca crece con cada corpus procesado.
@@ -71,17 +71,18 @@ La **Biblioteca** es una capa independiente. Todos los talleres producen outputs
 
 ## Biblioteca
 
-| # | Corpus | Género | Época | Rol |
-|---|---|---|---|---|
-| 1 | Caperucita Roja — Grimm | Cuento oral | s. XIX (recopilación) | Canónico |
-| 2 | El coronel no tiene quien le escriba — García Márquez | Novela corta | 1961 | Canónico |
-| 3 | Hamlet — Shakespeare | Drama en verso | c. 1600 | Canónico |
-| 4 | La vida es sueño — Calderón | Drama en verso | 1635 | Control de Hamlet |
-| 5 | La Odisea — Homero | Épica | c. s. VIII a.C. | Canónico |
-| 6 | Argonáuticas — Apolonio de Rodas | Épica | c. s. III a.C. | Control de La Odisea |
-| 7 | Cien años de soledad — García Márquez | Novela | 1967 | Canónico |
-| 8 | El proceso — Franz Kafka | Novela | 1925 (póstuma) | Caso especial |
-| 9 | El mito de Sísifo — Albert Camus | Ensayo filosófico | 1942 | Convergencia completa |
+| # | Corpus | Género | Época | Palabras | Rol |
+|---|---|---|---|---|---|
+| 1 | Caperucita Roja — Grimm | Cuento oral | s. XIX (recopilación) | ~1.500 | Canónico |
+| 2 | El coronel no tiene quien le escriba — García Márquez | Novela corta | 1961 | ~28.000 | Canónico |
+| 3 | Hamlet — Shakespeare | Drama en verso | c. 1600 | ~30.000 | Canónico |
+| 4 | La vida es sueño — Calderón | Drama en verso | 1635 | ~22.000 | Control de Hamlet |
+| 5 | La Odisea — Homero | Épica | c. s. VIII a.C. | ~120.000 | Canónico |
+| 6 | Argonáuticas — Apolonio de Rodas | Épica | c. s. III a.C. | ~70.000 | Control de La Odisea |
+| 7 | Cien años de soledad — García Márquez | Novela | 1967 | ~140.000 | Canónico |
+| 8 | El proceso — Franz Kafka | Novela | 1925 (póstuma) | ~60.000 | Caso especial |
+| 9 | El mito de Sísifo — Albert Camus | Ensayo filosófico | 1942 | ~34.000 | Convergencia completa |
+| 10 | El extranjero — Albert Camus | Novela breve | 1942 | ~29.000 | Par de El mito de Sísifo |
 
 **Próximos corpus**
 
@@ -90,7 +91,6 @@ La **Biblioteca** es una capa independiente. Todos los talleres producen outputs
 | Alta | Don Quijote — Cervantes | Primera novela moderna — ¿qué estrategia inaugura el género? |
 | Alta | Pedro Páramo — Rulfo | ¿Sustracción como El proceso o concentración como El coronel? |
 | Alta | Divina Comedia — Dante | Épica medieval — ¿ondulación majestuosa o complejidad máxima? |
-| Alta | El extranjero — Camus | Segunda prueba de estrategia sustractiva y segunda obra del mismo autor |
 | Media | En busca del tiempo perdido — Proust | Obra de máxima extensión — ¿cómo se mide la firma a esa escala? |
 | Control | Cualquier bestseller contemporáneo | Verificar que apertura topológica baja correlaciona con obras no canónicas |
 
@@ -102,9 +102,9 @@ La **Biblioteca** es una capa independiente. Todos los talleres producen outputs
 
 Los horizontes no son secuenciales ni excluyentes. Cada uno amplía el campo de visión sin cerrar el anterior.
 
-**Horizonte 1 — Masa crítica** — más corpus en la Biblioteca para que los hallazgos ganen confianza. H7 provisional con 1/9. La hipótesis del Telégrafo sobre redes small-world validada por primera vez con El mito de Sísifo — requiere confirmación en más corpus. Corpus prioritarios: El extranjero (Camus, prioridad alta), Don Quijote, Pedro Páramo, Divina Comedia, un bestseller como control negativo. Indicador: lucidez al 65%.
+**Horizonte 1 — Masa crítica** — más corpus en la Biblioteca para que los hallazgos ganen confianza. H7 provisional con 1/10. La hipótesis del Telégrafo sobre redes small-world tiene ahora dos validaciones directas (El mito de Sísifo · El extranjero) — el patrón se refuerza pero requiere confirmación en corpus de estrategia diferente. El par Camus confirma que la firma mide la obra, no al autor: mismo autor, mismo año, dos geometrías distintas. Corpus prioritarios: Don Quijote, Pedro Páramo, Divina Comedia, un bestseller como control negativo. Indicador: lucidez al 65%.
 
-**Horizonte 2 — Profundidad operativa** — Oráculo produciendo convergencia completa sobre corpus reales. Primera convergencia completa ejecutada: El mito de Sísifo (todos los talleres + Oráculo). Las tres operaciones ejecutadas con confianza calibrada. Indicador: Oráculo produce algo que ningún taller habría visto solo.
+**Horizonte 2 — Profundidad operativa** — Oráculo produciendo convergencia completa sobre corpus reales. Segunda convergencia completa ejecutada: El extranjero (todos los talleres + Oráculo). La Convergencia produjo el hallazgo de los dos autómatas incompatibles — algo que ningún taller habría visto solo. Las tres operaciones ejecutadas con confianza calibrada. Indicador: Oráculo produce algo que ningún taller habría visto solo.
 
 **Horizonte 3 — Apertura** — el sistema listo para que otros lo usen. Manual del operador. La pregunta central con una respuesta provisional pero defendible. Indicador: alguien que no construyó el sistema puede usarlo sin ayuda.
 
@@ -114,22 +114,22 @@ Los horizontes no son secuenciales ni excluyentes. Cada uno amplía el campo de 
 
 ```
 fulgurar/
-├── [README.md](README.md)                              <- este archivo
-├── [CHANGELOG.md](CHANGELOG.md)                        <- historial completo de cambios
-├── [system-prompt.md](system-prompt.md)                <- instrucciones de arranque del sistema
-├── [parametros-globales.md](parametros-globales.md)    <- fuente de verdad — valores actuales del sistema
-├── [matriz.md](matriz.md)                              <- módulo central del sistema
-├── [protocolo-umbral.md](protocolo-umbral.md)          <- protocolo de entrada — carta de presentación y portada
-├── [protocolo-bodega.md](protocolo-bodega.md)          <- vocabulario, criterios y formato de Bodega
-├── [protocolo-astillero.md](protocolo-astillero.md)    <- vocabulario, arquetipos, diez estratos de Astillero
-├── [protocolo-escuadra.md](protocolo-escuadra.md)      <- vocabulario, seis instrumentos de Escuadra
-├── [protocolo-jardin.md](protocolo-jardin.md)          <- vocabulario, cuatro estratos de Jardín
-├── [protocolo-prisma.md](protocolo-prisma.md)          <- algoritmo y operación de Prisma
-├── [protocolo-oraculo.md](protocolo-oraculo.md)        <- diseño completo de Oráculo
-├── [protocolo-telegrafo.md](protocolo-telegrafo.md)    <- vocabulario, cinco instrumentos de Telégrafo
-├── [protocolo-taller.md](protocolo-taller.md)          <- protocolo para construir talleres nuevos
-├── [protocolo-respaldo.md](protocolo-respaldo.md)      <- protocolo de generación de respaldos
-└── [corpus-biblioteca.md](corpus-biblioteca.md)        <- 9 corpus procesados · 7 hallazgos — Biblioteca
+├── README.md                              <- este archivo
+├── CHANGELOG.md                           <- historial completo de cambios
+├── system-prompt.md                       <- instrucciones de arranque del sistema
+├── parametros-globales.md                 <- fuente de verdad — valores actuales del sistema
+├── matriz.md                              <- módulo central del sistema
+├── protocolo-umbral.md                    <- protocolo de entrada — carta de presentación y portada
+├── protocolo-bodega.md                    <- vocabulario, criterios y formato de Bodega
+├── protocolo-astillero.md                 <- vocabulario, arquetipos, diez estratos de Astillero
+├── protocolo-escuadra.md                  <- vocabulario, seis instrumentos de Escuadra
+├── protocolo-jardin.md                    <- vocabulario, cuatro estratos de Jardín
+├── protocolo-prisma.md                    <- algoritmo y operación de Prisma
+├── protocolo-oraculo.md                   <- diseño completo de Oráculo
+├── protocolo-telegrafo.md                 <- vocabulario, cinco instrumentos de Telégrafo
+├── protocolo-taller.md                    <- protocolo para construir talleres nuevos
+├── protocolo-respaldo.md                  <- protocolo de generación de respaldos
+└── corpus-biblioteca.md                   <- 10 corpus procesados · 7 hallazgos — Biblioteca
 ```
 
 ---
@@ -158,4 +158,4 @@ Abre una conversación nueva y escribe: **Hola**
 
 ---
 
-*Fulgurar v1.6 · Respaldo #16 · 2026-03-21*
+*Fulgurar v1.8 · Respaldo #18 · 2026-03-21*
