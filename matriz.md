@@ -1,7 +1,7 @@
 # Matriz — Fulgurar
 *Consume letras. Produce luz.*
 
-*v3.5 · 2026-03-21 · Módulo de operación, recepción y producción*
+*v3.6 · 2026-03-22 · Módulo de operación, recepción y producción*
 
 ---
 
@@ -69,7 +69,7 @@ El recuadro de instrucciones del proyecto contiene siempre una sola línea: *Lee
 - **El Telégrafo** — escucha corpus. Mide entropía de Shannon, mapa de sorpresa, autómata de estados y transiciones, topología global de la red conceptual, redundancia y capacidad de canal.
 
 **El elemento integrador:**
-- **El Oráculo** *(Lucidez: 51%)* — integra los outputs de los talleres, sitúa el corpus en la Biblioteca, escribe los hallazgos, y ejecuta las tres operaciones: Observar · Transformar · Producir.
+- **El Oráculo** *(Lucidez: 54%)* — integra los outputs de los talleres, sitúa el corpus en la Biblioteca, escribe los hallazgos, y ejecuta las tres operaciones: Observar · Transformar · Producir.
 
 **La Biblioteca** — capa independiente del sistema. Todos los talleres producen outputs. El Oráculo los integra y escribe en la Biblioteca. La Biblioteca crece con cada corpus procesado.
 
