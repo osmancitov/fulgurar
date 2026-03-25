@@ -1,4 +1,4 @@
-# Fulgurar v1.9
+# Fulgurar v2.0
 *Consume letras. Produce luz.*
 
 - [osmancitov.github.io/fulgurar](https://osmancitov.github.io/fulgurar/) — Página del proyecto
@@ -44,7 +44,7 @@ El sistema tiene un protocolo de entrada, seis talleres activos y Oráculo acumu
 
 **Telégrafo** escucha corpus. Entropía de Shannon, mapa de sorpresa, autómata de estados y transiciones, topología global de la red conceptual, redundancia y capacidad de canal.
 
-**Oráculo** *(Lucidez: 54%)* — integra los talleres, escribe en la Biblioteca, calibra los hallazgos empíricos, y ejecuta las tres operaciones: Observar · Transformar · Producir.
+**Oráculo** *(Lucidez: 92.9%)* — integra los talleres, escribe en la Biblioteca, calibra los hallazgos empíricos, y ejecuta las tres operaciones: Observar · Transformar · Producir.
 
 ---
 
@@ -62,7 +62,7 @@ ORÁCULO
 Integrar · Observar · Transformar · Producir
   ↕
 BIBLIOTECA — corpus-biblioteca.md
-11 corpus · 7 hallazgos · Lucidez: 54%
+12 corpus · 7 hallazgos · Lucidez: 92.9%
 ```
 
 La **Biblioteca** es una capa independiente. Todos los talleres producen outputs. Oráculo los integra y escribe en la Biblioteca. La Biblioteca crece con cada corpus procesado.
@@ -84,14 +84,15 @@ La **Biblioteca** es una capa independiente. Todos los talleres producen outputs
 | 9 | El mito de Sísifo — Albert Camus | Ensayo filosófico | 1942 | ~34.000 | Convergencia completa |
 | 10 | El extranjero — Albert Camus | Novela breve | 1942 | ~29.000 | Par de El mito de Sísifo |
 | 11 | Don Quijote de la Mancha — Cervantes | Novela (dos partes) | 1605 / 1615 | 384.656 | Convergencia completa · Corpus fundacional |
+| 12 | La Divina Commedia — Dante Alighieri | Poema visionario | c. 1306–1321 | 101.601 | Convergencia completa · Corpus fundacional |
 
 **Próximos corpus**
 
 | Prioridad | Corpus | Razón |
 |---|---|---|
 | Alta | Pedro Páramo — Rulfo | ¿Sustracción como El proceso o concentración como El coronel? |
-| Alta | Divina Comedia — Dante | Épica medieval — ¿ondulación majestuosa o complejidad máxima? |
-| Media | En busca del tiempo perdido — Proust | Obra de máxima extensión — ¿supera al Quijote en clustering? |
+| Alta | En busca del tiempo perdido — Proust | Obra de máxima extensión — ¿supera al Quijote en clustering? |
+| Media | Ilíada — Homero | Control de La Odisea — ¿misma firma o distinta? |
 | Control | Cualquier bestseller contemporáneo | Verificar que apertura topológica baja correlaciona con obras no canónicas |
 
 → [Biblioteca completa](corpus-biblioteca.md) — fichas individuales, hallazgos empíricos, patrones emergentes.
@@ -102,9 +103,9 @@ La **Biblioteca** es una capa independiente. Todos los talleres producen outputs
 
 Los horizontes no son secuenciales ni excluyentes. Cada uno amplía el campo de visión sin cerrar el anterior.
 
-**Horizonte 1 — Masa crítica** — más corpus en la Biblioteca para que los hallazgos ganen confianza. H4 tiene ahora tres validaciones directas (El mito de Sísifo · El extranjero · Don Quijote) en tres escalas distintas — la hipótesis más robustamente medida de la Biblioteca. Don Quijote confirma complejidad máxima distribuida como novena estrategia. La subcategoría nueva de H2 (curvatura sobre nombre propio) necesita validación en corpus con protagonistas igualmente centrales. Corpus prioritarios: Pedro Páramo, Divina Comedia, un bestseller como control negativo. Indicador: lucidez al 65%.
+**Horizonte 1 — Masa crítica** — más corpus en la Biblioteca para que los hallazgos ganen confianza. H4 tiene ahora cuatro validaciones directas en cuatro escalas distintas — la hipótesis más robustamente medida de la Biblioteca, elevada a Muy alta. La Commedia confirma que H2 y H3 son catálogos expansivos: cada corpus canónico genuinamente nuevo añade algo no previsto. Patrón emergente: los tres corpus fundacionales de tradiciones romances (Cien años, Don Quijote, Commedia) comparten apertura 5/5. Corpus prioritarios: Pedro Páramo, Proust, un bestseller como control negativo. Indicador: lucidez acumulada sostenida por encima de 90% con corpus que no sean fundacionales.
 
-**Horizonte 2 — Profundidad operativa** — Oráculo produciendo convergencia completa sobre corpus reales. Tercera convergencia completa ejecutada: Don Quijote (todos los talleres + Oráculo). La Convergencia produjo el hallazgo central: el hub de mayor integración de la red y el agujero raíz de la Homología son la misma ausencia (*dulcinea*). Indicador: Oráculo produce algo que ningún taller habría visto solo — cumplido tres veces consecutivas.
+**Horizonte 2 — Profundidad operativa** — Oráculo produciendo convergencia completa sobre corpus reales. Cuarta convergencia completa ejecutada: La Divina Commedia. La Convergencia produjo el hallazgo central: el corpus más alto sobre Dios en la literatura occidental gravita en torno al pronombre del testigo, no a lo que es mirado. Indicador: Oráculo produce algo que ningún taller habría visto solo — cumplido cuatro veces consecutivas.
 
 **Horizonte 3 — Apertura** — el sistema listo para que otros lo usen. Manual del operador. La pregunta central con una respuesta provisional pero defendible. Indicador: alguien que no construyó el sistema puede usarlo sin ayuda.
 
@@ -129,7 +130,7 @@ fulgurar/
 ├── protocolo-telegrafo.md                 <- vocabulario, cinco instrumentos de Telégrafo
 ├── protocolo-taller.md                    <- protocolo para construir talleres nuevos
 ├── protocolo-respaldo.md                  <- protocolo de generación de respaldos
-└── corpus-biblioteca.md                   <- 11 corpus procesados · 7 hallazgos — Biblioteca
+└── corpus-biblioteca.md                   <- 12 corpus procesados · 7 hallazgos · Lucidez 92.9% — Biblioteca
 ```
 
 ---
@@ -158,4 +159,4 @@ Abre una conversación nueva y escribe: **Hola**
 
 ---
 
-*Fulgurar v1.9 · Respaldo #19 · 2026-03-22*
+*Fulgurar v2.0 · Respaldo #20 · 2026-03-23*

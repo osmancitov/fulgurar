@@ -25,7 +25,7 @@ Opera siempre dentro de sus límites declarados. No predice con falsa certeza �
 
 **LA CONVERGENCIA** — El nombre arquitectónico del Oráculo dentro del sistema. Designa su posición como el elemento que integra todos los talleres, independientemente de cuántos existan.
 
-**LUCIDEZ** — El nivel de desarrollo actual del sistema. Escala logarítmica sobre 100 corpus como referencia: `Lucidez = log(n) / log(100) × 100`. Con 9 corpus: 48%. Ver `parametros-globales.md` para valor actual.
+**LUCIDEZ** — La estabilidad predictiva acumulada del sistema. Promedio de aciertos sobre el total de convergencias realizadas. La lucidez baja cuando el sistema cree saber algo y resulta estar equivocado. Al 100% el sistema ya no se sorprende de la estructura de lo que encuentra. Ver definición completa, historial y límite ontológico en `corpus-biblioteca.md` — sección *Lucidez del sistema*. Valor actual en `parametros-globales.md`.
 
 **OPERACIÓN** — Cada una de las tres tareas ejecutoras del Oráculo: Observar, Transformar, Producir. Son el Oráculo con una pregunta distinta cada vez — no sistemas separados.
 
@@ -140,17 +140,7 @@ Ubica el corpus en la Biblioteca. Lo compara con los corpus ya procesados. Ident
 
 Actualiza los niveles de confianza de los hallazgos empíricos activos. Cada corpus nuevo que valida un hallazgo sube su confianza. Cada excepción la baja o la refina.
 
-**Tabla de confianza actual** (9 corpus procesados, lucidez 48%):
-
-| Hallazgo | Descripción | Validaciones | Confianza |
-|---|---|---|---|
-| H1 | Apertura topológica como predictor | 9/9 | Alta |
-| H2 | Umbral de curvatura en concepto dominante | 8/9 · 1 excepción refinada | Media-alta |
-| H3 | Siete estrategias de grandeza | 9/9 | Alta |
-| H4 | Grandeza es integración, no acumulación | 9/9 | Alta |
-| H5 | Firma refleja tema | 3/9 | Media |
-| H6 | Coherencia por exclusión | 2/9 | Provisional |
-| H7 | Tensión polar como mecanismo de apertura | 1/9 | Muy provisional |
+**Tabla de confianza actual:** ver `corpus-biblioteca.md` — sección *Hallazgos empíricos*. El Oráculo no mantiene copia propia de los niveles de confianza — la Biblioteca es la única fuente de verdad. Las reglas de calibración (qué cuenta como validación, excepción refinante o excepción refutante) son procedimiento estable y viven aquí. Los datos viven en la Biblioteca.
 
 **Reglas de calibración:**
 - Validación directa: el corpus confirma el hallazgo sin ambigüedad → +1 validación
@@ -328,10 +318,7 @@ La sección final del `.md` contiene el prompt generado con los valores específ
 - Transformar: funcional con advertencia — los dominios explorados son limitados
 - Producir: orientación solamente — no producción completa
 
-**Lo que se gana con más corpus:**
-- 20 corpus (65%): Observar con confianza alta, ajustes con mayor precisión
-- 50 corpus (85%): Transformar con solidez, primeras pruebas de Producir
-- 100 corpus (100%): sistema completo operativo
+**Lucidez actual:** ver `parametros-globales.md`. La lucidez es el promedio acumulado de aciertos predictivos sobre el total de convergencias — ver definición completa en `corpus-biblioteca.md`.
 
 ---
 

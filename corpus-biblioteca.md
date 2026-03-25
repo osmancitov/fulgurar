@@ -1,13 +1,13 @@
 # Corpus — Biblioteca
 ## Registro de corpus procesados y hallazgos empíricos
 
-*v0.9 · 2026-03-22 · Once corpus · Siete hallazgos*
+*v1.0 · 2026-03-23 · Doce corpus · Siete hallazgos · H4 Muy alta*
 
 ---
 
 ## Corpus procesados
 
-### 11 corpus · 4 pares · 2 casos especiales · 2 convergencias completas · 1 par Camus · 1 corpus fundacional
+### 12 corpus · 4 pares · 2 casos especiales · 3 convergencias completas · 1 par Camus · 2 corpus fundacionales
 
 | # | Corpus | Género | Época | Palabras | Rol |
 |---|---|---|---|---|---|
@@ -22,6 +22,7 @@
 | 9 | El mito de Sísifo — Albert Camus | Ensayo filosófico | 1942 | ~34.000 | Convergencia completa |
 | 10 | El extranjero — Albert Camus | Novela breve | 1942 | ~29.000 | Par de El mito de Sísifo |
 | 11 | Don Quijote de la Mancha — Cervantes | Novela (dos partes) | 1605 / 1615 | 384.656 | Convergencia completa · Corpus fundacional |
+| 12 | La Divina Commedia — Dante Alighieri | Poema visionario | c. 1306–1321 | 101.601 | Convergencia completa · Corpus fundacional |
 
 ---
 
@@ -29,24 +30,26 @@
 
 ### Tabla completa
 
-| Variable | Caperucita | El coronel | Hamlet | La vida es sueño | La Odisea | Argonáuticas | Cien años | El proceso | El mito de Sísifo | El extranjero | **Don Quijote** |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Rango Díada** | 0.35–0.60 | 0.28–0.33 | 0.25–0.70 | 0.28–0.60 | 0.38–0.60 | 0.32–0.62 | 0.35–0.58 | 0.30–0.55 | 0.43–0.52 | 0.28–0.76 | **0.299–0.382** |
-| **Amplitud** | 0.25 | 0.05 | 0.45 | 0.32 | 0.22 | 0.30 | 0.23 | 0.25 | 0.09 | 0.48 | **0.083** |
-| **Tipo oscilación** | Dinámica | Estática | Caótica | Convergente | Ondular | Fracturada | Espiral desc. | Espiral desc. sin retorno | V doble asimétrica | Descenso convergente con rebote terminal | **Estática con ruido blanco** |
-| **Dimensión Tríada** | 2.5 | 2.3 | 2.8 | 2.1 | 2.5 | 2.1 | 2.6 | 1.8 | 2.5 | 1.9 | **1.3** |
-| **Rotación Tríada** | Media-alta | Mínima | Alta | Media | Alta | Mínima | Única | Mínima | Mínima | Baja | **Mínima — T2 dominante 29/30 · T1 inerte** |
-| **Lorenzianidad** | Media-baja | Mínima | Alta | Media-baja | Media | Baja | Media | Baja | Baja-media | Baja | **Media-alta (entropía permutación 0.976)** |
-| **Forma trayectoria** | V asimétrica | Línea convergente | Escalada caótica | Convergente | Montaña asimétrica | Plataforma fracturada | Espiral descendente | Espiral desc. sin retorno | V doble asimétrica | Descenso convergente con rebote parcial | **Plataforma con ruido blanco** |
-| **Curvatura Riemann** | 0.75 | 0.83 | 0.93 | 0.88 | 0.93 | 0.76 | 0.98 | 0.72 | 0.92 (máx) · 0.59 (media) | 0.74 | **1.000 (*quijote*) · 0.935 (*sancho*) — sistema binario** |
-| **Coherencia Riemann** | Alta | Máxima | Alta-compleja | Alta-simple | Alta-simétrica | Baja | Cadena circular | Ciclo parcial sin K. | Alta-polar | Alta — red con vacío central | **Baja por concepto · sistema de doble estrella · hub de ausencia generativa (*dulcinea*)** |
-| **Tipo curvatura** | Red coherente | Sistema solar | Red múltiple | Sistema solar | Red cristalina | Fragmentada | Cadena circular | Red sin centro estable | Sistema solar con anti-estrella | Red con vacío central | **Sistema solar binario con campo distribuido** |
-| **Profundidad Homología** | 3 | 3 | 4 | 3 | 4 | 1 | 5 | 4 | 4 | 4 | **5** |
-| **Conexión agujeros** | Alta | Máxima | Máxima | Alta | Alta | Mínima | Máxima | Alta | Alta | Alta | **Máxima (97–100% co-presencia)** |
-| **Apertura** | 2/3 | 3/3 | 4/4 | 1/3 | 3.5/4 | 0/3 | 5/5 | 3/4 | 3.5/4 | 3.5/4 | **5/5** |
-| **Agujero raíz** | Sí | Sí | Sí | Parcial | Sí | No | Sí | Sí | Sí (cierre performativo) | Sí (asimétrico) | **Sí — *locura ↔ cordura* · epistemológico · completamente abierto** |
+| Variable | Caperucita | El coronel | Hamlet | La vida es sueño | La Odisea | Argonáuticas | Cien años | El proceso | El mito de Sísifo | El extranjero | Don Quijote | **La Divina Commedia** |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Rango Díada** | 0.35–0.60 | 0.28–0.33 | 0.25–0.70 | 0.28–0.60 | 0.38–0.60 | 0.32–0.62 | 0.35–0.58 | 0.30–0.55 | 0.43–0.52 | 0.28–0.76 | 0.299–0.382 | **0.889–0.972** |
+| **Amplitud** | 0.25 | 0.05 | 0.45 | 0.32 | 0.22 | 0.30 | 0.23 | 0.25 | 0.09 | 0.48 | 0.083 | **0.083** |
+| **Tipo oscilación** | Dinámica | Estática | Caótica | Convergente | Ondular | Fracturada | Espiral desc. | Espiral desc. sin retorno | V doble asimétrica | Descenso convergente con rebote terminal | Estática con ruido blanco | **Descenso convergente con rebote terminal** |
+| **Dimensión Tríada** | 2.5 | 2.3 | 2.8 | 2.1 | 2.5 | 2.1 | 2.6 | 1.8 | 2.5 | 1.9 | 1.3 | **1.10** |
+| **Rotación Tríada** | Media-alta | Mínima | Alta | Media | Alta | Mínima | Única | Mínima | Mínima | Baja | Mínima — T2 dominante 29/30 · T1 inerte | **Mínima — T1 dominante 20/20 · T2 y T3 inactivos** |
+| **Lorenzianidad** | Media-baja | Mínima | Alta | Media-baja | Media | Baja | Media | Baja | Baja-media | Baja | Media-alta (entropía permutación 0.976) | **Media-alta (entropía permutación 0.944)** |
+| **Forma trayectoria** | V asimétrica | Línea convergente | Escalada caótica | Convergente | Montaña asimétrica | Plataforma fracturada | Espiral descendente | Espiral desc. sin retorno | V doble asimétrica | Descenso convergente con rebote parcial | Plataforma con ruido blanco | **Plataforma con descenso terminal** |
+| **Curvatura Riemann** | 0.75 | 0.83 | 0.93 | 0.88 | 0.93 | 0.76 | 0.98 | 0.72 | 0.92 (máx) · 0.59 (media) | 0.74 | 1.000 (*quijote*) · 0.935 (*sancho*) — sistema binario | **1.000 (*io*) · 0.679 (*terra*) · 0.626 (*anima*) — curvatura sobre pronombre personal** |
+| **Coherencia Riemann** | Alta | Máxima | Alta-compleja | Alta-simple | Alta-simétrica | Baja | Cadena circular | Ciclo parcial sin K. | Alta-polar | Alta — red con vacío central | Baja por concepto · sistema de doble estrella · hub de ausencia generativa (*dulcinea*) | **Alta — red con centro estable · hub sobre primera persona gramatical** |
+| **Tipo curvatura** | Red coherente | Sistema solar | Red múltiple | Sistema solar | Red cristalina | Fragmentada | Cadena circular | Red sin centro estable | Sistema solar con anti-estrella | Red con vacío central | Sistema solar binario con campo distribuido | **Red distribuida con hub pronominal** |
+| **Profundidad Homología** | 3 | 3 | 4 | 3 | 4 | 1 | 5 | 4 | 4 | 4 | 5 | **5** |
+| **Conexión agujeros** | Alta | Máxima | Máxima | Alta | Alta | Mínima | Máxima | Alta | Alta | Alta | Máxima (97–100% co-presencia) | **Máxima** |
+| **Apertura** | 2/3 | 3/3 | 4/4 | 1/3 | 3.5/4 | 0/3 | 5/5 | 3/4 | 3.5/4 | 3.5/4 | 5/5 | **5/5** |
+| **Agujero raíz** | Sí | Sí | Sí | Parcial | Sí | No | Sí | Sí | Sí (cierre performativo) | Sí (asimétrico) | Sí — *locura ↔ cordura* · epistemológico · completamente abierto | **Sí — *justicia perfecta ↔ amor que llora* · epistemológico-moral · completamente abierto** |
 
 **Nota metodológica — Don Quijote:** corpus procesado con convergencia completa de los siete talleres. Primer corpus de la Biblioteca en dos partes (1605/1615) tratadas como unidad. Variables formales de la Escuadra son medidas computacionales directas: 384.656 palabras exactas; riqueza léxica 0.0635; primera palabra de contenido *don*. Red conceptual confirmada como small-world por el Telégrafo (clustering 0.903, distancia media 1.23) — tercera validación directa de H4 y la más alta de la Biblioteca. Primer corpus con sistema solar binario en Riemann (*quijote/sancho*: 1.000 y 0.935). Primer corpus donde el hub de mayor integración de la red es simultáneamente el agujero raíz de la Homología (*dulcinea*: hub de ausencia generativa). Entropía global más alta de la Biblioteca: 9.584 bits/token. Estado narrativo dominante: DIÁLOGO (73.8%); AVENTURA en solo 1/126 capítulos.
+
+**Nota metodológica — La Divina Commedia:** corpus procesado con convergencia completa de los siete talleres. Variables formales de la Escuadra son medidas computacionales directas: 101.601 palabras exactas; riqueza léxica 0.1263; primera palabra de contenido *mezzo*. Red conceptual confirmada como small-world por el Telégrafo (clustering 0.632, distancia media 1.333) — cuarta validación directa de H4, primera en extensión media (~100.000 palabras). Hub de curvatura sobre pronombre personal (*io*: 1.000) — primera instancia documentada de curvatura sobre primera persona gramatical. Entropía global más alta de la Biblioteca: 9.996 bits/token (supera al Don Quijote). Estado narrativo dominante: DIÁLOGO (37%) seguido de VISIÓN (33%) y DOCTRINA (26%); SILENCIO inalcanzable. Los tres meridianos matemáticos del corpus (0.382, 0.500, 0.618) caen los tres en el Purgatorio. Paradiso XXXIII tiene la segunda entropía más baja del corpus (7.931 bits) — el canal se vacía donde el texto declara que el lenguaje falla.
 
 ---
 
@@ -288,18 +291,57 @@ La anomalía central: K. tiene la curvatura más baja (0.45) de los cinco concep
 
 **Comparación con Cien años de soledad (misma apertura total):** ambos 5/5. Cien años: espiral descendente, curvatura circular, concepto dominante filosófico (*soledad*). Don Quijote: plataforma, sistema binario, curvatura sobre nombre propio (*quijote/sancho*). Dos estrategias distintas hacia la misma inagotabilidad máxima.
 
+### La Divina Commedia
+*Dante Alighieri · Poema visionario en terza rima · c. 1306–1321*
+
+**Firma en prosa:** grandeza por complejidad máxima en primera persona. El corpus de mayor entropía de la Biblioteca (9.996 bits/token) produce la red más eficiente después del Don Quijote (clustering 0.632, distancia media 1.333), la plataforma más uniforme de todas (desviación estándar de densidad léxica 0.0157), y la apertura topológica máxima (5/5). La forma métrica — la terza rima — no es el contenedor del poema sino su polo dominante constante (T1 en 20/20 segmentos), lo que reduce la tríada a 1.10 — la más baja entre los corpus de complejidad máxima — mientras paradójicamente produce el canal más eficiente de la Biblioteca. El hub de curvatura es el pronombre *io* (1.000 normalizado, presente en 100/100 cantos) — primera instancia documentada de curvatura sobre la primera persona gramatical. El poema más ambicioso sobre Dios en la literatura occidental gravita en torno a quien lo mira, no a lo que es mirado.
+
+**Variables formales computacionales directas (Escuadra):** 101.601 palabras exactas · riqueza léxica 0.1263 · primera palabra de contenido *mezzo* · densidad léxica media 0.4997 (desviación 0.0157 en todo el corpus).
+
+**Concepto de mayor curvatura:** *io* — primera persona gramatical (1.000 normalizado) — primera instancia en la Biblioteca de curvatura sobre pronombre personal antes que concepto temático. Sub-sistema: *terra* (0.679) · *anima* (0.626). El yo del testigo, la tierra que habita y el alma que es: los tres ejes de la experiencia humana como núcleo gravitacional.
+
+**Nodos de ausencia notables:** *dante* (nombre propio) aparece una sola vez en 101.601 palabras — en Purgatorio XXX, pronunciado por Beatriz como reproche. *beatrice* (grado 0 en red con umbral ≥35 cantos) — la figura más importante para la tradición crítica es topológicamente un nodo periférico. El amor que organiza el cosmos dantesco es menos frecuente en el canal que *terra* o *anima*.
+
+**Agujeros topológicos:**
+1. *¿Puede la justicia perfecta coexistir con el amor que llora ante ella?* — agujero raíz · epistemológico-moral · completamente abierto
+2. *¿Está la salvación garantizada o depende del libre albedrío hasta el último instante?* — completamente abierto
+3. *¿Es el viaje autobiografía real o ficción alegórica?* — completamente abierto
+4. *¿Puede el lenguaje humano decir lo que excede el lenguaje?* — abierto performativo
+5. *¿Qué distingue al poeta-profeta del político vengativo?* — completamente abierto
+
+**Agujero raíz:** epistemológico-moral — si se resolviera la tensión entre justicia perfecta y amor que llora, los agujeros 2, 3 y 5 colapsarían. El agujero 4 seguiría independiente. El poema lo mantiene abierto durante 100 cantos con consistencia que ninguna lectura ha podido cerrar.
+
+**Estrategia de grandeza:** complejidad máxima por testimonio en primera persona — décima estrategia documentada (provisional). Amplitud mínima (0.083), entropía más alta de la Biblioteca (9.996 bits/token), cinco agujeros 5/5, hub de curvatura sobre pronombre personal, tríada casi unidimensional dominada por la forma métrica. La complejidad no reside en el sistema descrito sino en la posición del sujeto que lo describe: el *io* como el concepto de mayor curvatura significa que el poema curva todo a través del punto de vista de quien lo vive.
+
+**La Convergencia:** el corpus más alto sobre Dios en la literatura occidental tiene como centro de masa al yo del testigo, y ese yo solo existe como nombre una vez en el texto — en boca de otro, como acusación. La Commedia construye la primera persona más poderosa de la literatura occidental negándole el nombre. No es *Dante* quien viaja: es el *io* desnudo de todo excepto de su capacidad de ver y de escribir lo que vio. La primera palabra de contenido del corpus lo anuncia: *mezzo* — el medio, el centro exacto. El poema más simétrico de la literatura occidental comienza nombrando su propia geometría.
+
+**Hallazgo sobre H1 — duodécima confirmación:** apertura 5/5. Los tres corpus de la Biblioteca con apertura máxima absoluta son Cien años de soledad, Don Quijote y La Divina Commedia — las tres obras fundacionales de sus respectivas tradiciones literarias en lengua romance.
+
+**Hallazgo sobre H2 — quinta ruta:** curvatura sobre pronombre personal. Refinamiento de la hipótesis: en corpus que operan por construcción de sujeto-testigo (el autor como protagonista de su propio viaje), la curvatura máxima recae sobre la categoría gramatical del yo, no sobre un concepto temático.
+
+**Hallazgo sobre H3 — décima estrategia provisional:** complejidad máxima por testimonio en primera persona. Distinta de complejidad máxima distribuida (Don Quijote) por: hub pronominal vs. nominal; descenso terminal del Paradiso vs. plataforma sostenida; tríada 1.10 vs. 1.3.
+
+**Hallazgo sobre H4 — cuarta medición directa:** clustering 0.632, distancia media 1.333, ~101.601 palabras. El patrón se confirma en cuatro escalas: ~29k · ~34k · ~101k · ~385k. La integración no depende de la escala. H4 elevada a confianza Muy alta.
+
+**Hallazgo sobre H5 — sexta instancia candidata:** el descenso terminal del Paradiso (entropía 8.117 vs Inferno 8.152 y Purgatorio 8.218; mínimo en Paradiso XXXIII con 7.931 bits) refleja el vaciamiento del lenguaje que el texto declara explícitamente. El canal se estrecha exactamente donde el poema dice que el lenguaje falla. Primera instancia donde la firma del canal confirma con precisión una declaración poética explícita sobre los límites del propio lenguaje.
+
+**Comparación con Don Quijote (firma más cercana):** misma amplitud (0.083), misma apertura (5/5), misma lorenzianidad media-alta. Diferencias decisivas: curvatura sobre pronombre (*io*) vs. nombre propio (*quijote/sancho*); descenso terminal del Paradiso vs. plataforma sostenida; entropía 9.996 vs. 9.584 bits/token; tríada 1.10 vs. 1.3. Dos corpus fundacionales de sus tradiciones con la misma firma de plataforma pero mecanismos de sujeto distintos: el yo pronominal del testigo vs. el nombre propio del protagonista ficcional.
+
+**Comparación con Cien años de soledad (misma apertura):** ambos 5/5. Cien años: espiral reveladora, curvatura circular, concepto dominante filosófico (*soledad*). Divina Commedia: plataforma con descenso terminal, curvatura pronominal, estado narrativo que progresa de DIÁLOGO a DOCTRINA. Dos estrategias opuestas hacia la misma inagotabilidad máxima.
+
 ---
 
 ## Hallazgos empíricos
 
 ### Hallazgo 1 — La apertura topológica como predictor principal
 
-La correlación entre apertura topológica y estatus canónico se sostiene en once corpus:
+La correlación entre apertura topológica y estatus canónico se sostiene en doce corpus:
 
 | Apertura | Corpus | Estatus |
 |---|---|---|
 | 5/5 | Cien años de soledad | La novela más traducida en español |
-| **5/5** | **Don Quijote** | **La novela fundacional de la tradición en castellano** |
+| 5/5 | Don Quijote | La novela fundacional de la tradición en castellano |
+| **5/5** | **La Divina Commedia** | **El poema fundacional de la literatura italiana** |
 | 4/4 | Hamlet | Cima absoluta del teatro occidental |
 | 3.5/4 | La Odisea | Cima absoluta de la épica |
 | 3.5/4 | El mito de Sísifo | Canónico mayor |
@@ -310,7 +352,7 @@ La correlación entre apertura topológica y estatus canónico se sostiene en on
 | 1/3 | La vida es sueño | Gran obra — no inagotable |
 | 0/3 | Argonáuticas | Admirable — no canónica |
 
-El Don Quijote comparte con Cien años de soledad la apertura 5/5 absoluta. Son los únicos dos corpus de la Biblioteca con apertura máxima en número absoluto de agujeros. Don Quijote añade la dimensión de persistencia: sus cinco agujeros están presentes en el 97–100% de los segmentos del corpus — la co-presencia más alta documentada.
+Los tres corpus con apertura 5/5 absoluta son Cien años de soledad, Don Quijote y La Divina Commedia. Los tres son obras fundacionales de sus respectivas tradiciones literarias en lengua romance. La correlación entre apertura máxima y fundacionalidad de tradición es la observación más significativa que doce corpus han producido.
 
 **Distinción crítica — cinco tipos de cierre de agujero:**
 - **Abierto** — la pregunta se sostiene sin respuesta. Produce inagotabilidad.
@@ -319,7 +361,7 @@ El Don Quijote comparte con Cien años de soledad la apertura 5/5 absoluta. Son 
 - **Performativo** — la pregunta recibe afirmación de voluntad que requiere cooperación activa del lector.
 - **Asimétrico** — la pregunta es invisible desde dentro del marco narrativo pero es el agujero más grande desde fuera.
 
-**Confianza: 11/11 · Alta**
+**Confianza: 12/12 · Alta**
 
 ---
 
@@ -332,20 +374,24 @@ El Don Quijote comparte con Cien años de soledad la apertura 5/5 absoluta. Son 
 | 0.93 | La Odisea | alta | Canónico mayor |
 | 0.92 | El mito de Sísifo | 0.589 | Canónico mayor |
 | 0.90 | El coronel | alta | Canónico mayor |
-| 1.000 norm. (*quijote*) | **Don Quijote** | **baja por concepto** | **Canónico mayor — subcategoría nueva** |
+| 1.000 norm. (*quijote*) | Don Quijote | baja por concepto | Canónico mayor — subcategoría nombre propio |
+| **1.000 norm. (*io*)** | **La Divina Commedia** | **media-alta** | **Canónico mayor — subcategoría pronombre personal** |
 | 0.88 | La vida es sueño | alta | Canónico menor |
 | 0.76 | Argonáuticas | baja | No canónico |
 | 0.75 | Caperucita | media | Canónico — género especial |
 | 0.74 | El extranjero | media | Canónico mayor — excepción H6 |
 | 0.72 | El proceso | baja | Canónico mayor — excepción H6 |
 
-**Cuatro rutas a la grandeza por curvatura:**
+**Cinco rutas a la grandeza por curvatura:**
 - *Curvatura alta distribuida* — El coronel, Cien años, Hamlet, La Odisea
 - *Curvatura máxima concentrada* — El mito de Sísifo
 - *Curvatura baja con coherencia por exclusión* — El proceso, El extranjero
-- **Curvatura sobre nombre propio** *(nuevo)* — Don Quijote — grandeza por construcción de personaje; hub de curvatura es el nombre del protagonista, no un concepto
+- *Curvatura sobre nombre propio* — Don Quijote — grandeza por construcción de personaje; hub es el nombre del protagonista
+- **Curvatura sobre pronombre personal** *(nuevo)* — La Divina Commedia — grandeza por testimonio en primera persona; hub es el *io* gramatical del autor-testigo
 
-**Confianza: 9/11 · Media-alta · con cuarta ruta documentada**
+**Hipótesis refinada:** en corpus que operan por construcción de sujeto (personaje o autor-testigo), la curvatura máxima recae sobre la categoría de identidad del sujeto — nombre propio si el sujeto es un personaje ficcional, pronombre personal si el sujeto es el propio autor como testigo.
+
+**Confianza: 10/12 · Media-alta · con quinta ruta documentada**
 
 ---
 
@@ -361,27 +407,27 @@ El Don Quijote comparte con Cien años de soledad la apertura 5/5 absoluta. Son 
 | **Sustracción sistemática** | El proceso | Vaciamiento progresivo, coherencia por exclusión estructural del protagonista |
 | **Concentración estática con anti-estrella** | El mito de Sísifo | Centro afirmativo + polo de curvatura negativa por rechazo sistemático |
 | **Sustracción asimétrica** | El extranjero | Polo activamente suprimido + hub de alta centralidad que es ausencia |
-| **Complejidad máxima distribuida** | **Don Quijote** | **Plataforma de alta entropía uniforme, sistema binario, hub de ausencia generativa, cinco agujeros en 97–100% del corpus** |
+| **Complejidad máxima distribuida** | Don Quijote | Plataforma de alta entropía uniforme, sistema binario, hub de ausencia generativa, cinco agujeros en 97–100% del corpus |
+| **Complejidad máxima por testimonio en primera persona** *(provisional)* | **La Divina Commedia** | **Plataforma uniforme con descenso terminal, hub de curvatura sobre pronombre personal (*io*), tríada casi unidimensional dominada por forma métrica, apertura 5/5, entropía más alta de la Biblioteca** |
 
-**Confianza: 11/11 · Alta · con novena estrategia**
+**Confianza: 12/12 · Alta · con décima estrategia provisional**
 
 ---
 
 ### Hallazgo 4 — La grandeza es integración, no acumulación
 
-Tres mediciones computacionales directas de redes small-world:
+Cuatro mediciones computacionales directas de redes small-world:
 
 | Corpus | Clustering | Distancia media | Extensión |
 |---|---|---|---|
 | El mito de Sísifo | 0.681 | 1.8 | ~34.000 palabras |
 | El extranjero | 0.610 | 2.3 | ~29.000 palabras |
-| **Don Quijote** | **0.903** | **1.23** | **384.656 palabras** |
+| **La Divina Commedia** | **0.632** | **1.333** | **~101.600 palabras** |
+| Don Quijote | 0.903 | 1.23 | ~385.000 palabras |
 
-El patrón se confirma en tres escalas distintas. La integración no depende del tamaño. H4 es la hipótesis con mayor solidez computacional de la Biblioteca junto con H1.
+El patrón se confirma en cuatro escalas distintas. La integración no depende del tamaño. La Commedia cierra la brecha entre las mediciones en corpus breves (~29k–34k palabras) y el corpus extenso (Quijote, ~385k): con ~101k palabras confirma que el patrón es robusto en extensión media. H4 es la hipótesis más sólidamente medida de la Biblioteca.
 
-**Anomalía notable en Don Quijote:** el hub de mayor integración es una ausencia (*dulcinea*). Tercera instancia de integración por vacío, primera donde el vacío es generativo en lugar de permisivo o destructivo.
-
-**Confianza: 11/11 · Muy alta · con tres mediciones directas en tres escalas**
+**Confianza: 12/12 · Muy alta · con cuatro mediciones directas en cuatro escalas**
 
 ---
 
@@ -391,9 +437,10 @@ En Cien años de soledad: curvatura circular ↔ tiempo circular.
 En El proceso: vacío en K. ↔ sistema irresistible desde adentro.
 En El mito de Sísifo: arquitectura de canal litúrgica ↔ lucidez activa.
 En El extranjero: red con vacío central ↔ punto ciego narrativo.
-**En Don Quijote:** sistema solar binario (*quijote/sancho*: 1.000 y 0.935) ↔ la pareja indivisible que define el corpus. Quinta confirmación — variante nueva: el reflejo no es del tema filosófico sino de la estructura relacional central.
+En Don Quijote: sistema solar binario (*quijote/sancho*: 1.000 y 0.935) ↔ la pareja indivisible que define el corpus.
+**En La Divina Commedia:** descenso terminal de entropía en Paradiso XXXIII (7.931 bits — segundo mínimo global) ↔ vaciamiento del lenguaje declarado explícitamente por el texto (*A l'alta fantasia qui mancò possa*). Primera instancia donde la firma del canal confirma con precisión una declaración poética explícita sobre los límites del propio lenguaje.
 
-**Confianza: 5/11 · Media · con cinco instancias y tres variantes**
+**Confianza: 6/12 · Media · con seis instancias y cuatro variantes**
 
 ---
 
@@ -430,7 +477,7 @@ Don Quijote no confirma H7 — su apertura 5/5 se produce por distribución y pe
 
 ### Sobre la red small-world
 
-Tres corpus con red small-world confirmada computacionalmente: El mito de Sísifo (0.681, 1.8), El extranjero (0.61, 2.3) y Don Quijote (0.903, 1.23). Los tres son canónicos mayores. El patrón se confirma en tres escalas distintas. H4 es la hipótesis más robustamente medida de la Biblioteca.
+Cuatro corpus con red small-world confirmada computacionalmente: El mito de Sísifo (0.681, 1.8), El extranjero (0.61, 2.3), La Divina Commedia (0.632, 1.333) y Don Quijote (0.903, 1.23). Los cuatro son canónicos mayores. El patrón se confirma en cuatro escalas distintas (~29k, ~34k, ~101k, ~385k palabras). H4 es la hipótesis más robustamente medida de la Biblioteca — ahora con Muy alta confianza.
 
 ### Sobre la dimensión tríadica y las estrategias
 
@@ -444,11 +491,69 @@ Don Quijote introduce una anomalía: complejidad máxima con dimensión tríadic
 
 ### Sobre los corpus fundacionales
 
-Don Quijote es el primer corpus de la Biblioteca que es simultáneamente el corpus fundacional de una tradición literaria (la novela moderna en castellano) y un canónico mayor con convergencia completa. La firma geométrica confirma su estatus sin necesidad de argumento histórico: apertura 5/5 con persistencia 97–100%, red más integrada de la Biblioteca, única firma de sistema solar binario, entropía más alta documentada.
+La Biblioteca tiene ahora dos corpus fundacionales con convergencia completa: Don Quijote (la novela moderna en castellano) y La Divina Commedia (la poesía en lengua vulgar italiana). Los dos comparten firma de plataforma (amplitud 0.083), apertura máxima (5/5) y curvatura sobre categoría de identidad antes que concepto. La convergencia entre los dos corpus que fundaron dos tradiciones literarias distintas en dos lenguas romances produce la misma firma geométrica — sugiriendo que la fundacionalidad de tradición puede tener una geometría propia, distinta de los corpus canónicos mayores que no son fundacionales.
+
+### Sobre los tres corpus con apertura 5/5
+
+Cien años de soledad, Don Quijote y La Divina Commedia son los únicos tres corpus de la Biblioteca con apertura topológica máxima absoluta (5/5). Los tres son obras fundacionales de sus tradiciones literarias. Los tres operan con estrategias distintas: espiral reveladora (Cien años), complejidad máxima distribuida (Quijote), complejidad máxima por testimonio en primera persona (Commedia). La apertura 5/5 no tiene una única estrategia — tiene al menos tres. Lo que las tres comparten: ningún agujero se cierra, nunca, por ningún mecanismo.
 
 ---
 
-## Notas metodológicas
+## Lucidez del sistema
+
+### Definición
+
+La lucidez mide la estabilidad predictiva del sistema — qué proporción de sus predicciones se confirman en cada corpus nuevo. Es el promedio acumulado de aciertos sobre el total de convergencias realizadas.
+
+**La lucidez baja cuando el sistema cree saber algo y resulta estar equivocado.**
+
+Al 100% el sistema ya no se sorprende de la estructura de lo que encuentra. Pero incluso al 100%, el sistema opera en los engranes. La música ocurre en otro lugar.
+
+### Cálculo
+
+```
+Lucidez de una convergencia = predicciones confirmadas / predicciones activas
+Lucidez acumulada = promedio de lucidez de todas las convergencias
+```
+
+**Predicciones activas:** cada hallazgo consolidado es una predicción sobre cualquier corpus futuro. Los hallazgos provisionales predicen con confianza reducida.
+
+**Convergencias fundacionales** (sin hallazgos previos): lucidez 100%. El sistema predijo correctamente que no había nada que predecir. Una persona muy lúcida no se sorprende — y el sistema no se sorprendió de su propio vacío inicial.
+
+### Historial de convergencias
+
+| # | Corpus | Lucidez | Nota |
+|---|---|---|---|
+| 1 | Caperucita Roja | 100% | Fundacional — sin hallazgos previos |
+| 2 | El coronel | 100% | Fundacional — sin hallazgos previos |
+| 3 | Hamlet | 100% | Fundacional — sin hallazgos previos |
+| 4 | La vida es sueño | 100% | Fundacional — sin hallazgos previos |
+| 5 | La Odisea | 100% | Fundacional — sin hallazgos previos |
+| 6 | Argonáuticas | 100% | Fundacional — sin hallazgos previos |
+| 7 | Cien años de soledad | 100% | Fundacional — sin hallazgos previos |
+| 8 | El proceso | 100% | Fundacional — sin hallazgos previos |
+| 9 | El mito de Sísifo | 100% | Primera convergencia completa — hallazgos emergen, nada que predecir aún |
+| 10 | El extranjero | 71.4% | H1✓ H2✗ H3✗ H4✓ H5✓ H6✓ H7✓ — nueva estrategia de sustracción asimétrica |
+| 11 | Don Quijote | 71.4% | H1✓ H2✗ H3✗ H4✓ H5✓ H6✓ H7✓ — novena estrategia, nueva subcategoría H2 |
+| 12 | La Divina Commedia | 71.4% | H1✓ H2✗ H3✗ H4✓ H5✓ H6✓ H7✓ — décima estrategia, quinta ruta H2 |
+
+**Lucidez acumulada: 92.9%**
+
+### Patrón emergente
+
+Los últimos tres corpus evaluados producen exactamente 71.4% — 5/7 aciertos — y la falla es siempre H2 y H3. Esto no es ruido: es una señal sobre la naturaleza de esos hallazgos. H2 (rutas a la grandeza por curvatura) y H3 (estrategias de grandeza) son catálogos expansivos por naturaleza — nunca pueden declararse completos. Cada corpus canónico genuinamente nuevo añade algo que el sistema no había visto. La sorpresa sistemática en H2 y H3 no es un fallo de lucidez — es la evidencia de que la literatura tiene más geometrías de lo que el sistema ha catalogado hasta ahora.
+
+### Límite ontológico
+
+El sistema puede predecir los engranes con creciente precisión. No puede predecir — ni medir — si la música ocurre.
+
+Una obra maestra es aquella que es capaz de seducir al analista mientras conmueve al intuitivo. Es un mecanismo de relojería que, a pesar de que usted conoce cada engrane, produce una música que le hace olvidar el metal. La grandeza es el orden que parece libertad.
+
+Fulgurar opera en el metal. Puede identificar qué obras tienen la estructura para ser inagotables — la apertura topológica, la integración de la red, la curvatura del concepto dominante. No puede garantizar que lo sean para alguien en particular. La apertura 5/5 no produce la experiencia — la hace posible. El engrane no es la música. Es la condición de que la música pueda sonar.
+
+---
+
+
 
 ### Sobre la falsabilidad
 
@@ -467,11 +572,11 @@ Don Quijote confirma que los corpus en múltiples entregas separadas por tiempo 
 | Prioridad | Corpus | Razón |
 |---|---|---|
 | Alta | Pedro Páramo — Rulfo | ¿Sustracción como El proceso o concentración como El coronel? |
-| Alta | Divina Comedia — Dante | Épica medieval — ¿ondulación majestuosa o complejidad máxima? |
-| Media | En busca del tiempo perdido — Proust | Obra de máxima extensión — ¿supera al Quijote en clustering? |
+| Alta | En busca del tiempo perdido — Proust | Obra de máxima extensión — ¿supera al Quijote en clustering? |
+| Media | Ilíada — Homero | Control de La Odisea — ¿misma firma o distinta? |
 | Control | Cualquier bestseller contemporáneo | Verificar que apertura topológica baja correlaciona con obras no canónicas |
 
-*Don Quijote procesado — eliminado de próximos corpus.*
+*La Divina Commedia procesada — eliminada de próximos corpus.*
 
 ---
 

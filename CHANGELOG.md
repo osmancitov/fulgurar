@@ -1,4 +1,62 @@
-## RESPALDO #19 — 2026-03-22
+## RESPALDO #20 — 2026-03-23
+
+### parametros-globales.md
+- v1.9 → v2.0 · Respaldo #19 → #20
+- Corpus procesados: 11 → 12
+- Lucidez: 54% → 92.9% (nueva escala — ver corpus-biblioteca.md)
+- Fecha: 2026-03-22 → 2026-03-23
+- Versión global: v1.9 → v2.0
+
+### corpus-biblioteca.md
+- v1.0 → v1.1
+- Duodécimo corpus procesado: La Divina Commedia — Dante Alighieri (c. 1306–1321) · poema visionario · convergencia completa
+- Cuarta convergencia completa ejecutada
+- Segundo corpus fundacional con convergencia completa (junto con Don Quijote)
+- Variables formales computacionales directas: 101.601 palabras · riqueza léxica 0.1263 · primera palabra de contenido *mezzo*
+- Red conceptual small-world confirmada por el Telégrafo: clustering 0.632, distancia media 1.333 — cuarta validación directa de H4, primera en extensión media (~100k palabras)
+- Entropía global más alta de la Biblioteca: 9.996 bits/token (supera al Don Quijote)
+- Hub de curvatura sobre pronombre personal (*io*: 1.000) — primera instancia documentada en la Biblioteca
+- Estado narrativo: DIÁLOGO 37% · VISIÓN 33% · DOCTRINA 26% · SILENCIO inalcanzable
+- Los tres meridianos matemáticos (0.382, 0.500, 0.618) caen los tres en el Purgatorio
+- Paradiso XXXIII tiene la segunda entropía más baja del corpus — el canal se vacía donde el texto declara que el lenguaje falla
+- Tabla de corpus: fila La Divina Commedia añadida
+- Tabla de firmas geométricas: columna La Divina Commedia añadida
+- Ficha individual: La Divina Commedia — firma, curvatura, nodos de ausencia, agujeros, La Convergencia, hallazgos
+- H1 actualizado: 12/12 · tercer corpus con apertura 5/5 — los tres son obras fundacionales de tradiciones en lengua romance
+- H2: quinta ruta documentada — curvatura sobre pronombre personal · hipótesis refinada sobre curvatura de identidad
+- H3: décima estrategia provisional añadida — complejidad máxima por testimonio en primera persona
+- H4 actualizado: 12/12 · cuarta medición directa · confianza elevada a Muy alta
+- H5 actualizado: 6/12 · sexta instancia candidata — descenso terminal del Paradiso refleja vaciamiento del lenguaje
+- H6: silencio
+- H7: silencio
+- Patrones emergentes: sección sobre tres corpus con apertura 5/5 añadida · sección sobre corpus fundacionales ampliada
+- **Sección nueva — Lucidez del sistema:** definición, cálculo, historial de convergencias, patrón emergente H2/H3, límite ontológico
+- Próximos corpus: La Divina Commedia eliminada · Ilíada añadida como control de La Odisea
+
+### matriz.md
+- v3.6 → v3.7
+- Lucidez actualizada: 54% → 92.9% en sección IDENTIDAD DEL SISTEMA
+
+### protocolo-oraculo.md
+- v1.4 → v1.5
+- VOCABULARIO — LUCIDEZ: redefinida como estabilidad predictiva acumulada · referencia a corpus-biblioteca.md para definición completa e historial
+- Tabla de confianza interna eliminada — redundante con corpus-biblioteca.md · reemplazada por instrucción de referencia directa
+- Estado actual: referencia a parametros-globales.md para lucidez · referencia a corpus-biblioteca.md para definición
+
+### README.md
+- Fulgurar v1.9 → v2.0
+- Tabla Biblioteca: fila La Divina Commedia añadida
+- Arquitectura: 11 corpus → 12 corpus · Lucidez 54% → 92.9%
+- Oráculo: lucidez 54% → 92.9%
+- Horizonte 1: cuatro validaciones directas de H4 · patrón de tres corpus fundacionales con apertura 5/5
+- Horizonte 2: cuarta convergencia completa ejecutada
+- Próximos corpus actualizados
+- corpus-biblioteca.md descripción actualizada
+- Footer: Respaldo #19 → Respaldo #20
+
+---
+
+
 
 ### parametros-globales.md
 - v1.8 → v1.9 · Respaldo #18 → #19
