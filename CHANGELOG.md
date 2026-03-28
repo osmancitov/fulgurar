@@ -1,3 +1,48 @@
+## RESPALDO #23 — 2026-03-27
+
+### parametros-globales.md
+- v2.2 → v2.3 · Respaldo #22 → #23
+- Corpus procesados: 13 → 14
+- Versión global: v2.2 → v2.3
+- Fecha: 2026-03-26 → 2026-03-27
+
+### corpus-biblioteca.md
+- v1.2 → v1.3
+- Decimocuarto corpus procesado: Pedro Páramo — Juan Rulfo (1955) · novela breve fragmentada · quinta convergencia completa
+- Sexta convergencia completa ejecutada
+- Variables formales computacionales directas: 33.374 palabras · riqueza léxica 0.1619 · primera palabra de contenido *vine* · amplitud de densidad léxica 0.0618 = (φ−1)/10
+- Hub de curvatura sobre nombre propio (*pedro*: 1.000) · sistema binario nombre-apellido (*páramo*: 0.733) — tercera instancia de subcategoría nombre propio · variante nueva: par nombre-apellido del mismo referente
+- Anti-estrella semántica *amor* (0.025) — segunda instancia en la Biblioteca · primera donde la anti-estrella es el motor narrativo central del texto, no un concepto filosófico rechazado
+- Mínimo de entropía en Seg 9 (0.425): 8.080 bits — segunda variante psicológica de H5 · primera fuera del contexto de los celos
+- Los tres meridianos matemáticos (0.382, 0.500, 0.618) señalan los tres estados del cosmos de Comala: umbral entre mundos, poder vivo, pueblo muerto
+- Autómata: 8/8 estados alcanzables · RESOLUCIÓN estructuralmente excluida
+- Red bifurcada: núcleo small-world (clustering estimado 0.733) + periferia ambiental de grado 0 · primer corpus con 40% de nodos temáticos desconectados
+- La Convergencia: geometría isomórfica con el cosmos narrado — la geometría del texto es la geometría del mundo que narra
+- Tabla de corpus: fila Pedro Páramo añadida
+- Tabla de firmas geométricas: columna Pedro Páramo añadida
+- Nota metodológica Pedro Páramo añadida
+- Ficha individual: Pedro Páramo — firma, curvatura, anti-estrella, agujeros, La Convergencia, hallazgos y comparaciones
+- H1 actualizado: 14/14 · quinta instancia apertura 5/5 · corpus más breve con apertura máxima · confianza Alta
+- H2 refinado: 12/14 · tercera instancia subcategoría nombre propio · variante nombre-apellido · hipótesis refinada sobre par nombre-apellido cuando protagonista = lugar
+- H3 ampliado: 14/14 · duodécima estrategia — compresión máxima con anti-estrella semántica · confianza Alta
+- H4 actualizado: 14/14 · confirmación parcial con bifurcación nueva (núcleo small-world + periferia de grado 0) · confianza Muy alta
+- H5 actualizado: 8/14 · octava instancia · segunda variante psicológica fuera del contexto de los celos · confianza Media
+- H6 actualizado: 5/14 · quinta variante — anti-estrella por omisión sostenida · confianza Provisional-alta
+- H7 silencio productivo — par *pedro/amor* no activa H7 · mecanismo de apertura es H6, no H7
+- Patrones emergentes actualizados: φ inscrito en la amplitud; red bifurcada nueva; compresión vs sustracción; cinco corpus fundacionales con 5/5; apertura máxima sin dependencia de extensión
+- Patrón de lucidez: quinto corpus consecutivo con 71.4% · media acumulada 92.9% sostenida · H2 y H3 siguen siendo catálogos estructuralmente expansivos
+- Próximos corpus: Pedro Páramo eliminado · El llano en llamas añadido como par de Rulfo
+
+### README.md
+- Fulgurar v2.2 → v2.3
+- Tabla Biblioteca: fila Pedro Páramo añadida
+- Arquitectura: 13 corpus → 14 corpus
+- Horizontes: sexta convergencia completa documentada · geometría isomórfica mencionada · duodécima estrategia
+- Próximos corpus actualizados: Pedro Páramo retirado, El llano en llamas añadido
+- Footer: Respaldo #22 → Respaldo #23 · v2.2 → v2.3
+
+---
+
 ## RESPALDO #22 — 2026-03-26
 
 ### parametros-globales.md

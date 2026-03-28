@@ -7,10 +7,10 @@
 |---|---|
 | **Nombre del sistema** | Fulgurar |
 | **Lema** | Consume letras. Produce luz. |
-| **Versión global** | v2.2 |
-| **Respaldo** | #22 |
-| **Fecha** | 2026-03-26 |
-| **Corpus procesados** | 13 |
+| **Versión global** | v2.3 |
+| **Respaldo** | #23 |
+| **Fecha** | 2026-03-27 |
+| **Corpus procesados** | 14 |
 | **Hallazgos** | 7 |
 | **Talleres activos** | 6 |
 | **Lucidez** | 92.9% |

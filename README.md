@@ -1,4 +1,4 @@
-# Fulgurar v2.2
+# Fulgurar v2.3
 *Consume letras. Produce luz.*
 
 - [osmancitov.github.io/fulgurar](https://osmancitov.github.io/fulgurar/) — Página del proyecto
@@ -64,7 +64,7 @@ ORÁCULO
 Integrar · Observar · Transformar · Producir
   ↕
 BIBLIOTECA — corpus-biblioteca.md
-13 corpus · 7 hallazgos · Lucidez: 92.9%
+14 corpus · 7 hallazgos · Lucidez: 92.9%
 
 ── MODO CASCADA ──────────────────────────────────
 Umbral → Bodega → Astillero → Escuadra → Jardín
@@ -93,14 +93,15 @@ La **Biblioteca** es una capa independiente. Todos los talleres producen outputs
 | 11 | Don Quijote de la Mancha — Cervantes | Novela (dos partes) | 1605 / 1615 | 384.656 | Convergencia completa · Corpus fundacional |
 | 12 | La Divina Commedia — Dante Alighieri | Poema visionario | c. 1306–1321 | 101.601 | Convergencia completa · Corpus fundacional |
 | 13 | Du côté de chez Swann — Marcel Proust | Novela autobiográfica | 1913 | 166.247 | Convergencia completa · Corpus fundacional |
+| 14 | Pedro Páramo — Juan Rulfo | Novela breve fragmentada | 1955 | 33.374 | Convergencia completa · Canónico mayor |
 
 **Próximos corpus**
 
 | Prioridad | Corpus | Razón |
 |---|---|---|
-| Alta | Pedro Páramo — Rulfo | ¿Sustracción como El proceso o concentración como El coronel? |
 | Alta | Le Temps retrouvé — Proust | Cierre del ciclo — ¿resuelve o declara irresoluble el agujero raíz del Swann? |
-| Media | Ilíada — Homero | Control de La Odisea — ¿misma firma o distinta? |
+| Alta | Ilíada — Homero | Control de La Odisea — ¿misma firma o distinta? |
+| Media | El llano en llamas — Rulfo | Par de Pedro Páramo — ¿misma estrategia de compresión en cuentos? |
 | Control | Cualquier bestseller contemporáneo | Verificar que apertura topológica baja correlaciona con obras no canónicas |
 
 → [Biblioteca completa](corpus-biblioteca.md) — fichas individuales, hallazgos empíricos, patrones emergentes.
@@ -111,9 +112,9 @@ La **Biblioteca** es una capa independiente. Todos los talleres producen outputs
 
 Los horizontes no son secuenciales ni excluyentes. Cada uno amplía el campo de visión sin cerrar el anterior.
 
-**Horizonte 1 — Masa crítica** — más corpus en la Biblioteca para que los hallazgos ganen confianza. H4 tiene cuatro validaciones directas en cuatro escalas distintas y una confirmación parcial — la hipótesis más robustamente medida. La Biblioteca tiene ahora cuatro corpus con apertura 5/5, los cuatro canónicos máximos o fundacionales. El 71.4% constante en los últimos cuatro corpus canónicos confirma que H2 y H3 son catálogos estructuralmente expansivos. Corpus prioritarios: Pedro Páramo, Le Temps retrouvé, un bestseller como control negativo. Indicador: lucidez acumulada sostenida por encima de 90%.
+**Horizonte 1 — Masa crítica** — más corpus en la Biblioteca para que los hallazgos ganen confianza. H4 tiene cuatro validaciones directas en cuatro escalas distintas y dos confirmaciones parciales — la hipótesis más robustamente medida. La Biblioteca tiene ahora cinco corpus con apertura 5/5, los cinco canónicos máximos o fundacionales. El 71.4% constante en los últimos cinco corpus canónicos confirma que H2 y H3 son catálogos estructuralmente expansivos. Corpus prioritarios: Le Temps retrouvé, Ilíada, El llano en llamas, un bestseller como control negativo. Indicador: lucidez acumulada sostenida por encima de 90%.
 
-**Horizonte 2 — Profundidad operativa** — Oráculo produciendo convergencia completa sobre corpus reales. Quinta convergencia completa ejecutada: Du côté de chez Swann. La Convergencia produjo el hallazgo central: el corpus más célebre sobre el tiempo tiene como hub a un nombre propio, no al tiempo; el amor desplaza al concepto. Cascada con respaldo automático integrado desde este respaldo. Indicador: Oráculo produce algo que ningún taller habría visto solo — cumplido cinco veces consecutivas.
+**Horizonte 2 — Profundidad operativa** — Oráculo produciendo convergencia completa sobre corpus reales. Sexta convergencia completa ejecutada: Pedro Páramo. La Convergencia produjo el hallazgo central: la geometría del texto es la geometría del mundo narrado — los meridianos señalan las tres capas de Comala, la red bifurcada replica la estructura del pueblo, el autómata excluye lo que los muertos no pueden alcanzar. Indicador: Oráculo produce algo que ningún taller habría visto solo — cumplido seis veces consecutivas.
 
 **Horizonte 3 — Apertura** — el sistema listo para que otros lo usen. Manual del operador. La pregunta central con una respuesta provisional pero defendible. Indicador: alguien que no construyó el sistema puede usarlo sin ayuda.
 
@@ -168,4 +169,4 @@ Abre una conversación nueva y escribe: **Hola**
 
 ---
 
-*Fulgurar v2.2 · Respaldo #22 · 2026-03-26*
+*Fulgurar v2.3 · Respaldo #23 · 2026-03-27*

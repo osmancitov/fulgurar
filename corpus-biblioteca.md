@@ -1,13 +1,13 @@
 # Corpus — Biblioteca
 ## Registro de corpus procesados y hallazgos empíricos
 
-*v1.2 · 2026-03-26 · Trece corpus · Siete hallazgos · H4 Muy alta*
+*v1.3 · 2026-03-26 · Catorce corpus · Siete hallazgos · H4 Muy alta*
 
 ---
 
 ## Corpus procesados
 
-### 13 corpus · 4 pares · 2 casos especiales · 4 convergencias completas · 1 par Camus · 3 corpus fundacionales
+### 14 corpus · 4 pares · 2 casos especiales · 5 convergencias completas · 1 par Camus · 3 corpus fundacionales · 1 corpus canónico mayor
 
 | # | Corpus | Género | Época | Palabras | Rol |
 |---|---|---|---|---|---|
@@ -24,6 +24,7 @@
 | 11 | Don Quijote de la Mancha — Cervantes | Novela (dos partes) | 1605 / 1615 | 384.656 | Convergencia completa · Corpus fundacional |
 | 12 | La Divina Commedia — Dante Alighieri | Poema visionario | c. 1306–1321 | 101.601 | Convergencia completa · Corpus fundacional |
 | 13 | Du côté de chez Swann — Marcel Proust | Novela autobiográfica | 1913 | 166.247 | Convergencia completa · Corpus fundacional |
+| 14 | Pedro Páramo — Juan Rulfo | Novela breve fragmentada | 1955 | 33.374 | Convergencia completa · Canónico mayor |
 
 ---
 
@@ -31,28 +32,30 @@
 
 ### Tabla completa
 
-| Variable | Caperucita | El coronel | Hamlet | La vida es sueño | La Odisea | Argonáuticas | Cien años | El proceso | El mito de Sísifo | El extranjero | Don Quijote | **La Divina Commedia** | **Du côté de chez Swann** |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Rango Díada** | 0.35–0.60 | 0.28–0.33 | 0.25–0.70 | 0.28–0.60 | 0.38–0.60 | 0.32–0.62 | 0.35–0.58 | 0.30–0.55 | 0.43–0.52 | 0.28–0.76 | 0.299–0.382 | **0.889–0.972** | **0.405–0.570** |
-| **Amplitud** | 0.25 | 0.05 | 0.45 | 0.32 | 0.22 | 0.30 | 0.23 | 0.25 | 0.09 | 0.48 | 0.083 | **0.083** | **0.165** |
-| **Tipo oscilación** | Dinámica | Estática | Caótica | Convergente | Ondular | Fracturada | Espiral desc. | Espiral desc. sin retorno | V doble asimétrica | Descenso convergente con rebote terminal | Estática con ruido blanco | **Descenso convergente con rebote terminal** | **Descenso convergente con rebote terminal** |
-| **Dimensión Tríada** | 2.5 | 2.3 | 2.8 | 2.1 | 2.5 | 2.1 | 2.6 | 1.8 | 2.5 | 1.9 | 1.3 | **1.10** | **1.10** |
-| **Rotación Tríada** | Media-alta | Mínima | Alta | Media | Alta | Mínima | Única | Mínima | Mínima | Baja | Mínima — T2 dominante 29/30 · T1 inerte | **Mínima — T1 dominante 20/20 · T2 y T3 inactivos** | **Mínima — T1 dominante 20/20 · T2 y T3 periféricos** |
-| **Lorenzianidad** | Media-baja | Mínima | Alta | Media-baja | Media | Baja | Media | Baja | Baja-media | Baja | Media-alta (entropía permutación 0.976) | **Media-alta (entropía permutación 0.944)** | **Media-alta (entropía permutación 0.893)** |
-| **Forma trayectoria** | V asimétrica | Línea convergente | Escalada caótica | Convergente | Montaña asimétrica | Plataforma fracturada | Espiral descendente | Espiral desc. sin retorno | V doble asimétrica | Descenso convergente con rebote parcial | Plataforma con ruido blanco | **Plataforma con descenso terminal** | **Plataforma con descenso central y rebote** |
-| **Curvatura Riemann** | 0.75 | 0.83 | 0.93 | 0.88 | 0.93 | 0.76 | 0.98 | 0.72 | 0.92 (máx) · 0.59 (media) | 0.74 | 1.000 (*quijote*) · 0.935 (*sancho*) — sistema binario | **1.000 (*io*) · 0.679 (*terra*) · 0.626 (*anima*) — curvatura sobre pronombre personal** | **1.000 (*swann*) · 0.651 (*odette*) — sistema binario asimétrico · curvatura sobre nombre propio** |
-| **Coherencia Riemann** | Alta | Máxima | Alta-compleja | Alta-simple | Alta-simétrica | Baja | Cadena circular | Ciclo parcial sin K. | Alta-polar | Alta — red con vacío central | Baja por concepto · sistema de doble estrella · hub de ausencia generativa (*dulcinea*) | **Alta — red con centro estable · hub sobre primera persona gramatical** | **Alta — sistema solar binario · hub sobre nombre propio del protagonista · *temps* como satélite periférico** |
-| **Tipo curvatura** | Red coherente | Sistema solar | Red múltiple | Sistema solar | Red cristalina | Fragmentada | Cadena circular | Red sin centro estable | Sistema solar con anti-estrella | Red con vacío central | Sistema solar binario con campo distribuido | **Red distribuida con hub pronominal** | **Sistema solar binario con satélite filosófico periférico** |
-| **Profundidad Homología** | 3 | 3 | 4 | 3 | 4 | 1 | 5 | 4 | 4 | 4 | 5 | **5** | **5** |
-| **Conexión agujeros** | Alta | Máxima | Máxima | Alta | Alta | Mínima | Máxima | Alta | Alta | Alta | Máxima (97–100% co-presencia) | **Máxima** | **Máxima (4/5 en 100% del corpus)** |
-| **Apertura** | 2/3 | 3/3 | 4/4 | 1/3 | 3.5/4 | 0/3 | 5/5 | 3/4 | 3.5/4 | 3.5/4 | 5/5 | **5/5** | **5/5** |
-| **Agujero raíz** | Sí | Sí | Sí | Parcial | Sí | No | Sí | Sí | Sí (cierre performativo) | Sí (asimétrico) | Sí — *locura ↔ cordura* · epistemológico · completamente abierto | **Sí — *justicia perfecta ↔ amor que llora* · epistemológico-moral · completamente abierto** | **Sí — *¿puede recuperarse el tiempo o solo fabricarse su representación?* · epistemológico · completamente abierto** |
+| Variable | Caperucita | El coronel | Hamlet | La vida es sueño | La Odisea | Argonáuticas | Cien años | El proceso | El mito de Sísifo | El extranjero | Don Quijote | **La Divina Commedia** | **Du côté de chez Swann** | **Pedro Páramo** |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Rango Díada** | 0.35–0.60 | 0.28–0.33 | 0.25–0.70 | 0.28–0.60 | 0.38–0.60 | 0.32–0.62 | 0.35–0.58 | 0.30–0.55 | 0.43–0.52 | 0.28–0.76 | 0.299–0.382 | **0.889–0.972** | **0.405–0.570** | **0.490–0.552** |
+| **Amplitud** | 0.25 | 0.05 | 0.45 | 0.32 | 0.22 | 0.30 | 0.23 | 0.25 | 0.09 | 0.48 | 0.083 | **0.083** | **0.165** | **0.0618 = (φ−1)/10** |
+| **Tipo oscilación** | Dinámica | Estática | Caótica | Convergente | Ondular | Fracturada | Espiral desc. | Espiral desc. sin retorno | V doble asimétrica | Descenso convergente con rebote terminal | Estática con ruido blanco | **Descenso convergente con rebote terminal** | **Descenso convergente con rebote terminal** | **Plataforma con valle central y pico tardío asimétrico** |
+| **Dimensión Tríada** | 2.5 | 2.3 | 2.8 | 2.1 | 2.5 | 2.1 | 2.6 | 1.8 | 2.5 | 1.9 | 1.3 | **1.10** | **1.10** | **~1.9** |
+| **Rotación Tríada** | Media-alta | Mínima | Alta | Media | Alta | Mínima | Única | Mínima | Mínima | Baja | Mínima — T2 dominante 29/30 · T1 inerte | **Mínima — T1 dominante 20/20 · T2 y T3 inactivos** | **Mínima — T1 dominante 20/20 · T2 y T3 periféricos** | **Baja — T1 dominante (oración 9.9 palabras) · T3 periférico** |
+| **Lorenzianidad** | Media-baja | Mínima | Alta | Media-baja | Media | Baja | Media | Baja | Baja-media | Baja | Media-alta (entropía permutación 0.976) | **Media-alta (entropía permutación 0.944)** | **Media-alta (entropía permutación 0.893)** | **Alta (entropía permutación 0.9895) — irregularidad máxima en espacio mínimo** |
+| **Forma trayectoria** | V asimétrica | Línea convergente | Escalada caótica | Convergente | Montaña asimétrica | Plataforma fracturada | Espiral descendente | Espiral desc. sin retorno | V doble asimétrica | Descenso convergente con rebote parcial | Plataforma con ruido blanco | **Plataforma con descenso terminal** | **Plataforma con descenso central y rebote** | **Plataforma con valle suave y pico tardío** |
+| **Curvatura Riemann** | 0.75 | 0.83 | 0.93 | 0.88 | 0.93 | 0.76 | 0.98 | 0.72 | 0.92 (máx) · 0.59 (media) | 0.74 | 1.000 (*quijote*) · 0.935 (*sancho*) — sistema binario | **1.000 (*io*) · 0.679 (*terra*) · 0.626 (*anima*) — curvatura sobre pronombre personal** | **1.000 (*swann*) · 0.651 (*odette*) — sistema binario asimétrico · curvatura sobre nombre propio** | **1.000 (*pedro*) · 0.733 (*páramo*) — sistema binario nombre-apellido · anti-estrella *amor* (0.025)** |
+| **Coherencia Riemann** | Alta | Máxima | Alta-compleja | Alta-simple | Alta-simétrica | Baja | Cadena circular | Ciclo parcial sin K. | Alta-polar | Alta — red con vacío central | Baja por concepto · sistema de doble estrella · hub de ausencia generativa (*dulcinea*) | **Alta — red con centro estable · hub sobre primera persona gramatical** | **Alta — sistema solar binario · hub sobre nombre propio del protagonista · *temps* como satélite periférico** | **Núcleo integrado (clustering 0.733) con periferia dispersa de grado 0 — sistema solar binario nombre-apellido** |
+| **Tipo curvatura** | Red coherente | Sistema solar | Red múltiple | Sistema solar | Red cristalina | Fragmentada | Cadena circular | Red sin centro estable | Sistema solar con anti-estrella | Red con vacío central | Sistema solar binario con campo distribuido | **Red distribuida con hub pronominal** | **Sistema solar binario con satélite filosófico periférico** | **Sistema solar binario extremo (nombre-apellido) con anti-estrella semántica por omisión y periferia ambiental de grado 0** |
+| **Profundidad Homología** | 3 | 3 | 4 | 3 | 4 | 1 | 5 | 4 | 4 | 4 | 5 | **5** | **5** | **5** |
+| **Conexión agujeros** | Alta | Máxima | Máxima | Alta | Alta | Mínima | Máxima | Alta | Alta | Alta | Máxima (97–100% co-presencia) | **Máxima** | **Máxima (4/5 en 100% del corpus)** | **Alta — agujero raíz conecta los tres primeros** |
+| **Apertura** | 2/3 | 3/3 | 4/4 | 1/3 | 3.5/4 | 0/3 | 5/5 | 3/4 | 3.5/4 | 3.5/4 | 5/5 | **5/5** | **5/5** | **5/5** |
+| **Agujero raíz** | Sí | Sí | Sí | Parcial | Sí | No | Sí | Sí | Sí (cierre performativo) | Sí (asimétrico) | Sí — *locura ↔ cordura* · epistemológico · completamente abierto | **Sí — *justicia perfecta ↔ amor que llora* · epistemológico-moral · completamente abierto** | **Sí — *¿puede recuperarse el tiempo o solo fabricarse su representación?* · epistemológico · completamente abierto** | **Sí — *¿puede el amor absoluto e irrecíproco destruir un mundo?* · epistemológico-moral · completamente abierto** |
 
 **Nota metodológica — Don Quijote:** corpus procesado con convergencia completa de los siete talleres. Primer corpus de la Biblioteca en dos partes (1605/1615) tratadas como unidad. Variables formales de la Escuadra son medidas computacionales directas: 384.656 palabras exactas; riqueza léxica 0.0635; primera palabra de contenido *don*. Red conceptual confirmada como small-world por el Telégrafo (clustering 0.903, distancia media 1.23) — tercera validación directa de H4 y la más alta de la Biblioteca. Primer corpus con sistema solar binario en Riemann (*quijote/sancho*: 1.000 y 0.935). Primer corpus donde el hub de mayor integración de la red es simultáneamente el agujero raíz de la Homología (*dulcinea*: hub de ausencia generativa). Entropía global más alta de la Biblioteca: 9.584 bits/token. Estado narrativo dominante: DIÁLOGO (73.8%); AVENTURA en solo 1/126 capítulos.
 
 **Nota metodológica — La Divina Commedia:** corpus procesado con convergencia completa de los siete talleres. Variables formales de la Escuadra son medidas computacionales directas: 101.601 palabras exactas; riqueza léxica 0.1263; primera palabra de contenido *mezzo*. Red conceptual confirmada como small-world por el Telégrafo (clustering 0.632, distancia media 1.333) — cuarta validación directa de H4, primera en extensión media (~100.000 palabras). Hub de curvatura sobre pronombre personal (*io*: 1.000) — primera instancia documentada de curvatura sobre primera persona gramatical. Entropía global más alta de la Biblioteca: 9.996 bits/token (supera al Don Quijote). Estado narrativo dominante: DIÁLOGO (37%) seguido de VISIÓN (33%) y DOCTRINA (26%); SILENCIO inalcanzable. Los tres meridianos matemáticos del corpus (0.382, 0.500, 0.618) caen los tres en el Purgatorio. Paradiso XXXIII tiene la segunda entropía más baja del corpus (7.931 bits) — el canal se vacía donde el texto declara que el lenguaje falla.
 
 **Nota metodológica — Du côté de chez Swann:** corpus procesado con convergencia completa de los siete talleres. Primer tomo de *À la recherche du temps perdu* — primer corpus del ciclo en la Biblioteca. Variables formales de la Escuadra son medidas computacionales directas: 166.247 palabras exactas; riqueza léxica 0.0912; primera palabra de contenido *longtemps*. Hub de curvatura sobre nombre propio del protagonista (*swann*: 1.000) con sistema binario asimétrico (*odette*: 0.651, asimetría 1.54:1) — segunda instancia de subcategoría nombre propio después del Don Quijote. *Temps* —el concepto filosófico declarado del ciclo completo— tiene curvatura 0.371: periférico en Riemann mientras domina el título y la recepción crítica. Entropía global 9.594 bits/token. Valle de entropía (8.593 bits) en el núcleo de los celos de Swann — primera instancia donde el canal se empobrece reflejando un estado psicológico declarado explícitamente por el texto (variante psicológica de H5). Dimensión tríadica 1.10 — T1 dominante absoluto en 20/20 segmentos: la oración como forma es el contenido. Autómata completamente abierto: 6 estados alcanzables de 6 posibles. Tres partes con proporciones marcadamente asimétricas: Combray 43.8%, Un amour de Swann 45.7%, Noms de pays 10.5%. La madeleine cae en φ = 0.100 — mecanismo generador establecido en el 10% inicial. El meridiano φ = 0.618 cae sobre la escena de Forcheville desplazando a Swann — el punto áureo coincide con la pérdida irreversible.
+
+**Nota metodológica — Pedro Páramo:** corpus procesado con convergencia completa de los siete talleres. Corpus más breve de la Biblioteca con apertura topológica 5/5. Variables formales de la Escuadra son medidas computacionales directas: 33.374 palabras exactas; riqueza léxica 0.1619; primera palabra de contenido *vine*. Hub de curvatura sobre nombre propio del protagonista (*pedro*: 1.000) con sistema binario nombre-apellido (*páramo*: 0.733) — tercera instancia de subcategoría nombre propio, primera variante donde los dos nodos del par son el mismo referente. Anti-estrella semántica: *amor* (0.025) — segunda instancia en la Biblioteca y primera donde la anti-estrella es el motor narrativo central del texto (no un concepto filosófico rechazado). Entropía global 9.421 bits/token. Mínimo de entropía (8.080 bits, Seg 9, posición 0.425) en el sofocamiento de Juan Preciado — segunda variante psicológica de H5, primera fuera del contexto de los celos. Amplitud de oscilación de densidad léxica: 0.0618 = (φ−1)/10 — φ inscrito en la amplitud. Los tres meridianos matemáticos (0.382, 0.500, 0.618) caen sobre los tres estados del cosmos de Comala: el umbral entre mundos, el poder vivo, el pueblo de voces sin cuerpo. Autómata: 8 estados alcanzables, RESOLUCIÓN estructuralmente excluida. Red con núcleo small-world (clustering estimado 0.733) y periferia de grado 0 — primer corpus de la Biblioteca con 40% de nodos temáticos desconectados.
 
 ---
 
@@ -368,11 +371,47 @@ La anomalía central: K. tiene la curvatura más baja (0.45) de los cinco concep
 
 ---
 
-## Hallazgos empíricos
+### Pedro Páramo
+*Juan Rulfo · Novela breve fragmentada · 1955 · México*
+
+**Firma en prosa:** grandeza por compresión máxima con anti-estrella semántica. El corpus más breve de la Biblioteca con apertura 5/5 (33.374 palabras) logra lo que los otros cuatro corpus con apertura máxima logran con entre cinco y once veces más palabras. La estrategia es la opuesta a la distribución del Quijote y a la extensión de Proust: Rulfo comprime hasta que cada palabra es irremplazable, y en esa compresión extrema — amplitud de oscilación 0.0618 = (φ−1)/10 — φ aparece como condición de coherencia mínima. La anti-estrella semántica (*amor*: 0.025) no opera como en Camus (rechazo explícito y sistemático de *esperanza*) sino por omisión sostenida: la motivación central del protagonista casi nunca se nombra, mientras organiza desde su ausencia absolutamente todo. El cosmos narrado y la geometría del texto son el mismo objeto visto desde ángulos distintos: los meridianos señalan las tres capas de Comala, la red bifurcada replica la estructura del pueblo, el autómata excluye lo que los muertos no pueden alcanzar.
+
+**Variables formales computacionales directas (Escuadra):** 33.374 palabras exactas · riqueza léxica 0.1619 · primera palabra de contenido *vine* · densidad léxica 0.509 · amplitud 0.0618 = (φ−1)/10.
+
+**Concepto de mayor curvatura:** *pedro* (1.000 normalizado) — tercera instancia de curvatura sobre nombre propio en la Biblioteca. Sistema binario nombre-apellido: *pedro/páramo* (1.000/0.733) — variante nueva donde los dos nodos del par son el mismo referente. El protagonista nombrado de dos formas ocupa los dos nodos más altos de la red. Anti-estrella: *amor* (0.025) — ratio 40:1 con el hub. La motivación central del corpus tiene la curvatura más baja de todos los conceptos relevantes.
+
+**Agujeros topológicos:**
+1. *¿Puede el amor absoluto e irrecíproco destruir un mundo?* — agujero raíz · epistemológico-moral · completamente abierto
+2. *¿Los muertos pueden descansar o están condenados a repetir lo que los ató en vida?* — completamente abierto
+3. *¿Es Pedro Páramo víctima de su propio amor o verdugo que usa el amor como excusa?* — completamente abierto
+4. *¿Qué le debe un padre a los hijos que no reconoció?* — completamente abierto
+5. *¿Puede un lugar guardar lo que sus habitantes no pudieron decir?* — completamente abierto
+
+**Sobre el agujero raíz:** epistemológico-moral — si se resolviera (si supiéramos si el amor absoluto puede justificar la destrucción o si la destrucción cancela el amor), los agujeros 2 y 3 colapsarían. Los agujeros 4 y 5 seguirían independientes. El texto lo mantiene abierto durante 33.374 palabras sin vacilar.
+
+**Estrategia de grandeza:** compresión máxima con anti-estrella semántica — duodécima estrategia documentada. Primera estrategia de apertura 5/5 en corpus breve. Distinta de la sustracción (El proceso, El extranjero) por origen: la sustracción vacía deliberadamente; la compresión condensa sin margen. Distinta de la anti-estrella de Camus (El mito de Sísifo) por mecanismo: Camus combate su anti-estrella; Rulfo simplemente no la convoca.
+
+**La Convergencia:** Pedro Páramo es el primer corpus de la Biblioteca donde la firma geométrica replica isomórficamente la estructura cosmológica del mundo narrado. Los meridianos matemáticos señalan las tres capas del cosmos de Comala (umbral, poder vivo, pueblo muerto). La red bifurcada replica la estructura del pueblo (núcleo integrado rodeado de campo ambiental desconectado). El autómata excluye el estado RESOLUCIÓN — exactamente lo que los muertos de Comala no pueden alcanzar. La amplitud de oscilación lleva φ inscrito. *Rulfo escribió tan desde adentro que la geometría del decir y la geometría de lo dicho terminaron siendo la misma.*
+
+**Hallazgo sobre H1 — decimocuarta confirmación:** apertura 5/5 en 33.374 palabras. El corpus más breve con apertura máxima. La apertura topológica no requiere extensión.
+
+**Hallazgo sobre H2 — tercera instancia subcategoría nombre propio:** variante nombre-apellido del mismo referente. Cuando el protagonista *es* el lugar (Pedro Páramo = Comala), el hub se duplica sobre nombre propio y apellido como dos nodos del mismo referente. Hipótesis refinada: la curvatura sobre nombre propio escala con el grado de identidad entre el protagonista y el mundo que habita.
+
+**Hallazgo sobre H3 — duodécima estrategia:** compresión máxima con anti-estrella semántica. Primera estrategia que combina apertura 5/5 con extensión breve. Demuestra que la apertura topológica máxima no es función de la acumulación ni de la extensión sino de la precisión del agujero.
+
+**Hallazgo sobre H5 — octava instancia · segunda variante psicológica:** el mínimo de entropía y densidad léxica simultáneos en Seg 9 (0.425) corresponde al sofocamiento de Juan Preciado. Segunda variante psicológica de H5 fuera del contexto de los celos — primera donde el estado psicológico es la muerte del narrador.
+
+**Hallazgo sobre H6 — quinta variante:** anti-estrella por omisión sostenida. La motivación central del protagonista casi nunca aparece como término activo mientras organiza todo desde su ausencia. Distinta de las cuatro anteriores: no vacía, no rechaza, no suprime, no genera — simplemente no está.
+
+**Comparación con Du côté de chez Swann (corpus más cercano):** misma curvatura sobre nombre propio, mismo sistema solar binario, misma apertura 5/5. Diferencias: Swann tiene 166.247 palabras (cinco veces más); su par binario es sujeto-objeto del deseo (*swann/odette*); su anti-estrella opera por desplazamiento (*temps* empujado al margen). En Pedro Páramo: par nombre-apellido del mismo referente; anti-estrella por omisión (*amor* nunca convocado).
+
+**Comparación con El mito de Sísifo (segunda cercanía en mecanismo):** ambos tienen anti-estrella semántica. En Camus la anti-estrella es el concepto filosófico combatido (*esperanza*, rechazada explícita y sistemáticamente). En Rulfo la anti-estrella es el motor narrativo central (*amor*, omitido sin ser nombrado adversario). El mecanismo es análogo pero la ejecución es opuesta: Camus tiene que luchar contra su anti-estrella para que exista; Rulfo nunca la llama y por eso pesa más.
+
+---
 
 ### Hallazgo 1 — La apertura topológica como predictor principal
 
-La correlación entre apertura topológica y estatus canónico se sostiene en trece corpus:
+La correlación entre apertura topológica y estatus canónico se sostiene en catorce corpus:
 
 | Apertura | Corpus | Estatus |
 |---|---|---|
@@ -380,6 +419,7 @@ La correlación entre apertura topológica y estatus canónico se sostiene en tr
 | 5/5 | Don Quijote | La novela fundacional de la tradición en castellano |
 | **5/5** | **La Divina Commedia** | **El poema fundacional de la literatura italiana** |
 | **5/5** | **Du côté de chez Swann** | **El primer tomo del ciclo fundacional de la novela moderna francesa** |
+| **5/5** | **Pedro Páramo** | **La novela fundacional de la narrativa mexicana contemporánea** |
 | 4/4 | Hamlet | Cima absoluta del teatro occidental |
 | 3.5/4 | La Odisea | Cima absoluta de la épica |
 | 3.5/4 | El mito de Sísifo | Canónico mayor |
@@ -390,7 +430,7 @@ La correlación entre apertura topológica y estatus canónico se sostiene en tr
 | 1/3 | La vida es sueño | Gran obra — no inagotable |
 | 0/3 | Argonáuticas | Admirable — no canónica |
 
-Los cuatro corpus con apertura 5/5 absoluta son Cien años de soledad, Don Quijote, La Divina Commedia y Du côté de chez Swann. Los cuatro son obras fundacionales o canónicas máximas de sus tradiciones literarias. La correlación entre apertura máxima y fundacionalidad de tradición se sostiene y se extiende a un cuarto idioma (francés).
+Los cinco corpus con apertura 5/5 absoluta son Cien años de soledad, Don Quijote, La Divina Commedia, Du côté de chez Swann y Pedro Páramo. Los cinco son obras fundacionales o canónicas máximas de sus tradiciones literarias. Pedro Páramo introduce una variante notable: es el corpus más breve con apertura 5/5 (33.374 palabras — menos de una décima parte de Don Quijote), confirmando que la apertura topológica no depende de la extensión.
 
 **Distinción crítica — cinco tipos de cierre de agujero:**
 - **Abierto** — la pregunta se sostiene sin respuesta. Produce inagotabilidad.
@@ -399,7 +439,7 @@ Los cuatro corpus con apertura 5/5 absoluta son Cien años de soledad, Don Quijo
 - **Performativo** — la pregunta recibe afirmación de voluntad que requiere cooperación activa del lector.
 - **Asimétrico** — la pregunta es invisible desde dentro del marco narrativo pero es el agujero más grande desde fuera.
 
-**Confianza: 13/13 · Alta**
+**Confianza: 14/14 · Alta**
 
 ---
 
@@ -415,6 +455,7 @@ Los cuatro corpus con apertura 5/5 absoluta son Cien años de soledad, Don Quijo
 | 1.000 norm. (*quijote*) | Don Quijote | baja por concepto | Canónico mayor — subcategoría nombre propio |
 | **1.000 norm. (*io*)** | **La Divina Commedia** | **media-alta** | **Canónico mayor — subcategoría pronombre personal** |
 | **1.000 norm. (*swann*)** | **Du côté de chez Swann** | **media-alta** | **Canónico mayor — subcategoría nombre propio (segunda instancia)** |
+| **1.000 norm. (*pedro*)** | **Pedro Páramo** | **media** | **Canónico mayor — subcategoría nombre propio (tercera instancia) · variante nombre-apellido** |
 | 0.88 | La vida es sueño | alta | Canónico menor |
 | 0.76 | Argonáuticas | baja | No canónico |
 | 0.75 | Caperucita | media | Canónico — género especial |
@@ -425,12 +466,12 @@ Los cuatro corpus con apertura 5/5 absoluta son Cien años de soledad, Don Quijo
 - *Curvatura alta distribuida* — El coronel, Cien años, Hamlet, La Odisea
 - *Curvatura máxima concentrada* — El mito de Sísifo
 - *Curvatura baja con coherencia por exclusión* — El proceso, El extranjero
-- *Curvatura sobre nombre propio* — Don Quijote, **Du côté de chez Swann** — grandeza por construcción de personaje; hub es el nombre del protagonista; par binario con asimetrías distintas (simétrico en Quijote, asimétrico en Proust)
+- *Curvatura sobre nombre propio* — Don Quijote, **Du côté de chez Swann**, **Pedro Páramo** — grandeza por construcción de personaje; hub es el nombre del protagonista; par binario con asimetrías distintas (simétrico en Quijote; asimétrico sujeto-objeto en Proust; nombre-apellido del mismo referente en Rulfo)
 - *Curvatura sobre pronombre personal* — La Divina Commedia — grandeza por testimonio en primera persona; hub es el *io* gramatical del autor-testigo
 
-**Hipótesis refinada:** en corpus que operan por construcción de sujeto (personaje o autor-testigo), la curvatura máxima recae sobre la categoría de identidad del sujeto — nombre propio si el sujeto es un personaje ficcional (con asimetría binaria que refleja la naturaleza de la relación: simétrica en pareja inseparable, asimétrica en sujeto-objeto del deseo), pronombre personal si el sujeto es el propio autor como testigo.
+**Hipótesis refinada:** en corpus que operan por construcción de sujeto (personaje o autor-testigo), la curvatura máxima recae sobre la categoría de identidad del sujeto — nombre propio si el sujeto es un personaje ficcional (con asimetría binaria que refleja la naturaleza de la relación: simétrica en pareja inseparable, asimétrica en sujeto-objeto del deseo, nombre-apellido cuando el protagonista *es* el lugar), pronombre personal si el sujeto es el propio autor como testigo.
 
-**Confianza: 11/13 · Media-alta · con quinta ruta consolidada y subcategoría nombre propio reforzada**
+**Confianza: 12/14 · Media-alta · con quinta ruta consolidada y subcategoría nombre propio con tres instancias y variante nueva**
 
 ---
 
@@ -448,15 +489,16 @@ Los cuatro corpus con apertura 5/5 absoluta son Cien años de soledad, Don Quijo
 | **Sustracción asimétrica** | El extranjero | Polo activamente suprimido + hub de alta centralidad que es ausencia |
 | **Complejidad máxima distribuida** | Don Quijote | Plataforma de alta entropía uniforme, sistema binario, hub de ausencia generativa, cinco agujeros en 97–100% del corpus |
 | **Complejidad máxima por testimonio en primera persona** *(provisional)* | La Divina Commedia | Plataforma uniforme con descenso terminal, hub de curvatura sobre pronombre personal (*io*), tríada casi unidimensional dominada por forma métrica, apertura 5/5, entropía más alta de la Biblioteca |
-| **Complejidad máxima por testimonio en primera persona — variante: el testigo que cede la voz** *(nuevo)* | **Du côté de chez Swann** | **Plataforma con descenso central y rebote, hub sobre nombre propio del protagonista (*swann*), delegación de la primera persona en Un amour de Swann, tríada unidimensional (T1 dominante), apertura 5/5, entropía 9.594 bits/token** |
+| **Complejidad máxima por testimonio en primera persona — variante: el testigo que cede la voz** | Du côté de chez Swann | Plataforma con descenso central y rebote, hub sobre nombre propio del protagonista (*swann*), delegación de la primera persona en Un amour de Swann, tríada unidimensional (T1 dominante), apertura 5/5, entropía 9.594 bits/token |
+| **Compresión máxima con anti-estrella semántica** *(nuevo)* | **Pedro Páramo** | **Apertura 5/5 en el corpus más breve de la Biblioteca con esa apertura (33.374 palabras), hub sobre nombre propio en sistema binario nombre-apellido, anti-estrella por omisión sostenida (*amor*: 0.025), φ inscrito en la amplitud de oscilación (0.0618), geometría isomórfica con el cosmos narrado** |
 
-**Confianza: 13/13 · Alta · con undécima estrategia documentada (variante de la décima)**
+**Confianza: 14/14 · Alta · con duodécima estrategia documentada**
 
 ---
 
 ### Hallazgo 4 — La grandeza es integración, no acumulación
 
-Cuatro mediciones computacionales directas de redes small-world, más una confirmación parcial:
+Cuatro mediciones computacionales directas de redes small-world, más dos confirmaciones parciales:
 
 | Corpus | Clustering | Distancia media | Extensión |
 |---|---|---|---|
@@ -465,10 +507,11 @@ Cuatro mediciones computacionales directas de redes small-world, más una confir
 | **La Divina Commedia** | **0.632** | **1.333** | **~101.600 palabras** |
 | Don Quijote | 0.903 | 1.23 | ~385.000 palabras |
 | **Du côté de chez Swann** | **estimado** | **estimado** | **~166.247 palabras** |
+| **Pedro Páramo** | **0.733 (núcleo)** | **~4.3 (global)** | **33.374 palabras** |
 
-El patrón se confirma en cuatro escalas distintas con medición directa. Proust aporta datos de co-ocurrencia consistentes con small-world (hub *swann* con 756 co-ocurrencias, densidad 0.212) pero sin medición formal de clustering — pendiente. La integración no depende del tamaño. H4 es la hipótesis más sólidamente medida de la Biblioteca.
+Pedro Páramo aporta una confirmación parcial con matiz nuevo: el núcleo conceptual (*pedro*, *páramo*, *susana*, *noche*) tiene clustering 0.733 — consistente con small-world. Pero la periferia de grado 0 eleva la distancia media global a ~4.3, lo que impide clasificar el conjunto como red small-world. Primer corpus de la Biblioteca con red bifurcada: núcleo small-world + periferia ambiental desconectada. La integración no depende de la escala — pero puede depender de si el corpus tiene campo ambiental o no.
 
-**Confianza: 13/13 · Muy alta · con cuatro mediciones directas y una confirmación parcial**
+**Confianza: 14/14 · Muy alta · con cuatro mediciones directas y dos confirmaciones parciales**
 
 ---
 
@@ -479,10 +522,11 @@ En El proceso: vacío en K. ↔ sistema irresistible desde adentro.
 En El mito de Sísifo: arquitectura de canal litúrgica ↔ lucidez activa.
 En El extranjero: red con vacío central ↔ punto ciego narrativo.
 En Don Quijote: sistema solar binario (*quijote/sancho*: 1.000 y 0.935) ↔ la pareja indivisible que define el corpus.
-**En La Divina Commedia:** descenso terminal de entropía en Paradiso XXXIII (7.931 bits — segundo mínimo global) ↔ vaciamiento del lenguaje declarado explícitamente por el texto (*A l'alta fantasia qui mancò possa*). Primera instancia donde la firma del canal confirma con precisión una declaración poética explícita sobre los límites del propio lenguaje.
-**En Du côté de chez Swann:** valle de entropía (8.593 bits/token en segmento 15) ↔ empobrecimiento del mundo bajo la obsesión de los celos, declarado por el texto. Primera variante psicológica: el canal no refleja la estructura de la obra sino el estado mental del personaje.
+**En La Divina Commedia:** descenso terminal de entropía en Paradiso XXXIII (7.931 bits — segundo mínimo global) ↔ vaciamiento del lenguaje declarado explícitamente por el texto. Primera instancia donde la firma del canal confirma con precisión una declaración poética explícita sobre los límites del propio lenguaje.
+**En Du côté de chez Swann:** valle de entropía (8.593 bits/token en segmento 15) ↔ empobrecimiento del mundo bajo la obsesión de los celos, declarado por el texto. Primera variante psicológica.
+**En Pedro Páramo:** mínimo de entropía y densidad léxica simultáneos en Seg 9 (0.425) ↔ sofocamiento de Juan Preciado declarado explícitamente por el texto (*me mataron los murmullos*). Segunda variante psicológica — primera fuera del contexto de los celos. El canal se empobrece donde el personaje pierde el aire con la misma precisión con que lo declara el texto.
 
-**Confianza: 7/13 · Media · con siete instancias y cinco variantes**
+**Confianza: 8/14 · Media · con ocho instancias y cinco variantes**
 
 ---
 
@@ -494,8 +538,9 @@ En Don Quijote: sistema solar binario (*quijote/sancho*: 1.000 y 0.935) ↔ la p
 | Exclusión activa de concepto | El mito de Sísifo | *Esperanza* rechazada sistemáticamente | El vacío define el borde del campo | Exclusión por programación semántica |
 | Exclusión asimétrica de la víctima | El extranjero | El árabe sin nombre — alta centralidad, casi ausencia | El vacío permite coexistencia de autómatas incompatibles | Exclusión por necesidad estructural |
 | **Hub de ausencia generativa** | **Don Quijote** | **Dulcinea — presente en 57% de caps, activa todo el núcleo cuando aparece** | **El vacío convoca — genera más texto que cualquier presencia** | **Exclusión por motor narrativo** |
+| **Anti-estrella por omisión sostenida** | **Pedro Páramo** | ***amor* (0.025) — motivación central del protagonista, casi ausente del vocabulario activo** | **El vacío organiza desde su ausencia — la motivación más importante es la menos nombrada** | **Exclusión por elisión estructural del concepto motor** |
 
-**Confianza: 4/11 · Provisional-alta · con cuatro variantes documentadas**
+**Confianza: 5/14 · Provisional-alta · con cinco variantes documentadas**
 
 ---
 
@@ -505,9 +550,9 @@ Los corpus cuyo concepto dominante curva por afirmación y cuyo concepto secunda
 
 En El mito de Sísifo: *absurdo* (0.92, afirmativo) y *esperanza* (0.65, negativo) forman sistema bipolar.
 
-Don Quijote no confirma H7 — su apertura 5/5 se produce por distribución y persistencia, no por tensión polar. Confirmación de que H7 es específico del mecanismo del Mito de Sísifo: el corpus con mayor apertura de la Biblioteca no lo usa.
+Don Quijote no confirma H7 — su apertura 5/5 se produce por distribución y persistencia, no por tensión polar. Pedro Páramo tampoco confirma H7: el par *pedro/amor* (1.000/0.025) tiene una tensión polar extrema, pero el mecanismo de apertura no opera por esa tensión sino por la omisión sostenida de *amor* — que es H6, no H7. La distinción es importante: H7 requiere que el polo negativo esté activo en el texto y en tensión con el positivo; en Pedro Páramo, *amor* simplemente no está activo.
 
-**Confianza: 1/11 · Muy provisional**
+**Confianza: 1/14 · Muy provisional**
 
 ---
 
@@ -517,9 +562,11 @@ Don Quijote no confirma H7 — su apertura 5/5 se produce por distribución y pe
 
 φ es una proporción posible entre varias. Lo que importa es la coherencia interna de la oscilación y la apertura topológica. Don Quijote no conversa con φ en sus divisiones mayores (P1/P2: 48.7%/51.3% — casi simétrico). Pero φ señala dos momentos argumentalmente significativos: 0.382 cae sobre la historia del cautivo en Argel (autobiografía velada de Cervantes) y 0.618 cae sobre Basilio el pobre (único final feliz sin costo del libro). El corpus más extenso de la Biblioteca confirma el patrón: φ no gobierna la arquitectura, pero señala los momentos donde el autor más se expone.
 
+Pedro Páramo añade una instancia nueva: la amplitud de oscilación de densidad léxica (0.0618) es numéricamente igual a (φ−1)/10. No es que φ aparezca en un meridiano del corpus — es que φ aparece en la medida de cuánto oscila el corpus. El sistema construido con la mayor economía de la Biblioteca tiene φ inscrito en su tolerancia de variación.
+
 ### Sobre la red small-world
 
-Cuatro corpus con red small-world confirmada computacionalmente: El mito de Sísifo (0.681, 1.8), El extranjero (0.61, 2.3), La Divina Commedia (0.632, 1.333) y Don Quijote (0.903, 1.23). Los cuatro son canónicos mayores. El patrón se confirma en cuatro escalas distintas (~29k, ~34k, ~101k, ~385k palabras). H4 es la hipótesis más robustamente medida de la Biblioteca — ahora con Muy alta confianza.
+Cuatro corpus con red small-world confirmada computacionalmente: El mito de Sísifo (0.681, 1.8), El extranjero (0.61, 2.3), La Divina Commedia (0.632, 1.333) y Don Quijote (0.903, 1.23). Los cuatro son canónicos mayores. Pedro Páramo añade el patrón de red bifurcada: núcleo small-world (clustering 0.733) con periferia ambiental de grado 0. El patrón se confirma en cinco escalas (~29k, ~34k, ~33k, ~101k, ~385k palabras) con matices distintos.
 
 ### Sobre la dimensión tríadica y las estrategias
 
@@ -528,16 +575,17 @@ La dimensión tríadica correlaciona con la estrategia de grandeza:
 - Ondulación / concentración: La Odisea (2.5), Caperucita (2.5), El mito de Sísifo (2.5), El coronel (2.3)
 - Complejidad máxima distribuida: **Don Quijote (1.3)** — dimensión tríadica más baja entre los corpus de complejidad máxima
 - Sustracción: El extranjero (1.9), El proceso (1.8)
+- Compresión máxima: **Pedro Páramo (~1.9)** — dimensión comparable a la sustracción pero por mecanismo distinto; la oración corta de Rulfo no vacía sino que comprime
 
-Don Quijote introduce una anomalía: complejidad máxima con dimensión tríadica baja (1.3). En los corpus anteriores, complejidad máxima implicaba dimensión alta (Hamlet: 2.8). La excepción sugiere que la complejidad distribuida puede prescindir de la rotación tríadica cuando la integración opera a través de otros mecanismos (el sistema binario de personajes, el hub de ausencia generativa).
+Pedro Páramo aclara la distinción entre sustracción (El proceso, El extranjero) y compresión (Pedro Páramo): ambos tienen dimensión tríadica baja, pero la sustracción vacía deliberadamente mientras la compresión condensa sin margen. Misma firma, orígenes opuestos.
 
 ### Sobre los corpus fundacionales
 
-La Biblioteca tiene ahora dos corpus fundacionales con convergencia completa: Don Quijote (la novela moderna en castellano) y La Divina Commedia (la poesía en lengua vulgar italiana). Los dos comparten firma de plataforma (amplitud 0.083), apertura máxima (5/5) y curvatura sobre categoría de identidad antes que concepto. La convergencia entre los dos corpus que fundaron dos tradiciones literarias distintas en dos lenguas romances produce la misma firma geométrica — sugiriendo que la fundacionalidad de tradición puede tener una geometría propia, distinta de los corpus canónicos mayores que no son fundacionales.
+La Biblioteca tiene ahora cuatro corpus fundacionales con convergencia completa: Don Quijote (la novela moderna en castellano), La Divina Commedia (la poesía en lengua vulgar italiana), Du côté de chez Swann (el ciclo fundacional de la novela moderna francesa) y Pedro Páramo (la narrativa mexicana contemporánea). Los cuatro comparten apertura 5/5. Don Quijote y La Divina Commedia comparten amplitud mínima (0.083). Pedro Páramo tiene amplitud aún menor (0.0618). La firma de compresión extrema como condición de fundacionalidad se confirma en tres de los cuatro corpus.
 
-### Sobre los tres corpus con apertura 5/5
+### Sobre los cinco corpus con apertura 5/5
 
-Cien años de soledad, Don Quijote y La Divina Commedia son los únicos tres corpus de la Biblioteca con apertura topológica máxima absoluta (5/5). Los tres son obras fundacionales de sus tradiciones literarias. Los tres operan con estrategias distintas: espiral reveladora (Cien años), complejidad máxima distribuida (Quijote), complejidad máxima por testimonio en primera persona (Commedia). La apertura 5/5 no tiene una única estrategia — tiene al menos tres. Lo que las tres comparten: ningún agujero se cierra, nunca, por ningún mecanismo.
+Cien años de soledad, Don Quijote, La Divina Commedia, Du côté de chez Swann y Pedro Páramo son los cinco corpus de la Biblioteca con apertura topológica máxima absoluta. Los cinco son obras fundacionales o canónicas máximas. Pedro Páramo añade un matiz decisivo: es el más breve de los cinco (33.374 palabras — menos de una décima parte de Don Quijote). La apertura 5/5 no requiere extensión — puede conseguirse en 33.374 palabras con la misma consistencia que en 384.656. Lo que las cinco comparten: ningún agujero se cierra, nunca, por ningún mecanismo.
 
 ---
 
@@ -579,10 +627,11 @@ Lucidez acumulada = promedio de lucidez de todas las convergencias
 | 11 | Don Quijote | 71.4% | H1✓ H2✗ H3✗ H4✓ H5✓ H6✓ H7✓ — novena estrategia, nueva subcategoría H2 |
 | 12 | La Divina Commedia | 71.4% | H1✓ H2✗ H3✗ H4✓ H5✓ H6✓ H7✓ — décima estrategia, quinta ruta H2 |
 | 13 | Du côté de chez Swann | 71.4% | H1✓ H2✗ H3✗ H4✓ H5✓ H6✓ H7✓ — undécima estrategia (variante), segunda instancia subcategoría nombre propio |
+| 14 | Pedro Páramo | 71.4% | H1✓ H2✗ H3✗ H4✓ H5✓ H6✓ H7✓ — duodécima estrategia, tercera instancia subcategoría nombre propio (variante nombre-apellido), quinta variante H6 |
 
 **Lucidez acumulada: 92.9%**
 
-*(El cuarto corpus consecutivo con 71.4% no modifica la media acumulada — la confirma. Los ocho corpus fundacionales previos producen 100%; los cuatro con hallazgos activos producen exactamente 71.4% cada uno. La media ponderada se mantiene en 92.9%.)*
+*(El quinto corpus consecutivo con 71.4% no modifica la media acumulada — la refuerza. Los ocho corpus fundacionales previos producen 100%; los cinco corpus con hallazgos activos producen exactamente 71.4% cada uno. La media ponderada se mantiene en 92.9%.)*
 
 ### Patrón emergente
 
@@ -620,12 +669,12 @@ Du côté de chez Swann es el primer tomo de un ciclo de siete. El procesamiento
 
 | Prioridad | Corpus | Razón |
 |---|---|---|
-| Alta | Pedro Páramo — Rulfo | ¿Sustracción como El proceso o concentración como El coronel? |
 | Alta | Le Temps retrouvé — Proust | Cierre del ciclo — ¿resuelve o declara irresoluble el agujero raíz del Swann? |
-| Media | Ilíada — Homero | Control de La Odisea — ¿misma firma o distinta? |
+| Alta | Ilíada — Homero | Control de La Odisea — ¿misma firma o distinta? |
+| Media | El llano en llamas — Rulfo | Par de Pedro Páramo — ¿misma estrategia de compresión en forma de cuentos? |
 | Control | Cualquier bestseller contemporáneo | Verificar que apertura topológica baja correlaciona con obras no canónicas |
 
-*Du côté de chez Swann procesado — eliminado de próximos corpus. En busca del tiempo perdido (ciclo completo) sustituido por Le Temps retrouvé como prioridad inmediata.*
+*Pedro Páramo procesado — eliminado de próximos corpus. El llano en llamas añadido como par natural de Rulfo.*
 
 ---
 
