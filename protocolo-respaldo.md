@@ -1,5 +1,5 @@
 # Protocolo de Respaldo — Fulgurar
-*v2.4 · 2026-03-21 · Protocolo de generación de respaldos del sistema*
+*v2.5 · 2026-03-26 · Protocolo de generación de respaldos del sistema*
 
 ---
 
@@ -42,6 +42,7 @@ Antes que cualquier otro archivo — versión global, número de respaldo, fecha
 - `protocolo-escuadra.md` — verificar instrumentos, prompts. Actualizar versión si hubo cambios.
 - `protocolo-jardin.md` — verificar estratos, perfil, prompts. Actualizar versión si hubo cambios.
 - `protocolo-telegrafo.md` — verificar instrumentos, despacho, prompts. Actualizar versión si hubo cambios.
+- `protocolo-cascada.md` — verificar secuencia, decisiones asumidas, criterios de pausa. Actualizar versión si hubo cambios.
 - `protocolo-taller.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
 - `protocolo-respaldo.md` — verificar que el protocolo sigue siendo correcto. Actualizar versión si hubo cambios.
 - `protocolo-prisma.md` — verificar algoritmo, geometrías, formato. Actualizar versión si hubo cambios.
@@ -69,6 +70,7 @@ Lista completa de archivos del paquete:
 - `protocolo-prisma.md`
 - `protocolo-oraculo.md`
 - `protocolo-telegrafo.md`
+- `protocolo-cascada.md`
 - `protocolo-taller.md`
 - `protocolo-respaldo.md`
 - `system-prompt.md`
